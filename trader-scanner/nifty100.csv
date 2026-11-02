@@ -1,0 +1,101 @@
+Symbol,Company Name,Industry,NIFTY50
+ABB,ABB India Ltd.,Capital Goods,N
+ADANIENSOL,Adani Energy Solutions Ltd.,Power,N
+ADANIENT,Adani Enterprises Ltd.,Metals & Mining,Y
+ADANIGREEN,Adani Green Energy Ltd.,Power,N
+ADANIPORTS,Adani Ports and Special Economic Zone Ltd.,Services,Y
+ADANIPOWER,Adani Power Ltd.,Power,N
+AMBUJACEM,Ambuja Cements Ltd.,Construction Materials,N
+APOLLOHOSP,Apollo Hospitals Enterprise Ltd.,Healthcare,Y
+ASIANPAINT,Asian Paints Ltd.,Consumer Durables,Y
+DMART,Avenue Supermarts Ltd.,Consumer Services,N
+AXISBANK,Axis Bank Ltd.,Financial Services,Y
+BSE,BSE Ltd.,Financial Services,Y
+BAJAJ-AUTO,Bajaj Auto Ltd.,Automobile and Auto Components,Y
+BAJFINANCE,Bajaj Finance Ltd.,Financial Services,Y
+BAJAJFINSV,Bajaj Finserv Ltd.,Financial Services,Y
+BAJAJHLDNG,Bajaj Holdings & Investment Ltd.,Financial Services,N
+BANKBARODA,Bank of Baroda,Financial Services,N
+BEL,Bharat Electronics Ltd.,Capital Goods,Y
+BPCL,Bharat Petroleum Corporation Ltd.,Oil Gas & Consumable Fuels,N
+BHARTIARTL,Bharti Airtel Ltd.,Telecommunication,Y
+BOSCHLTD,Bosch Ltd.,Automobile and Auto Components,N
+BRITANNIA,Britannia Industries Ltd.,Fast Moving Consumer Goods,N
+CGPOWER,CG Power and Industrial Solutions Ltd.,Capital Goods,N
+CANBK,Canara Bank,Financial Services,N
+CHOLAFIN,Cholamandalam Investment and Finance Company Ltd.,Financial Services,N
+CIPLA,Cipla Ltd.,Healthcare,Y
+COALINDIA,Coal India Ltd.,Oil Gas & Consumable Fuels,Y
+CUMMINSIND,Cummins India Ltd.,Capital Goods,N
+DLF,DLF Ltd.,Realty,N
+DIVISLAB,Divi's Laboratories Ltd.,Healthcare,N
+DRREDDY,Dr. Reddy's Laboratories Ltd.,Healthcare,Y
+EICHERMOT,Eicher Motors Ltd.,Automobile and Auto Components,Y
+ETERNAL,Eternal Ltd.,Consumer Services,Y
+GAIL,GAIL (India) Ltd.,Oil Gas & Consumable Fuels,N
+GODREJCP,Godrej Consumer Products Ltd.,Fast Moving Consumer Goods,N
+GRASIM,Grasim Industries Ltd.,Construction Materials,Y
+HCLTECH,HCL Technologies Ltd.,Information Technology,Y
+HDFCAMC,HDFC Asset Management Company Ltd.,Financial Services,N
+HDFCBANK,HDFC Bank Ltd.,Financial Services,Y
+HDFCLIFE,HDFC Life Insurance Company Ltd.,Financial Services,Y
+HINDALCO,Hindalco Industries Ltd.,Metals & Mining,Y
+HAL,Hindustan Aeronautics Ltd.,Capital Goods,N
+HINDUNILVR,Hindustan Unilever Ltd.,Fast Moving Consumer Goods,Y
+HINDZINC,Hindustan Zinc Ltd.,Metals & Mining,N
+POWERINDIA,Hitachi Energy India Ltd.,Capital Goods,N
+HYUNDAI,Hyundai Motor India Ltd.,Automobile and Auto Components,N
+ICICIBANK,ICICI Bank Ltd.,Financial Services,Y
+ITC,ITC Ltd.,Fast Moving Consumer Goods,Y
+IOC,Indian Oil Corporation Ltd.,Oil Gas & Consumable Fuels,N
+IRFC,Indian Railway Finance Corporation Ltd.,Financial Services,N
+INFY,Infosys Ltd.,Information Technology,Y
+INDIGO,InterGlobe Aviation Ltd.,Services,Y
+JSWSTEEL,JSW Steel Ltd.,Metals & Mining,Y
+JINDALSTEL,Jindal Steel Ltd.,Metals & Mining,N
+JIOFIN,Jio Financial Services Ltd.,Financial Services,Y
+KOTAKBANK,Kotak Mahindra Bank Ltd.,Financial Services,Y
+LTM,LTM Ltd.,Information Technology,N
+LT,Larsen & Toubro Ltd.,Construction,Y
+M&M,Mahindra & Mahindra Ltd.,Automobile and Auto Components,Y
+MARUTI,Maruti Suzuki India Ltd.,Automobile and Auto Components,Y
+MAXHEALTH,Max Healthcare Institute Ltd.,Healthcare,Y
+MAZDOCK,Mazagoan Dock Shipbuilders Ltd.,Capital Goods,N
+MUTHOOTFIN,Muthoot Finance Ltd.,Financial Services,N
+NTPC,NTPC Ltd.,Power,Y
+NESTLEIND,Nestle India Ltd.,Fast Moving Consumer Goods,Y
+ONGC,Oil & Natural Gas Corporation Ltd.,Oil Gas & Consumable Fuels,Y
+PIDILITIND,Pidilite Industries Ltd.,Chemicals,N
+POLYCAB,Polycab India Ltd.,Capital Goods,N
+PFC,Power Finance Corporation Ltd.,Financial Services,N
+POWERGRID,Power Grid Corporation of India Ltd.,Power,Y
+PNB,Punjab National Bank,Financial Services,N
+RELIANCE,Reliance Industries Ltd.,Oil Gas & Consumable Fuels,Y
+SBILIFE,SBI Life Insurance Company Ltd.,Financial Services,Y
+MOTHERSON,Samvardhana Motherson International Ltd.,Automobile and Auto Components,N
+SHRIRAMFIN,Shriram Finance Ltd.,Financial Services,Y
+ENRIN,Siemens Energy India Ltd.,Capital Goods,N
+SIEMENS,Siemens Ltd.,Capital Goods,N
+SOLARINDS,Solar Industries India Ltd.,Chemicals,N
+SBIN,State Bank of India,Financial Services,Y
+SUNPHARMA,Sun Pharmaceutical Industries Ltd.,Healthcare,Y
+TVSMOTOR,TVS Motor Company Ltd.,Automobile and Auto Components,N
+TATACAP,Tata Capital Ltd.,Financial Services,N
+TCS,Tata Consultancy Services Ltd.,Information Technology,Y
+TATACONSUM,Tata Consumer Products Ltd.,Fast Moving Consumer Goods,Y
+TMCV,Tata Motors Ltd.,Capital Goods,N
+TMPV,Tata Motors Passenger Vehicles Ltd.,Automobile and Auto Components,Y
+TATAPOWER,Tata Power Co. Ltd.,Power,N
+TATASTEEL,Tata Steel Ltd.,Metals & Mining,Y
+TECHM,Tech Mahindra Ltd.,Information Technology,Y
+TITAN,Titan Company Ltd.,Consumer Durables,Y
+TORNTPHARM,Torrent Pharmaceuticals Ltd.,Healthcare,N
+TRENT,Trent Ltd.,Consumer Services,Y
+ULTRACEMCO,UltraTech Cement Ltd.,Construction Materials,Y
+UNIONBANK,Union Bank of India,Financial Services,N
+VBL,Varun Beverages Ltd.,Fast Moving Consumer Goods,N
+VAML,Vedanta Aluminium Metal Ltd.,Metals & Mining,N
+VEDL,Vedanta Ltd.,Metals & Mining,N
+IDEA,Vodafone Idea Ltd.,Telecommunication,N
+WIPRO,Wipro Ltd.,Information Technology,N
+ZYDUSLIFE,Zydus Lifesciences Ltd.,Healthcare,N

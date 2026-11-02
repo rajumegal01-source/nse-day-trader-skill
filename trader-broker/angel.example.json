@@ -1,0 +1,7 @@
+{
+  "_comment": "Copy to trader/secrets/angel.json, fill in, chmod 600, and NEVER commit or paste it in a chat. Environment variables ANGEL_API_KEY, ANGEL_CLIENT_CODE, ANGEL_PIN, ANGEL_TOTP_SECRET take precedence.",
+  "api_key": "",
+  "client_code": "",
+  "pin": "",
+  "totp_secret": ""
+}

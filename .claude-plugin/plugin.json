@@ -1,0 +1,22 @@
+{
+  "name": "nse-day-trader-skill",
+  "description": "11 Claude skills for day trading NSE/BSE stocks: scan thousands of charts, track news and NSE filings, time every entry and exit, replay every outcome before you risk a rupee, and size with real Indian intraday charges. Paper by default. Educational only, not investment advice.",
+  "version": "2.0.0-nse.1",
+  "author": {
+    "name": "Raju Megal"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-skills",
+    "day-trading",
+    "nse",
+    "bse",
+    "nifty",
+    "indian-stock-market",
+    "opening-range-breakout",
+    "paper-trading",
+    "angel-one"
+  ],
+  "skills": "./"
+}
