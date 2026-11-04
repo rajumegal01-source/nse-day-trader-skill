@@ -37,6 +37,19 @@ class TestUniverse(unittest.TestCase):
         self.assertEqual(len(names), 100)
         self.assertIn("RELIANCE", names)
 
+    def test_no_universe_file_falls_back_to_nifty100(self):
+        import argparse
+        a = argparse.Namespace(symbols=None, watchlist=None, universe=None, limit=None, json=False, quiet=True)
+        cwd = os.getcwd()
+        with tempfile.TemporaryDirectory() as d:
+            os.chdir(d)
+            try:
+                syms = scan.read_symbols(a)
+            finally:
+                os.chdir(cwd)
+        self.assertEqual(len(syms), 100)
+        self.assertIn("POWERGRID", syms)
+
     def test_yahoo_symbols(self):
         self.assertEqual(scan.to_yahoo("RELIANCE"), "RELIANCE.NS")
         self.assertEqual(scan.to_yahoo("RELIANCE.BO"), "RELIANCE.BO")

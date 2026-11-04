@@ -742,9 +742,14 @@ def read_symbols(a, offline_syms=None):
         syms = sorted(offline_syms)  # offline: every chart in the file, unless a list was given
     else:
         path = a.universe or DEFAULT_UNIVERSE
-        if not os.path.exists(path):
-            raise ScanError("no %s yet: run `scan.py universe` first, or pass --symbols" % path)
-        syms = symbols_from_file(path)
+        if os.path.exists(path):
+            syms = symbols_from_file(path)
+        elif not a.universe:
+            # no universe built yet: fall back to the bundled NIFTY 100 list instead of failing
+            progress(a, "no %s yet: scanning the bundled NIFTY 100 list (run `scan.py universe` for all NSE stocks)" % path)
+            syms = [sym for sym, _ in fallback_universe()]
+        else:
+            raise ScanError("no %s: check the path, or pass --symbols" % path)
     out = []
     for s in syms:
         if s not in out:

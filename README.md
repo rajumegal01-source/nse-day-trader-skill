@@ -109,6 +109,11 @@ An example with real data: RELIANCE, Monday 2 November 2026.
 
 ## Live trading: Angel One SmartAPI (UNVERIFIED)
 
+> **Status:** login and the order book were checked read-only against the real Angel One API
+> (`trader-broker/check_angel.py`, 3 Nov 2026, no order placed). Placing, cancelling and fills are
+> tested **only against a mock server**. Before real money: register a static IP, then place one
+> tiny LIMIT order by hand-approval and watch it in the Angel One app.
+
 Set `"mode": "live"` and `"broker": "angelone"` in `trader/config.json`. Credentials only from
 environment variables or a local file you fill in yourself (`trader/secrets/angel.json`, from
 `trader-broker/angel.example.json`, `chmod 600`, git-ignored):
@@ -138,7 +143,7 @@ Read the current circulars and your broker's API terms before you go live.
 ## The tools
 
 ```bash
-python3 trader-scanner/scan.py universe                       # NSE EQ list -> trader/universe.txt
+python3 trader-scanner/scan.py universe                       # NSE EQ list -> trader/universe.txt (optional: without it, scans use the bundled NIFTY 100)
 python3 trader-scanner/scan.py daily                          # pre-market setups
 python3 trader-scanner/scan.py orb --at 10:00                 # opening-range breakouts so far
 python3 trader-news/news.py --tickers RELIANCE --hours 24     # headlines, NSE filings, the move
@@ -152,6 +157,18 @@ python3 trader-alerts/alerts.py add --from-plan && python3 trader-alerts/alerts.
 python3 trader-analyst/facts.py RELIANCE TCS
 python3 trader-bulkdeals/deals.py deals && python3 trader-bulkdeals/deals.py insider RELIANCE
 ```
+
+```bash
+python3 backtest/orb_grid_sym.py POWERGRID                    # ORB grid backtest: 10,240 settings, train/test split
+```
+
+`orb_grid_sym.py` downloads ~60 days of Yahoo 5-minute bars, tests every opening-range setting
+(range 5/10/15/30 min, entry cutoff, stop, target, filter, side, volume, buffer), and prints the
+most stable one with its test results and what it would have done on the last day. It also lists
+**data gaps**: Yahoo's free 5-minute charts sometimes drop bars (15:15-15:25 were missing on
+4 Nov 2026), and a missing bar can hide a stop or target touch, so the JSON warns you and days with
+more than `--max-gaps` missing bars are left out. Backtests over thousands of settings overfit:
+trust the test half, not the train half, and paper-trade before real money.
 
 ```bash
 python3 -m unittest discover -s tests -v
@@ -207,6 +224,7 @@ trader-broker/      SKILL.md, ticket.py, angel.py, nse.py, angel.example.json
 trader-alerts/      SKILL.md, alerts.py, alerts.example.json
 trader-analyst/     SKILL.md, facts.py, metrics.example.json
 trader-bulkdeals/   SKILL.md, deals.py
+backtest/           orb_grid_sym.py (ORB grid backtest, educational)
 tests/              unittest suite + offline fixtures
 ```
 

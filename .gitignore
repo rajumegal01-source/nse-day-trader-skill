@@ -1,4 +1,7 @@
-__pycache__/
-*.pyc
+# your own state and secrets: never commit
+trader/
 secrets/
+**/__pycache__/
+*.pyc
 *.log
+backtest_out/
