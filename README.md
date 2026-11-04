@@ -171,6 +171,12 @@ more than `--max-gaps` missing bars are left out. Backtests over thousands of se
 trust the test half, not the train half, and paper-trade before real money.
 
 ```bash
+python3 backtest/orb_grid_sym.py POWERGRID | python3 backtest/paper_journal.py add -   # log today's signal
+python3 backtest/paper_journal.py grade      # after 15:30 IST: target, stop or close (flags missing bars)
+python3 backtest/paper_journal.py report     # win %, average, total; says when you have too few trades
+```
+
+```bash
 python3 -m unittest discover -s tests -v
 ```
 
@@ -224,7 +230,7 @@ trader-broker/      SKILL.md, ticket.py, angel.py, nse.py, angel.example.json
 trader-alerts/      SKILL.md, alerts.py, alerts.example.json
 trader-analyst/     SKILL.md, facts.py, metrics.example.json
 trader-bulkdeals/   SKILL.md, deals.py
-backtest/           orb_grid_sym.py (ORB grid backtest, educational)
+backtest/           orb_grid_sym.py (ORB grid backtest), paper_journal.py (paper trades), educational
 tests/              unittest suite + offline fixtures
 ```
 
