@@ -140,6 +140,30 @@ exchange needs no separate algo registration (this tool sends at most 1 per seco
 login; a self-built algo is for you and your family only; no market orders through an API algo.
 Read the current circulars and your broker's API terms before you go live.
 
+## Trading Lab (`lab/`)
+
+Our own indicators, each tested thousands of ways on every stock, with a memory of what held up:
+
+| Setup | What it is |
+|---|---|
+| `structure` | Market structure: swing highs/lows, **BOS** (trend continues) and **CHoCH** (trend flips) |
+| `fvg` | **Fair Value Gap**: a 3-candle gap, traded on its first retest |
+| `ob` | **Order Block**: the last opposite candle before a BOS, traded on its first retest |
+| `vdelta` | **Order-flow proxy**: volume delta from each candle + an n-bar breakout. True order flow needs tick / bid-ask data that free sources do not give |
+
+```bash
+python3 lab/lab.py grid --nifty100     # 12,960 settings x every Nifty 100 stock -> lab/memory.json
+python3 lab/lab.py scan                # every 5-min bar of today, every remembered setting
+python3 lab/lab.py scan --at 11:00     # as it looked at 11:00 IST
+python3 lab/lab.py show POWERGRID      # what the lab remembers
+```
+
+`lab/memory.json` is the lab's memory: for each stock and setup, how many settings were robust
+(positive in BOTH the train and the test half) and the best three, plus a history of past runs.
+The scan lists **every** trigger of the day with its status (live / target / stop / close), so
+a signal that fired while you were away still shows, and it lists missing 5-minute bars.
+Thousands of settings overfit: a robust setting is something to paper-trade, not a promise.
+
 ## The tools
 
 ```bash
@@ -230,6 +254,7 @@ trader-broker/      SKILL.md, ticket.py, angel.py, nse.py, angel.example.json
 trader-alerts/      SKILL.md, alerts.py, alerts.example.json
 trader-analyst/     SKILL.md, facts.py, metrics.example.json
 trader-bulkdeals/   SKILL.md, deals.py
+lab/                core.py (indicators), lab.py (grid, scan, show), memory.json
 backtest/           orb_grid_sym.py (ORB grid backtest), paper_journal.py (paper trades), educational
 tests/              unittest suite + offline fixtures
 ```
