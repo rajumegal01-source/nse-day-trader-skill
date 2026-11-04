@@ -156,7 +156,17 @@ python3 lab/lab.py grid --nifty100     # 12,960 settings x every Nifty 100 stock
 python3 lab/lab.py scan                # every 5-min bar of today, every remembered setting
 python3 lab/lab.py scan --at 11:00     # as it looked at 11:00 IST
 python3 lab/lab.py show POWERGRID      # what the lab remembers
+python3 lab/lab.py learn               # after 15:30 IST: grade today's triggers, retire losing settings
+python3 lab/lab.py lessons             # what it learned: win % by setup, by time of day, long vs short
+python3 lab/terminal.py                # the lab's own terminal: a menu, works in Termux
 ```
+
+**It learns every day by itself.** `.github/workflows/lab-daily.yml` runs `lab.py daily` on
+GitHub (free for public repos) at 16:30 IST on weekdays: it grades the day's triggers, keeps a
+live record for every remembered setting, retires a setting after 5+ live trades with a net
+loss, re-tests all Nifty 100 stocks with the new day included, and commits `lab/memory.json`.
+Outcomes that a missing 5-minute bar could hide are not learned from. Run it by hand from the
+repo's Actions tab (Run workflow).
 
 `lab/memory.json` is the lab's memory: for each stock and setup, how many settings were robust
 (positive in BOTH the train and the test half) and the best three, plus a history of past runs.

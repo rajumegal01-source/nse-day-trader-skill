@@ -5,6 +5,10 @@ EDUCATIONAL ONLY, not investment advice. શૈક્ષણિક હેતુ �
     python3 lab/lab.py grid --nifty100 --limit 20   # many stocks (about 1 minute each)
     python3 lab/lab.py scan                         # every bar of today, for every remembered setting
     python3 lab/lab.py show POWERGRID               # what the lab remembers about a stock
+    python3 lab/lab.py learn                        # after 15:30: grade today's triggers, retire losers
+    python3 lab/lab.py lessons                      # what the lab has learned live
+    python3 lab/lab.py daily                        # learn + re-test all Nifty 100 (GitHub Actions runs this)
+    python3 lab/terminal.py                         # menu for Termux
 
 Setups (see core.py): structure (BOS/CHoCH), fvg (fair value gap retest), ob (order block
 retest), vdelta (volume-delta order-flow proxy + n-bar breakout). Each one is tested on
@@ -71,7 +75,7 @@ def prepare(sym, rng="60d"):
     return B, gaps, sorted(bad), days, pctx
 
 
-def grid_one(B, days, pctx, setups=None):
+def grid_one(B, days, pctx, setups=None, retired=None):
     split = days[int(len(days) * 0.67)] if days else ""
     out = {}
     cache = {}
@@ -87,6 +91,8 @@ def grid_one(B, days, pctx, setups=None):
             for evals in itertools.product(*core.EXITS.values()):
                 p = dict(zip(ekeys, evals))
                 tested += 1
+                if retired and pkey(dict(dp, **p)) in retired.get(name, ()):
+                    continue                  # failed live: the lab learned not to use it
                 tr, te = [], []
                 for i, side, natural, _ in core.first_per_day(B, cands, p, pctx):
                     st = core.stop_price(B[i]["c"], side, natural, p["stop"])
@@ -113,6 +119,10 @@ def grid_one(B, days, pctx, setups=None):
     return out
 
 
+def pkey(p):
+    return json.dumps(p, sort_keys=True)
+
+
 def rnd(s):
     return {k: round(v, 3) if isinstance(v, float) else v for k, v in s.items()}
 
@@ -133,7 +143,7 @@ def cmd_grid(a):
         if len(days) < 20:
             print("%s: only %d clean days, skipped" % (sym, len(days)))
             continue
-        res = grid_one(B, days, pctx, a.setups)
+        res = grid_one(B, days, pctx, a.setups, mem.get("retired", {}).get(sym))
         mem["stocks"][sym] = {"date": today, "days": len(days), "first": days[0], "last": days[-1],
                               "skipped_gap_days": bad, "setups": res}
         h = mem["history"].setdefault(sym, [])
@@ -178,10 +188,12 @@ def scan_one(sym, info, day=None, at=None):
                 seen.add(key)
                 r = core.simulate(B, i, side, st, p["tgt"])
                 status = "live" if r is None or (r[1] == "close" and B[-1]["m"] < core.EXIT_M) else r[1]
-                hits.append(dict(symbol=sym, setup=setup, rank=k + 1, time="%02d:%02d" % divmod(B[i]["m"] + 5, 60),
+                hits.append(dict(symbol=sym, day=day, setup=setup, rank=k + 1, time="%02d:%02d" % divmod(B[i]["m"] + 5, 60),
                                  side="LONG" if side == 1 else "SHORT", entry=round(e, 2), stop=round(st, 2),
                                  target=None if tgt is None else round(tgt, 2), last=round(B[-1]["c"], 2),
-                                 status=status, test=best["test"]))
+                                 status=status, pct=None if status == "live" else round(r[0] * 100, 3),
+                                 exit_time=None if r is None else "%02d:%02d" % divmod(B[r[2]]["m"], 60),
+                                 p=best["p"], test=best["test"]))
     g = gaps.get(day, [])
     if at is not None:
         g = [x for x in g if int(x[:2]) * 60 + int(x[3:]) + 5 <= at]
@@ -224,6 +236,97 @@ def cmd_scan(a):
     return 0
 
 
+def bucket(t):
+    return "09:15-11:00" if t <= "11:00" else ("11:00-13:00" if t <= "13:00" else "13:00-15:30")
+
+
+def cmd_learn(a):
+    """After the close: grade every trigger of the day, keep a live record of each remembered
+    setting, retire settings that keep losing live, and update the lessons."""
+    mem = load_memory(a.memory)
+    live = mem.setdefault("live", {})
+    retired = mem.setdefault("retired", {})
+    journal = mem.setdefault("journal", {})
+    day_hits, gaps_all = [], {}
+    for sym, info in sorted(mem["stocks"].items()):
+        if not any(v["best"] for v in info["setups"].values()):
+            continue
+        try:
+            hits, gaps = scan_one(sym, info, a.day)
+        except Exception as e:
+            print("%s: data error (%s)" % (sym, e))
+            continue
+        day_hits += [h for h in hits if h["status"] != "live"]
+        if gaps:
+            gaps_all[sym] = gaps
+    if not day_hits:
+        print("nothing to learn: no closed trigger")
+        return 0
+    day = a.day or max(h.get("day", "") for h in day_hits) or dt.datetime.now(core.IST).date().isoformat()
+    if day in journal and not a.force:
+        print("already learned from %s (use --force to redo)" % day)
+        return 0
+    for h in day_hits:   # a missing bar between entry and exit may hide the real outcome
+        h["gap"] = any(h["time"] <= g <= (h["exit_time"] or "15:25") for g in gaps_all.get(h["symbol"], []))
+    journal[day] = [{k: h[k] for k in ("symbol", "setup", "side", "time", "entry", "stop", "target", "status", "pct", "gap")}
+                    for h in day_hits]
+    for d in sorted(journal)[:-HISTORY]:
+        del journal[d]
+    newly = 0
+    for h in day_hits:
+        if h["gap"]:
+            continue                     # do not learn from an outcome a missing bar may hide
+        rec = live.setdefault(h["symbol"], {}).setdefault(h["setup"], {}).setdefault(
+            pkey(h["p"]), {"n": 0, "wins": 0, "tot": 0.0})
+        rec["n"] += 1
+        rec["wins"] += 1 if h["pct"] > 0 else 0
+        rec["tot"] = round(rec["tot"] + h["pct"], 3)
+        rec["last"] = day
+        if rec["n"] >= 5 and rec["tot"] < 0:
+            r = retired.setdefault(h["symbol"], {}).setdefault(h["setup"], [])
+            if pkey(h["p"]) not in r:
+                r.append(pkey(h["p"]))
+                newly += 1
+    lessons = {}
+    for d, hs in journal.items():
+        for h in hs:
+            if h["pct"] is None or h.get("gap"):
+                continue
+            for key in (h["setup"], "%s %s" % (h["setup"], bucket(h["time"])), "%s %s" % (h["setup"], h["side"])):
+                l = lessons.setdefault(key, {"n": 0, "wins": 0, "tot": 0.0})
+                l["n"] += 1
+                l["wins"] += 1 if h["pct"] > 0 else 0
+                l["tot"] = round(l["tot"] + h["pct"], 3)
+    mem["lessons"] = lessons
+    save_memory(mem, a.memory)
+    w = sum(1 for h in day_hits if h["pct"] > 0)
+    print("%s: learned from %d triggers (%d won), %d settings retired, %d skipped for missing bars"
+          % (day, len(day_hits), w, newly, sum(1 for h in day_hits if h["gap"])))
+    return 0
+
+
+def cmd_lessons(a):
+    mem = load_memory(a.memory)
+    ls = mem.get("lessons") or {}
+    if not ls:
+        print("no lessons yet: run `lab.py learn` after the close")
+        return 0
+    print("What the lab has seen live (last %d days of triggers):" % len(mem.get("journal", {})))
+    for k in sorted(ls):
+        l = ls[k]
+        print("  %-28s %4d trades  win %3.0f%%  avg %+.2f%%" % (k, l["n"], 100.0 * l["wins"] / l["n"], l["tot"] / l["n"]))
+    print("  retired settings: %d" % sum(len(x) for s in mem.get("retired", {}).values() for x in s.values()))
+    print("Educational only, not investment advice.")
+    return 0
+
+
+def cmd_daily(a):
+    """learn from today, then re-test every stock with today's bars included."""
+    cmd_learn(a)
+    a.symbols, a.nifty100, a.limit, a.setups = [], True, None, None
+    return cmd_grid(a)
+
+
 def cmd_show(a):
     mem = load_memory(a.memory)
     info = mem["stocks"].get(a.symbol.upper())
@@ -256,10 +359,16 @@ def main(argv=None):
     s.add_argument("--json", action="store_true")
     w = sub.add_parser("show")
     w.add_argument("symbol")
+    for name in ("learn", "daily"):
+        l = sub.add_parser(name)
+        l.add_argument("--day", help="YYYY-MM-DD (default: the latest session)")
+        l.add_argument("--force", action="store_true")
+    sub.add_parser("lessons")
     a = ap.parse_args(argv)
     if a.cmd == "grid" and not a.symbols and not a.nifty100:
         ap.error("grid needs symbols or --nifty100")
-    return {"grid": cmd_grid, "scan": cmd_scan, "show": cmd_show}[a.cmd](a)
+    return {"grid": cmd_grid, "scan": cmd_scan, "show": cmd_show, "learn": cmd_learn,
+            "lessons": cmd_lessons, "daily": cmd_daily}[a.cmd](a)
 
 
 if __name__ == "__main__":
