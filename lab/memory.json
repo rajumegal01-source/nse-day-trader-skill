@@ -15,9 +15,39 @@
      "structure": 221,
      "vdelta": 31
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.627,
+     "ob": 0.695,
+     "structure": 0.288,
+     "vdelta": 0.424
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 433,
+     "ob": 234,
+     "structure": 221,
+     "vdelta": 31
+    }
    }
   ],
   "ADANIENSOL": [
+   {
+    "best_test_exp": {
+     "fvg": 0.427,
+     "ob": 0.467,
+     "structure": 0.871,
+     "vdelta": 0.844
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 972,
+     "ob": 404,
+     "structure": 667,
+     "vdelta": 56
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.427,
@@ -49,9 +79,39 @@
      "structure": 402,
      "vdelta": 72
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.534,
+     "ob": 0.58,
+     "structure": 0.879,
+     "vdelta": 0.438
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 770,
+     "ob": 176,
+     "structure": 402,
+     "vdelta": 72
+    }
    }
   ],
   "ADANIGREEN": [
+   {
+    "best_test_exp": {
+     "fvg": 0.379,
+     "ob": 0.307,
+     "structure": 0.774,
+     "vdelta": 0.742
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 528,
+     "ob": 72,
+     "structure": 702,
+     "vdelta": 69
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.379,
@@ -83,9 +143,39 @@
      "structure": 619,
      "vdelta": 296
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.693,
+     "ob": 0.372,
+     "structure": 0.58,
+     "vdelta": 0.532
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 806,
+     "ob": 347,
+     "structure": 619,
+     "vdelta": 296
+    }
    }
   ],
   "ADANIPOWER": [
+   {
+    "best_test_exp": {
+     "fvg": 0.711,
+     "ob": 0.965,
+     "structure": 0.846,
+     "vdelta": 0.911
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 1272,
+     "ob": 639,
+     "structure": 864,
+     "vdelta": 125
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.711,
@@ -117,9 +207,39 @@
      "structure": 866,
      "vdelta": 123
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.369,
+     "ob": 0.476,
+     "structure": 0.559,
+     "vdelta": 0.225
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 355,
+     "ob": 272,
+     "structure": 866,
+     "vdelta": 123
+    }
    }
   ],
   "APOLLOHOSP": [
+   {
+    "best_test_exp": {
+     "fvg": 0.377,
+     "ob": 0.122,
+     "structure": 0.283,
+     "vdelta": 0.14
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 452,
+     "ob": 45,
+     "structure": 22,
+     "vdelta": 11
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.377,
@@ -151,9 +271,39 @@
      "structure": 132,
      "vdelta": 56
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.117,
+     "ob": 0.109,
+     "structure": 0.228,
+     "vdelta": 0.232
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 111,
+     "ob": 16,
+     "structure": 132,
+     "vdelta": 56
+    }
    }
   ],
   "AXISBANK": [
+   {
+    "best_test_exp": {
+     "fvg": 0.077,
+     "ob": 0.157,
+     "structure": 0.407,
+     "vdelta": 0.112
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 20,
+     "ob": 38,
+     "structure": 119,
+     "vdelta": 43
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.077,
@@ -185,9 +335,39 @@
      "structure": 177,
      "vdelta": 158
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.526,
+     "ob": 0.209,
+     "structure": 0.216,
+     "vdelta": 0.344
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 443,
+     "ob": 283,
+     "structure": 177,
+     "vdelta": 158
+    }
    }
   ],
   "BAJAJFINSV": [
+   {
+    "best_test_exp": {
+     "fvg": 0.193,
+     "ob": 0.382,
+     "structure": 0.688,
+     "vdelta": 0.321
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 236,
+     "ob": 196,
+     "structure": 166,
+     "vdelta": 28
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.193,
@@ -219,9 +399,39 @@
      "structure": 162,
      "vdelta": 2
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.231,
+     "ob": 0.15,
+     "structure": 0.644,
+     "vdelta": 0.073
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 21,
+     "ob": 19,
+     "structure": 162,
+     "vdelta": 2
+    }
    }
   ],
   "BAJFINANCE": [
+   {
+    "best_test_exp": {
+     "fvg": 0.409,
+     "ob": 0.171,
+     "structure": 0.325,
+     "vdelta": 0.234
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 222,
+     "ob": 76,
+     "structure": 41,
+     "vdelta": 82
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.409,
@@ -253,9 +463,39 @@
      "structure": 70,
      "vdelta": 11
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": null,
+     "ob": 0.277,
+     "structure": 0.225,
+     "vdelta": 0.052
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 0,
+     "ob": 117,
+     "structure": 70,
+     "vdelta": 11
+    }
    }
   ],
   "BEL": [
+   {
+    "best_test_exp": {
+     "fvg": 0.204,
+     "ob": 0.261,
+     "structure": 0.413,
+     "vdelta": 0.336
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 192,
+     "ob": 165,
+     "structure": 731,
+     "vdelta": 174
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.204,
@@ -287,9 +527,39 @@
      "structure": 326,
      "vdelta": 35
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.403,
+     "ob": 0.56,
+     "structure": 0.572,
+     "vdelta": 0.134
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 342,
+     "ob": 83,
+     "structure": 326,
+     "vdelta": 35
+    }
    }
   ],
   "BOSCHLTD": [
+   {
+    "best_test_exp": {
+     "fvg": 0.407,
+     "ob": 0.396,
+     "structure": 0.673,
+     "vdelta": 0.294
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 791,
+     "ob": 514,
+     "structure": 1040,
+     "vdelta": 247
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.407,
@@ -321,9 +591,39 @@
      "structure": 632,
      "vdelta": 236
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.662,
+     "ob": 0.487,
+     "structure": 0.518,
+     "vdelta": 0.415
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 766,
+     "ob": 490,
+     "structure": 632,
+     "vdelta": 236
+    }
    }
   ],
   "BRITANNIA": [
+   {
+    "best_test_exp": {
+     "fvg": 0.198,
+     "ob": 0.161,
+     "structure": 0.181,
+     "vdelta": 0.25
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 306,
+     "ob": 293,
+     "structure": 266,
+     "vdelta": 126
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.198,
@@ -355,9 +655,39 @@
      "structure": 424,
      "vdelta": 314
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.433,
+     "ob": 0.282,
+     "structure": 0.752,
+     "vdelta": 0.808
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 93,
+     "ob": 112,
+     "structure": 424,
+     "vdelta": 314
+    }
    }
   ],
   "CANBK": [
+   {
+    "best_test_exp": {
+     "fvg": 0.464,
+     "ob": 0.313,
+     "structure": 0.183,
+     "vdelta": 0.228
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 422,
+     "ob": 313,
+     "structure": 126,
+     "vdelta": 126
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.464,
@@ -389,9 +719,39 @@
      "structure": 396,
      "vdelta": 95
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.361,
+     "ob": 0.151,
+     "structure": 0.351,
+     "vdelta": 0.589
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 677,
+     "ob": 18,
+     "structure": 396,
+     "vdelta": 95
+    }
    }
   ],
   "CHOLAFIN": [
+   {
+    "best_test_exp": {
+     "fvg": 0.427,
+     "ob": 0.274,
+     "structure": 0.201,
+     "vdelta": 0.441
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 448,
+     "ob": 107,
+     "structure": 93,
+     "vdelta": 104
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.427,
@@ -423,9 +783,39 @@
      "structure": 14,
      "vdelta": 0
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.009,
+     "ob": 0.17,
+     "structure": 0.075,
+     "vdelta": null
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 6,
+     "ob": 200,
+     "structure": 14,
+     "vdelta": 0
+    }
    }
   ],
   "COALINDIA": [
+   {
+    "best_test_exp": {
+     "fvg": 0.222,
+     "ob": 0.248,
+     "structure": 0.231,
+     "vdelta": 0.162
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 116,
+     "ob": 3,
+     "structure": 157,
+     "vdelta": 60
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.222,
@@ -457,9 +847,39 @@
      "structure": 261,
      "vdelta": 344
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.506,
+     "ob": 0.25,
+     "structure": 0.309,
+     "vdelta": 0.505
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 383,
+     "ob": 90,
+     "structure": 261,
+     "vdelta": 344
+    }
    }
   ],
   "DIVISLAB": [
+   {
+    "best_test_exp": {
+     "fvg": 0.443,
+     "ob": 0.302,
+     "structure": 0.529,
+     "vdelta": 0.488
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 582,
+     "ob": 212,
+     "structure": 670,
+     "vdelta": 234
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.443,
@@ -491,9 +911,39 @@
      "structure": 1357,
      "vdelta": 18
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.095,
+     "ob": 0.627,
+     "structure": 0.581,
+     "vdelta": 0.143
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 55,
+     "ob": 653,
+     "structure": 1357,
+     "vdelta": 18
+    }
    }
   ],
   "DMART": [
+   {
+    "best_test_exp": {
+     "fvg": 0.239,
+     "ob": 0.215,
+     "structure": 0.246,
+     "vdelta": 0.304
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 300,
+     "ob": 46,
+     "structure": 161,
+     "vdelta": 139
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.239,
@@ -525,9 +975,39 @@
      "structure": 684,
      "vdelta": 68
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.365,
+     "ob": 0.2,
+     "structure": 0.832,
+     "vdelta": 0.661
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 126,
+     "ob": 164,
+     "structure": 684,
+     "vdelta": 68
+    }
    }
   ],
   "EICHERMOT": [
+   {
+    "best_test_exp": {
+     "fvg": 0.252,
+     "ob": 0.295,
+     "structure": 0.188,
+     "vdelta": 0.104
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 14,
+     "ob": 66,
+     "structure": 34,
+     "vdelta": 25
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.252,
@@ -559,9 +1039,39 @@
      "structure": 864,
      "vdelta": 324
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.387,
+     "ob": 0.795,
+     "structure": 0.606,
+     "vdelta": 0.61
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 624,
+     "ob": 772,
+     "structure": 864,
+     "vdelta": 324
+    }
    }
   ],
   "ETERNAL": [
+   {
+    "best_test_exp": {
+     "fvg": 0.444,
+     "ob": 0.283,
+     "structure": 0.562,
+     "vdelta": 0.249
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 150,
+     "ob": 138,
+     "structure": 1397,
+     "vdelta": 117
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.444,
@@ -593,9 +1103,39 @@
      "structure": 225,
      "vdelta": 35
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.204,
+     "ob": 0.305,
+     "structure": 0.738,
+     "vdelta": 0.407
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 286,
+     "ob": 123,
+     "structure": 225,
+     "vdelta": 35
+    }
    }
   ],
   "GODREJCP": [
+   {
+    "best_test_exp": {
+     "fvg": 0.427,
+     "ob": 0.246,
+     "structure": 0.393,
+     "vdelta": 0.569
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 174,
+     "ob": 155,
+     "structure": 186,
+     "vdelta": 52
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.427,
@@ -627,9 +1167,39 @@
      "structure": 324,
      "vdelta": 96
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.413,
+     "ob": 0.13,
+     "structure": 0.204,
+     "vdelta": 0.401
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 442,
+     "ob": 71,
+     "structure": 324,
+     "vdelta": 96
+    }
    }
   ],
   "HAL": [
+   {
+    "best_test_exp": {
+     "fvg": 0.052,
+     "ob": 0.54,
+     "structure": 0.649,
+     "vdelta": 0.199
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 20,
+     "ob": 292,
+     "structure": 390,
+     "vdelta": 23
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.052,
@@ -661,9 +1231,39 @@
      "structure": 444,
      "vdelta": 49
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.083,
+     "ob": 0.272,
+     "structure": 0.399,
+     "vdelta": 0.144
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 24,
+     "ob": 559,
+     "structure": 444,
+     "vdelta": 49
+    }
    }
   ],
   "HDFCAMC": [
+   {
+    "best_test_exp": {
+     "fvg": 0.38,
+     "ob": 0.2,
+     "structure": 0.52,
+     "vdelta": 0.414
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 301,
+     "ob": 110,
+     "structure": 627,
+     "vdelta": 216
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.38,
@@ -695,9 +1295,39 @@
      "structure": 376,
      "vdelta": 29
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.075,
+     "ob": 0.19,
+     "structure": 0.41,
+     "vdelta": 0.34
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 30,
+     "ob": 84,
+     "structure": 376,
+     "vdelta": 29
+    }
    }
   ],
   "HDFCLIFE": [
+   {
+    "best_test_exp": {
+     "fvg": 0.105,
+     "ob": 0.213,
+     "structure": 0.161,
+     "vdelta": null
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 38,
+     "ob": 77,
+     "structure": 54,
+     "vdelta": 0
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.105,
@@ -729,9 +1359,39 @@
      "structure": 195,
      "vdelta": 50
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.228,
+     "ob": 0.198,
+     "structure": 0.489,
+     "vdelta": 0.256
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 108,
+     "ob": 240,
+     "structure": 195,
+     "vdelta": 50
+    }
    }
   ],
   "HINDUNILVR": [
+   {
+    "best_test_exp": {
+     "fvg": 0.165,
+     "ob": 0.132,
+     "structure": 0.49,
+     "vdelta": 0.152
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 313,
+     "ob": 91,
+     "structure": 864,
+     "vdelta": 52
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.165,
@@ -763,9 +1423,39 @@
      "structure": 101,
      "vdelta": 149
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.367,
+     "ob": 0.157,
+     "structure": 0.25,
+     "vdelta": 0.815
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 144,
+     "ob": 23,
+     "structure": 101,
+     "vdelta": 149
+    }
    }
   ],
   "HYUNDAI": [
+   {
+    "best_test_exp": {
+     "fvg": 0.721,
+     "ob": 0.384,
+     "structure": 0.309,
+     "vdelta": 0.359
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 783,
+     "ob": 43,
+     "structure": 249,
+     "vdelta": 139
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.721,
@@ -797,9 +1487,39 @@
      "structure": 269,
      "vdelta": 29
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.322,
+     "ob": 0.317,
+     "structure": 0.358,
+     "vdelta": 0.293
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 237,
+     "ob": 259,
+     "structure": 269,
+     "vdelta": 29
+    }
    }
   ],
   "IDEA": [
+   {
+    "best_test_exp": {
+     "fvg": 0.733,
+     "ob": 0.511,
+     "structure": 1.114,
+     "vdelta": 0.501
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 853,
+     "ob": 395,
+     "structure": 1198,
+     "vdelta": 229
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.733,
@@ -831,9 +1551,39 @@
      "structure": 261,
      "vdelta": 14
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.151,
+     "ob": 0.101,
+     "structure": 0.343,
+     "vdelta": 0.122
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 94,
+     "ob": 25,
+     "structure": 261,
+     "vdelta": 14
+    }
    }
   ],
   "INFY": [
+   {
+    "best_test_exp": {
+     "fvg": 0.119,
+     "ob": 0.259,
+     "structure": 0.281,
+     "vdelta": 0.2
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 76,
+     "ob": 526,
+     "structure": 329,
+     "vdelta": 78
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.119,
@@ -865,9 +1615,39 @@
      "structure": 29,
      "vdelta": 46
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.27,
+     "ob": 0.244,
+     "structure": 0.157,
+     "vdelta": 0.098
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 593,
+     "ob": 87,
+     "structure": 29,
+     "vdelta": 46
+    }
    }
   ],
   "IRFC": [
+   {
+    "best_test_exp": {
+     "fvg": 0.176,
+     "ob": 0.255,
+     "structure": 0.736,
+     "vdelta": 0.21
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 209,
+     "ob": 159,
+     "structure": 694,
+     "vdelta": 228
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.176,
@@ -899,9 +1679,39 @@
      "structure": 776,
      "vdelta": 122
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.174,
+     "ob": 0.83,
+     "structure": 0.495,
+     "vdelta": 0.302
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 165,
+     "ob": 557,
+     "structure": 776,
+     "vdelta": 122
+    }
    }
   ],
   "JINDALSTEL": [
+   {
+    "best_test_exp": {
+     "fvg": 1.041,
+     "ob": 0.702,
+     "structure": 0.54,
+     "vdelta": 1.267
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 772,
+     "ob": 607,
+     "structure": 1043,
+     "vdelta": 233
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 1.041,
@@ -933,9 +1743,39 @@
      "structure": 228,
      "vdelta": 125
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.638,
+     "ob": 0.485,
+     "structure": 0.535,
+     "vdelta": 0.444
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 295,
+     "ob": 598,
+     "structure": 228,
+     "vdelta": 125
+    }
    }
   ],
   "JSWSTEEL": [
+   {
+    "best_test_exp": {
+     "fvg": 0.345,
+     "ob": 0.219,
+     "structure": 0.427,
+     "vdelta": 0.279
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 315,
+     "ob": 95,
+     "structure": 423,
+     "vdelta": 233
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.345,
@@ -967,9 +1807,39 @@
      "structure": 430,
      "vdelta": 131
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.328,
+     "ob": 0.152,
+     "structure": 0.472,
+     "vdelta": 0.527
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 133,
+     "ob": 295,
+     "structure": 430,
+     "vdelta": 131
+    }
    }
   ],
   "LT": [
+   {
+    "best_test_exp": {
+     "fvg": 0.412,
+     "ob": 0.328,
+     "structure": 0.555,
+     "vdelta": 0.148
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 632,
+     "ob": 284,
+     "structure": 837,
+     "vdelta": 109
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.412,
@@ -1001,9 +1871,39 @@
      "structure": 63,
      "vdelta": 26
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.127,
+     "ob": 0.643,
+     "structure": 0.195,
+     "vdelta": 0.123
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 192,
+     "ob": 201,
+     "structure": 63,
+     "vdelta": 26
+    }
    }
   ],
   "M&M": [
+   {
+    "best_test_exp": {
+     "fvg": 0.149,
+     "ob": 0.098,
+     "structure": 0.254,
+     "vdelta": 0.065
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 126,
+     "ob": 52,
+     "structure": 45,
+     "vdelta": 20
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.149,
@@ -1035,9 +1935,39 @@
      "structure": 378,
      "vdelta": 101
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.519,
+     "ob": 0.294,
+     "structure": 0.292,
+     "vdelta": 0.188
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 431,
+     "ob": 303,
+     "structure": 378,
+     "vdelta": 101
+    }
    }
   ],
   "MAXHEALTH": [
+   {
+    "best_test_exp": {
+     "fvg": 0.306,
+     "ob": 0.231,
+     "structure": 0.164,
+     "vdelta": 0.164
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 150,
+     "ob": 72,
+     "structure": 140,
+     "vdelta": 55
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.306,
@@ -1069,9 +1999,39 @@
      "structure": 1062,
      "vdelta": 252
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 1.5,
+     "ob": 0.502,
+     "structure": 0.497,
+     "vdelta": 0.757
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 866,
+     "ob": 624,
+     "structure": 1062,
+     "vdelta": 252
+    }
    }
   ],
   "MOTHERSON": [
+   {
+    "best_test_exp": {
+     "fvg": 0.043,
+     "ob": 0.286,
+     "structure": 0.164,
+     "vdelta": 0.545
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 10,
+     "ob": 80,
+     "structure": 48,
+     "vdelta": 4
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.043,
@@ -1103,9 +2063,39 @@
      "structure": 876,
      "vdelta": 127
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.633,
+     "ob": 0.203,
+     "structure": 0.699,
+     "vdelta": 0.447
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 504,
+     "ob": 186,
+     "structure": 876,
+     "vdelta": 127
+    }
    }
   ],
   "NESTLEIND": [
+   {
+    "best_test_exp": {
+     "fvg": 0.335,
+     "ob": 0.429,
+     "structure": 0.233,
+     "vdelta": 0.104
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 47,
+     "ob": 36,
+     "structure": 470,
+     "vdelta": 86
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.335,
@@ -1137,9 +2127,39 @@
      "structure": 50,
      "vdelta": 13
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.55,
+     "ob": 0.593,
+     "structure": 0.197,
+     "vdelta": 0.82
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 79,
+     "ob": 15,
+     "structure": 50,
+     "vdelta": 13
+    }
    }
   ],
   "ONGC": [
+   {
+    "best_test_exp": {
+     "fvg": 0.197,
+     "ob": 0.332,
+     "structure": 0.458,
+     "vdelta": 0.161
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 263,
+     "ob": 455,
+     "structure": 347,
+     "vdelta": 34
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.197,
@@ -1171,9 +2191,39 @@
      "structure": 604,
      "vdelta": 38
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.297,
+     "ob": 0.077,
+     "structure": 0.283,
+     "vdelta": 0.21
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 722,
+     "ob": 8,
+     "structure": 604,
+     "vdelta": 38
+    }
    }
   ],
   "PIDILITIND": [
+   {
+    "best_test_exp": {
+     "fvg": 0.284,
+     "ob": 0.316,
+     "structure": 0.282,
+     "vdelta": 0.441
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 255,
+     "ob": 126,
+     "structure": 336,
+     "vdelta": 61
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.284,
@@ -1205,9 +2255,39 @@
      "structure": 262,
      "vdelta": 43
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.148,
+     "ob": 0.069,
+     "structure": 0.315,
+     "vdelta": 0.365
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 45,
+     "ob": 2,
+     "structure": 262,
+     "vdelta": 43
+    }
    }
   ],
   "POLYCAB": [
+   {
+    "best_test_exp": {
+     "fvg": 0.492,
+     "ob": 0.069,
+     "structure": 0.251,
+     "vdelta": 0.551
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 271,
+     "ob": 13,
+     "structure": 178,
+     "vdelta": 121
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.492,
@@ -1239,9 +2319,39 @@
      "structure": 94,
      "vdelta": 56
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.196,
+     "ob": 0.203,
+     "structure": 0.175,
+     "vdelta": 0.177
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 229,
+     "ob": 81,
+     "structure": 94,
+     "vdelta": 56
+    }
    }
   ],
   "POWERINDIA": [
+   {
+    "best_test_exp": {
+     "fvg": 0.528,
+     "ob": 0.137,
+     "structure": 0.537,
+     "vdelta": 0.29
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 540,
+     "ob": 9,
+     "structure": 530,
+     "vdelta": 37
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.528,
@@ -1273,9 +2383,39 @@
      "structure": 419,
      "vdelta": 149
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.332,
+     "ob": 0.361,
+     "structure": 0.309,
+     "vdelta": 0.196
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 558,
+     "ob": 290,
+     "structure": 419,
+     "vdelta": 149
+    }
    }
   ],
   "SBILIFE": [
+   {
+    "best_test_exp": {
+     "fvg": 0.144,
+     "ob": 0.336,
+     "structure": 0.664,
+     "vdelta": 0.183
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 10,
+     "ob": 82,
+     "structure": 158,
+     "vdelta": 24
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.144,
@@ -1307,9 +2447,39 @@
      "structure": 34,
      "vdelta": 6
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.141,
+     "ob": 0.309,
+     "structure": 0.171,
+     "vdelta": 0.253
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 2,
+     "ob": 38,
+     "structure": 34,
+     "vdelta": 6
+    }
    }
   ],
   "SHRIRAMFIN": [
+   {
+    "best_test_exp": {
+     "fvg": 0.47,
+     "ob": 0.287,
+     "structure": 0.879,
+     "vdelta": 0.929
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 401,
+     "ob": 228,
+     "structure": 475,
+     "vdelta": 43
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.47,
@@ -1341,9 +2511,39 @@
      "structure": 140,
      "vdelta": 64
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.516,
+     "ob": 0.577,
+     "structure": 1.034,
+     "vdelta": 1.252
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 175,
+     "ob": 334,
+     "structure": 140,
+     "vdelta": 64
+    }
    }
   ],
   "SOLARINDS": [
+   {
+    "best_test_exp": {
+     "fvg": 0.212,
+     "ob": 0.263,
+     "structure": 0.626,
+     "vdelta": 0.267
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 130,
+     "ob": 77,
+     "structure": 642,
+     "vdelta": 74
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.212,
@@ -1375,9 +2575,39 @@
      "structure": 155,
      "vdelta": 12
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.311,
+     "ob": 0.2,
+     "structure": 0.208,
+     "vdelta": 0.185
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 156,
+     "ob": 129,
+     "structure": 155,
+     "vdelta": 12
+    }
    }
   ],
   "TATACAP": [
+   {
+    "best_test_exp": {
+     "fvg": 0.351,
+     "ob": 0.539,
+     "structure": 0.604,
+     "vdelta": 0.712
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 395,
+     "ob": 262,
+     "structure": 729,
+     "vdelta": 43
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.351,
@@ -1409,9 +2639,39 @@
      "structure": 267,
      "vdelta": 132
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.098,
+     "ob": 0.173,
+     "structure": 0.995,
+     "vdelta": 0.597
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 91,
+     "ob": 222,
+     "structure": 267,
+     "vdelta": 132
+    }
    }
   ],
   "TATAPOWER": [
+   {
+    "best_test_exp": {
+     "fvg": 0.084,
+     "ob": 0.219,
+     "structure": 0.459,
+     "vdelta": 0.153
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 30,
+     "ob": 21,
+     "structure": 118,
+     "vdelta": 38
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.084,
@@ -1443,9 +2703,39 @@
      "structure": 39,
      "vdelta": 59
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.305,
+     "ob": 0.206,
+     "structure": 0.339,
+     "vdelta": 0.231
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 94,
+     "ob": 224,
+     "structure": 39,
+     "vdelta": 59
+    }
    }
   ],
   "TCS": [
+   {
+    "best_test_exp": {
+     "fvg": 0.153,
+     "ob": 0.275,
+     "structure": 0.157,
+     "vdelta": 0.509
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 95,
+     "ob": 137,
+     "structure": 126,
+     "vdelta": 106
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.153,
@@ -1477,9 +2767,39 @@
      "structure": 332,
      "vdelta": 35
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.442,
+     "ob": 0.254,
+     "structure": 0.227,
+     "vdelta": 0.262
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 406,
+     "ob": 129,
+     "structure": 332,
+     "vdelta": 35
+    }
    }
   ],
   "TITAN": [
+   {
+    "best_test_exp": {
+     "fvg": 0.278,
+     "ob": 0.376,
+     "structure": 0.332,
+     "vdelta": 0.346
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 274,
+     "ob": 310,
+     "structure": 804,
+     "vdelta": 268
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.278,
@@ -1511,9 +2831,39 @@
      "structure": 204,
      "vdelta": 20
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.821,
+     "ob": 0.817,
+     "structure": 0.325,
+     "vdelta": 0.77
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 255,
+     "ob": 232,
+     "structure": 204,
+     "vdelta": 20
+    }
    }
   ],
   "TMPV": [
+   {
+    "best_test_exp": {
+     "fvg": 0.231,
+     "ob": 0.118,
+     "structure": 0.324,
+     "vdelta": 0.459
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 233,
+     "ob": 53,
+     "structure": 256,
+     "vdelta": 128
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.231,
@@ -1545,9 +2895,39 @@
      "structure": 393,
      "vdelta": 55
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.512,
+     "ob": 0.48,
+     "structure": 0.271,
+     "vdelta": 0.185
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 561,
+     "ob": 140,
+     "structure": 393,
+     "vdelta": 55
+    }
    }
   ],
   "TRENT": [
+   {
+    "best_test_exp": {
+     "fvg": 0.296,
+     "ob": 0.482,
+     "structure": 0.278,
+     "vdelta": 0.185
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 72,
+     "ob": 50,
+     "structure": 268,
+     "vdelta": 50
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.296,
@@ -1579,9 +2959,39 @@
      "structure": 486,
      "vdelta": 115
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.071,
+     "ob": 0.246,
+     "structure": 0.4,
+     "vdelta": 0.368
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 1,
+     "ob": 77,
+     "structure": 486,
+     "vdelta": 115
+    }
    }
   ],
   "ULTRACEMCO": [
+   {
+    "best_test_exp": {
+     "fvg": 0.23,
+     "ob": 0.125,
+     "structure": 0.323,
+     "vdelta": 0.354
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 234,
+     "ob": 101,
+     "structure": 695,
+     "vdelta": 23
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.23,
@@ -1613,9 +3023,39 @@
      "structure": 180,
      "vdelta": 64
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.455,
+     "ob": 0.397,
+     "structure": 0.336,
+     "vdelta": 0.25
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 250,
+     "ob": 90,
+     "structure": 180,
+     "vdelta": 64
+    }
    }
   ],
   "VAML": [
+   {
+    "best_test_exp": {
+     "fvg": 0.336,
+     "ob": 0.709,
+     "structure": 0.343,
+     "vdelta": 0.658
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 305,
+     "ob": 134,
+     "structure": 190,
+     "vdelta": 133
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.336,
@@ -1647,9 +3087,39 @@
      "structure": 1268,
      "vdelta": 244
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.304,
+     "ob": 0.681,
+     "structure": 0.708,
+     "vdelta": 0.878
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 182,
+     "ob": 382,
+     "structure": 1268,
+     "vdelta": 244
+    }
    }
   ],
   "VEDL": [
+   {
+    "best_test_exp": {
+     "fvg": 0.252,
+     "ob": 0.437,
+     "structure": 0.352,
+     "vdelta": 0.586
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 169,
+     "ob": 601,
+     "structure": 471,
+     "vdelta": 87
+    }
+   },
    {
     "best_test_exp": {
      "fvg": 0.252,
@@ -1681,6 +3151,21 @@
      "structure": 272,
      "vdelta": 29
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": 0.136,
+     "ob": 0.206,
+     "structure": 0.2,
+     "vdelta": 0.115
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 79,
+     "ob": 199,
+     "structure": 272,
+     "vdelta": 29
+    }
    }
   ],
   "ZYDUSLIFE": [
@@ -1698,9 +3183,4952 @@
      "structure": 261,
      "vdelta": 244
     }
+   },
+   {
+    "best_test_exp": {
+     "fvg": null,
+     "ob": 0.358,
+     "structure": 0.542,
+     "vdelta": 0.665
+    },
+    "date": "2026-11-05",
+    "robust": {
+     "fvg": 0,
+     "ob": 196,
+     "structure": 261,
+     "vdelta": 244
+    }
    }
   ]
  },
+ "journal": {
+  "2026-11-04": [
+   {
+    "entry": 6674.5,
+    "gap": false,
+    "pct": 1.081,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 6607.76,
+    "symbol": "ABB",
+    "target": null,
+    "time": "09:55"
+   },
+   {
+    "entry": 6688.0,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 6754.88,
+    "symbol": "ABB",
+    "target": null,
+    "time": "11:20"
+   },
+   {
+    "entry": 6610.0,
+    "gap": false,
+    "pct": 2.068,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 6576.95,
+    "symbol": "ABB",
+    "target": null,
+    "time": "09:35"
+   },
+   {
+    "entry": 6503.5,
+    "gap": false,
+    "pct": -1.18,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 6577.0,
+    "symbol": "ABB",
+    "target": 6356.5,
+    "time": "09:20"
+   },
+   {
+    "entry": 6717.0,
+    "gap": false,
+    "pct": 0.657,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 6669.5,
+    "symbol": "ABB",
+    "target": 6764.5,
+    "time": "12:55"
+   },
+   {
+    "entry": 1397.5,
+    "gap": false,
+    "pct": 1.138,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1392.4,
+    "symbol": "ADANIENSOL",
+    "target": null,
+    "time": "12:05"
+   },
+   {
+    "entry": 1414.9,
+    "gap": false,
+    "pct": -0.107,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1400.75,
+    "symbol": "ADANIENSOL",
+    "target": 1443.2,
+    "time": "14:35"
+   },
+   {
+    "entry": 2676.0,
+    "gap": false,
+    "pct": 0.899,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2649.24,
+    "symbol": "ADANIENT",
+    "target": null,
+    "time": "10:00"
+   },
+   {
+    "entry": 2598.8,
+    "gap": false,
+    "pct": 3.898,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2585.1,
+    "symbol": "ADANIENT",
+    "target": null,
+    "time": "09:20"
+   },
+   {
+    "entry": 2686.5,
+    "gap": false,
+    "pct": 0.505,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2581.4,
+    "symbol": "ADANIENT",
+    "target": null,
+    "time": "10:20"
+   },
+   {
+    "entry": 2695.2,
+    "gap": false,
+    "pct": 0.18,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2681.72,
+    "symbol": "ADANIENT",
+    "target": 2715.41,
+    "time": "13:20"
+   },
+   {
+    "entry": 1361.4,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1347.79,
+    "symbol": "ADANIGREEN",
+    "target": 1381.82,
+    "time": "10:35"
+   },
+   {
+    "entry": 1364.3,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1357.48,
+    "symbol": "ADANIGREEN",
+    "target": 1377.94,
+    "time": "11:15"
+   },
+   {
+    "entry": 1350.1,
+    "gap": false,
+    "pct": 2.461,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1339.5,
+    "symbol": "ADANIGREEN",
+    "target": null,
+    "time": "09:25"
+   },
+   {
+    "entry": 1359.1,
+    "gap": false,
+    "pct": -0.609,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 1366.7,
+    "symbol": "ADANIGREEN",
+    "target": 1351.5,
+    "time": "10:25"
+   },
+   {
+    "entry": 1904.8,
+    "gap": false,
+    "pct": -0.092,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1885.75,
+    "symbol": "ADANIPORTS",
+    "target": null,
+    "time": "13:40"
+   },
+   {
+    "entry": 1915.5,
+    "gap": false,
+    "pct": -0.65,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1853.0,
+    "symbol": "ADANIPORTS",
+    "target": null,
+    "time": "10:05"
+   },
+   {
+    "entry": 1915.5,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1896.35,
+    "symbol": "ADANIPORTS",
+    "target": null,
+    "time": "10:05"
+   },
+   {
+    "entry": 196.76,
+    "gap": false,
+    "pct": 2.207,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 194.18,
+    "symbol": "ADANIPOWER",
+    "target": null,
+    "time": "09:20"
+   },
+   {
+    "entry": 372.75,
+    "gap": false,
+    "pct": 0.554,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 370.89,
+    "symbol": "AMBUJACEM",
+    "target": 376.48,
+    "time": "10:20"
+   },
+   {
+    "entry": 370.05,
+    "gap": false,
+    "pct": 1.288,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 366.35,
+    "symbol": "AMBUJACEM",
+    "target": 375.6,
+    "time": "09:20"
+   },
+   {
+    "entry": 8556.0,
+    "gap": false,
+    "pct": -0.336,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 8531.5,
+    "symbol": "APOLLOHOSP",
+    "target": 8629.5,
+    "time": "09:35"
+   },
+   {
+    "entry": 8506.0,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 8548.53,
+    "symbol": "APOLLOHOSP",
+    "target": 8463.47,
+    "time": "11:10"
+   },
+   {
+    "entry": 2434.1,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 2421.93,
+    "symbol": "ASIANPAINT",
+    "target": 2446.27,
+    "time": "10:20"
+   },
+   {
+    "entry": 2418.6,
+    "gap": false,
+    "pct": 0.45,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 2406.51,
+    "symbol": "ASIANPAINT",
+    "target": 2430.69,
+    "time": "13:30"
+   },
+   {
+    "entry": 1229.8,
+    "gap": false,
+    "pct": 0.45,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1223.65,
+    "symbol": "AXISBANK",
+    "target": 1235.95,
+    "time": "13:20"
+   },
+   {
+    "entry": 1230.3,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 1236.45,
+    "symbol": "AXISBANK",
+    "target": 1218.0,
+    "time": "10:00"
+   },
+   {
+    "entry": 10586.0,
+    "gap": false,
+    "pct": -0.012,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 10480.14,
+    "symbol": "BAJAJ-AUTO",
+    "target": 10744.79,
+    "time": "14:05"
+   },
+   {
+    "entry": 10553.0,
+    "gap": false,
+    "pct": 0.301,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 10447.47,
+    "symbol": "BAJAJ-AUTO",
+    "target": 10764.06,
+    "time": "11:50"
+   },
+   {
+    "entry": 10545.0,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 10597.72,
+    "symbol": "BAJAJ-AUTO",
+    "target": 10386.83,
+    "time": "10:20"
+   },
+   {
+    "entry": 1760.2,
+    "gap": false,
+    "pct": 0.245,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 1777.8,
+    "symbol": "BAJAJFINSV",
+    "target": 1707.39,
+    "time": "11:15"
+   },
+   {
+    "entry": 978.9,
+    "gap": true,
+    "pct": 1.493,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 974.01,
+    "symbol": "BAJFINANCE",
+    "target": null,
+    "time": "09:35"
+   },
+   {
+    "entry": 243.75,
+    "gap": false,
+    "pct": 0.582,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 242.53,
+    "symbol": "BANKBARODA",
+    "target": 246.19,
+    "time": "11:40"
+   },
+   {
+    "entry": 244.14,
+    "gap": false,
+    "pct": 0.421,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 241.7,
+    "symbol": "BANKBARODA",
+    "target": 251.46,
+    "time": "11:15"
+   },
+   {
+    "entry": 244.85,
+    "gap": false,
+    "pct": 0.13,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 242.4,
+    "symbol": "BANKBARODA",
+    "target": 247.3,
+    "time": "13:40"
+   },
+   {
+    "entry": 244.19,
+    "gap": false,
+    "pct": 0.4,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 242.97,
+    "symbol": "BANKBARODA",
+    "target": 246.02,
+    "time": "12:20"
+   },
+   {
+    "entry": 390.65,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 386.74,
+    "symbol": "BEL",
+    "target": 394.56,
+    "time": "09:45"
+   },
+   {
+    "entry": 392.65,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 390.69,
+    "symbol": "BEL",
+    "target": 396.58,
+    "time": "12:20"
+   },
+   {
+    "entry": 393.15,
+    "gap": false,
+    "pct": 0.389,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 392.0,
+    "symbol": "BEL",
+    "target": 394.87,
+    "time": "12:40"
+   },
+   {
+    "entry": 394.75,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 392.78,
+    "symbol": "BEL",
+    "target": 397.71,
+    "time": "13:05"
+   },
+   {
+    "entry": 2045.0,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 2065.45,
+    "symbol": "BHARTIARTL",
+    "target": 2004.1,
+    "time": "10:20"
+   },
+   {
+    "entry": 50515.0,
+    "gap": false,
+    "pct": 0.316,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 50009.85,
+    "symbol": "BOSCHLTD",
+    "target": 51525.3,
+    "time": "10:15"
+   },
+   {
+    "entry": 50145.0,
+    "gap": false,
+    "pct": 1.057,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 49643.55,
+    "symbol": "BOSCHLTD",
+    "target": 51649.35,
+    "time": "09:40"
+   },
+   {
+    "entry": 50030.0,
+    "gap": false,
+    "pct": 1.289,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 49529.7,
+    "symbol": "BOSCHLTD",
+    "target": 51530.9,
+    "time": "09:25"
+   },
+   {
+    "entry": 51125.0,
+    "gap": false,
+    "pct": -0.881,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 50125.0,
+    "symbol": "BOSCHLTD",
+    "target": 54125.0,
+    "time": "10:50"
+   },
+   {
+    "entry": 300.6,
+    "gap": false,
+    "pct": 0.582,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 296.3,
+    "symbol": "BPCL",
+    "target": 309.2,
+    "time": "09:50"
+   },
+   {
+    "entry": 4898.2,
+    "gap": false,
+    "pct": -0.352,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 4913.0,
+    "symbol": "BRITANNIA",
+    "target": null,
+    "time": "11:20"
+   },
+   {
+    "entry": 3597.0,
+    "gap": false,
+    "pct": 0.003,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 3632.97,
+    "symbol": "BSE",
+    "target": 3525.06,
+    "time": "12:25"
+   },
+   {
+    "entry": 118.11,
+    "gap": false,
+    "pct": -0.312,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 119.29,
+    "symbol": "CANBK",
+    "target": 115.75,
+    "time": "10:50"
+   },
+   {
+    "entry": 117.6,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 118.19,
+    "symbol": "CANBK",
+    "target": 116.42,
+    "time": "11:35"
+   },
+   {
+    "entry": 117.41,
+    "gap": false,
+    "pct": -0.672,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 118.14,
+    "symbol": "CANBK",
+    "target": 116.32,
+    "time": "11:55"
+   },
+   {
+    "entry": 803.9,
+    "gap": false,
+    "pct": 4.179,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 799.88,
+    "symbol": "CGPOWER",
+    "target": null,
+    "time": "09:40"
+   },
+   {
+    "entry": 813.2,
+    "gap": false,
+    "pct": 2.987,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 805.07,
+    "symbol": "CGPOWER",
+    "target": null,
+    "time": "10:15"
+   },
+   {
+    "entry": 815.95,
+    "gap": false,
+    "pct": 2.64,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 789.0,
+    "symbol": "CGPOWER",
+    "target": 856.38,
+    "time": "10:25"
+   },
+   {
+    "entry": 821.7,
+    "gap": false,
+    "pct": 1.922,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 817.59,
+    "symbol": "CGPOWER",
+    "target": null,
+    "time": "11:20"
+   },
+   {
+    "entry": 838.75,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 834.56,
+    "symbol": "CGPOWER",
+    "target": null,
+    "time": "14:05"
+   },
+   {
+    "entry": 1648.4,
+    "gap": true,
+    "pct": 0.532,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1641.7,
+    "symbol": "CHOLAFIN",
+    "target": 1658.45,
+    "time": "13:40"
+   },
+   {
+    "entry": 1396.5,
+    "gap": false,
+    "pct": 0.129,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1382.54,
+    "symbol": "CIPLA",
+    "target": 1410.46,
+    "time": "11:10"
+   },
+   {
+    "entry": 1397.3,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1390.31,
+    "symbol": "CIPLA",
+    "target": 1411.27,
+    "time": "10:45"
+   },
+   {
+    "entry": 399.2,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 397.2,
+    "symbol": "COALINDIA",
+    "target": 403.19,
+    "time": "11:30"
+   },
+   {
+    "entry": 4606.6,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 4583.57,
+    "symbol": "CUMMINSIND",
+    "target": 4675.7,
+    "time": "09:45"
+   },
+   {
+    "entry": 4628.2,
+    "gap": false,
+    "pct": 2.182,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 4534.3,
+    "symbol": "CUMMINSIND",
+    "target": 4769.05,
+    "time": "09:50"
+   },
+   {
+    "entry": 9972.5,
+    "gap": false,
+    "pct": -0.677,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 10072.23,
+    "symbol": "DIVISLAB",
+    "target": 9673.32,
+    "time": "10:10"
+   },
+   {
+    "entry": 10004.5,
+    "gap": false,
+    "pct": 0.255,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 9904.45,
+    "symbol": "DIVISLAB",
+    "target": 10154.57,
+    "time": "11:20"
+   },
+   {
+    "entry": 715.6,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 712.02,
+    "symbol": "DLF",
+    "target": 720.97,
+    "time": "10:05"
+   },
+   {
+    "entry": 720.85,
+    "gap": true,
+    "pct": -0.168,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 717.25,
+    "symbol": "DLF",
+    "target": null,
+    "time": "10:55"
+   },
+   {
+    "entry": 3374.0,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 3357.13,
+    "symbol": "DMART",
+    "target": 3399.3,
+    "time": "09:50"
+   },
+   {
+    "entry": 3375.9,
+    "gap": true,
+    "pct": 0.95,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 3359.02,
+    "symbol": "DMART",
+    "target": 3409.66,
+    "time": "14:05"
+   },
+   {
+    "entry": 3381.0,
+    "gap": true,
+    "pct": 0.926,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 3347.19,
+    "symbol": "DMART",
+    "target": 3414.81,
+    "time": "14:15"
+   },
+   {
+    "entry": 1368.5,
+    "gap": false,
+    "pct": -0.635,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1354.82,
+    "symbol": "DRREDDY",
+    "target": 1409.55,
+    "time": "12:05"
+   },
+   {
+    "entry": 1362.4,
+    "gap": false,
+    "pct": 0.089,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 1376.02,
+    "symbol": "DRREDDY",
+    "target": 1321.53,
+    "time": "11:25"
+   },
+   {
+    "entry": 7403.5,
+    "gap": false,
+    "pct": 0.146,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 7366.48,
+    "symbol": "EICHERMOT",
+    "target": 7477.53,
+    "time": "12:05"
+   },
+   {
+    "entry": 2850.8,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 2822.29,
+    "symbol": "ENRIN",
+    "target": 2893.56,
+    "time": "09:45"
+   },
+   {
+    "entry": 2892.0,
+    "gap": true,
+    "pct": 2.405,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2806.5,
+    "symbol": "ENRIN",
+    "target": 3063.0,
+    "time": "10:00"
+   },
+   {
+    "entry": 2864.4,
+    "gap": true,
+    "pct": 3.392,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2762.0,
+    "symbol": "ENRIN",
+    "target": 3171.6,
+    "time": "09:50"
+   },
+   {
+    "entry": 345.7,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 349.16,
+    "symbol": "ETERNAL",
+    "target": 340.51,
+    "time": "09:50"
+   },
+   {
+    "entry": 345.8,
+    "gap": false,
+    "pct": 0.45,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 347.53,
+    "symbol": "ETERNAL",
+    "target": 344.07,
+    "time": "09:30"
+   },
+   {
+    "entry": 344.35,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 346.07,
+    "symbol": "ETERNAL",
+    "target": 341.77,
+    "time": "10:20"
+   },
+   {
+    "entry": 184.62,
+    "gap": false,
+    "pct": -0.732,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 183.36,
+    "symbol": "GAIL",
+    "target": null,
+    "time": "09:55"
+   },
+   {
+    "entry": 184.62,
+    "gap": false,
+    "pct": 0.697,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 180.09,
+    "symbol": "GAIL",
+    "target": null,
+    "time": "09:55"
+   },
+   {
+    "entry": 3093.8,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 3062.86,
+    "symbol": "GRASIM",
+    "target": 3140.21,
+    "time": "12:50"
+   },
+   {
+    "entry": 3097.2,
+    "gap": true,
+    "pct": 1.267,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 3066.23,
+    "symbol": "GRASIM",
+    "target": null,
+    "time": "12:25"
+   },
+   {
+    "entry": 3102.2,
+    "gap": true,
+    "pct": 1.104,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 3071.18,
+    "symbol": "GRASIM",
+    "target": null,
+    "time": "09:20"
+   },
+   {
+    "entry": 5015.0,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 5040.07,
+    "symbol": "HAL",
+    "target": 4989.93,
+    "time": "10:35"
+   },
+   {
+    "entry": 5027.6,
+    "gap": false,
+    "pct": 0.177,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 5020.0,
+    "symbol": "HAL",
+    "target": 5039.0,
+    "time": "13:10"
+   },
+   {
+    "entry": 4969.7,
+    "gap": false,
+    "pct": 2.113,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 4920.0,
+    "symbol": "HAL",
+    "target": null,
+    "time": "09:30"
+   },
+   {
+    "entry": 5011.3,
+    "gap": false,
+    "pct": 1.265,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 4961.19,
+    "symbol": "HAL",
+    "target": 5161.64,
+    "time": "09:50"
+   },
+   {
+    "entry": 1430.1,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1422.95,
+    "symbol": "HCLTECH",
+    "target": 1444.4,
+    "time": "09:40"
+   },
+   {
+    "entry": 1414.0,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1406.93,
+    "symbol": "HCLTECH",
+    "target": 1428.14,
+    "time": "12:50"
+   },
+   {
+    "entry": 2517.2,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 2492.03,
+    "symbol": "HDFCAMC",
+    "target": null,
+    "time": "10:45"
+   },
+   {
+    "entry": 2519.1,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 2493.91,
+    "symbol": "HDFCAMC",
+    "target": 2594.67,
+    "time": "10:30"
+   },
+   {
+    "entry": 2506.2,
+    "gap": false,
+    "pct": -0.098,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2481.14,
+    "symbol": "HDFCAMC",
+    "target": 2581.39,
+    "time": "10:25"
+   },
+   {
+    "entry": 2506.2,
+    "gap": false,
+    "pct": -0.477,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 2495.5,
+    "symbol": "HDFCAMC",
+    "target": null,
+    "time": "10:25"
+   },
+   {
+    "entry": 736.35,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 732.67,
+    "symbol": "HDFCBANK",
+    "target": 741.87,
+    "time": "09:45"
+   },
+   {
+    "entry": 735.5,
+    "gap": false,
+    "pct": 0.045,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 731.0,
+    "symbol": "HDFCBANK",
+    "target": 740.0,
+    "time": "13:35"
+   },
+   {
+    "entry": 532.5,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 529.84,
+    "symbol": "HDFCLIFE",
+    "target": null,
+    "time": "09:50"
+   },
+   {
+    "entry": 530.35,
+    "gap": true,
+    "pct": 0.355,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 525.05,
+    "symbol": "HDFCLIFE",
+    "target": 540.96,
+    "time": "11:45"
+   },
+   {
+    "entry": 917.25,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 908.08,
+    "symbol": "HINDALCO",
+    "target": 926.42,
+    "time": "11:00"
+   },
+   {
+    "entry": 917.25,
+    "gap": false,
+    "pct": 1.4,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 910.6,
+    "symbol": "HINDALCO",
+    "target": 930.55,
+    "time": "11:00"
+   },
+   {
+    "entry": 915.4,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 910.82,
+    "symbol": "HINDALCO",
+    "target": 922.27,
+    "time": "10:45"
+   },
+   {
+    "entry": 917.25,
+    "gap": false,
+    "pct": 0.893,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 908.6,
+    "symbol": "HINDALCO",
+    "target": 925.9,
+    "time": "11:00"
+   },
+   {
+    "entry": 1951.0,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 1970.51,
+    "symbol": "HINDUNILVR",
+    "target": 1931.49,
+    "time": "10:35"
+   },
+   {
+    "entry": 1949.5,
+    "gap": false,
+    "pct": -0.183,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 1952.1,
+    "symbol": "HINDUNILVR",
+    "target": 1946.9,
+    "time": "11:25"
+   },
+   {
+    "entry": 1960.8,
+    "gap": false,
+    "pct": 0.424,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1951.5,
+    "symbol": "HINDUNILVR",
+    "target": 1970.1,
+    "time": "12:25"
+   },
+   {
+    "entry": 522.65,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 525.26,
+    "symbol": "HINDZINC",
+    "target": 514.81,
+    "time": "10:15"
+   },
+   {
+    "entry": 532.3,
+    "gap": false,
+    "pct": 1.406,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 524.55,
+    "symbol": "HINDZINC",
+    "target": 540.05,
+    "time": "11:35"
+   },
+   {
+    "entry": 530.0,
+    "gap": false,
+    "pct": 2.441,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 521.2,
+    "symbol": "HINDZINC",
+    "target": 543.2,
+    "time": "11:25"
+   },
+   {
+    "entry": 2036.4,
+    "gap": false,
+    "pct": -0.413,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 2029.0,
+    "symbol": "HYUNDAI",
+    "target": null,
+    "time": "10:25"
+   },
+   {
+    "entry": 2063.7,
+    "gap": true,
+    "pct": -0.084,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2043.06,
+    "symbol": "HYUNDAI",
+    "target": 2094.66,
+    "time": "13:40"
+   },
+   {
+    "entry": 2059.1,
+    "gap": true,
+    "pct": 0.139,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2038.51,
+    "symbol": "HYUNDAI",
+    "target": null,
+    "time": "12:10"
+   },
+   {
+    "entry": 1424.1,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 1431.22,
+    "symbol": "ICICIBANK",
+    "target": 1413.42,
+    "time": "10:40"
+   },
+   {
+    "entry": 1425.2,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 1432.33,
+    "symbol": "ICICIBANK",
+    "target": 1414.51,
+    "time": "10:35"
+   },
+   {
+    "entry": 1419.8,
+    "gap": true,
+    "pct": -0.353,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 1426.4,
+    "symbol": "ICICIBANK",
+    "target": 1409.9,
+    "time": "11:35"
+   },
+   {
+    "entry": 1436.3,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1429.12,
+    "symbol": "ICICIBANK",
+    "target": 1450.66,
+    "time": "09:20"
+   },
+   {
+    "entry": 12.27,
+    "gap": false,
+    "pct": 1.661,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 12.13,
+    "symbol": "IDEA",
+    "target": 12.48,
+    "time": "10:00"
+   },
+   {
+    "entry": 5053.2,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 5027.93,
+    "symbol": "INDIGO",
+    "target": 5103.73,
+    "time": "11:35"
+   },
+   {
+    "entry": 5109.0,
+    "gap": true,
+    "pct": 0.572,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 5045.9,
+    "symbol": "INDIGO",
+    "target": 5298.3,
+    "time": "13:30"
+   },
+   {
+    "entry": 1143.6,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1137.88,
+    "symbol": "INFY",
+    "target": 1155.04,
+    "time": "10:15"
+   },
+   {
+    "entry": 139.67,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 138.97,
+    "symbol": "IOC",
+    "target": 141.07,
+    "time": "11:15"
+   },
+   {
+    "entry": 140.71,
+    "gap": false,
+    "pct": 0.327,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 140.01,
+    "symbol": "IOC",
+    "target": 142.12,
+    "time": "14:20"
+   },
+   {
+    "entry": 140.9,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 140.2,
+    "symbol": "IOC",
+    "target": 143.01,
+    "time": "09:50"
+   },
+   {
+    "entry": 140.21,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 139.51,
+    "symbol": "IOC",
+    "target": 141.61,
+    "time": "12:40"
+   },
+   {
+    "entry": 76.98,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 77.36,
+    "symbol": "IRFC",
+    "target": null,
+    "time": "11:45"
+   },
+   {
+    "entry": 77.24,
+    "gap": false,
+    "pct": 0.753,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 75.25,
+    "symbol": "IRFC",
+    "target": 83.21,
+    "time": "09:50"
+   },
+   {
+    "entry": 281.85,
+    "gap": false,
+    "pct": -0.6,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 279.03,
+    "symbol": "ITC",
+    "target": 287.49,
+    "time": "09:40"
+   },
+   {
+    "entry": 1129.6,
+    "gap": true,
+    "pct": 1.667,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1118.3,
+    "symbol": "JINDALSTEL",
+    "target": 1152.19,
+    "time": "13:35"
+   },
+   {
+    "entry": 1123.2,
+    "gap": false,
+    "pct": 1.95,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1111.97,
+    "symbol": "JINDALSTEL",
+    "target": 1145.66,
+    "time": "11:35"
+   },
+   {
+    "entry": 1121.2,
+    "gap": false,
+    "pct": 1.95,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1109.99,
+    "symbol": "JINDALSTEL",
+    "target": 1143.62,
+    "time": "11:10"
+   },
+   {
+    "entry": 1124.8,
+    "gap": true,
+    "pct": 2.101,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1101.6,
+    "symbol": "JINDALSTEL",
+    "target": 1171.2,
+    "time": "11:25"
+   },
+   {
+    "entry": 1120.0,
+    "gap": false,
+    "pct": 2.414,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1101.6,
+    "symbol": "JINDALSTEL",
+    "target": 1147.6,
+    "time": "09:50"
+   },
+   {
+    "entry": 216.22,
+    "gap": false,
+    "pct": 1.95,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 214.06,
+    "symbol": "JIOFIN",
+    "target": 220.54,
+    "time": "09:35"
+   },
+   {
+    "entry": 215.45,
+    "gap": false,
+    "pct": 2.95,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 213.3,
+    "symbol": "JIOFIN",
+    "target": 221.91,
+    "time": "09:20"
+   },
+   {
+    "entry": 215.82,
+    "gap": false,
+    "pct": 2.35,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 214.74,
+    "symbol": "JIOFIN",
+    "target": null,
+    "time": "13:05"
+   },
+   {
+    "entry": 1330.6,
+    "gap": false,
+    "pct": 0.281,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1324.0,
+    "symbol": "JSWSTEEL",
+    "target": null,
+    "time": "12:25"
+   },
+   {
+    "entry": 1329.8,
+    "gap": false,
+    "pct": 0.341,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1316.5,
+    "symbol": "JSWSTEEL",
+    "target": null,
+    "time": "12:20"
+   },
+   {
+    "entry": 1329.8,
+    "gap": false,
+    "pct": 0.341,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1316.5,
+    "symbol": "JSWSTEEL",
+    "target": 1369.69,
+    "time": "12:20"
+   },
+   {
+    "entry": 461.2,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 465.81,
+    "symbol": "KOTAKBANK",
+    "target": 456.59,
+    "time": "10:00"
+   },
+   {
+    "entry": 458.3,
+    "gap": false,
+    "pct": -0.039,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 460.59,
+    "symbol": "KOTAKBANK",
+    "target": 451.43,
+    "time": "10:30"
+   },
+   {
+    "entry": 3940.0,
+    "gap": true,
+    "pct": 0.062,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 3900.6,
+    "symbol": "LT",
+    "target": 4018.8,
+    "time": "13:00"
+   },
+   {
+    "entry": 4253.4,
+    "gap": false,
+    "pct": -0.226,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 4245.9,
+    "symbol": "LTM",
+    "target": 4275.9,
+    "time": "10:15"
+   },
+   {
+    "entry": 2915.0,
+    "gap": false,
+    "pct": 0.976,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2901.5,
+    "symbol": "M&M",
+    "target": 2955.5,
+    "time": "12:05"
+   },
+   {
+    "entry": 2933.6,
+    "gap": false,
+    "pct": 0.335,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2918.93,
+    "symbol": "M&M",
+    "target": 2955.6,
+    "time": "13:40"
+   },
+   {
+    "entry": 11902.0,
+    "gap": false,
+    "pct": 0.143,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 11842.49,
+    "symbol": "MARUTI",
+    "target": null,
+    "time": "12:40"
+   },
+   {
+    "entry": 921.85,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 917.24,
+    "symbol": "MAXHEALTH",
+    "target": null,
+    "time": "09:35"
+   },
+   {
+    "entry": 917.4,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 912.81,
+    "symbol": "MAXHEALTH",
+    "target": 924.28,
+    "time": "12:15"
+   },
+   {
+    "entry": 909.65,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 905.1,
+    "symbol": "MAXHEALTH",
+    "target": 923.29,
+    "time": "09:20"
+   },
+   {
+    "entry": 918.7,
+    "gap": false,
+    "pct": 0.418,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 914.11,
+    "symbol": "MAXHEALTH",
+    "target": 925.59,
+    "time": "12:35"
+   },
+   {
+    "entry": 1768.3,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 1785.98,
+    "symbol": "MAZDOCK",
+    "target": 1732.93,
+    "time": "09:20"
+   },
+   {
+    "entry": 159.49,
+    "gap": false,
+    "pct": -0.2,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 159.73,
+    "symbol": "MOTHERSON",
+    "target": null,
+    "time": "10:00"
+   },
+   {
+    "entry": 158.94,
+    "gap": false,
+    "pct": 0.45,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 159.73,
+    "symbol": "MOTHERSON",
+    "target": 158.15,
+    "time": "10:30"
+   },
+   {
+    "entry": 160.13,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 159.33,
+    "symbol": "MOTHERSON",
+    "target": 161.33,
+    "time": "09:25"
+   },
+   {
+    "entry": 2560.0,
+    "gap": false,
+    "pct": 6.903,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 2547.2,
+    "symbol": "MUTHOOTFIN",
+    "target": null,
+    "time": "09:20"
+   },
+   {
+    "entry": 2661.3,
+    "gap": false,
+    "pct": 2.165,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 2622.0,
+    "symbol": "MUTHOOTFIN",
+    "target": 2720.25,
+    "time": "12:00"
+   },
+   {
+    "entry": 1259.2,
+    "gap": true,
+    "pct": 0.839,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 1264.8,
+    "symbol": "NESTLEIND",
+    "target": null,
+    "time": "09:45"
+   },
+   {
+    "entry": 1252.9,
+    "gap": true,
+    "pct": 0.341,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 1271.7,
+    "symbol": "NESTLEIND",
+    "target": 1215.3,
+    "time": "10:15"
+   },
+   {
+    "entry": 1245.0,
+    "gap": true,
+    "pct": -0.291,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 1271.7,
+    "symbol": "NESTLEIND",
+    "target": 1164.9,
+    "time": "10:25"
+   },
+   {
+    "entry": 318.35,
+    "gap": false,
+    "pct": 0.17,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 317.65,
+    "symbol": "NTPC",
+    "target": 319.05,
+    "time": "12:30"
+   },
+   {
+    "entry": 232.79,
+    "gap": false,
+    "pct": 0.414,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 232.43,
+    "symbol": "ONGC",
+    "target": 233.87,
+    "time": "10:00"
+   },
+   {
+    "entry": 232.43,
+    "gap": false,
+    "pct": 0.72,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 231.27,
+    "symbol": "ONGC",
+    "target": 235.92,
+    "time": "09:40"
+   },
+   {
+    "entry": 233.4,
+    "gap": false,
+    "pct": 0.301,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 231.07,
+    "symbol": "ONGC",
+    "target": 238.07,
+    "time": "09:55"
+   },
+   {
+    "entry": 234.38,
+    "gap": false,
+    "pct": -0.118,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 233.16,
+    "symbol": "ONGC",
+    "target": 236.21,
+    "time": "12:40"
+   },
+   {
+    "entry": 322.0,
+    "gap": false,
+    "pct": 0.183,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 321.25,
+    "symbol": "PFC",
+    "target": 322.75,
+    "time": "12:20"
+   },
+   {
+    "entry": 319.9,
+    "gap": false,
+    "pct": -0.972,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 322.85,
+    "symbol": "PFC",
+    "target": 315.47,
+    "time": "10:25"
+   },
+   {
+    "entry": 319.3,
+    "gap": false,
+    "pct": 0.968,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 322.55,
+    "symbol": "PFC",
+    "target": 316.05,
+    "time": "14:10"
+   },
+   {
+    "entry": 1517.1,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1501.93,
+    "symbol": "PIDILITIND",
+    "target": null,
+    "time": "09:30"
+   },
+   {
+    "entry": 121.35,
+    "gap": false,
+    "pct": 0.543,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 120.14,
+    "symbol": "PNB",
+    "target": 124.99,
+    "time": "10:15"
+   },
+   {
+    "entry": 121.56,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 120.34,
+    "symbol": "PNB",
+    "target": 122.78,
+    "time": "10:10"
+   },
+   {
+    "entry": 121.27,
+    "gap": false,
+    "pct": 0.61,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 120.06,
+    "symbol": "PNB",
+    "target": null,
+    "time": "12:20"
+   },
+   {
+    "entry": 7835.0,
+    "gap": false,
+    "pct": 0.888,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 7756.65,
+    "symbol": "POLYCAB",
+    "target": 7991.7,
+    "time": "09:50"
+   },
+   {
+    "entry": 7850.5,
+    "gap": false,
+    "pct": 0.689,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 7771.99,
+    "symbol": "POLYCAB",
+    "target": 8086.02,
+    "time": "10:00"
+   },
+   {
+    "entry": 7880.0,
+    "gap": false,
+    "pct": 0.312,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 7729.5,
+    "symbol": "POLYCAB",
+    "target": null,
+    "time": "09:55"
+   },
+   {
+    "entry": 259.35,
+    "gap": false,
+    "pct": 0.528,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 256.76,
+    "symbol": "POWERGRID",
+    "target": 264.54,
+    "time": "10:40"
+   },
+   {
+    "entry": 260.0,
+    "gap": false,
+    "pct": 0.277,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 257.4,
+    "symbol": "POWERGRID",
+    "target": 263.9,
+    "time": "11:20"
+   },
+   {
+    "entry": 260.5,
+    "gap": false,
+    "pct": 0.084,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 258.4,
+    "symbol": "POWERGRID",
+    "target": 263.65,
+    "time": "11:10"
+   },
+   {
+    "entry": 260.5,
+    "gap": false,
+    "pct": 0.084,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 259.2,
+    "symbol": "POWERGRID",
+    "target": 264.41,
+    "time": "11:10"
+   },
+   {
+    "entry": 27785.0,
+    "gap": false,
+    "pct": 3.477,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 27320.0,
+    "symbol": "POWERINDIA",
+    "target": 29180.0,
+    "time": "09:45"
+   },
+   {
+    "entry": 28560.0,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 28274.4,
+    "symbol": "POWERINDIA",
+    "target": 28988.4,
+    "time": "11:35"
+   },
+   {
+    "entry": 27645.0,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 27368.55,
+    "symbol": "POWERINDIA",
+    "target": 28059.68,
+    "time": "09:35"
+   },
+   {
+    "entry": 27980.0,
+    "gap": false,
+    "pct": 1.95,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 27700.2,
+    "symbol": "POWERINDIA",
+    "target": 28539.6,
+    "time": "09:55"
+   },
+   {
+    "entry": 1302.3,
+    "gap": false,
+    "pct": 0.964,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1295.79,
+    "symbol": "RELIANCE",
+    "target": 1321.83,
+    "time": "12:10"
+   },
+   {
+    "entry": 1305.9,
+    "gap": false,
+    "pct": 0.685,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1299.37,
+    "symbol": "RELIANCE",
+    "target": 1325.49,
+    "time": "12:40"
+   },
+   {
+    "entry": 1311.8,
+    "gap": false,
+    "pct": 0.232,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1298.68,
+    "symbol": "RELIANCE",
+    "target": 1331.48,
+    "time": "14:35"
+   },
+   {
+    "entry": 1695.1,
+    "gap": false,
+    "pct": 0.446,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1690.9,
+    "symbol": "SBILIFE",
+    "target": 1703.5,
+    "time": "12:20"
+   },
+   {
+    "entry": 975.95,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 971.07,
+    "symbol": "SBIN",
+    "target": 983.27,
+    "time": "11:30"
+   },
+   {
+    "entry": 903.0,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 898.49,
+    "symbol": "SHRIRAMFIN",
+    "target": null,
+    "time": "09:40"
+   },
+   {
+    "entry": 3486.8,
+    "gap": false,
+    "pct": 0.331,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 3451.93,
+    "symbol": "SIEMENS",
+    "target": 3591.4,
+    "time": "12:15"
+   },
+   {
+    "entry": 3360.4,
+    "gap": false,
+    "pct": -1.109,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 3396.0,
+    "symbol": "SIEMENS",
+    "target": 3253.6,
+    "time": "09:20"
+   },
+   {
+    "entry": 3439.5,
+    "gap": false,
+    "pct": 1.712,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 3422.3,
+    "symbol": "SIEMENS",
+    "target": null,
+    "time": "09:55"
+   },
+   {
+    "entry": 19875.0,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 19676.25,
+    "symbol": "SOLARINDS",
+    "target": 20272.5,
+    "time": "10:20"
+   },
+   {
+    "entry": 1789.5,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 1771.61,
+    "symbol": "SUNPHARMA",
+    "target": 1807.39,
+    "time": "09:35"
+   },
+   {
+    "entry": 1784.1,
+    "gap": true,
+    "pct": 0.55,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 1798.9,
+    "symbol": "SUNPHARMA",
+    "target": 1761.9,
+    "time": "12:05"
+   },
+   {
+    "entry": 1806.8,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1797.77,
+    "symbol": "SUNPHARMA",
+    "target": 1815.83,
+    "time": "10:50"
+   },
+   {
+    "entry": 334.0,
+    "gap": false,
+    "pct": 1.207,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 330.66,
+    "symbol": "TATACAP",
+    "target": 339.01,
+    "time": "10:35"
+   },
+   {
+    "entry": 334.0,
+    "gap": false,
+    "pct": 1.207,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 330.66,
+    "symbol": "TATACAP",
+    "target": 344.02,
+    "time": "10:30"
+   },
+   {
+    "entry": 1076.0,
+    "gap": false,
+    "pct": -0.31,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 1078.8,
+    "symbol": "TATACONSUM",
+    "target": 1067.6,
+    "time": "09:50"
+   },
+   {
+    "entry": 1068.9,
+    "gap": false,
+    "pct": -0.349,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 1058.21,
+    "symbol": "TATACONSUM",
+    "target": 1079.59,
+    "time": "13:05"
+   },
+   {
+    "entry": 357.25,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 353.68,
+    "symbol": "TATAPOWER",
+    "target": 364.39,
+    "time": "09:55"
+   },
+   {
+    "entry": 358.75,
+    "gap": false,
+    "pct": 0.45,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 356.96,
+    "symbol": "TATAPOWER",
+    "target": 360.54,
+    "time": "13:55"
+   },
+   {
+    "entry": 358.6,
+    "gap": false,
+    "pct": 0.354,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 355.01,
+    "symbol": "TATAPOWER",
+    "target": 365.77,
+    "time": "13:35"
+   },
+   {
+    "entry": 355.1,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 351.55,
+    "symbol": "TATAPOWER",
+    "target": 360.43,
+    "time": "12:05"
+   },
+   {
+    "entry": 176.63,
+    "gap": false,
+    "pct": 1.445,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 175.75,
+    "symbol": "TATASTEEL",
+    "target": null,
+    "time": "13:05"
+   },
+   {
+    "entry": 177.05,
+    "gap": false,
+    "pct": 1.204,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 174.32,
+    "symbol": "TATASTEEL",
+    "target": 185.24,
+    "time": "09:40"
+   },
+   {
+    "entry": 176.75,
+    "gap": false,
+    "pct": 1.376,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 174.98,
+    "symbol": "TATASTEEL",
+    "target": 182.05,
+    "time": "12:45"
+   },
+   {
+    "entry": 2461.3,
+    "gap": false,
+    "pct": 0.958,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 2473.61,
+    "symbol": "TCS",
+    "target": null,
+    "time": "10:30"
+   },
+   {
+    "entry": 2461.3,
+    "gap": false,
+    "pct": 0.958,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 2485.91,
+    "symbol": "TCS",
+    "target": 2387.46,
+    "time": "10:30"
+   },
+   {
+    "entry": 2465.0,
+    "gap": false,
+    "pct": 1.106,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 2477.32,
+    "symbol": "TCS",
+    "target": null,
+    "time": "10:20"
+   },
+   {
+    "entry": 1768.3,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "vdelta",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 1777.14,
+    "symbol": "TECHM",
+    "target": 1741.78,
+    "time": "11:00"
+   },
+   {
+    "entry": 4630.0,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "target",
+    "stop": 4583.7,
+    "symbol": "TITAN",
+    "target": 4699.45,
+    "time": "10:25"
+   },
+   {
+    "entry": 4610.5,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "target",
+    "stop": 4587.45,
+    "symbol": "TITAN",
+    "target": 4679.66,
+    "time": "10:35"
+   },
+   {
+    "entry": 4606.7,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 4583.67,
+    "symbol": "TITAN",
+    "target": 4675.8,
+    "time": "09:50"
+   },
+   {
+    "entry": 4627.5,
+    "gap": false,
+    "pct": 2.165,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 4580.0,
+    "symbol": "TITAN",
+    "target": null,
+    "time": "10:00"
+   },
+   {
+    "entry": 406.25,
+    "gap": false,
+    "pct": 0.787,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 410.31,
+    "symbol": "TMCV",
+    "target": 398.12,
+    "time": "11:15"
+   },
+   {
+    "entry": 406.25,
+    "gap": false,
+    "pct": 0.95,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "target",
+    "stop": 410.31,
+    "symbol": "TMCV",
+    "target": 402.19,
+    "time": "11:15"
+   },
+   {
+    "entry": 406.3,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 408.33,
+    "symbol": "TMCV",
+    "target": null,
+    "time": "10:45"
+   },
+   {
+    "entry": 278.55,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 277.16,
+    "symbol": "TMPV",
+    "target": 282.73,
+    "time": "10:00"
+   },
+   {
+    "entry": 279.25,
+    "gap": true,
+    "pct": -0.319,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 276.46,
+    "symbol": "TMPV",
+    "target": 283.44,
+    "time": "13:10"
+   },
+   {
+    "entry": 4652.0,
+    "gap": false,
+    "pct": 0.952,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 4605.48,
+    "symbol": "TORNTPHARM",
+    "target": 4721.78,
+    "time": "10:35"
+   },
+   {
+    "entry": 4659.7,
+    "gap": false,
+    "pct": 0.785,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 4613.1,
+    "symbol": "TORNTPHARM",
+    "target": 4729.6,
+    "time": "10:25"
+   },
+   {
+    "entry": 3049.5,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 3019.01,
+    "symbol": "TRENT",
+    "target": 3110.49,
+    "time": "10:00"
+   },
+   {
+    "entry": 3027.8,
+    "gap": false,
+    "pct": -0.308,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 3020.0,
+    "symbol": "TRENT",
+    "target": 3043.4,
+    "time": "10:35"
+   },
+   {
+    "entry": 3017.7,
+    "gap": false,
+    "pct": -1.011,
+    "setup": "structure",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 3055.6,
+    "symbol": "TRENT",
+    "target": 2904.0,
+    "time": "11:00"
+   },
+   {
+    "entry": 3033.9,
+    "gap": false,
+    "pct": 0.372,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 3003.56,
+    "symbol": "TRENT",
+    "target": 3079.41,
+    "time": "12:35"
+   },
+   {
+    "entry": 4330.8,
+    "gap": false,
+    "pct": -0.722,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 4287.49,
+    "symbol": "TVSMOTOR",
+    "target": null,
+    "time": "11:40"
+   },
+   {
+    "entry": 4333.0,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 4311.34,
+    "symbol": "TVSMOTOR",
+    "target": 4376.33,
+    "time": "10:20"
+   },
+   {
+    "entry": 4346.7,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 4303.23,
+    "symbol": "TVSMOTOR",
+    "target": 4477.1,
+    "time": "10:05"
+   },
+   {
+    "entry": 11748.0,
+    "gap": false,
+    "pct": 0.563,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "close",
+    "stop": 11630.52,
+    "symbol": "ULTRACEMCO",
+    "target": 11924.22,
+    "time": "09:35"
+   },
+   {
+    "entry": 11759.0,
+    "gap": false,
+    "pct": 0.469,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 11641.41,
+    "symbol": "ULTRACEMCO",
+    "target": 11935.39,
+    "time": "10:05"
+   },
+   {
+    "entry": 11787.0,
+    "gap": false,
+    "pct": -0.262,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 11762.0,
+    "symbol": "ULTRACEMCO",
+    "target": null,
+    "time": "13:35"
+   },
+   {
+    "entry": 11769.0,
+    "gap": false,
+    "pct": 0.383,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 11651.31,
+    "symbol": "ULTRACEMCO",
+    "target": 11945.53,
+    "time": "09:50"
+   },
+   {
+    "entry": 182.16,
+    "gap": false,
+    "pct": -0.511,
+    "setup": "ob",
+    "side": "SHORT",
+    "status": "close",
+    "stop": 183.98,
+    "symbol": "UNIONBANK",
+    "target": 180.34,
+    "time": "11:10"
+   },
+   {
+    "entry": 360.65,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 364.26,
+    "symbol": "VAML",
+    "target": 353.44,
+    "time": "10:05"
+   },
+   {
+    "entry": 361.1,
+    "gap": false,
+    "pct": 4.741,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "close",
+    "stop": 359.65,
+    "symbol": "VAML",
+    "target": null,
+    "time": "11:05"
+   },
+   {
+    "entry": 362.6,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 360.79,
+    "symbol": "VAML",
+    "target": 365.32,
+    "time": "10:50"
+   },
+   {
+    "entry": 362.25,
+    "gap": false,
+    "pct": 0.7,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "target",
+    "stop": 360.44,
+    "symbol": "VAML",
+    "target": 364.97,
+    "time": "10:45"
+   },
+   {
+    "entry": 363.35,
+    "gap": false,
+    "pct": 4.092,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "close",
+    "stop": 361.53,
+    "symbol": "VAML",
+    "target": null,
+    "time": "11:15"
+   },
+   {
+    "entry": 245.12,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 246.35,
+    "symbol": "VEDL",
+    "target": null,
+    "time": "10:20"
+   },
+   {
+    "entry": 244.95,
+    "gap": false,
+    "pct": -0.55,
+    "setup": "fvg",
+    "side": "SHORT",
+    "status": "stop",
+    "stop": 246.17,
+    "symbol": "VEDL",
+    "target": null,
+    "time": "10:15"
+   },
+   {
+    "entry": 247.0,
+    "gap": false,
+    "pct": 3.209,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "close",
+    "stop": 245.76,
+    "symbol": "VEDL",
+    "target": null,
+    "time": "11:25"
+   },
+   {
+    "entry": 247.0,
+    "gap": false,
+    "pct": 1.45,
+    "setup": "vdelta",
+    "side": "LONG",
+    "status": "target",
+    "stop": 245.76,
+    "symbol": "VEDL",
+    "target": 250.71,
+    "time": "11:25"
+   },
+   {
+    "entry": 196.21,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "fvg",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 194.25,
+    "symbol": "WIPRO",
+    "target": 199.15,
+    "time": "09:55"
+   },
+   {
+    "entry": 1260.2,
+    "gap": false,
+    "pct": -1.05,
+    "setup": "ob",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1247.6,
+    "symbol": "ZYDUSLIFE",
+    "target": 1285.4,
+    "time": "10:05"
+   },
+   {
+    "entry": 1253.7,
+    "gap": false,
+    "pct": -1.23,
+    "setup": "structure",
+    "side": "LONG",
+    "status": "stop",
+    "stop": 1238.9,
+    "symbol": "ZYDUSLIFE",
+    "target": null,
+    "time": "09:20"
+   }
+  ]
+ },
+ "lessons": {
+  "fvg": {
+   "n": 64,
+   "tot": 13.894,
+   "wins": 32
+  },
+  "fvg 09:15-11:00": {
+   "n": 50,
+   "tot": 10.812,
+   "wins": 23
+  },
+  "fvg 11:00-13:00": {
+   "n": 12,
+   "tot": 2.455,
+   "wins": 7
+  },
+  "fvg 13:00-15:30": {
+   "n": 2,
+   "tot": 0.627,
+   "wins": 2
+  },
+  "fvg LONG": {
+   "n": 50,
+   "tot": 18.388,
+   "wins": 29
+  },
+  "fvg SHORT": {
+   "n": 14,
+   "tot": -4.494,
+   "wins": 3
+  },
+  "ob": {
+   "n": 46,
+   "tot": 22.939,
+   "wins": 32
+  },
+  "ob 09:15-11:00": {
+   "n": 17,
+   "tot": 7.327,
+   "wins": 11
+  },
+  "ob 11:00-13:00": {
+   "n": 21,
+   "tot": 13.655,
+   "wins": 17
+  },
+  "ob 13:00-15:30": {
+   "n": 8,
+   "tot": 1.957,
+   "wins": 4
+  },
+  "ob LONG": {
+   "n": 35,
+   "tot": 23.205,
+   "wins": 27
+  },
+  "ob SHORT": {
+   "n": 11,
+   "tot": -0.266,
+   "wins": 5
+  },
+  "structure": {
+   "n": 49,
+   "tot": 41.67,
+   "wins": 36
+  },
+  "structure 09:15-11:00": {
+   "n": 37,
+   "tot": 31.972,
+   "wins": 25
+  },
+  "structure 11:00-13:00": {
+   "n": 12,
+   "tot": 9.698,
+   "wins": 11
+  },
+  "structure LONG": {
+   "n": 40,
+   "tot": 44.762,
+   "wins": 33
+  },
+  "structure SHORT": {
+   "n": 9,
+   "tot": -3.092,
+   "wins": 3
+  },
+  "vdelta": {
+   "n": 61,
+   "tot": 34.362,
+   "wins": 44
+  },
+  "vdelta 09:15-11:00": {
+   "n": 28,
+   "tot": 11.702,
+   "wins": 16
+  },
+  "vdelta 11:00-13:00": {
+   "n": 22,
+   "tot": 18.023,
+   "wins": 19
+  },
+  "vdelta 13:00-15:30": {
+   "n": 11,
+   "tot": 4.637,
+   "wins": 9
+  },
+  "vdelta LONG": {
+   "n": 49,
+   "tot": 34.483,
+   "wins": 39
+  },
+  "vdelta SHORT": {
+   "n": 12,
+   "tot": -0.121,
+   "wins": 5
+  }
+ },
+ "live": {
+  "ABB": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.081,
+     "wins": 1
+    },
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"rsi50\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 630, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.18,
+     "wins": 0
+    },
+    "{\"L\": 3, \"dead\": 690, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.068,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"none\", \"n\": 24, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.657,
+     "wins": 1
+    }
+   }
+  },
+  "ADANIENSOL": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 870, \"filt\": \"rsi50\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.138,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"none\", \"n\": 24, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.107,
+     "wins": 0
+    }
+   }
+  },
+  "ADANIENT": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.899,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 3.898,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\", \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.505,
+     "wins": 1
+    },
+    "{\"dead\": 870, \"filt\": \"none\", \"n\": 24, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.18,
+     "wins": 1
+    }
+   }
+  },
+  "ADANIGREEN": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 12, \"dead\": 690, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 630, \"event\": \"both\", \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.461,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.609,
+     "wins": 0
+    }
+   }
+  },
+  "ADANIPORTS": {
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 870, \"filt\": \"sma20\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.092,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 630, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.65,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\", \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   }
+  },
+  "ADANIPOWER": {
+   "structure": {
+    "{\"L\": 3, \"dead\": 630, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.207,
+     "wins": 1
+    }
+   }
+  },
+  "AMBUJACEM": {
+   "fvg": {
+    "{\"age\": 24, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.554,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 630, \"event\": \"choch\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.288,
+     "wins": 1
+    }
+   }
+  },
+  "APOLLOHOSP": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.336,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 3, \"age\": 24, \"dead\": 690, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "ASIANPAINT": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 870, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 3, \"age\": 24, \"dead\": 870, \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.45,
+     "wins": 1
+    }
+   }
+  },
+  "AXISBANK": {
+   "fvg": {
+    "{\"age\": 24, \"dead\": 870, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.45,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "BAJAJ-AUTO": {
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.301,
+     "wins": 1
+    },
+    "{\"L\": 5, \"age\": 24, \"dead\": 870, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.012,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "BAJAJFINSV": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"rsi50\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.245,
+     "wins": 1
+    }
+   }
+  },
+  "BANKBARODA": {
+   "ob": {
+    "{\"L\": 5, \"age\": 12, \"dead\": 870, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.582,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 690, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.421,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"none\", \"n\": 24, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.13,
+     "wins": 1
+    },
+    "{\"dead\": 870, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.4,
+     "wins": 1
+    }
+   }
+  },
+  "BEL": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 780, \"filt\": \"sma20\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 3, \"age\": 24, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    },
+    "{\"dead\": 870, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.389,
+     "wins": 1
+    }
+   }
+  },
+  "BHARTIARTL": {
+   "ob": {
+    "{\"L\": 5, \"age\": 6, \"dead\": 690, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   }
+  },
+  "BOSCHLTD": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"sma20\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.316,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 870, \"filt\": \"sma20\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.057,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.289,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.881,
+     "wins": 0
+    }
+   }
+  },
+  "BPCL": {
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"rsi50\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 2, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.582,
+     "wins": 1
+    }
+   }
+  },
+  "BRITANNIA": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 870, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.352,
+     "wins": 0
+    }
+   }
+  },
+  "BSE": {
+   "ob": {
+    "{\"L\": 5, \"age\": 24, \"dead\": 870, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.003,
+     "wins": 1
+    }
+   }
+  },
+  "CANBK": {
+   "ob": {
+    "{\"L\": 3, \"age\": 6, \"dead\": 690, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.312,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 870, \"event\": \"bos\", \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"rsi50\", \"n\": 12, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.672,
+     "wins": 0
+    }
+   }
+  },
+  "CGPOWER": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 4.179,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 3, \"age\": 24, \"dead\": 870, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.987,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 630, \"event\": \"both\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.64,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\", \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.922,
+     "wins": 1
+    },
+    "{\"dead\": 870, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\", \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "CIPLA": {
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 780, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.129,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "COALINDIA": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 690, \"filt\": \"sma20\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "CUMMINSIND": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.182,
+     "wins": 1
+    }
+   }
+  },
+  "DIVISLAB": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.677,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 5, \"age\": 12, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.255,
+     "wins": 1
+    }
+   }
+  },
+  "DLF": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"sma20\", \"minpct\": 0.0, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   }
+  },
+  "DMART": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"sma20\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   }
+  },
+  "DRREDDY": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 780, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.635,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.089,
+     "wins": 1
+    }
+   }
+  },
+  "EICHERMOT": {
+   "structure": {
+    "{\"L\": 5, \"dead\": 780, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.146,
+     "wins": 1
+    }
+   }
+  },
+  "ENRIN": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 870, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   }
+  },
+  "ETERNAL": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 12, \"dead\": 630, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.45,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   }
+  },
+  "GAIL": {
+   "fvg": {
+    "{\"age\": 24, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.732,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.697,
+     "wins": 1
+    }
+   }
+  },
+  "GRASIM": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 870, \"filt\": \"sma20\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   }
+  },
+  "HAL": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 870, \"filt\": \"sma20\", \"minpct\": 0.001, \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.177,
+     "wins": 1
+    },
+    "{\"age\": 6, \"dead\": 870, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.113,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.265,
+     "wins": 1
+    }
+   }
+  },
+  "HCLTECH": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 780, \"filt\": \"sma20\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "HDFCAMC": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 780, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 3, \"age\": 24, \"dead\": 780, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 630, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.098,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\", \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.477,
+     "wins": 0
+    }
+   }
+  },
+  "HDFCBANK": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"rsi50\", \"n\": 12, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.045,
+     "wins": 1
+    }
+   }
+  },
+  "HDFCLIFE": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "HINDALCO": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 780, \"filt\": \"rsi50\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.4,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"rsi50\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.893,
+     "wins": 1
+    }
+   }
+  },
+  "HINDUNILVR": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 12, \"dead\": 690, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.183,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.424,
+     "wins": 1
+    }
+   }
+  },
+  "HINDZINC": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.441,
+     "wins": 1
+    },
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 1, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.406,
+     "wins": 1
+    }
+   }
+  },
+  "HYUNDAI": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 780, \"filt\": \"sma20\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.413,
+     "wins": 0
+    }
+   }
+  },
+  "ICICIBANK": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 690, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 630, \"event\": \"both\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "IDEA": {
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.661,
+     "wins": 1
+    }
+   }
+  },
+  "INDIGO": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 870, \"filt\": \"sma20\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   }
+  },
+  "INFY": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"rsi50\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "IOC": {
+   "fvg": {
+    "{\"age\": 24, \"dead\": 780, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 5, \"age\": 12, \"dead\": 870, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.327,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    },
+    "{\"dead\": 780, \"filt\": \"none\", \"n\": 12, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 2, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   }
+  },
+  "IRFC": {
+   "ob": {
+    "{\"L\": 5, \"age\": 6, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 3, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.753,
+     "wins": 1
+    }
+   }
+  },
+  "ITC": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"rsi50\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.6,
+     "wins": 0
+    }
+   }
+  },
+  "JINDALSTEL": {
+   "ob": {
+    "{\"L\": 3, \"age\": 12, \"dead\": 690, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.95,
+     "wins": 1
+    },
+    "{\"L\": 5, \"age\": 12, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.95,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.414,
+     "wins": 1
+    }
+   }
+  },
+  "JIOFIN": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 630, \"filt\": \"sma20\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.95,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 690, \"event\": \"choch\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.95,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"sma20\", \"n\": 12, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\", \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.35,
+     "wins": 1
+    }
+   }
+  },
+  "JSWSTEEL": {
+   "ob": {
+    "{\"L\": 5, \"age\": 6, \"dead\": 870, \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.281,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 780, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.341,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"sma20\", \"n\": 12, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.341,
+     "wins": 1
+    }
+   }
+  },
+  "KOTAKBANK": {
+   "ob": {
+    "{\"L\": 2, \"age\": 12, \"dead\": 690, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.039,
+     "wins": 0
+    }
+   }
+  },
+  "LTM": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"rsi50\", \"minpct\": 0.0, \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.226,
+     "wins": 0
+    }
+   }
+  },
+  "M&M": {
+   "structure": {
+    "{\"L\": 5, \"dead\": 780, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.976,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.335,
+     "wins": 1
+    }
+   }
+  },
+  "MARUTI": {
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"rsi50\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\", \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.143,
+     "wins": 1
+    }
+   }
+  },
+  "MAXHEALTH": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 780, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 690, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"sma20\", \"n\": 12, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.418,
+     "wins": 1
+    }
+   }
+  },
+  "MAZDOCK": {
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   }
+  },
+  "MOTHERSON": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.2,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    },
+    "{\"L\": 5, \"dead\": 630, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.45,
+     "wins": 1
+    }
+   }
+  },
+  "MUTHOOTFIN": {
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"choch\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 6.903,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.165,
+     "wins": 1
+    }
+   }
+  },
+  "NTPC": {
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.17,
+     "wins": 1
+    }
+   }
+  },
+  "ONGC": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 870, \"filt\": \"sma20\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.414,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 870, \"event\": \"both\", \"filt\": \"sma20\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.72,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 2, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.301,
+     "wins": 1
+    },
+    "{\"dead\": 870, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.118,
+     "wins": 0
+    }
+   }
+  },
+  "PFC": {
+   "ob": {
+    "{\"L\": 5, \"age\": 6, \"dead\": 780, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.183,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.972,
+     "wins": 0
+    },
+    "{\"dead\": 870, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 1, \"thr\": 0.7}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.968,
+     "wins": 1
+    }
+   }
+  },
+  "PIDILITIND": {
+   "structure": {
+    "{\"L\": 5, \"dead\": 630, \"event\": \"both\", \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   }
+  },
+  "PNB": {
+   "ob": {
+    "{\"L\": 5, \"age\": 12, \"dead\": 870, \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.543,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"choch\", \"filt\": \"rsi50\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    },
+    "{\"L\": 5, \"dead\": 780, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.61,
+     "wins": 1
+    }
+   }
+  },
+  "POLYCAB": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.888,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 690, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.689,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.312,
+     "wins": 1
+    }
+   }
+  },
+  "POWERGRID": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.528,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 3, \"age\": 24, \"dead\": 690, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.277,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.084,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.084,
+     "wins": 1
+    }
+   }
+  },
+  "POWERINDIA": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 3.477,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    },
+    "{\"L\": 5, \"dead\": 690, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 2, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.95,
+     "wins": 1
+    }
+   }
+  },
+  "RELIANCE": {
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.964,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 780, \"event\": \"bos\", \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.685,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"rsi50\", \"n\": 6, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.232,
+     "wins": 1
+    }
+   }
+  },
+  "SBILIFE": {
+   "ob": {
+    "{\"L\": 5, \"age\": 12, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.446,
+     "wins": 1
+    }
+   }
+  },
+  "SBIN": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 870, \"filt\": \"rsi50\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   }
+  },
+  "SHRIRAMFIN": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "SIEMENS": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 780, \"filt\": \"none\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.331,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 690, \"event\": \"bos\", \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.109,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\", \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.712,
+     "wins": 1
+    }
+   }
+  },
+  "SOLARINDS": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   }
+  },
+  "SUNPHARMA": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 690, \"filt\": \"sma20\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 1, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "TATACAP": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.207,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 630, \"event\": \"both\", \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.207,
+     "wins": 1
+    }
+   }
+  },
+  "TATACONSUM": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.31,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 5, \"age\": 12, \"dead\": 780, \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.349,
+     "wins": 0
+    }
+   }
+  },
+  "TATAPOWER": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 690, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 5, \"age\": 6, \"dead\": 870, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.45,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    },
+    "{\"dead\": 870, \"filt\": \"sma20\", \"n\": 24, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.354,
+     "wins": 1
+    }
+   }
+  },
+  "TATASTEEL": {
+   "ob": {
+    "{\"L\": 5, \"age\": 12, \"dead\": 780, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.445,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"bos\", \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.204,
+     "wins": 1
+    },
+    "{\"L\": 5, \"dead\": 870, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.376,
+     "wins": 1
+    }
+   }
+  },
+  "TCS": {
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.958,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 630, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\", \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.106,
+     "wins": 1
+    },
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 3, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.958,
+     "wins": 1
+    }
+   }
+  },
+  "TECHM": {
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 12, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "TITAN": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 870, \"filt\": \"rsi50\", \"minpct\": 0.002, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 12, \"dead\": 630, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 630, \"event\": \"both\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\", \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 2.165,
+     "wins": 1
+    }
+   }
+  },
+  "TMCV": {
+   "ob": {
+    "{\"L\": 5, \"age\": 12, \"dead\": 780, \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.787,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"bos\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.95,
+     "wins": 1
+    },
+    "{\"L\": 3, \"dead\": 690, \"event\": \"choch\", \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "TMPV": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"sma20\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   }
+  },
+  "TORNTPHARM": {
+   "ob": {
+    "{\"L\": 2, \"age\": 12, \"dead\": 630, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.952,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 2, \"dead\": 690, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.785,
+     "wins": 1
+    }
+   }
+  },
+  "TRENT": {
+   "fvg": {
+    "{\"age\": 24, \"dead\": 780, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 12, \"dead\": 690, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"natural\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.308,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"choch\", \"filt\": \"none\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": 3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.011,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"sma20\", \"n\": 6, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.372,
+     "wins": 1
+    }
+   }
+  },
+  "TVSMOTOR": {
+   "fvg": {
+    "{\"age\": 24, \"dead\": 870, \"filt\": \"sma20\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.722,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 2, \"age\": 24, \"dead\": 690, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 870, \"filt\": \"sma20\", \"n\": 6, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   }
+  },
+  "ULTRACEMCO": {
+   "fvg": {
+    "{\"age\": 24, \"dead\": 870, \"filt\": \"sma20\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.563,
+     "wins": 1
+    }
+   },
+   "ob": {
+    "{\"L\": 3, \"age\": 12, \"dead\": 690, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.469,
+     "wins": 1
+    },
+    "{\"L\": 5, \"age\": 12, \"dead\": 870, \"filt\": \"sma20\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.262,
+     "wins": 0
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 1.5, \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.383,
+     "wins": 1
+    }
+   }
+  },
+  "UNIONBANK": {
+   "ob": {
+    "{\"L\": 3, \"age\": 6, \"dead\": 690, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.511,
+     "wins": 0
+    }
+   }
+  },
+  "VAML": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 870, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   },
+   "ob": {
+    "{\"L\": 3, \"age\": 6, \"dead\": 780, \"filt\": \"none\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 4.741,
+     "wins": 1
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    },
+    "{\"L\": 5, \"dead\": 690, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 0.7,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 690, \"filt\": \"none\", \"n\": 6, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\", \"thr\": 0.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 4.092,
+     "wins": 1
+    }
+   }
+  },
+  "VEDL": {
+   "fvg": {
+    "{\"age\": 12, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.001, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    },
+    "{\"age\": 6, \"dead\": 630, \"filt\": \"none\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -0.55,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 3, \"dead\": 690, \"event\": \"bos\", \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p0.5\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 3.209,
+     "wins": 1
+    }
+   },
+   "vdelta": {
+    "{\"dead\": 780, \"filt\": \"rsi50\", \"n\": 12, \"side\": \"both\", \"stop\": \"p0.5\", \"tgt\": 3, \"thr\": 0.3}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": 1.45,
+     "wins": 1
+    }
+   }
+  },
+  "WIPRO": {
+   "fvg": {
+    "{\"age\": 6, \"dead\": 780, \"filt\": \"sma20\", \"minpct\": 0.0, \"side\": \"both\", \"stop\": \"p1.0\", \"tgt\": 1.5}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   }
+  },
+  "ZYDUSLIFE": {
+   "ob": {
+    "{\"L\": 2, \"age\": 6, \"dead\": 690, \"filt\": \"none\", \"side\": \"long\", \"stop\": \"p1.0\", \"tgt\": 2}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.05,
+     "wins": 0
+    }
+   },
+   "structure": {
+    "{\"L\": 5, \"dead\": 690, \"event\": \"bos\", \"filt\": \"rsi50\", \"side\": \"both\", \"stop\": \"natural\", \"tgt\": \"eod\"}": {
+     "last": "2026-11-04",
+     "n": 1,
+     "tot": -1.23,
+     "wins": 0
+    }
+   }
+  }
+ },
+ "retired": {},
  "settings_per_stock": 12960,
  "stocks": {
   "ABB": {
