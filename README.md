@@ -168,6 +168,12 @@ loss, re-tests all Nifty 100 stocks with the new day included, and commits `lab/
 Outcomes that a missing 5-minute bar could hide are not learned from. Run it by hand from the
 repo's Actions tab (Run workflow).
 
+**Telegram alerts.** `.github/workflows/lab-alerts.yml` runs `lab/alert.py` every 15 minutes in
+market hours and sends each new quality trigger once (best setting of its setup, still live,
+8+ test trades, 60%+ test wins, +0.15% test average). Setup: make a bot with @BotFather, send it
+/start, and save its token as the repo secret `TELEGRAM_TOKEN` (Settings, Secrets and variables,
+Actions). Never paste the token anywhere else.
+
 `lab/memory.json` is the lab's memory: for each stock and setup, how many settings were robust
 (positive in BOTH the train and the test half) and the best three, plus a history of past runs.
 The scan lists **every** trigger of the day with its status (live / target / stop / close), so

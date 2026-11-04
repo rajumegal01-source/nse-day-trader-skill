@@ -134,7 +134,7 @@ class TestPython38(unittest.TestCase):
                 self.assertIsNone(re.search(pat, src, re.M), "%s uses %s" % (path, pat))
 
     def test_stdlib_only(self):
-        allowed = {"argparse", "ast", "base64", "contextlib", "decimal", "csv", "datetime", "email", "core", "getpass", "gzip", "hashlib", "hmac", "importlib",
+        allowed = {"argparse", "ast", "base64", "contextlib", "decimal", "csv", "datetime", "email", "core", "lab", "getpass", "gzip", "hashlib", "hmac", "importlib",
                    "io", "json", "math", "os", "random", "re", "socket", "statistics", "struct", "subprocess",
                    "sys", "tempfile", "time", "unittest", "urllib", "uuid", "xml", "zlib", "shutil", "collections",
                    "itertools", "bisect", "functools", "textwrap", "string", "copy",
