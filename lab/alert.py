@@ -51,6 +51,9 @@ MAX_PER_DAY = int(os.environ.get("MAX_PER_DAY", "2"))   # only the best 2 setups
 # effect is not clear enough to act on. The score is shown in every alert. SCORE_RANK=1 turns it on.
 SCORE_RANK = os.environ.get("SCORE_RANK", "0") == "1"
 DEFAULT_RULES = os.environ.get("ALERT_FILTERS", ",".join(filters.DEFAULT))
+# Optional 'sector strong' hook (lab/sector.py): keep only picks in the top SECTOR_TOP sectors by
+# 1-month relative strength. OFF by default (not tested out of sample). SECTOR_STRONG=1 turns it on.
+SECTOR_STRONG = os.environ.get("SECTOR_STRONG", "0") == "1"
 FOOT = "નિયમનું output છે, buy/sell સલાહ નથી. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી."
 
 
@@ -117,6 +120,16 @@ def nifty_bars(flt):
     except Exception as e:  # no index data: the nifty filter then lets every trigger through
         print("^NSEI: data error (%s), nifty filter off this run" % type(e).__name__)
         return []
+
+
+def sector_filter(hits, rank=None):
+    """Keep hits in a strong sector. Any data error: keep every hit (the filter steps aside)."""
+    try:
+        import sector
+        return sector.filter_picks(hits, rank if rank is not None else sector.today_rank())
+    except Exception as e:
+        print("sector filter: data error (%s), off this run" % type(e).__name__)
+        return hits
 
 
 def send(text):
@@ -248,6 +261,11 @@ def main(argv=None):
     if picks and stops >= a.max_stops:
         print("%s: %d pick(s) stopped out today, daily loss limit reached: no new picks" % (day, stops))
         return 0
+    if new and SECTOR_STRONG:
+        new = sector_filter(new)
+        if not new:
+            print("%s: no new quality trigger in a strong sector" % day)
+            return 0
     if not new:
         print("%s: no new quality trigger" % day)
         return 0
