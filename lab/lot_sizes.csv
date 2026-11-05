@@ -1,0 +1,29 @@
+# F&O lot sizes for Nov 2026 contracts. VERIFY ON NSE, LOT SIZES CHANGE (revised every few months).
+# Source: NSE lot-size file fo_mktlots.csv as listed by https://tbtflow.com/daily/fno-stocks-list (checked 2026-11-05).
+# Index lots: NSE circular FAOP70616 (NIFTY 65, BANKNIFTY 30 from the Jan 2026 series). Edit freely.
+symbol,lot,note
+NIFTY,65,index weekly Tuesday + monthly
+BANKNIFTY,30,index monthly
+FINNIFTY,60,index monthly
+RELIANCE,500,
+HDFCBANK,650,750 from Jan 2027 series
+ICICIBANK,700,
+INFY,400,500 from Jan 2027 series
+TCS,225,250 from Jan 2027 series
+SBIN,750,
+AXISBANK,625,
+KOTAKBANK,2000,
+BHARTIARTL,475,
+ITC,1725,1975 from Jan 2027 series
+LT,175,
+HINDUNILVR,300,
+BAJFINANCE,750,
+MARUTI,50,
+SUNPHARMA,350,
+TATASTEEL,2750,
+POWERGRID,1900,
+NTPC,1500,1600 from Jan 2027 series
+ONGC,2250,
+WIPRO,3000,
+HCLTECH,400,
+M&M,200,
