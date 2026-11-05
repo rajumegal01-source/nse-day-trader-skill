@@ -1,11 +1,12 @@
-# Telegram alerts for new Trading Lab triggers, every 15 minutes in market hours
-# (09:15-15:30 IST = 03:45-10:00 UTC, weekdays). GitHub may start a scheduled run a few minutes late.
+# Telegram alerts: at most 2 picks a day, checked every 15 minutes 09:15-15:15 IST
+# (03:45-09:45 UTC, weekdays), plus a result message at 15:35 IST (10:05 UTC). GitHub may start a scheduled run a few minutes late.
 # Needs the repo secret TELEGRAM_TOKEN (see lab/alert.py). No broker, no orders.
 name: lab-alerts
 on:
   schedule:
     - cron: "*/15 4-9 * * 1-5"
     - cron: "45 3 * * 1-5"
+    - cron: "5 10 * * 1-5"
   workflow_dispatch: {}
 permissions:
   contents: read
@@ -27,4 +28,6 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python3 lab/alert.py
+        run: |
+          if [ "${{ github.event.schedule }}" = "5 10 * * 1-5" ]; then python3 lab/alert.py --result
+          else python3 lab/alert.py; fi

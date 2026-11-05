@@ -3,6 +3,9 @@
 
     TELEGRAM_TOKEN=... python3 lab/alert.py            # send new triggers (once each)
     python3 lab/alert.py --dry-run                     # print, send nothing
+    python3 lab/alert.py --result                      # after 15:15: how today's picks ended
+
+At most MAX_PER_DAY (2) picks a day: when several pass at once, the best test average goes first.
 
 Setup (once): make a bot with @BotFather in Telegram, send your bot /start, and save the bot
 token as the GitHub repo secret TELEGRAM_TOKEN. The chat id is found from your /start message
@@ -29,6 +32,7 @@ STATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "alert_state.js
 MIN_N = int(os.environ.get("MIN_N", "8"))
 MIN_WIN = float(os.environ.get("MIN_WIN", "60"))
 MIN_EXP = float(os.environ.get("MIN_EXP", "0.15"))
+MAX_PER_DAY = int(os.environ.get("MAX_PER_DAY", "2"))   # only the best 2 setups a day
 FOOT = "નિયમનું output છે, buy/sell સલાહ નથી. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી."
 
 
@@ -66,6 +70,50 @@ def line(h):
                h["test"]["n"], h["test"]["win"], h["test"]["exp"]))
 
 
+def send(text):
+    token = os.environ.get("TELEGRAM_TOKEN")
+    if not token:
+        print("no TELEGRAM_TOKEN: add it as a GitHub repo secret. Nothing sent.")
+        return False
+    cid = chat_id(token)
+    if not cid:
+        print("no chat found: open your bot in Telegram and send /start, then it works. Nothing sent.")
+        return False
+    for k in range(0, len(text), 3900):
+        tg(token, "sendMessage", {"chat_id": cid, "text": text[k:k + 3900]})
+    return True
+
+
+def result(a, mem, day, picks):
+    """End of day: how each of today's picks ended (target / stop / 15:15 close)."""
+    if not picks:
+        print("%s: no picks today" % day)
+        return 0
+    out = ["📊 %s result (paper)" % day]
+    for p in picks:
+        st = "data missing"
+        try:
+            hits, g = lab.scan_one(p["symbol"], mem["stocks"][p["symbol"]], day, None)
+            for h in hits:
+                if (h["setup"], h["side"], h["time"]) == (p["setup"], p["side"], p["time"]):
+                    st = "%s %+.2f%% (exit %s)" % (h["status"], h["pct"] or 0, h["exit_time"] or "-")
+                    if g:
+                        st += " ⚠️ missing bars %s" % ",".join(g)
+                    break
+        except Exception as e:
+            st = "data error (%s)" % type(e).__name__
+        out.append("%s %s %s %s: entry %s stop %s target %s → %s" % (
+            p["symbol"], p["setup"].upper(), p["side"], p["time"], p["entry"], p["stop"],
+            p["target"] if p["target"] is not None else "15:15 exit", st))
+    out.append(FOOT)
+    text = "\n".join(out)
+    if a.dry_run:
+        print(text)
+    else:
+        send(text)
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Telegram alerts (educational)")
     ap.add_argument("--dry-run", action="store_true")
@@ -73,6 +121,7 @@ def main(argv=None):
     ap.add_argument("--at", help="HH:MM IST, for testing")
     ap.add_argument("--memory", default=lab.MEMORY)
     ap.add_argument("--state", default=STATE)
+    ap.add_argument("--result", action="store_true", help="after 15:15: send how today's picks ended")
     a = ap.parse_args(argv)
     now = dt.datetime.now(core.IST)
     day = a.day or now.date().isoformat()
@@ -83,6 +132,12 @@ def main(argv=None):
     mem = lab.load_memory(a.memory)
     state = json.load(open(a.state)) if os.path.exists(a.state) else {}
     sent = set(state.get(day, []))
+    picks = state.get(day + "#picks", [])
+    if a.result:
+        return result(a, mem, day, picks)
+    if len(picks) >= MAX_PER_DAY:
+        print("%s: already %d pick(s) today" % (day, len(picks)))
+        return 0
     new, gaps = [], {}
     for sym, info in sorted(mem["stocks"].items()):
         if not any(v["best"] for v in info["setups"].values()):
@@ -104,6 +159,10 @@ def main(argv=None):
     if not new:
         print("%s: no new quality trigger" % day)
         return 0
+    new.sort(key=lambda h: (-h["test"]["exp"], -h["test"]["win"]))
+    new = new[:MAX_PER_DAY - len(picks)]
+    picks += [dict(symbol=h["symbol"], setup=h["setup"], side=h["side"], time=h["time"], entry=h["entry"],
+                   stop=h["stop"], target=h["target"]) for h in new]
     new.sort(key=lambda h: h["time"])
     parts = [line(h) for h in new]
     if gaps:
@@ -113,18 +172,11 @@ def main(argv=None):
     if a.dry_run:
         print(text)
         return 0
-    token = os.environ.get("TELEGRAM_TOKEN")
-    if not token:
-        print("no TELEGRAM_TOKEN: add it as a GitHub repo secret. Nothing sent.")
+    if not send(text):
         return 0
-    cid = chat_id(token)
-    if not cid:
-        print("no chat found: open your bot in Telegram and send /start, then it works. Nothing sent.")
-        return 0
-    for k in range(0, len(text), 3900):
-        tg(token, "sendMessage", {"chat_id": cid, "text": text[k:k + 3900]})
     state = {d: v for d, v in state.items() if d >= (now.date() - dt.timedelta(days=5)).isoformat()}
     state[day] = sorted(sent)
+    state[day + "#picks"] = picks
     with open(a.state, "w") as fh:
         json.dump(state, fh)
     print("%s: sent %d new trigger(s)" % (day, len(new)))
