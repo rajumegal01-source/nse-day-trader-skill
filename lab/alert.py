@@ -35,6 +35,7 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import calendar_nse  # noqa: E402
 import core  # noqa: E402
 import filters  # noqa: E402
 import lab  # noqa: E402
@@ -242,6 +243,9 @@ def main(argv=None):
     except ValueError as e:
         ap.error(str(e))
     now = dt.datetime.now(core.IST)
+    if not a.day and not calendar_nse.is_trading_day(now.date()):     # NSE holiday or weekend: skip quietly
+        print("%s: NSE closed (%s), nothing to do" % (now.date(), calendar_nse.holiday_name(now.date()) or "weekend"))
+        return 0
     day = a.day or now.date().isoformat()
     at = None
     if a.at:

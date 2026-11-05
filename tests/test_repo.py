@@ -139,7 +139,7 @@ class TestPython38(unittest.TestCase):
                    "sys", "tempfile", "time", "unittest", "urllib", "uuid", "xml", "zlib", "shutil", "collections",
                    "itertools", "bisect", "functools", "textwrap", "string", "copy",
                    "nse", "angel", "_load", "filters", "risk", "setups2", "score",
-                   "alert", "report", "walkforward", "evalscore", "fno", "swing", "pine", "sector", "journal_stats", "regime"}
+                   "alert", "report", "walkforward", "evalscore", "fno", "swing", "pine", "sector", "journal_stats", "regime", "calendar_nse"}
         for path in all_py():
             tree = ast.parse(open(path, encoding="utf-8").read())
             for node in ast.walk(tree):
