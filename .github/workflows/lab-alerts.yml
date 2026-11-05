@@ -3,10 +3,8 @@
 # Needs the repo secret TELEGRAM_TOKEN (see lab/alert.py). No broker, no orders.
 name: lab-alerts
 on:
-  schedule:
-    - cron: "*/15 4-9 * * 1-5"
-    - cron: "45 3 * * 1-5"
-    - cron: "5 10 * * 1-5"
+  # schedule off: Raju gets the 2 daily picks in the Hark chat instead (python3 lab/alert.py --local).
+  # To use Telegram, add these back: "*/15 4-9 * * 1-5", "45 3 * * 1-5", "5 10 * * 1-5"
   workflow_dispatch: {}
 permissions:
   contents: read

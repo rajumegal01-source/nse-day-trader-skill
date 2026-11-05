@@ -96,7 +96,12 @@ def result(a, mem, day, picks):
             hits, g = lab.scan_one(p["symbol"], mem["stocks"][p["symbol"]], day, None)
             for h in hits:
                 if (h["setup"], h["side"], h["time"]) == (p["setup"], p["side"], p["time"]):
-                    st = "%s %+.2f%% (exit %s)" % (h["status"], h["pct"] or 0, h["exit_time"] or "-")
+                    if h["status"] == "live":   # day over but last bar(s) missing: close at last price
+                        sd = 1 if h["side"] == "LONG" else -1
+                        pct = sd * (h["last"] - h["entry"]) / h["entry"] * 100 - 0.05
+                        st = "close %+.2f%% (last price %s, approx)" % (pct, h["last"])
+                    else:
+                        st = "%s %+.2f%% (exit %s)" % (h["status"], h["pct"] or 0, h["exit_time"] or "-")
                     if g:
                         st += " ⚠️ missing bars %s" % ",".join(g)
                     break
@@ -107,7 +112,7 @@ def result(a, mem, day, picks):
             p["target"] if p["target"] is not None else "15:15 exit", st))
     out.append(FOOT)
     text = "\n".join(out)
-    if a.dry_run:
+    if a.dry_run or a.local:
         print(text)
     else:
         send(text)
@@ -117,6 +122,7 @@ def result(a, mem, day, picks):
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Telegram alerts (educational)")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--local", action="store_true", help="print instead of Telegram, but remember picks")
     ap.add_argument("--day", help="YYYY-MM-DD, for testing on a past session")
     ap.add_argument("--at", help="HH:MM IST, for testing")
     ap.add_argument("--memory", default=lab.MEMORY)
@@ -172,7 +178,9 @@ def main(argv=None):
     if a.dry_run:
         print(text)
         return 0
-    if not send(text):
+    if a.local:
+        print(text)
+    elif not send(text):
         return 0
     state = {d: v for d, v in state.items() if d >= (now.date() - dt.timedelta(days=5)).isoformat()}
     state[day] = sorted(sent)
