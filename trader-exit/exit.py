@@ -217,11 +217,6 @@ def cents(x):
     return D(x).quantize(CENT, rounding=ROUND_HALF_UP)
 
 
-def floor_cents(x):
-    """A long's stop: round down, away from the entry."""
-    return D(x).quantize(CENT, rounding=ROUND_FLOOR)
-
-
 def to_tick(x, tick=None, down=False):
     """Snap a price to the tick: down (a long's stop) or half up (a target)."""
     t = D(tick if tick is not None else TICK, "the tick size")

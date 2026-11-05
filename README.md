@@ -315,6 +315,133 @@ The scan lists **every** trigger of the day with its status (live / target / sto
 a signal that fired while you were away still shows, and it lists missing 5-minute bars.
 Thousands of settings overfit: a robust setting is something to paper-trade, not a promise.
 
+### Lab Phases D to M (2026-11-06)
+
+Every tool below is plain Python (standard library only), reads free data, and places no orders.
+Each prints "Educational only, not investment advice" next to any trade level.
+દરેક tool ફક્ત શીખવા માટે છે: કોઈ broker નથી, કોઈ order નથી. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી.
+
+**Phase D: F&O math** (`lab/fno.py`, `lab/lot_sizes.csv`).
+
+```bash
+python3 lab/fno.py price --spot 24000 --strike 24100 --days 6 --iv 13 --type C    # Black-Scholes + greeks
+python3 lab/fno.py iv --spot 24000 --strike 24100 --days 6 --premium 95 --type C  # implied vol (bisection)
+python3 lab/fno.py payoff iron_condor --strikes 23600,23800,24200,24400 --premiums 20,45,50,22 --symbol NIFTY
+python3 lab/fno.py payoff custom --leg +C:24000:180 --leg -C:24300:70             # any legs
+python3 lab/fno.py size --symbol NIFTY --premium 120 --lots 2 --capital 100000    # premium vs capital
+python3 lab/fno.py chain NIFTY                                                     # NSE option chain (often blocked)
+```
+
+Payoff at expiry with breakevens and max profit / loss (unlimited is reported as such) for
+straddle, strangle, bull/bear call and put spreads, iron condor, butterfly, covered call and
+protective put. Lot sizes in `lab/lot_sizes.csv` are Nov 2026 values (NIFTY 65, BANKNIFTY 30):
+**verify on NSE, lot sizes change**. Selling options needs exchange margin, which is not computed.
+
+**Phase E: swing trading** (`lab/swing.py`), daily bars, long only, entry at the next open.
+
+```bash
+python3 lab/swing.py scan                    # today's breakout / pullback / 52-week-high setups
+python3 lab/swing.py test --cache /tmp/yd    # 67/33 split with default settings
+python3 lab/swing.py wf --cache /tmp/yd      # walk-forward, ~5 years, Nifty 100
+```
+
+Setups: close above the N-day high with volume >= V x average; pullback to EMA20/50 in an uptrend;
+first close within X% of the 52-week high. Exits: ATR stop, R-multiple target, max hold days,
+0.1% round-trip cost. Walk-forward run 2026-11-06 (95 stocks with 5 years of data, 2021-11 to
+2026-11, train 500 / test 125 days, settings chosen on the train window pooled over all stocks):
+
+| setup | OOS trades | OOS win % | OOS avg % | every-day baseline avg % |
+|---|---|---|---|---|
+| breakout | 585 | 39.1 | +0.023 | +0.298 |
+| near52 | 816 | 45.5 | +0.802 | +0.587 |
+| pullback | 1189 | 47.9 | +1.068 | +0.282 |
+| **all** | **2590** | **45.1** | **+0.748** | **+0.381** |
+
+By test window the OOS average was +2.34, -0.02, -0.41, +0.33, -0.51 % (positive in 2 of 5):
+one strong 2023-24 bull window carries the pooled number. With default settings, the last 33% of
+days lost money for all three setups (-0.24, -0.23, -0.08 % a trade). Today's Nifty 100 list is
+used for the past (survivorship bias). **Verdict: no proven swing edge out of sample.**
+
+**Phase F: Pine Script export** (`lab/pine.py` -> `pine/*.pine`).
+
+```bash
+python3 lab/pine.py                       # orb, fvg, structure (BOS/CHoCH), pdhl, cpr, swing_breakout
+python3 lab/pine.py --symbol POWERGRID    # input defaults from that stock's best memory.json setting
+```
+
+TradingView Pine v5 indicators, commented, drawing levels and alerts only (no strategy orders).
+Paste a file into the Pine editor. They follow the Python rules closely but not bar-for-bar.
+
+**Phase G: sector and market strength** (`lab/sector.py`, `lab/sectors.csv`).
+
+```bash
+python3 lab/sector.py --stocks 10       # sector ranking by 1-month RS vs NIFTY, breadth, strongest stocks
+SECTOR_STRONG=1 python3 lab/alert.py --dry-run   # optional: picks only from the top 3 sectors (OFF by default)
+```
+
+RS = stock return minus NIFTY return (1 week = 5 days, 1 month = 21). Breadth = % above EMA20 /
+EMA50 and advances / declines. The sector filter has not been tested out of sample, so it is off.
+
+**Phase H: journal analytics** (`lab/journal_stats.py`).
+
+```bash
+python3 lab/journal_stats.py --state lab/alert_state.json --paper backtest_out/paper.json
+```
+
+Expectancy (R and %), R-multiples, win rate and profit factor by setup, side, weekday and source,
+streaks and drawdown, from the paper journal and the alert state (`<day>#picks`, `<day>#results`).
+
+**Phase I: market regime** (`lab/regime.py`).
+
+```bash
+python3 lab/regime.py today --cache /tmp/yd       # trend-up / trend-down / range / high-vol
+python3 lab/regime.py intraday --cache /tmp/yd    # lab setups by regime (needs walkforward.json)
+python3 lab/regime.py swing --cache /tmp/yd       # swing setups by regime, 5 years
+```
+
+NIFTY regime from ADX14, ATR14 % (top 20% of 250 days = high-vol) and the EMA20 slope; intraday
+trades use the regime known the evening before. An adaptive selector allows a setup only in
+regimes where it was positive on earlier trades (>= 30 trades); checked by expanding walk-forward:
+
+| test | all OOS trades | avg % | selector kept | avg % | blocks where kept beat all |
+|---|---|---|---|---|---|
+| intraday (35 OOS days, 5-day blocks) | 17926 | -0.004 | 3478 | +0.015 | 3 of 5 |
+| swing (2024-03 to 2026-10, 125-day blocks) | 3332 | -0.168 | 2034 | +0.079 | 3 of 5 |
+
+Intraday OOS trades did +0.067% on trend-up days and -0.029% on trend-down days (no range or
+high-vol day in those 35 days). The selector raised the pooled average a little in both tests but
+not consistently, and the intraday sample is very short. **It does not clearly help, so
+`REGIME_SELECT` stays off** (`REGIME_SELECT=1` turns it on in `alert.py`).
+
+**Phase J: NSE calendar** (`lab/calendar_nse.py`).
+
+```bash
+python3 lab/calendar_nse.py                 # trading day?, next NIFTY weekly / monthly and BANKNIFTY expiry
+python3 lab/calendar_nse.py --month 2026-11 # 03 Nov, 09 Nov (Mon: 10th is a holiday), 17 Nov, 23 Nov
+```
+
+2026 holidays from NSE circulars 71775 / 71777 (+ 15 Jan via 72260). Since Sep 2025 NIFTY weekly
+expires on Tuesday, NIFTY and BANKNIFTY monthly on the last Tuesday; a holiday moves the expiry
+to the previous trading day. `alert.py` now skips NSE holidays and weekends quietly.
+
+**Phase K: Facebook content helper** (`lab/content.py`).
+
+```bash
+python3 lab/content.py                    # today's first pick -> content_out/post.txt + chart.svg
+python3 lab/content.py --day 2026-11-04 --pick 2
+```
+
+A short Gujarati + English post ("setup example", "rule output", never buy / sell words) and a
+1080x1080 SVG chart with entry / stop / target lines, with the disclaimer
+શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી. It posts nothing: review before publishing.
+
+**Phase L: easy runners.** `notebooks/trading_lab_colab.ipynb` (open in Google Colab, run the
+cells: clone, scan, walk-forward report, swing) and `termux/run.sh` (Android Termux:
+`pkg install -y python git`, clone, then `bash nse-day-trader-skill/termux/run.sh`).
+
+**Phase M: docs.** This section, and [docs/GUJARATI_GUIDE.md](docs/GUJARATI_GUIDE.md): a simple
+Gujarati guide to every tool. ગુજરાતી માર્ગદર્શિકા: દરેક tool કેવી રીતે ચલાવવું, અને સાચી વાત: હજી કોઈ સાબિત edge નથી.
+
 ## The tools
 
 ```bash
@@ -408,7 +535,13 @@ trader-bulkdeals/   SKILL.md, deals.py
 lab/                core.py (indicators), lab.py (grid, scan, show), memory.json,
                     filters.py, risk.py, evalfilters.py (Phase A), alert.py,
                     setups2.py, score.py, evalscore.py (Phase B),
-                    walkforward.py, report.py (Phase C)
+                    walkforward.py, report.py (Phase C), fno.py + lot_sizes.csv (D),
+                    swing.py (E), pine.py (F), sector.py + sectors.csv (G),
+                    journal_stats.py (H), regime.py (I), calendar_nse.py (J), content.py (K)
+pine/               TradingView Pine v5 indicators generated by lab/pine.py
+notebooks/          trading_lab_colab.ipynb (Google Colab)
+termux/             run.sh (Android Termux menu)
+docs/               GUJARATI_GUIDE.md
 backtest/           orb_grid_sym.py (ORB grid backtest), paper_journal.py (paper trades), educational
 tests/              unittest suite + offline fixtures
 ```

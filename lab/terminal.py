@@ -21,6 +21,10 @@ MENU = [
     ("6", "Learn from today, after 15:30 (આજથી શીખો)", ["lab/lab.py", "learn"]),
     ("7", "ORB scan (scanner)", ["trader-scanner/scan.py", "orb"]),
     ("8", "Paper trades report (paper ટ્રેડ)", ["backtest/paper_journal.py", "report"]),
+    ("9", "Swing scan, daily bars (swing setups)", ["lab/swing.py", "scan"]),
+    ("10", "Sector strength + breadth (sector ranking)", ["lab/sector.py", "--stocks", "10"]),
+    ("11", "NSE calendar + expiries (રજા / expiry)", ["lab/calendar_nse.py"]),
+    ("12", "Journal stats (paper + picks)", ["lab/journal_stats.py"]),
     ("0", "Exit (બહાર)", None),
 ]
 
@@ -53,7 +57,7 @@ def main():
         if item is None:
             if choice == "":
                 return 0
-            print("choose 0-8")
+            print("choose 0-12")
             continue
         if item[2] is None:
             return 0
