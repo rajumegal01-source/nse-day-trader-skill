@@ -6,3 +6,4 @@ secrets/
 *.log
 backtest_out/
 lab/alert_state.json
+content_out/
