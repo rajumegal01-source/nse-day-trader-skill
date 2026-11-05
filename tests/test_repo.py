@@ -138,7 +138,8 @@ class TestPython38(unittest.TestCase):
                    "io", "json", "math", "os", "random", "re", "socket", "statistics", "struct", "subprocess",
                    "sys", "tempfile", "time", "unittest", "urllib", "uuid", "xml", "zlib", "shutil", "collections",
                    "itertools", "bisect", "functools", "textwrap", "string", "copy",
-                   "nse", "angel", "_load", "filters", "risk", "setups2", "score"}
+                   "nse", "angel", "_load", "filters", "risk", "setups2", "score",
+                   "alert", "report", "walkforward", "evalscore"}
         for path in all_py():
             tree = ast.parse(open(path, encoding="utf-8").read())
             for node in ast.walk(tree):

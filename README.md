@@ -265,6 +265,50 @@ The test half rises with the score, the train half does not (and for the origina
 it falls), so alerts still rank by test average; `SCORE_RANK=1` ranks by score first.
 score ફક્ત માહિતી માટે બતાવાય છે; ક્રમ હજી test average થી જ નક્કી થાય છે.
 
+**Phase C: reports and honesty tools** (`lab/walkforward.py`, `lab/report.py`).
+
+```bash
+python3 lab/report.py weekly --state lab/alert_state.json   # this week's paper picks, phone-sized lines
+python3 lab/walkforward.py --cache /tmp/y                   # walk-forward test, all Nifty 100 (~3 min)
+python3 lab/report.py wf                                    # out-of-sample vs memory.json, per setup
+python3 lab/report.py risk                                  # 2 picks/day OOS simulation, drawdown, Monte Carlo
+python3 lab/report.py chart                                 # backtest_out/equity.svg (hand-written SVG)
+python3 lab/report.py compare                               # top 10 stock + setup pairs out of sample
+```
+
+Weekly report: per pick result, trades, target/stop/close, win %, average, total, best and worst
+setup, streaks. `alert.py --result` now keeps each day's outcomes in the state file
+(`<day>#results`, picks and results kept 40 days); picks without one are graded from Yahoo.
+અઠવાડિયાનો paper report: દરેક pick નું પરિણામ, જીત %, સરેરાશ અને streak, ફોનમાં વાંચી શકાય એવું.
+
+**Walk-forward = the most honest number.** Train 25 days -> choose each stock's best setting per
+setup from those days only -> trade it on the next 5 unseen days; step 5, 7 windows, 35
+out-of-sample days. Run 2026-11-05, all 100 stocks, full grid:
+
+| setup | OOS trades | OOS win % | OOS avg % | in-sample avg % (memory.json) |
+|---|---|---|---|---|
+| odrive | 520 | 41.7 | +0.139 | +0.319 |
+| pdhl | 1479 | 38.6 | +0.016 | +0.317 |
+| structure | 1644 | 45.0 | +0.010 | +0.411 |
+| fvg | 1880 | 42.8 | +0.009 | +0.320 |
+| cpr | 1607 | 34.0 | +0.003 | +0.265 |
+| trend | 2044 | 39.1 | -0.002 | +0.233 |
+| round | 2144 | 34.5 | -0.008 | +0.220 |
+| vdelta | 1451 | 44.5 | -0.019 | +0.360 |
+| inside | 2157 | 36.7 | -0.024 | +0.138 |
+| ob | 1474 | 41.3 | -0.034 | +0.306 |
+| candle | 2444 | 33.0 | -0.037 | +0.205 |
+| sweep | 2035 | 32.7 | -0.044 | +0.210 |
+| **all** | **20879** | **38.0** | **-0.009** | **+0.260** |
+
+Out of sample the edge is about zero after the 0.05% cost: the in-sample numbers are mostly
+selection luck. 2 picks/day like `alert.py` (quality bar on the train window, nifty/gap filters
+not applied): 70 trades, 40% win, avg +0.045%, total +3.15% of one pick's money, max drawdown
+10.3, longest losing streak 10; Monte Carlo (2000 reshuffles) drawdown 5.9 / 9.1 / 13.9 and
+20-day return -14.6 / +1.0 / +17.8 (5th / 50th / 95th). With 40 train days the picks did
++0.19% a trade on 40 trades: still small and noisy.
+walk-forward માં ધાર લગભગ શૂન્ય છે: memory.json ના આંકડા વધારે સારા દેખાય છે, real money પહેલાં paper-trade કરો.
+
 `lab/memory.json` is the lab's memory: for each stock and setup, how many settings were robust
 (positive in BOTH the train and the test half) and the best three, plus a history of past runs.
 The scan lists **every** trigger of the day with its status (live / target / stop / close), so
@@ -363,7 +407,8 @@ trader-analyst/     SKILL.md, facts.py, metrics.example.json
 trader-bulkdeals/   SKILL.md, deals.py
 lab/                core.py (indicators), lab.py (grid, scan, show), memory.json,
                     filters.py, risk.py, evalfilters.py (Phase A), alert.py,
-                    setups2.py, score.py, evalscore.py (Phase B)
+                    setups2.py, score.py, evalscore.py (Phase B),
+                    walkforward.py, report.py (Phase C)
 backtest/           orb_grid_sym.py (ORB grid backtest), paper_journal.py (paper trades), educational
 tests/              unittest suite + offline fixtures
 ```

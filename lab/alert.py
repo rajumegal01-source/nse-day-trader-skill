@@ -133,13 +133,14 @@ def send(text):
     return True
 
 
-def result(a, mem, day, picks):
-    """End of day: how each of today's picks ended (target / stop / 15:15 close)."""
+def result(a, mem, day, picks, state=None):
+    """End of day: how each of today's picks ended (target / stop / 15:15 close). Unless --dry-run,
+    the outcomes are kept in the state file as '<day>#results' for `lab/report.py weekly`."""
     if not picks:
         print("%s: no picks today" % day)
         return 0
     out = ["📊 %s result (paper)" % day]
-    nbs = {}
+    nbs, kept = {}, []
     for p in picks:
         st = "data missing"
         try:
@@ -153,7 +154,11 @@ def result(a, mem, day, picks):
                         sd = 1 if h["side"] == "LONG" else -1
                         pct = sd * (h["last"] - h["entry"]) / h["entry"] * 100 - 0.05
                         st = "close %+.2f%% (last price %s, approx)" % (pct, h["last"])
+                        kept.append(dict(symbol=p["symbol"], setup=p["setup"], side=p["side"], time=p["time"],
+                                         result="close", pct=round(pct, 3), approx=True))
                     else:
+                        kept.append(dict(symbol=p["symbol"], setup=p["setup"], side=p["side"], time=p["time"],
+                                         result=h["status"], pct=h["pct"] or 0, exit_time=h["exit_time"]))
                         st = "%s %+.2f%% (exit %s)" % (h["status"], h["pct"] or 0, h["exit_time"] or "-")
                     if g:
                         st += " ⚠️ missing bars %s" % ",".join(g)
@@ -169,7 +174,21 @@ def result(a, mem, day, picks):
         print(text)
     else:
         send(text)
+    if state is not None and kept and not a.dry_run:
+        state[day + "#results"] = kept
+        with open(a.state, "w") as fh:
+            json.dump(state, fh)
     return 0
+
+
+def prune(state, today, sent_days=5, pick_days=40):
+    """Keep sent-trigger keys 5 days, '<day>#picks' / '<day>#results' 40 days (weekly report)."""
+    keep = {}
+    for k, v in state.items():
+        n = pick_days if "#" in k else sent_days
+        if k[:10] >= (today - dt.timedelta(days=n)).isoformat():
+            keep[k] = v
+    return keep
 
 
 def main(argv=None):
@@ -201,7 +220,7 @@ def main(argv=None):
     sent = set(state.get(day, []))
     picks = state.get(day + "#picks", [])
     if a.result:
-        return result(a, mem, day, picks)
+        return result(a, mem, day, picks, state)
     if len(picks) >= MAX_PER_DAY:
         print("%s: already %d pick(s) today" % (day, len(picks)))
         return 0
@@ -249,7 +268,7 @@ def main(argv=None):
         print(text)
     elif not send(text):
         return 0
-    state = {d: v for d, v in state.items() if d >= (now.date() - dt.timedelta(days=5)).isoformat()}
+    state = prune(state, now.date())
     state[day] = sorted(sent)
     state[day + "#picks"] = picks
     with open(a.state, "w") as fh:
