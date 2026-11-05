@@ -13,6 +13,7 @@ Indicators (all from free 5-minute OHLCV bars, no tick data):
 import datetime as dt
 import json
 import os
+import urllib.parse
 import urllib.request
 
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
@@ -25,7 +26,9 @@ COST = 0.0005                                        # 0.05% a trade
 # ------------------------------------------------------------------ data
 
 def fetch(sym, rng, iv, cache_dir=None):
-    url = "https://query2.finance.yahoo.com/v8/finance/chart/%s.NS?range=%s&interval=%s" % (sym, rng, iv)
+    ysym = sym if sym.startswith("^") else sym + ".NS"           # ^NSEI is an index: no .NS
+    url = "https://query2.finance.yahoo.com/v8/finance/chart/%s?range=%s&interval=%s" % (
+        urllib.parse.quote(ysym), rng, iv)
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     raw = urllib.request.urlopen(req, timeout=30).read()
     if cache_dir:

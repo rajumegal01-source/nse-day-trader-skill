@@ -174,6 +174,39 @@ market hours and sends each new quality trigger once (best setting of its setup,
 /start, and save its token as the repo secret `TELEGRAM_TOKEN` (Settings, Secrets and variables,
 Actions). Never paste the token anywhere else.
 
+**Phase A filters and exits (optional).** `lab/filters.py`: sideways, nifty (^NSEI vs its
+VWAP-proxy/EMA20), relvol, vwap, time, gap. `lab/risk.py`: trail (stop to entry at 1R), partial
+(half at 1R), tstop (out after 6 bars without +0.5R), a position-size calculator with approximate
+Angel One-like intraday costs, and the alert's daily loss limit (no new picks after 2 stop-outs).
+All are off in `lab.py`; `alert.py --filters nifty,gap` is the default (`--filters none` turns it off).
+વૈકલ્પિક filters/exits: alert માં default ફક્ત nifty + gap ચાલુ છે, બાકી બધું બંધ.
+
+```bash
+python3 lab/evalfilters.py --cache /tmp/y      # replay remembered best settings with / without each rule
+python3 lab/risk.py size --capital 50000 --risk 1 --entry 1250 --stop 1240 --target 1270
+```
+
+Replay on 2026-11-05 (100 stocks, rank-1 setting per setup, ~60 days, last 33% = test, 21 days):
+
+| rule | test trades | test win % | test avg % | train avg % |
+|---|---|---|---|---|
+| none (baseline) | 3207 | 59.5 | +0.341 | +0.267 |
+| sideways | 2937 | 59.0 | +0.329 | +0.259 |
+| nifty | 2635 | 60.2 | +0.357 | +0.262 |
+| relvol | 1138 | 57.9 | +0.286 | +0.229 |
+| vwap | 2894 | 59.7 | +0.345 | +0.254 |
+| time | 2884 | 59.5 | +0.330 | +0.249 |
+| gap | 2682 | 60.2 | +0.359 | +0.265 |
+| trail | 3207 | 54.0 | +0.313 | +0.247 |
+| partial | 3207 | 60.4 | +0.263 | +0.203 |
+| tstop | 3207 | 47.5 | +0.181 | +0.087 |
+| nifty + gap | 2212 | 61.7 | +0.384 | +0.257 |
+
+Only nifty and gap raised the test average, and only by ~0.02% each; neither helped the train
+half, and a day-level bootstrap does not rule out zero. The settings were picked partly on the
+test half. Treat the defaults as a weak lean, not an edge. Exits all lowered the average.
+નાના sample, overfitting શક્ય: આ ફક્ત શૈક્ષણિક છે.
+
 `lab/memory.json` is the lab's memory: for each stock and setup, how many settings were robust
 (positive in BOTH the train and the test half) and the best three, plus a history of past runs.
 The scan lists **every** trigger of the day with its status (live / target / stop / close), so
@@ -270,7 +303,8 @@ trader-broker/      SKILL.md, ticket.py, angel.py, nse.py, angel.example.json
 trader-alerts/      SKILL.md, alerts.py, alerts.example.json
 trader-analyst/     SKILL.md, facts.py, metrics.example.json
 trader-bulkdeals/   SKILL.md, deals.py
-lab/                core.py (indicators), lab.py (grid, scan, show), memory.json
+lab/                core.py (indicators), lab.py (grid, scan, show), memory.json,
+                    filters.py, risk.py, evalfilters.py (Phase A), alert.py
 backtest/           orb_grid_sym.py (ORB grid backtest), paper_journal.py (paper trades), educational
 tests/              unittest suite + offline fixtures
 ```

@@ -20,6 +20,9 @@ first when a bar touches both, out at 15:15, 0.05% cost. First 67% of days train
 Ranked by the smaller of the two averages. Thousands of settings overfit: a robust setting
 is a candidate to paper-trade, not a promise.
 
+Optional Phase A filters (filters.py) and exit rules (risk.py) are OFF here; scan_one takes them
+as arguments for alert.py. grid and memory.json do not use them.
+
 The scan reports EVERY trigger of the day with its status (live, target, stop, closed), so a
 signal that fired while you were away still shows up. Missing 5-minute bars are listed: a gap
 can hide a touch.
@@ -35,6 +38,8 @@ import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import core  # noqa: E402
+import filters  # noqa: E402
+import risk  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MEMORY = os.path.join(HERE, "memory.json")
@@ -159,16 +164,27 @@ def cmd_grid(a):
     return 0
 
 
-def scan_one(sym, info, day=None, at=None):
-    raw = core.fetch(sym, "5d", "5m")
+def scan_one(sym, info, day=None, at=None, flt=(), exits=(), NB=None):
+    """flt = optional filter names (filters.py), exits = optional exit rules (risk.py), both off by
+    default. NB = ^NSEI 5-min bars for the 'nifty' filter (fetched here when not given)."""
+    raw = core.fetch(sym, "1mo" if "relvol" in flt else "5d", "5m")
     B, gaps = core.sessions(raw)
     if not B:
         return [], []
     day = day or B[-1]["day"]
     if at is not None:
         B = [b for b in B if b["day"] < day or b["m"] + 5 <= at]
-    ctx = core.daily_context(core.fetch(sym, "3mo", "1d"))
+    daily = core.fetch(sym, "3mo", "1d")
+    ctx = core.daily_context(daily)
     pctx = {day: core.prev_context(ctx, day)}
+    fo = None
+    if flt:
+        if "nifty" in flt and NB is None:
+            NB, _ = core.sessions(core.fetch("^NSEI", "5d", "5m"))
+        if NB is not None and at is not None:
+            NB = [b for b in NB if b["day"] < day or b["m"] + 5 <= at]
+        fo = filters.Filters(list(flt), B, daily, NB)
+    gap_pct = filters.gap_by_day(B).get(day)
     hits, seen = [], set()
     for setup, s in info["setups"].items():
         fn, dparams = core.SETUPS[setup]
@@ -176,6 +192,8 @@ def scan_one(sym, info, day=None, at=None):
             p = best["p"]
             dp = {x: p[x] for x in dparams}
             cands = [c for c in fn(B, **dp) if B[c[0]]["day"] == day]
+            if fo is not None:
+                cands = fo.keep(cands)
             for i, side, natural, label in core.first_per_day(B, cands, p, pctx):
                 st = core.stop_price(B[i]["c"], side, natural, p["stop"])
                 e = B[i]["c"]
@@ -186,14 +204,15 @@ def scan_one(sym, info, day=None, at=None):
                 if key in seen:
                     continue
                 seen.add(key)
-                r = core.simulate(B, i, side, st, p["tgt"])
+                r = risk.simulate_ex(B, i, side, st, p["tgt"], exits)
                 status = "live" if r is None or (r[1] == "close" and B[-1]["m"] < core.EXIT_M) else r[1]
                 hits.append(dict(symbol=sym, day=day, setup=setup, rank=k + 1, time="%02d:%02d" % divmod(B[i]["m"] + 5, 60),
                                  side="LONG" if side == 1 else "SHORT", entry=round(e, 2), stop=round(st, 2),
                                  target=None if tgt is None else round(tgt, 2), last=round(B[-1]["c"], 2),
                                  status=status, pct=None if status == "live" else round(r[0] * 100, 3),
                                  exit_time=None if r is None else "%02d:%02d" % divmod(B[r[2]]["m"], 60),
-                                 p=best["p"], test=best["test"]))
+                                 p=best["p"], test=best["test"],
+                                 gap_pct=None if gap_pct is None else round(gap_pct, 2)))
     g = gaps.get(day, [])
     if at is not None:
         g = [x for x in g if int(x[:2]) * 60 + int(x[3:]) + 5 <= at]

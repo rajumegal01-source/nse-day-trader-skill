@@ -6,6 +6,13 @@
     python3 lab/alert.py --result                      # after 15:15: how today's picks ended
 
 At most MAX_PER_DAY (2) picks a day: when several pass at once, the best test average goes first.
+No new picks after MAX_STOPS (2) of today's picks hit their stop (daily loss limit).
+
+Optional rules (lab/filters.py, lab/risk.py):  --filters nifty,gap   (the default)
+    filters: sideways nifty relvol vwap time gap     exits: trail partial tstop     none = off
+Only nifty + gap are on by default: in lab/evalfilters.py they were the only ones that raised the
+test-half average of the remembered settings, and only slightly (see README). A gap day of
+1%+ is flagged in the message when the gap filter is off.
 
 Setup (once): make a bot with @BotFather in Telegram, send your bot /start, and save the bot
 token as the GitHub repo secret TELEGRAM_TOKEN. The chat id is found from your /start message
@@ -26,13 +33,16 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import core  # noqa: E402
+import filters  # noqa: E402
 import lab  # noqa: E402
+import risk  # noqa: E402
 
 STATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "alert_state.json")
 MIN_N = int(os.environ.get("MIN_N", "8"))
 MIN_WIN = float(os.environ.get("MIN_WIN", "60"))
 MIN_EXP = float(os.environ.get("MIN_EXP", "0.15"))
 MAX_PER_DAY = int(os.environ.get("MAX_PER_DAY", "2"))   # only the best 2 setups a day
+DEFAULT_RULES = os.environ.get("ALERT_FILTERS", ",".join(filters.DEFAULT))
 FOOT = "નિયમનું output છે, buy/sell સલાહ નથી. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી."
 
 
@@ -65,9 +75,32 @@ def pick(hits):
 
 def line(h):
     tgt = h["target"] if h["target"] is not None else "15:15 exit"
-    return ("🔔 %s %s %s %s\nentry %s | stop %s | target %s | last %s\ntest: %d trades, %.0f%% win, avg %+.2f%%"
-            % (h["symbol"], h["setup"].upper(), h["side"], h["time"], h["entry"], h["stop"], tgt, h["last"],
-               h["test"]["n"], h["test"]["win"], h["test"]["exp"]))
+    txt = ("🔔 %s %s %s %s\nentry %s | stop %s | target %s | last %s\ntest: %d trades, %.0f%% win, avg %+.2f%%"
+           % (h["symbol"], h["setup"].upper(), h["side"], h["time"], h["entry"], h["stop"], tgt, h["last"],
+              h["test"]["n"], h["test"]["win"], h["test"]["exp"]))
+    g = h.get("gap_pct")
+    if g is not None and abs(g) >= filters.GAP_PCT:
+        txt += "\n⚠️ gap day %+.1f%%" % g
+    return txt
+
+
+def split_rules(text):
+    """'nifty,gap,trail' -> (['nifty', 'gap'], ['trail']); unknown names raise ValueError."""
+    names = filters.parse_names(text)
+    bad = [n for n in names if n not in filters.NAMES and n not in risk.EXIT_NAMES]
+    if bad:
+        raise ValueError("unknown rule(s): %s" % ",".join(bad))
+    return [n for n in names if n in filters.NAMES], [n for n in names if n in risk.EXIT_NAMES]
+
+
+def nifty_bars(flt):
+    if "nifty" not in flt:
+        return None
+    try:
+        return core.sessions(core.fetch("^NSEI", "5d", "5m"))[0]
+    except Exception as e:  # no index data: the nifty filter then lets every trigger through
+        print("^NSEI: data error (%s), nifty filter off this run" % type(e).__name__)
+        return []
 
 
 def send(text):
@@ -90,10 +123,14 @@ def result(a, mem, day, picks):
         print("%s: no picks today" % day)
         return 0
     out = ["📊 %s result (paper)" % day]
+    nbs = {}
     for p in picks:
         st = "data missing"
         try:
-            hits, g = lab.scan_one(p["symbol"], mem["stocks"][p["symbol"]], day, None)
+            flt, ex = split_rules(p.get("rules", a.filters))   # grade with the rules it was picked under
+            if tuple(flt) not in nbs:
+                nbs[tuple(flt)] = nifty_bars(flt)
+            hits, g = lab.scan_one(p["symbol"], mem["stocks"][p["symbol"]], day, None, flt, ex, nbs[tuple(flt)])
             for h in hits:
                 if (h["setup"], h["side"], h["time"]) == (p["setup"], p["side"], p["time"]):
                     if h["status"] == "live":   # day over but last bar(s) missing: close at last price
@@ -128,7 +165,15 @@ def main(argv=None):
     ap.add_argument("--memory", default=lab.MEMORY)
     ap.add_argument("--state", default=STATE)
     ap.add_argument("--result", action="store_true", help="after 15:15: send how today's picks ended")
+    ap.add_argument("--filters", default=DEFAULT_RULES,
+                    help="comma list of %s / %s, or none (default %s)" % (
+                        ",".join(filters.NAMES), ",".join(risk.EXIT_NAMES), DEFAULT_RULES))
+    ap.add_argument("--max-stops", type=int, default=risk.MAX_STOPS, help="no new picks after this many stop-outs today")
     a = ap.parse_args(argv)
+    try:
+        flt, ex = split_rules(a.filters)
+    except ValueError as e:
+        ap.error(str(e))
     now = dt.datetime.now(core.IST)
     day = a.day or now.date().isoformat()
     at = None
@@ -144,15 +189,17 @@ def main(argv=None):
     if len(picks) >= MAX_PER_DAY:
         print("%s: already %d pick(s) today" % (day, len(picks)))
         return 0
-    new, gaps = [], {}
+    new, gaps, every = [], {}, []
+    NB = nifty_bars(flt)
     for sym, info in sorted(mem["stocks"].items()):
         if not any(v["best"] for v in info["setups"].values()):
             continue
         try:
-            hits, g = lab.scan_one(sym, info, day, at)
+            hits, g = lab.scan_one(sym, info, day, at, flt, ex, NB)
         except Exception as e:
             print("%s: data error (%s)" % (sym, type(e).__name__))
             continue
+        every += hits
         for h in pick(hits):
             if h.get("day") != day:
                 continue
@@ -162,13 +209,17 @@ def main(argv=None):
                 sent.add(key)
                 if g:
                     gaps[sym] = g
+    stops = risk.stopouts(picks, every)
+    if picks and stops >= a.max_stops:
+        print("%s: %d pick(s) stopped out today, daily loss limit reached: no new picks" % (day, stops))
+        return 0
     if not new:
         print("%s: no new quality trigger" % day)
         return 0
     new.sort(key=lambda h: (-h["test"]["exp"], -h["test"]["win"]))
     new = new[:MAX_PER_DAY - len(picks)]
     picks += [dict(symbol=h["symbol"], setup=h["setup"], side=h["side"], time=h["time"], entry=h["entry"],
-                   stop=h["stop"], target=h["target"]) for h in new]
+                   stop=h["stop"], target=h["target"], rules=",".join(flt + ex)) for h in new]
     new.sort(key=lambda h: h["time"])
     parts = [line(h) for h in new]
     if gaps:
