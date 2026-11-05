@@ -54,6 +54,10 @@ DEFAULT_RULES = os.environ.get("ALERT_FILTERS", ",".join(filters.DEFAULT))
 # Optional 'sector strong' hook (lab/sector.py): keep only picks in the top SECTOR_TOP sectors by
 # 1-month relative strength. OFF by default (not tested out of sample). SECTOR_STRONG=1 turns it on.
 SECTOR_STRONG = os.environ.get("SECTOR_STRONG", "0") == "1"
+# Optional regime selector (lab/regime.py): keep only setups whose walk-forward OOS average was > 0
+# in today's NIFTY regime (backtest_out/regime_table.json). OFF by default: in the 2026-11-06
+# walk-forward it did not clearly help out of sample. REGIME_SELECT=1 turns it on.
+REGIME_SELECT = os.environ.get("REGIME_SELECT", "0") == "1"
 FOOT = "નિયમનું output છે, buy/sell સલાહ નથી. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી."
 
 
@@ -129,6 +133,21 @@ def sector_filter(hits, rank=None):
         return sector.filter_picks(hits, rank if rank is not None else sector.today_rank())
     except Exception as e:
         print("sector filter: data error (%s), off this run" % type(e).__name__)
+        return hits
+
+
+def regime_filter(hits, day, regime_name=None, table=None):
+    """Keep hits whose setup was positive in the regime known before `day`. Any error: keep all."""
+    try:
+        import regime
+        if table is None:
+            with open(regime.TABLE) as fh:
+                table = json.load(fh)["table"]
+        if regime_name is None:
+            regime_name = regime.regime_before(regime.classify(core.fetch("^NSEI", "2y", "1d")), day)
+        return regime.filter_picks(hits, regime_name, table)
+    except Exception as e:
+        print("regime selector: not available (%s), off this run" % type(e).__name__)
         return hits
 
 
@@ -265,6 +284,11 @@ def main(argv=None):
         new = sector_filter(new)
         if not new:
             print("%s: no new quality trigger in a strong sector" % day)
+            return 0
+    if new and REGIME_SELECT:
+        new = regime_filter(new, day)
+        if not new:
+            print("%s: no new quality trigger that suits today's regime" % day)
             return 0
     if not new:
         print("%s: no new quality trigger" % day)
