@@ -152,7 +152,7 @@ Our own indicators, each tested thousands of ways on every stock, with a memory 
 | `vdelta` | **Order-flow proxy**: volume delta from each candle + an n-bar breakout. True order flow needs tick / bid-ask data that free sources do not give |
 
 ```bash
-python3 lab/lab.py grid --nifty100     # 12,960 settings x every Nifty 100 stock -> lab/memory.json
+python3 lab/lab.py grid --nifty100     # 14,088 settings (12 setups) x every Nifty 100 stock -> lab/memory.json
 python3 lab/lab.py scan                # every 5-min bar of today, every remembered setting
 python3 lab/lab.py scan --at 11:00     # as it looked at 11:00 IST
 python3 lab/lab.py show POWERGRID      # what the lab remembers
@@ -206,6 +206,64 @@ Only nifty and gap raised the test average, and only by ~0.02% each; neither hel
 half, and a day-level bootstrap does not rule out zero. The settings were picked partly on the
 test half. Treat the defaults as a weak lean, not an edge. Exits all lowered the average.
 નાના sample, overfitting શક્ય: આ ફક્ત શૈક્ષણિક છે.
+
+**Phase B price-action setups.** `lab/setups2.py` adds eight setups, each with a small grid
+(<= 8 detection settings x 24 exits = <= 192 settings, 1,128 in all), the same 67/33 split and
+the same robust rule. Their best settings sit in `memory.json` next to the original four, and
+`alert.py` sends them only when they pass the same quality bar.
+
+| Setup | What it is | ગુજરાતીમાં |
+|---|---|---|
+| `pdhl` | Previous-day high/low close-break, or a close beyond then back inside (failed break) | ગઈકાલના high/low નો breakout અથવા નિષ્ફળ breakout પછી ઉલટું |
+| `cpr` | Floor pivots P, BC, TC, R1, S1: bounce or break | પિવટ લેવલ (P, CPR, R1, S1) પરથી bounce કે break |
+| `inside` | 15-min inside bar / NR4 breakout, or day NR7 breakout | 15-મિનિટ inside bar / NR4 કે દિવસના NR7 નો breakout |
+| `sweep` | Liquidity sweep: wick through a swing or PDH/PDL, close back inside -> reversal | swing કે PDH/PDL ની ઉપર-નીચે wick પછી અંદર close: ઉલટો ટ્રેડ |
+| `odrive` | Opening drive: strong first 15 min, then opening-range break or first pullback | પહેલી 15 મિનિટની મજબૂત ચાલ પછી breakout કે પહેલો pullback |
+| `round` | Round-number level (1-2-5 step, ~1% / ~2.5% of price): bounce or break | રાઉન્ડ નંબર લેવલ પર પ્રતિક્રિયા |
+| `candle` | Engulfing / pin bar at a swing or pivot level | swing કે pivot લેવલ પર engulfing / pin bar |
+| `trend` | EMA 9/21 pullback in trend, or Supertrend(10, 2/3) flip | EMA 9/21 pullback અથવા Supertrend flip |
+
+```bash
+python3 lab/lab.py grid --nifty100 --setups pdhl cpr inside sweep odrive round candle trend --cache /tmp/y
+python3 lab/evalscore.py --cache /tmp/y        # setup table + score buckets
+```
+
+Grid on 2026-11-05 (100 stocks, ~60 days of 5-min bars, last 33% = test, ~20 days). Test record
+pooled over each stock's best (rank-1) setting:
+
+| setup | settings | stocks with a robust setting | test trades | win % | avg % |
+|---|---|---|---|---|---|
+| structure | 3240 | 100 | 790 | 61.6 | +0.411 |
+| fvg | 3240 | 98 | 945 | 55.6 | +0.320 |
+| ob | 3240 | 100 | 770 | 60.3 | +0.306 |
+| vdelta | 3240 | 98 | 713 | 64.0 | +0.360 |
+| pdhl | 144 | 90 | 814 | 50.5 | +0.317 |
+| cpr | 192 | 99 | 899 | 48.5 | +0.265 |
+| inside | 144 | 79 | 1262 | 46.7 | +0.138 |
+| sweep | 144 | 95 | 1156 | 41.5 | +0.210 |
+| odrive | 144 | 75 | 567 | 50.6 | +0.319 |
+| round | 96 | 92 | 1232 | 43.0 | +0.220 |
+| candle | 192 | 93 | 1367 | 44.5 | +0.205 |
+| trend | 72 | 84 | 1120 | 49.0 | +0.233 |
+
+Every number here is picked partly BY its test half (best of many), so it flatters; with only
+~20 test days most stocks have a robust setting for most setups. New setups win less often
+than the original four (their targets are wider); fewer of them pass the alert bar.
+નવા setups ના આંકડા પણ overfit હોઈ શકે: પહેલાં paper-trade કરો.
+
+**Confluence score 0-10** (`lab/score.py`): one point each for structure trend, a same-side
+FVG/order block at the bar, near PDH/PDL/pivot, VWAP side, Nifty side, volume above the 20-bar
+average, not a gap day, EMA9 vs EMA21, yesterday's close vs SMA20, and close vs today's open.
+Every scan line and alert shows it ("score 7/10"). Replay of every stock's rank-1 setting:
+
+| score | 0-3 | 4 | 5 | 6 | 7 | 8 | 9-10 |
+|---|---|---|---|---|---|---|---|
+| test avg % | +0.105 | +0.193 | +0.230 | +0.284 | +0.289 | +0.322 | +0.378 |
+| train avg % | +0.172 | +0.161 | +0.177 | +0.189 | +0.197 | +0.211 | +0.171 |
+
+The test half rises with the score, the train half does not (and for the original four setups
+it falls), so alerts still rank by test average; `SCORE_RANK=1` ranks by score first.
+score ફક્ત માહિતી માટે બતાવાય છે; ક્રમ હજી test average થી જ નક્કી થાય છે.
 
 `lab/memory.json` is the lab's memory: for each stock and setup, how many settings were robust
 (positive in BOTH the train and the test half) and the best three, plus a history of past runs.
@@ -304,7 +362,8 @@ trader-alerts/      SKILL.md, alerts.py, alerts.example.json
 trader-analyst/     SKILL.md, facts.py, metrics.example.json
 trader-bulkdeals/   SKILL.md, deals.py
 lab/                core.py (indicators), lab.py (grid, scan, show), memory.json,
-                    filters.py, risk.py, evalfilters.py (Phase A), alert.py
+                    filters.py, risk.py, evalfilters.py (Phase A), alert.py,
+                    setups2.py, score.py, evalscore.py (Phase B)
 backtest/           orb_grid_sym.py (ORB grid backtest), paper_journal.py (paper trades), educational
 tests/              unittest suite + offline fixtures
 ```

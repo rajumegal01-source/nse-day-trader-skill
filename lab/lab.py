@@ -1,7 +1,7 @@
 """Trading Lab: test our own indicators thousands of ways, remember what held up, scan every bar.
 EDUCATIONAL ONLY, not investment advice. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી.
 
-    python3 lab/lab.py grid POWERGRID GRASIM        # 12,960 settings per stock -> lab/memory.json
+    python3 lab/lab.py grid POWERGRID GRASIM        # 14,088 settings per stock -> lab/memory.json
     python3 lab/lab.py grid --nifty100 --limit 20   # many stocks (about 1 minute each)
     python3 lab/lab.py scan                         # every bar of today, for every remembered setting
     python3 lab/lab.py show POWERGRID               # what the lab remembers about a stock
@@ -13,7 +13,10 @@ EDUCATIONAL ONLY, not investment advice. શૈક્ષણિક હેતુ �
 Setups (see core.py): structure (BOS/CHoCH), fvg (fair value gap retest), ob (order block
 retest), vdelta (volume-delta order-flow proxy + n-bar breakout). Each one is tested on
 3 x 3 detection settings x 360 exits (side, entry cutoff, stop, target, daily filter) = 3,240,
-so 12,960 settings per stock. One trade per setting per day, entry on a bar's close, stop
+so 12,960 settings per stock. Phase B (setups2.py): pdhl, cpr, inside, sweep, odrive,
+round, candle, trend, each <= 8 detection settings x 24 exits (setups2.EXITS2), 1,128 more.
+Every scan hit carries a confluence score 0-10 (score.py). `grid --setups X` re-tests only X and
+keeps every other remembered setup of the stock. One trade per setting per day, entry on a bar's close, stop
 first when a bar touches both, out at 15:15, 0.05% cost. First 67% of days train, last 33% test.
 
 "robust" = at least 8 train trades, 5 test trades, and a positive average in BOTH halves.
@@ -40,6 +43,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import core  # noqa: E402
 import filters  # noqa: E402
 import risk  # noqa: E402
+import score as cscore  # noqa: E402
+import setups2  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MEMORY = os.path.join(HERE, "memory.json")
@@ -47,6 +52,16 @@ NIFTY100 = os.path.join(HERE, "..", "trader-scanner", "nifty100.csv")
 KEEP = 3          # best robust settings remembered per setup per stock
 HISTORY = 60      # past grid results remembered per stock
 MAX_GAPS = 3
+SETUPS = dict(core.SETUPS, **setups2.SETUPS)      # Phase A setups + Phase B price-action setups
+
+
+def exits_for(name):
+    """Exit grid of a setup: the big core.EXITS for the original four, setups2.EXITS2 for Phase B."""
+    return setups2.EXITS2 if name in setups2.SETUPS else core.EXITS
+
+
+def n_settings_all():
+    return core.n_settings() + sum(setups2.n_settings(k) for k in setups2.SETUPS)
 
 
 def load_memory(path=MEMORY):
@@ -69,12 +84,21 @@ def nifty100():
         return [r["Symbol"].strip().upper() for r in csv.DictReader(fh) if r.get("Symbol")]
 
 
-def prepare(sym, rng="60d"):
-    raw = core.fetch(sym, rng, "5m")
+def cached_fetch(sym, rng, iv, cache=None):
+    """core.fetch, reusing a raw Yahoo file in `cache` when one exists (saved there otherwise)."""
+    p = os.path.join(cache, "%s_%s_%s.json" % (sym, rng, iv)) if cache else None
+    if p and os.path.exists(p):
+        with open(p, "rb") as fh:
+            return core.parse(json.loads(fh.read()))
+    return core.fetch(sym, rng, iv, cache)
+
+
+def prepare(sym, rng="60d", cache=None):
+    raw = cached_fetch(sym, rng, "5m", cache)
     B, gaps = core.sessions(raw)
     bad = {d for d, g in gaps.items() if len(g) > MAX_GAPS}
     B = [b for b in B if b["day"] not in bad]
-    ctx = core.daily_context(core.fetch(sym, "1y", "1d"))
+    ctx = core.daily_context(cached_fetch(sym, "1y", "1d", cache))
     days = sorted({b["day"] for b in B})
     pctx = {d: core.prev_context(ctx, d) for d in days}
     return B, gaps, sorted(bad), days, pctx
@@ -84,7 +108,7 @@ def grid_one(B, days, pctx, setups=None, retired=None):
     split = days[int(len(days) * 0.67)] if days else ""
     out = {}
     cache = {}
-    for name, (fn, dparams) in core.SETUPS.items():
+    for name, (fn, dparams) in SETUPS.items():
         if setups and name not in setups:
             continue
         tested, rows = 0, []
@@ -92,8 +116,9 @@ def grid_one(B, days, pctx, setups=None, retired=None):
         for dvals in itertools.product(*dparams.values()):
             dp = dict(zip(dkeys, dvals))
             cands = fn(B, **dp)
-            ekeys = list(core.EXITS)
-            for evals in itertools.product(*core.EXITS.values()):
+            EX = exits_for(name)
+            ekeys = list(EX)
+            for evals in itertools.product(*EX.values()):
                 p = dict(zip(ekeys, evals))
                 tested += 1
                 if retired and pkey(dict(dp, **p)) in retired.get(name, ()):
@@ -119,7 +144,8 @@ def grid_one(B, days, pctx, setups=None, retired=None):
                 sig.add(k)
                 uniq.append(row)
         rows_best = uniq[:KEEP]
-        out[name] = {"tested": tested, "robust": len(rows),
+        out[name] = {"tested": tested, "robust": len(rows), "first": days[0] if days else None,
+                     "last": days[-1] if days else None,
                      "best": [{"p": p, "train": rnd(a), "test": rnd(b)} for _, p, a, b in rows_best]}
     return out
 
@@ -141,7 +167,7 @@ def cmd_grid(a):
     for sym in syms:
         t0 = time.time()
         try:
-            B, gaps, bad, days, pctx = prepare(sym)
+            B, gaps, bad, days, pctx = prepare(sym, cache=a.cache)
         except Exception as e:  # network or Yahoo error: skip, keep going
             print("%s: data error (%s), skipped" % (sym, e))
             continue
@@ -149,14 +175,18 @@ def cmd_grid(a):
             print("%s: only %d clean days, skipped" % (sym, len(days)))
             continue
         res = grid_one(B, days, pctx, a.setups, mem.get("retired", {}).get(sym))
+        merged = dict((mem["stocks"].get(sym) or {}).get("setups") or {})
+        merged.update(res)                # re-tested setups replace theirs, the others are kept
         mem["stocks"][sym] = {"date": today, "days": len(days), "first": days[0], "last": days[-1],
-                              "skipped_gap_days": bad, "setups": res}
+                              "skipped_gap_days": bad, "setups": merged}
         h = mem["history"].setdefault(sym, [])
-        h.append({"date": today, "robust": {k: v["robust"] for k, v in res.items()},
-                  "best_test_exp": {k: (v["best"][0]["test"]["exp"] if v["best"] else None) for k, v in res.items()}})
+        if not h or h[-1]["date"] != today:
+            h.append({"date": today, "robust": {}, "best_test_exp": {}})
+        h[-1]["robust"].update({k: v["robust"] for k, v in res.items()})
+        h[-1]["best_test_exp"].update({k: (v["best"][0]["test"]["exp"] if v["best"] else None) for k, v in res.items()})
         del h[:-HISTORY]
         mem["updated"] = today
-        mem["settings_per_stock"] = core.n_settings()
+        mem["settings_per_stock"] = n_settings_all()
         save_memory(mem, a.memory)
         print("%s: %d days, %s  (%.0fs)" % (sym, len(days), ", ".join(
             "%s %d robust" % (k, v["robust"]) for k, v in res.items()), time.time() - t0))
@@ -167,13 +197,17 @@ def cmd_grid(a):
 def scan_one(sym, info, day=None, at=None, flt=(), exits=(), NB=None):
     """flt = optional filter names (filters.py), exits = optional exit rules (risk.py), both off by
     default. NB = ^NSEI 5-min bars for the 'nifty' filter (fetched here when not given)."""
-    raw = core.fetch(sym, "1mo" if "relvol" in flt else "5d", "5m")
+    long_hist = "relvol" in flt or any(k in setups2.NEEDS_HISTORY for k in info["setups"])
+    raw = core.fetch(sym, "1mo" if long_hist else "5d", "5m")
     B, gaps = core.sessions(raw)
     if not B:
         return [], []
     day = day or B[-1]["day"]
     if at is not None:
         B = [b for b in B if b["day"] < day or b["m"] + 5 <= at]
+    B = [b for b in B if b["day"] <= day]
+    days5 = sorted({b["day"] for b in B})[-5:]
+    B5 = [b for b in B if b["day"] >= days5[0]] if days5 else B   # the original setups see 5 sessions, as before
     daily = core.fetch(sym, "3mo", "1d")
     ctx = core.daily_context(daily)
     pctx = {day: core.prev_context(ctx, day)}
@@ -185,13 +219,18 @@ def scan_one(sym, info, day=None, at=None, flt=(), exits=(), NB=None):
             NB = [b for b in NB if b["day"] < day or b["m"] + 5 <= at]
         fo = filters.Filters(list(flt), B, daily, NB)
     gap_pct = filters.gap_by_day(B).get(day)
+    sc = cscore.Context(B, NB, pctx)
     hits, seen = [], set()
     for setup, s in info["setups"].items():
-        fn, dparams = core.SETUPS[setup]
+        if setup not in SETUPS:
+            continue                      # remembered by a newer lab version: skip, do not crash
+        fn, dparams = SETUPS[setup]
+        BB = B if setup in setups2.SETUPS else B5
+        off = len(B) - len(BB)
         for k, best in enumerate(s["best"]):
             p = best["p"]
             dp = {x: p[x] for x in dparams}
-            cands = [c for c in fn(B, **dp) if B[c[0]]["day"] == day]
+            cands = [(c[0] + off,) + tuple(c[1:]) for c in fn(BB, **dp) if BB[c[0]]["day"] == day]
             if fo is not None:
                 cands = fo.keep(cands)
             for i, side, natural, label in core.first_per_day(B, cands, p, pctx):
@@ -205,13 +244,14 @@ def scan_one(sym, info, day=None, at=None, flt=(), exits=(), NB=None):
                     continue
                 seen.add(key)
                 r = risk.simulate_ex(B, i, side, st, p["tgt"], exits)
+                cs, cf = sc.score(i, side)
                 status = "live" if r is None or (r[1] == "close" and B[-1]["m"] < core.EXIT_M) else r[1]
                 hits.append(dict(symbol=sym, day=day, setup=setup, rank=k + 1, time="%02d:%02d" % divmod(B[i]["m"] + 5, 60),
                                  side="LONG" if side == 1 else "SHORT", entry=round(e, 2), stop=round(st, 2),
                                  target=None if tgt is None else round(tgt, 2), last=round(B[-1]["c"], 2),
                                  status=status, pct=None if status == "live" else round(r[0] * 100, 3),
                                  exit_time=None if r is None else "%02d:%02d" % divmod(B[r[2]]["m"], 60),
-                                 p=best["p"], test=best["test"],
+                                 p=best["p"], test=best["test"], score=cs, factors=cf,
                                  gap_pct=None if gap_pct is None else round(gap_pct, 2)))
     g = gaps.get(day, [])
     if at is not None:
@@ -246,9 +286,9 @@ def cmd_scan(a):
     if not allhits:
         print("No trigger today for the remembered settings.")
     for h in allhits:
-        print("%-11s %-9s %-5s %s entry %s stop %s target %s last %s  [%s]  test: %d trades, %.0f%% win, avg %+.2f%%"
+        print("%-11s %-9s %-5s %s entry %s stop %s target %s last %s  [%s]  score %d/10  test: %d trades, %.0f%% win, avg %+.2f%%"
               % (h["symbol"], h["setup"], h["side"], h["time"], h["entry"], h["stop"], h["target"], h["last"],
-                 h["status"], h["test"]["n"], h["test"]["win"], h["test"]["exp"]))
+                 h["status"], h["score"], h["test"]["n"], h["test"]["win"], h["test"]["exp"]))
     for sym, g in gapnote.items():
         print("%s: missing 5-min bars %s (a touch may be hidden; check the chart)" % (sym, ", ".join(g)))
     print("Rule output from a backtest, not a buy/sell call. Educational only, not investment advice.")
@@ -342,7 +382,7 @@ def cmd_lessons(a):
 def cmd_daily(a):
     """learn from today, then re-test every stock with today's bars included."""
     cmd_learn(a)
-    a.symbols, a.nifty100, a.limit, a.setups = [], True, None, None
+    a.symbols, a.nifty100, a.limit, a.setups, a.cache = [], True, None, None, None
     return cmd_grid(a)
 
 
@@ -354,7 +394,8 @@ def cmd_show(a):
         return 1
     print("%s  tested %s on %d days (%s to %s)" % (a.symbol.upper(), info["date"], info["days"], info["first"], info["last"]))
     for k, v in info["setups"].items():
-        print("  %-9s %d of %d robust" % (k, v["robust"], v["tested"]))
+        print("  %-9s %d of %d robust%s" % (k, v["robust"], v["tested"],
+                                           "  (%s to %s)" % (v["first"], v["last"]) if v.get("first") else ""))
         for b in v["best"]:
             print("     test %d trades %.0f%% win avg %+.2f%% | train %d avg %+.2f%% | %s"
                   % (b["test"]["n"], b["test"]["win"], b["test"]["exp"], b["train"]["n"], b["train"]["exp"],
@@ -370,7 +411,8 @@ def main(argv=None):
     g.add_argument("symbols", nargs="*")
     g.add_argument("--nifty100", action="store_true")
     g.add_argument("--limit", type=int)
-    g.add_argument("--setups", nargs="*", choices=list(core.SETUPS))
+    g.add_argument("--setups", nargs="*", choices=list(SETUPS))
+    g.add_argument("--cache", help="folder of raw Yahoo files to reuse (e.g. from evalfilters --cache)")
     s = sub.add_parser("scan")
     s.add_argument("symbols", nargs="*")
     s.add_argument("--day", help="YYYY-MM-DD (default: the latest session)")

@@ -86,7 +86,7 @@ def evaluate(mem, syms, cache=None, variants=VARIANTS, log=print):
             if not s["best"]:
                 continue
             best = s["best"][0]
-            fn, dparams = core.SETUPS[setup]
+            fn, dparams = lab.SETUPS[setup]
             p = best["p"]
             cands = fn(B, **{k: p[k] for k in dparams})
             for name, fl, ex in variants:

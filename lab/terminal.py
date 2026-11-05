@@ -16,7 +16,7 @@ MENU = [
     ("1", "Scan today (આજનું scan)", ["lab/lab.py", "scan"]),
     ("2", "Scan as at a time (સમય પ્રમાણે scan)", ["lab/lab.py", "scan", "--at", "{time}"]),
     ("3", "Show a stock (stock ની memory)", ["lab/lab.py", "show", "{symbol}"]),
-    ("4", "Re-test a stock, 12,960 settings (ફરી test)", ["lab/lab.py", "grid", "{symbol}"]),
+    ("4", "Re-test a stock, 14,088 settings (ફરી test)", ["lab/lab.py", "grid", "{symbol}"]),
     ("5", "Lessons (લેબે શું શીખ્યું)", ["lab/lab.py", "lessons"]),
     ("6", "Learn from today, after 15:30 (આજથી શીખો)", ["lab/lab.py", "learn"]),
     ("7", "ORB scan (scanner)", ["trader-scanner/scan.py", "orb"]),

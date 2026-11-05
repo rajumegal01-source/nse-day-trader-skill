@@ -5,7 +5,10 @@
     python3 lab/alert.py --dry-run                     # print, send nothing
     python3 lab/alert.py --result                      # after 15:15: how today's picks ended
 
-At most MAX_PER_DAY (2) picks a day: when several pass at once, the best test average goes first.
+At most MAX_PER_DAY (2) picks a day: when several pass at once, the best test average goes first
+(SCORE_RANK=1: the highest confluence score, 0-10 from lab/score.py, first). Every alert shows
+its score, e.g. "score 7/10".
+Phase B setups (lab/setups2.py) are picked only when they pass the same quality bar.
 No new picks after MAX_STOPS (2) of today's picks hit their stop (daily loss limit).
 
 Optional rules (lab/filters.py, lab/risk.py):  --filters nifty,gap   (the default)
@@ -42,6 +45,11 @@ MIN_N = int(os.environ.get("MIN_N", "8"))
 MIN_WIN = float(os.environ.get("MIN_WIN", "60"))
 MIN_EXP = float(os.environ.get("MIN_EXP", "0.15"))
 MAX_PER_DAY = int(os.environ.get("MAX_PER_DAY", "2"))   # only the best 2 setups a day
+# Rank picks by confluence score (score.py) first, then test average: OFF by default. In
+# lab/evalscore.py (2026-11-05, all Nifty 100) the pooled TEST-half average rose bucket by bucket
+# with the score, but the TRAIN half did not (flat; falling for the original four setups), so the
+# effect is not clear enough to act on. The score is shown in every alert. SCORE_RANK=1 turns it on.
+SCORE_RANK = os.environ.get("SCORE_RANK", "0") == "1"
 DEFAULT_RULES = os.environ.get("ALERT_FILTERS", ",".join(filters.DEFAULT))
 FOOT = "નિયમનું output છે, buy/sell સલાહ નથી. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી."
 
@@ -78,10 +86,18 @@ def line(h):
     txt = ("🔔 %s %s %s %s\nentry %s | stop %s | target %s | last %s\ntest: %d trades, %.0f%% win, avg %+.2f%%"
            % (h["symbol"], h["setup"].upper(), h["side"], h["time"], h["entry"], h["stop"], tgt, h["last"],
               h["test"]["n"], h["test"]["win"], h["test"]["exp"]))
+    if h.get("score") is not None:
+        txt += " | score %d/10" % h["score"]
     g = h.get("gap_pct")
     if g is not None and abs(g) >= filters.GAP_PCT:
         txt += "\n⚠️ gap day %+.1f%%" % g
     return txt
+
+
+def rank_key(h):
+    """Sort key for picks: score first (when SCORE_RANK), then test average, then test win %."""
+    sc = (h.get("score") or 0) if SCORE_RANK else 0
+    return (-sc, -h["test"]["exp"], -h["test"]["win"])
 
 
 def split_rules(text):
@@ -216,7 +232,7 @@ def main(argv=None):
     if not new:
         print("%s: no new quality trigger" % day)
         return 0
-    new.sort(key=lambda h: (-h["test"]["exp"], -h["test"]["win"]))
+    new.sort(key=rank_key)
     new = new[:MAX_PER_DAY - len(picks)]
     picks += [dict(symbol=h["symbol"], setup=h["setup"], side=h["side"], time=h["time"], entry=h["entry"],
                    stop=h["stop"], target=h["target"], rules=",".join(flt + ex)) for h in new]
