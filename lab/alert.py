@@ -12,6 +12,9 @@ Phase B setups (lab/setups2.py) are picked only when they pass the same quality 
 No new picks after MAX_STOPS (2) of today's picks hit their stop (daily loss limit).
 Optional TARGET_R (e.g. TARGET_R=0.5): every pick's target = entry +/- TARGET_R x risk (also for
 15:15-exit setups), saved with the pick and used by --result. It does not move the stop. Unset = off.
+Optional STOP_MULT (e.g. 2): stop = entry -/+ STOP_MULT x |entry - stop| (a wider stop); TARGET_R and
+each setting's own target stay measured in the ORIGINAL risk. Saved with the pick (and its new stop),
+used by --result and the daily loss limit. Unset = off.
 
 Optional rules (lab/filters.py, lab/risk.py):  --filters nifty,gap   (the default)
     filters: sideways nifty relvol vwap time gap     exits: trail partial tstop     none = off
@@ -77,6 +80,29 @@ def target_r_env(text=None):
 
 
 TARGET_R = target_r_env()
+
+
+def stop_mult_env(text=None):
+    """STOP_MULT env (e.g. 1.5, 2, 3): stop = entry -/+ STOP_MULT x |entry - original stop|.
+    Targets stay in units of the original risk. Unset or empty: no change. See README (STOP_MULT)."""
+    text = os.environ.get("STOP_MULT", "") if text is None else text
+    if not text.strip():
+        return None
+    m = float(text)
+    if m <= 0:
+        raise ValueError("STOP_MULT must be > 0")
+    return m
+
+
+STOP_MULT = stop_mult_env()
+
+
+def opts(target_r, stop_mult):
+    """scan_one keyword args: only the modes that are on (unset = the call is unchanged)."""
+    o = {} if target_r is None else {"target_r": target_r}
+    if stop_mult is not None:
+        o["stop_mult"] = stop_mult
+    return o
 FOOT = "નિયમનું output છે, buy/sell સલાહ નથી. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી."
 
 
@@ -111,8 +137,9 @@ def line(h):
     tgt = h["target"] if h["target"] is not None else "15:15 exit"
     if h.get("target_r") is not None:
         tgt = "%s (%gR)" % (tgt, h["target_r"])
+    stp = h["stop"] if h.get("stop_mult") is None else "%s (%gx)" % (h["stop"], h["stop_mult"])
     txt = ("🔔 %s %s %s %s\nentry %s | stop %s | target %s | last %s\ntest: %d trades, %.0f%% win, avg %+.2f%%"
-           % (h["symbol"], h["setup"].upper(), h["side"], h["time"], h["entry"], h["stop"], tgt, h["last"],
+           % (h["symbol"], h["setup"].upper(), h["side"], h["time"], h["entry"], stp, tgt, h["last"],
               h["test"]["n"], h["test"]["win"], h["test"]["exp"]))
     if h.get("score") is not None:
         txt += " | score %d/10" % h["score"]
@@ -202,7 +229,7 @@ def result(a, mem, day, picks, state=None):
                 nbs[tuple(flt)] = nifty_bars(flt)
             tr = p["target_r"] if "target_r" in p else TARGET_R   # grade with the target it was sent with
             hits, g = lab.scan_one(p["symbol"], mem["stocks"][p["symbol"]], day, None, flt, ex, nbs[tuple(flt)],
-                                   **({"target_r": tr} if tr is not None else {}))
+                                   **opts(tr, p.get("stop_mult")))   # and with the stop it was sent with
             for h in hits:
                 if (h["setup"], h["side"], h["time"]) == (p["setup"], p["side"], p["time"]):
                     if h["status"] == "live":   # day over but last bar(s) missing: close at last price
@@ -288,8 +315,7 @@ def main(argv=None):
         if not any(v["best"] for v in info["setups"].values()):
             continue
         try:
-            hits, g = lab.scan_one(sym, info, day, at, flt, ex, NB,
-                                   **({"target_r": TARGET_R} if TARGET_R is not None else {}))
+            hits, g = lab.scan_one(sym, info, day, at, flt, ex, NB, **opts(TARGET_R, STOP_MULT))
         except Exception as e:
             print("%s: data error (%s)" % (sym, type(e).__name__))
             continue
@@ -297,6 +323,8 @@ def main(argv=None):
         for h in pick(hits):
             if TARGET_R is not None:
                 h["target_r"] = TARGET_R
+            if STOP_MULT is not None:
+                h["stop_mult"] = STOP_MULT
             if h.get("day") != day:
                 continue
             key = "%s|%s|%s|%s" % (h["symbol"], h["setup"], h["side"], h["time"])
@@ -305,7 +333,16 @@ def main(argv=None):
                 sent.add(key)
                 if g:
                     gaps[sym] = g
-    stops = risk.stopouts(picks, every)
+    for p in picks:   # a pick saved under another STOP_MULT: re-scan it with its own stop and target
+        if p.get("stop_mult") != STOP_MULT:
+            try:
+                f2, e2 = split_rules(p.get("rules", a.filters))
+                every += lab.scan_one(p["symbol"], mem["stocks"][p["symbol"]], day, at, f2, e2,
+                                      NB if f2 == flt else nifty_bars(f2),
+                                      **opts(p.get("target_r", TARGET_R), p.get("stop_mult")))[0]
+            except Exception as e:
+                print("%s: data error (%s)" % (p["symbol"], type(e).__name__))
+    stops = risk.stopouts(picks, every)   # matched on each pick's stored stop
     if picks and stops >= a.max_stops:
         print("%s: %d pick(s) stopped out today, daily loss limit reached: no new picks" % (day, stops))
         return 0
@@ -326,7 +363,7 @@ def main(argv=None):
     new = new[:MAX_PER_DAY - len(picks)]
     picks += [dict(symbol=h["symbol"], setup=h["setup"], side=h["side"], time=h["time"], entry=h["entry"],
                    stop=h["stop"], target=h["target"], rules=",".join(flt + ex),
-                   **({"target_r": TARGET_R} if TARGET_R is not None else {})) for h in new]
+                   **opts(TARGET_R, STOP_MULT)) for h in new]
     new.sort(key=lambda h: h["time"])
     parts = [line(h) for h in new]
     if gaps:

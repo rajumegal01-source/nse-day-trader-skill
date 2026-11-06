@@ -125,9 +125,19 @@ def size_report(capital, risk_pct, entry, stop, target=None, leverage=1.0):
 
 
 def stopouts(picks, hits):
-    """How many of today's picks have hit their stop, matched on (symbol, setup, side, time)."""
-    keys = {(p["symbol"], p["setup"], p["side"], p["time"]) for p in picks}
-    return sum(1 for h in hits if (h["symbol"], h["setup"], h["side"], h["time"]) in keys and h["status"] == "stop")
+    """How many of today's picks have hit their stop, matched on (symbol, setup, side, time) and,
+    when the pick stored one, on its stop price (so a STOP_MULT pick counts only its own wide stop)."""
+    keys = {(p["symbol"], p["setup"], p["side"], p["time"]): p.get("stop") for p in picks}
+    n = 0
+    for h in hits:
+        k = (h["symbol"], h["setup"], h["side"], h["time"])
+        if k in keys and h["status"] == "stop":
+            ps = keys.pop(k)
+            if ps is None or h.get("stop") is None or abs(ps - h["stop"]) < 0.006:
+                n += 1
+            else:
+                keys[k] = ps
+    return n
 
 
 def main(argv=None):

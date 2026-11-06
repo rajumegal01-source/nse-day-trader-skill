@@ -338,6 +338,54 @@ per trade FALLS at every smaller target: the current targets were best out of sa
 the 60-day data window moved.)
 નાનો target stop ને ખસેડતો નથી: જીત % વધે છે પણ સરેરાશ ઘટે છે, એટલે TARGET_R બંધ રાખો.
 
+**Wide stop (`STOP_MULT`, optional, off by default).** `STOP_MULT=2 TARGET_R=0.5 python3 lab/alert.py`
+puts the stop at entry ∓ 2 × |entry − original stop| and the target at entry ± 0.5 × that ORIGINAL
+risk (stop 2R away, target 0.5R away). Without `TARGET_R` each setting's own target stays where it
+was. The pick is saved with the wide stop and `stop_mult`; `--result` and the daily loss limit
+(`MAX_STOPS`) use that stored stop. Unset = no change.
+
+```bash
+python3 lab/walkforward.py --cache /tmp/y --out-dir /tmp/wfS --out /tmp/wfS_out/walkforward.json --target-r 0.3,0.5,0.75,1 --stop-mult 1,1.5,2,3
+```
+
+Same walk-forward and data as the `TARGET_R` table above (2026-11-06, all 100 stocks, full grid,
+35 OOS days 2026-09-17 to 2026-11-06; settings chosen on the train window with their own stop and
+target, only the exit changes). R = original risk; "own" = each setting's own target. Avg is after
+the 0.05% cost; win = target hit or closed positive. Worst = worst single 5-picks/day trade; max DD =
+max drawdown of the running sum of pick % (one pick's money each). All OOS trades: 21119.
+
+| stop × R | target | all OOS avg % | 5 picks/day trades | win % | stop-hit % | avg % | total % | worst % | max DD % |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | own | -0.011 | 175 | 38.9 | 45.1 | +0.070 | +12.16 | -2.46 | 15.51 |
+| 1 | 0.3R | -0.066 | 175 | 70.3 | 24.6 | -0.084 | -14.78 | -2.46 | 15.92 |
+| 1 | 0.5R | -0.055 | 175 | 60.0 | 29.7 | -0.055 | -9.68 | -2.46 | 13.97 |
+| 1 | 0.75R | -0.048 | 175 | 49.7 | 38.9 | -0.064 | -11.24 | -2.46 | 18.02 |
+| 1 | 1R | -0.039 | 175 | 47.4 | 38.9 | -0.032 | -5.56 | -2.46 | 15.50 |
+| 1.5 | own | -0.011 | 175 | 44.6 | 33.1 | +0.068 | +11.88 | -2.63 | 16.75 |
+| 1.5 | 0.3R | -0.068 | 175 | 70.3 | 22.9 | -0.176 | -30.89 | -2.63 | 31.79 |
+| 1.5 | 0.5R | -0.058 | 175 | 60.0 | 24.6 | -0.137 | -23.99 | -2.63 | 28.31 |
+| 1.5 | 0.75R | -0.052 | 175 | 53.1 | 30.9 | -0.129 | -22.58 | -2.63 | 29.23 |
+| 1.5 | 1R | -0.042 | 175 | 50.9 | 30.9 | -0.098 | -17.15 | -2.63 | 23.24 |
+| 2 | own | -0.013 | 175 | 48.6 | 22.9 | +0.084 | +14.72 | -3.34 | 17.22 |
+| 2 | 0.3R | -0.070 | 175 | 72.0 | 16.0 | -0.198 | -34.71 | -2.46 | 35.61 |
+| 2 | 0.5R | -0.061 | 175 | 61.7 | 17.7 | -0.168 | -29.40 | -2.46 | 33.73 |
+| 2 | 0.75R | -0.055 | 175 | 56.6 | 20.6 | -0.139 | -24.27 | -2.46 | 30.64 |
+| 2 | 1R | -0.045 | 175 | 56.0 | 20.0 | -0.080 | -13.92 | -3.34 | 21.96 |
+| 3 | own | -0.018 | 175 | 49.7 | 13.7 | +0.030 | +5.17 | -4.99 | 24.64 |
+| 3 | 0.3R | -0.073 | 175 | 73.1 | 6.9 | -0.202 | -35.35 | -3.05 | 36.26 |
+| 3 | 0.5R | -0.065 | 175 | 64.6 | 8.6 | -0.170 | -29.72 | -3.20 | 34.04 |
+| 3 | 0.75R | -0.058 | 175 | 60.0 | 9.7 | -0.144 | -25.21 | -3.20 | 31.65 |
+| 3 | 1R | -0.050 | 175 | 58.9 | 10.3 | -0.106 | -18.52 | -4.99 | 24.41 |
+
+The tradeoff: a wide stop with a small target gives a HIGH win rate (up to 73%) and few stop-hits
+(down to 7%), but each stop-hit is a large loss (5 picks/day, average stop loss -1.76% at 3× / 0.3R
+against an average win of +0.23%), so a few rare stop-outs wipe out many small wins. Every wide-stop
++ small-target combo LOST out of sample, and lost more than the same small target with the normal
+stop; the best of them, 2× / 1R, averaged -0.080% (56.0% win, 20.0% stop-hit). Only the settings'
+own targets stayed positive (2× own +0.084% vs 1× own +0.070% on 175 trades: within noise, and 3×
+fell to +0.030%). Keep `STOP_MULT` and `TARGET_R` unset.
+પહોળો stop + નાનો target: જીત % ઊંચું પણ ક્યારેક મોટું નુકસાન, OOS માં દરેક combo નુકસાનમાં. STOP_MULT બંધ રાખો.
+
 `lab/memory.json` is the lab's memory: for each stock and setup, how many settings were robust
 (positive in BOTH the train and the test half) and the best three, plus a history of past runs.
 The scan lists **every** trigger of the day with its status (live / target / stop / close), so
