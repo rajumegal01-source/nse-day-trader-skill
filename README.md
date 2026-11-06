@@ -309,6 +309,35 @@ not applied): 70 trades, 40% win, avg +0.045%, total +3.15% of one pick's money,
 +0.19% a trade on 40 trades: still small and noisy.
 walk-forward માં ધાર લગભગ શૂન્ય છે: memory.json ના આંકડા વધારે સારા દેખાય છે, real money પહેલાં paper-trade કરો.
 
+**Smaller targets (`TARGET_R`, optional, off by default).** `TARGET_R=0.5 python3 lab/alert.py`
+sets every pick's target to entry ± 0.5 × |entry − stop| (also for 15:15-exit setups); the pick
+is saved with that target and `--result` grades with it. The stop does not move.
+
+```bash
+python3 lab/walkforward.py --cache /tmp/y --out-dir /tmp/wfR --out /tmp/wfR_out/walkforward.json --target-r 0.5,0.75,1,1.5
+```
+
+Same walk-forward (settings still chosen with their own targets on the train window only; only
+the exit changes), run 2026-11-06, all 100 stocks, full grid, 35 OOS days (2026-09-17 to
+2026-11-06). Win = target hit or closed positive; avg is after the 0.05% cost. "5 picks/day" =
+alert-style picks (quality gate, best train average first, still live when the run sees it).
+
+| target | all OOS trades | win % | stop-hit % | avg % | total % | 5 picks/day trades | win % | stop-hit % | avg % | total % |
+|---|---|---|---|---|---|---|---|---|---|---|
+| current | 21119 | 37.2 | 54.4 | -0.011 | -240.3 | 175 | 38.9 | 45.1 | +0.070 | +12.16 |
+| 0.5R | 21119 | 63.5 | 33.1 | -0.055 | -1165.5 | 175 | 60.0 | 29.7 | -0.055 | -9.68 |
+| 0.75R | 21119 | 55.1 | 39.9 | -0.048 | -1019.7 | 175 | 49.7 | 38.9 | -0.064 | -11.24 |
+| 1.0R | 21119 | 49.5 | 44.4 | -0.039 | -831.4 | 175 | 47.4 | 38.9 | -0.032 | -5.56 |
+| 1.5R | 21119 | 42.2 | 50.2 | -0.031 | -648.0 | 175 | 42.3 | 42.9 | +0.018 | +3.24 |
+
+A smaller target does not move the stop. Stop-hits fall only because some trades that went
++0.5R first and then reversed now book the small target; 33% of all trades still hit the stop
+before ever reaching +0.5R. Win % rises, but each win is smaller than each loss, so the average
+per trade FALLS at every smaller target: the current targets were best out of sample. Keep
+`TARGET_R` unset. (The baseline here, -0.011%, differs from -0.009% above because this run was a day later, so
+the 60-day data window moved.)
+નાનો target stop ને ખસેડતો નથી: જીત % વધે છે પણ સરેરાશ ઘટે છે, એટલે TARGET_R બંધ રાખો.
+
 `lab/memory.json` is the lab's memory: for each stock and setup, how many settings were robust
 (positive in BOTH the train and the test half) and the best three, plus a history of past runs.
 The scan lists **every** trigger of the day with its status (live / target / stop / close), so

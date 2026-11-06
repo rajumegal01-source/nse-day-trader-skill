@@ -10,6 +10,8 @@ At most MAX_PER_DAY (2) picks a day: when several pass at once, the best test av
 its score, e.g. "score 7/10".
 Phase B setups (lab/setups2.py) are picked only when they pass the same quality bar.
 No new picks after MAX_STOPS (2) of today's picks hit their stop (daily loss limit).
+Optional TARGET_R (e.g. TARGET_R=0.5): every pick's target = entry +/- TARGET_R x risk (also for
+15:15-exit setups), saved with the pick and used by --result. It does not move the stop. Unset = off.
 
 Optional rules (lab/filters.py, lab/risk.py):  --filters nifty,gap   (the default)
     filters: sideways nifty relvol vwap time gap     exits: trail partial tstop     none = off
@@ -59,6 +61,22 @@ SECTOR_STRONG = os.environ.get("SECTOR_STRONG", "0") == "1"
 # in today's NIFTY regime (backtest_out/regime_table.json). OFF by default: in the 2026-11-06
 # walk-forward it did not clearly help out of sample. REGIME_SELECT=1 turns it on.
 REGIME_SELECT = os.environ.get("REGIME_SELECT", "0") == "1"
+
+
+def target_r_env(text=None):
+    """TARGET_R env (e.g. 0.5): every pick's target = entry +/- TARGET_R x |entry - stop|, also for
+    setups that normally exit at 15:15. Unset or empty: each setting's own target (no change).
+    It does NOT move the stop. See README 'Smaller targets (TARGET_R)' for the OOS test."""
+    text = os.environ.get("TARGET_R", "") if text is None else text
+    if not text.strip():
+        return None
+    r = float(text)
+    if r <= 0:
+        raise ValueError("TARGET_R must be > 0")
+    return r
+
+
+TARGET_R = target_r_env()
 FOOT = "નિયમનું output છે, buy/sell સલાહ નથી. શૈક્ષણિક હેતુ માટે, રોકાણ સલાહ નથી."
 
 
@@ -91,6 +109,8 @@ def pick(hits):
 
 def line(h):
     tgt = h["target"] if h["target"] is not None else "15:15 exit"
+    if h.get("target_r") is not None:
+        tgt = "%s (%gR)" % (tgt, h["target_r"])
     txt = ("🔔 %s %s %s %s\nentry %s | stop %s | target %s | last %s\ntest: %d trades, %.0f%% win, avg %+.2f%%"
            % (h["symbol"], h["setup"].upper(), h["side"], h["time"], h["entry"], h["stop"], tgt, h["last"],
               h["test"]["n"], h["test"]["win"], h["test"]["exp"]))
@@ -180,7 +200,9 @@ def result(a, mem, day, picks, state=None):
             flt, ex = split_rules(p.get("rules", a.filters))   # grade with the rules it was picked under
             if tuple(flt) not in nbs:
                 nbs[tuple(flt)] = nifty_bars(flt)
-            hits, g = lab.scan_one(p["symbol"], mem["stocks"][p["symbol"]], day, None, flt, ex, nbs[tuple(flt)])
+            tr = p["target_r"] if "target_r" in p else TARGET_R   # grade with the target it was sent with
+            hits, g = lab.scan_one(p["symbol"], mem["stocks"][p["symbol"]], day, None, flt, ex, nbs[tuple(flt)],
+                                   **({"target_r": tr} if tr is not None else {}))
             for h in hits:
                 if (h["setup"], h["side"], h["time"]) == (p["setup"], p["side"], p["time"]):
                     if h["status"] == "live":   # day over but last bar(s) missing: close at last price
@@ -266,12 +288,15 @@ def main(argv=None):
         if not any(v["best"] for v in info["setups"].values()):
             continue
         try:
-            hits, g = lab.scan_one(sym, info, day, at, flt, ex, NB)
+            hits, g = lab.scan_one(sym, info, day, at, flt, ex, NB,
+                                   **({"target_r": TARGET_R} if TARGET_R is not None else {}))
         except Exception as e:
             print("%s: data error (%s)" % (sym, type(e).__name__))
             continue
         every += hits
         for h in pick(hits):
+            if TARGET_R is not None:
+                h["target_r"] = TARGET_R
             if h.get("day") != day:
                 continue
             key = "%s|%s|%s|%s" % (h["symbol"], h["setup"], h["side"], h["time"])
@@ -300,7 +325,8 @@ def main(argv=None):
     new.sort(key=rank_key)
     new = new[:MAX_PER_DAY - len(picks)]
     picks += [dict(symbol=h["symbol"], setup=h["setup"], side=h["side"], time=h["time"], entry=h["entry"],
-                   stop=h["stop"], target=h["target"], rules=",".join(flt + ex)) for h in new]
+                   stop=h["stop"], target=h["target"], rules=",".join(flt + ex),
+                   **({"target_r": TARGET_R} if TARGET_R is not None else {})) for h in new]
     new.sort(key=lambda h: h["time"])
     parts = [line(h) for h in new]
     if gaps:

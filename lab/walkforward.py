@@ -48,8 +48,10 @@ def windows(days, train=None, test=None, step=None):
     return out
 
 
-def setting_trades(B, pctx, grid="full"):
-    """Yield (setup, params, [(day, minute_of_close, side, ret, how, exit_minute)]) for every setting."""
+def setting_trades(B, pctx, grid="full", alt=()):
+    """Yield (setup, params, [(day, minute_of_close, side, ret, how, exit_minute)]) for every setting.
+    alt = target multiples R (TARGET_R): each trade then also carries {R: (ret, how, exit_minute)},
+    the same entry and stop with target entry +/- R x risk (the setting is still chosen as before)."""
     cache = {}
     for name, (fn, dparams) in lab.SETUPS.items():
         EX = lab.exits_for(name)
@@ -67,8 +69,19 @@ def setting_trades(B, pctx, grid="full"):
                     if key not in cache:
                         cache[key] = core.simulate(B, i, side, st, p["tgt"])
                     r = cache[key]
-                    if r is not None:
-                        tr.append((B[i]["day"], B[i]["m"] + 5, side, r[0], r[1], B[r[2]]["m"]))
+                    if r is None:
+                        continue
+                    t = (B[i]["day"], B[i]["m"] + 5, side, r[0], r[1], B[r[2]]["m"])
+                    if alt:
+                        x = {}
+                        for R in alt:
+                            k2 = (i, side, st, R)
+                            if k2 not in cache:
+                                cache[k2] = core.simulate(B, i, side, st, R)
+                            q = cache[k2]
+                            x[R] = (q[0], q[1], B[q[2]]["m"])
+                        t += (x,)
+                    tr.append(t)
                 yield name, dict(dp, **p), tr
 
 
@@ -92,9 +105,9 @@ def choose(settings, train_days):
     return None if best is None else best[1:]
 
 
-def walk_stock(sym, B, days, pctx, grid="full"):
+def walk_stock(sym, B, days, pctx, grid="full", alt=()):
     by_setup = {}
-    for name, p, tr in setting_trades(B, pctx, grid):
+    for name, p, tr in setting_trades(B, pctx, grid, alt):
         by_setup.setdefault(name, []).append((p, tr))
     trades = []
     for w, (trd, ted) in enumerate(windows(days)):
@@ -105,9 +118,11 @@ def walk_stock(sym, B, days, pctx, grid="full"):
                 continue
             p, sa, sb, sw, tr = ch
             gate = sw["n"] >= GATE_N and sw["win"] >= GATE_WIN and sw["exp"] >= GATE_EXP
-            for d, m, side, r, how, xm in tr:
+            for d, m, side, r, how, xm, *x in tr:
                 if d in tes:
-                    trades.append(dict(symbol=sym, setup=name, day=d, time="%02d:%02d" % divmod(m, 60),
+                    extra = {"alt": {str(R): [round(q[0] * 100, 4), q[1], "%02d:%02d" % divmod(q[2], 60)]
+                                     for R, q in x[0].items()}} if x else {}
+                    trades.append(dict(extra, symbol=sym, setup=name, day=d, time="%02d:%02d" % divmod(m, 60),
                                        side=side, pct=round(r * 100, 4), how=how,
                                        exit="%02d:%02d" % divmod(xm, 60), window=w,
                                        sel=round(min(sa["exp"], sb["exp"]), 4), train_n=sw["n"],
@@ -128,6 +143,33 @@ def pool(trades, key=None):
     return out
 
 
+def win_target(t):
+    """Win = target hit or closed positive (after cost)."""
+    return t["how"] == "target" or t["pct"] > 0
+
+
+def target_r_table(trades, days, rs, k=5):
+    """Compare targets on the same OOS trades: {label: {all: stats, picks: stats}}. 'current' = each
+    chosen setting's own target; 'R' = target entry +/- R x risk. picks = up to k a day, alert-style
+    (report.pick_day: quality gate, best train average first, still live when the run sees it)."""
+    import report
+    out = {}
+    for lab_ in ["current"] + [str(R) for R in rs]:
+        tt = [t if lab_ == "current" else dict(t, pct=t["alt"][lab_][0], how=t["alt"][lab_][1], exit=t["alt"][lab_][2])
+              for t in trades]
+        picks, _ = report.simulate_picks(tt, days, k)
+        row = {}
+        for name, xs in (("all", tt), ("picks", picks)):
+            n = len(xs)
+            row[name] = dict(n=n, win=round(100.0 * sum(map(win_target, xs)) / n, 1) if n else 0,
+                             stop=round(100.0 * sum(t["how"] == "stop" for t in xs) / n, 1) if n else 0,
+                             target=round(100.0 * sum(t["how"] == "target" for t in xs) / n, 1) if n else 0,
+                             avg=round(sum(t["pct"] for t in xs) / n, 4) if n else 0,
+                             tot=round(sum(t["pct"] for t in xs), 2))
+        out[lab_] = row
+    return out
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="walk-forward test (educational)")
     ap.add_argument("symbols", nargs="*")
@@ -137,10 +179,14 @@ def main(argv=None):
     ap.add_argument("--out-dir", default=os.path.join(ROOT, "backtest_out", "wf"))
     ap.add_argument("--out", default=OUT)
     ap.add_argument("--only-pool", action="store_true", help="just pool the per-stock files")
+    ap.add_argument("--target-r", help="e.g. 0.5,0.75,1,1.5: also compare these TARGET_R targets OOS "
+                    "(use a separate --out-dir)")
+    ap.add_argument("--picks", type=int, default=5, help="alert-style picks a day for --target-r (5)")
     a = ap.parse_args(argv)
     syms = [s.upper() for s in a.symbols] or lab.nifty100()
     if a.limit:
         syms = syms[:a.limit]
+    alt = tuple(float(x) for x in a.target_r.split(",")) if a.target_r else ()
     os.makedirs(a.out_dir, exist_ok=True)
     for sym in ([] if a.only_pool else syms):
         f = os.path.join(a.out_dir, sym + ".json")
@@ -155,7 +201,7 @@ def main(argv=None):
         if len(days) < TRAIN + 5:
             print("%s: only %d clean days, skipped" % (sym, len(days)), flush=True)
             continue
-        tr = walk_stock(sym, B, days, pctx, a.grid)
+        tr = walk_stock(sym, B, days, pctx, a.grid, alt)
         with open(f + ".tmp", "w") as fh:
             json.dump({"symbol": sym, "days": len(days), "first": days[0], "last": days[-1],
                        "windows": len(windows(days)), "grid": a.grid, "trades": tr}, fh)
@@ -172,6 +218,16 @@ def main(argv=None):
     with open(a.out, "w") as fh:
         json.dump(res, fh)
     print("pooled %d stocks, %d OOS trades -> %s" % (len(docs), len(trades), a.out))
+    if alt:
+        trades = [t for t in trades if "alt" in t]
+        tab = target_r_table(trades, res["oos_days"], alt, a.picks)
+        with open(os.path.join(os.path.dirname(a.out), "target_r.json"), "w") as fh:
+            json.dump(tab, fh, indent=1)
+        print("target      | all OOS: trades win%% stop%% avg%% total%% | %d picks/day: trades win%% stop%% avg%% total%%" % a.picks)
+        for k, v in tab.items():
+            print("%-11s | %6d %5.1f %5.1f %+7.3f %+8.1f | %6d %5.1f %5.1f %+7.3f %+7.2f" % (
+                k, v["all"]["n"], v["all"]["win"], v["all"]["stop"], v["all"]["avg"], v["all"]["tot"],
+                v["picks"]["n"], v["picks"]["win"], v["picks"]["stop"], v["picks"]["avg"], v["picks"]["tot"]))
     return 0
 
 

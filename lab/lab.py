@@ -194,9 +194,11 @@ def cmd_grid(a):
     return 0
 
 
-def scan_one(sym, info, day=None, at=None, flt=(), exits=(), NB=None):
+def scan_one(sym, info, day=None, at=None, flt=(), exits=(), NB=None, target_r=None):
     """flt = optional filter names (filters.py), exits = optional exit rules (risk.py), both off by
-    default. NB = ^NSEI 5-min bars for the 'nifty' filter (fetched here when not given)."""
+    default. NB = ^NSEI 5-min bars for the 'nifty' filter (fetched here when not given).
+    target_r (alert.py TARGET_R): every target becomes entry +/- target_r x |entry - stop|, also
+    for 'eod' settings; None keeps each setting's own target."""
     long_hist = "relvol" in flt or any(k in setups2.NEEDS_HISTORY for k in info["setups"])
     raw = core.fetch(sym, "1mo" if long_hist else "5d", "5m")
     B, gaps = core.sessions(raw)
@@ -238,12 +240,13 @@ def scan_one(sym, info, day=None, at=None, flt=(), exits=(), NB=None):
                 e = B[i]["c"]
                 if (side == 1 and st >= e) or (side == -1 and st <= e):
                     continue
-                tgt = None if p["tgt"] == "eod" else e + side * abs(e - st) * p["tgt"]
+                tm = p["tgt"] if target_r is None else target_r
+                tgt = None if tm == "eod" else e + side * abs(e - st) * tm
                 key = (setup, B[i]["m"], side)
                 if key in seen:
                     continue
                 seen.add(key)
-                r = risk.simulate_ex(B, i, side, st, p["tgt"], exits)
+                r = risk.simulate_ex(B, i, side, st, tm, exits)
                 cs, cf = sc.score(i, side)
                 status = "live" if r is None or (r[1] == "close" and B[-1]["m"] < core.EXIT_M) else r[1]
                 hits.append(dict(symbol=sym, day=day, setup=setup, rank=k + 1, time="%02d:%02d" % divmod(B[i]["m"] + 5, 60),
