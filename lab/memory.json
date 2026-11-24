@@ -356,6 +356,37 @@
      "trend": 3,
      "vdelta": 13
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": null,
+     "cpr": 0.267,
+     "fvg": 0.244,
+     "inside": null,
+     "ob": 0.066,
+     "odrive": 0.293,
+     "pdhl": 0.095,
+     "round": 0.277,
+     "structure": 0.943,
+     "sweep": 0.02,
+     "trend": 0.099,
+     "vdelta": 0.395
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 0,
+     "cpr": 59,
+     "fvg": 160,
+     "inside": 0,
+     "ob": 4,
+     "odrive": 9,
+     "pdhl": 20,
+     "round": 28,
+     "structure": 144,
+     "sweep": 2,
+     "trend": 3,
+     "vdelta": 13
+    }
    }
   ],
   "ADANIENSOL": [
@@ -714,6 +745,37 @@
      "trend": 17,
      "vdelta": 97
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.106,
+     "cpr": 0.435,
+     "fvg": 0.499,
+     "inside": 0.129,
+     "ob": 0.383,
+     "odrive": 0.287,
+     "pdhl": 0.415,
+     "round": 0.232,
+     "structure": 0.429,
+     "sweep": 0.536,
+     "trend": 0.271,
+     "vdelta": 0.3
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 14,
+     "cpr": 47,
+     "fvg": 96,
+     "inside": 3,
+     "ob": 278,
+     "odrive": 11,
+     "pdhl": 55,
+     "round": 7,
+     "structure": 385,
+     "sweep": 32,
+     "trend": 17,
+     "vdelta": 97
+    }
    }
   ],
   "ADANIENT": [
@@ -1060,6 +1122,37 @@
     "date": "2026-11-24",
     "robust": {
      "candle": 42,
+     "cpr": 29,
+     "fvg": 759,
+     "inside": 0,
+     "ob": 276,
+     "odrive": 8,
+     "pdhl": 18,
+     "round": 16,
+     "structure": 411,
+     "sweep": 27,
+     "trend": 14,
+     "vdelta": 70
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.461,
+     "cpr": 0.343,
+     "fvg": 0.598,
+     "inside": null,
+     "ob": 0.531,
+     "odrive": 0.538,
+     "pdhl": 0.466,
+     "round": 0.464,
+     "structure": 0.565,
+     "sweep": 0.44,
+     "trend": 0.305,
+     "vdelta": 0.289
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 32,
      "cpr": 29,
      "fvg": 759,
      "inside": 0,
@@ -1430,6 +1523,37 @@
      "trend": 4,
      "vdelta": 65
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.268,
+     "cpr": 0.406,
+     "fvg": 0.684,
+     "inside": 0.007,
+     "ob": 0.421,
+     "odrive": 0.364,
+     "pdhl": 0.209,
+     "round": 0.302,
+     "structure": 0.775,
+     "sweep": 0.355,
+     "trend": 0.118,
+     "vdelta": 0.545
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 19,
+     "cpr": 26,
+     "fvg": 609,
+     "inside": 2,
+     "ob": 207,
+     "odrive": 28,
+     "pdhl": 28,
+     "round": 17,
+     "structure": 608,
+     "sweep": 95,
+     "trend": 4,
+     "vdelta": 65
+    }
    }
   ],
   "ADANIPORTS": [
@@ -1788,6 +1912,37 @@
      "trend": 8,
      "vdelta": 312
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.236,
+     "cpr": 0.271,
+     "fvg": 1.061,
+     "inside": 0.157,
+     "ob": 0.563,
+     "odrive": 0.372,
+     "pdhl": 0.427,
+     "round": 0.439,
+     "structure": 0.583,
+     "sweep": 0.079,
+     "trend": 0.191,
+     "vdelta": 0.588
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 37,
+     "cpr": 31,
+     "fvg": 995,
+     "inside": 25,
+     "ob": 333,
+     "odrive": 6,
+     "pdhl": 33,
+     "round": 18,
+     "structure": 630,
+     "sweep": 16,
+     "trend": 8,
+     "vdelta": 307
+    }
    }
   ],
   "ADANIPOWER": [
@@ -2138,6 +2293,37 @@
      "fvg": 649,
      "inside": 6,
      "ob": 577,
+     "odrive": 6,
+     "pdhl": 1,
+     "round": 21,
+     "structure": 595,
+     "sweep": 23,
+     "trend": 27,
+     "vdelta": 66
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.149,
+     "cpr": 0.729,
+     "fvg": 1.033,
+     "inside": 0.163,
+     "ob": 0.525,
+     "odrive": 0.05,
+     "pdhl": 0.095,
+     "round": 0.672,
+     "structure": 0.792,
+     "sweep": 0.257,
+     "trend": 0.537,
+     "vdelta": 0.2
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 46,
+     "cpr": 30,
+     "fvg": 649,
+     "inside": 6,
+     "ob": 579,
      "odrive": 6,
      "pdhl": 1,
      "round": 21,
@@ -2504,6 +2690,37 @@
      "trend": 13,
      "vdelta": 187
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.367,
+     "cpr": 0.233,
+     "fvg": 0.392,
+     "inside": 0.211,
+     "ob": 0.237,
+     "odrive": 0.015,
+     "pdhl": 0.147,
+     "round": 0.127,
+     "structure": 0.459,
+     "sweep": 0.115,
+     "trend": 0.262,
+     "vdelta": 0.321
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 17,
+     "cpr": 15,
+     "fvg": 333,
+     "inside": 21,
+     "ob": 93,
+     "odrive": 1,
+     "pdhl": 30,
+     "round": 2,
+     "structure": 599,
+     "sweep": 13,
+     "trend": 13,
+     "vdelta": 188
+    }
    }
   ],
   "APOLLOHOSP": [
@@ -2860,6 +3077,37 @@
      "structure": 107,
      "sweep": 20,
      "trend": 3,
+     "vdelta": 26
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.224,
+     "cpr": 0.626,
+     "fvg": 0.241,
+     "inside": 0.056,
+     "ob": 0.3,
+     "odrive": 0.208,
+     "pdhl": 0.329,
+     "round": 0.201,
+     "structure": 0.493,
+     "sweep": 0.054,
+     "trend": 0.09,
+     "vdelta": 0.38
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 39,
+     "cpr": 43,
+     "fvg": 492,
+     "inside": 5,
+     "ob": 167,
+     "odrive": 7,
+     "pdhl": 16,
+     "round": 11,
+     "structure": 104,
+     "sweep": 20,
+     "trend": 2,
      "vdelta": 26
     }
    }
@@ -3220,6 +3468,37 @@
      "trend": 15,
      "vdelta": 8
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.108,
+     "cpr": 0.106,
+     "fvg": 0.057,
+     "inside": null,
+     "ob": 0.128,
+     "odrive": null,
+     "pdhl": 0.468,
+     "round": 0.046,
+     "structure": 0.158,
+     "sweep": 0.198,
+     "trend": 0.319,
+     "vdelta": 0.14
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 14,
+     "cpr": 6,
+     "fvg": 7,
+     "inside": 0,
+     "ob": 39,
+     "odrive": 0,
+     "pdhl": 1,
+     "round": 3,
+     "structure": 128,
+     "sweep": 15,
+     "trend": 15,
+     "vdelta": 4
+    }
    }
   ],
   "AXISBANK": [
@@ -3578,6 +3857,37 @@
      "trend": 13,
      "vdelta": 202
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.289,
+     "cpr": 0.231,
+     "fvg": 0.244,
+     "inside": 0.28,
+     "ob": 0.419,
+     "odrive": 0.244,
+     "pdhl": 0.053,
+     "round": 0.212,
+     "structure": 0.449,
+     "sweep": 1.049,
+     "trend": 0.204,
+     "vdelta": 0.897
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 38,
+     "cpr": 61,
+     "fvg": 188,
+     "inside": 66,
+     "ob": 158,
+     "odrive": 10,
+     "pdhl": 5,
+     "round": 21,
+     "structure": 372,
+     "sweep": 68,
+     "trend": 13,
+     "vdelta": 200
+    }
    }
   ],
   "BAJAJ-AUTO": [
@@ -3922,6 +4232,37 @@
      "vdelta": 0.046
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 24,
+     "cpr": 43,
+     "fvg": 264,
+     "inside": 0,
+     "ob": 254,
+     "odrive": 0,
+     "pdhl": 16,
+     "round": 4,
+     "structure": 338,
+     "sweep": 2,
+     "trend": 26,
+     "vdelta": 2
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.3,
+     "cpr": 0.3,
+     "fvg": 0.206,
+     "inside": null,
+     "ob": 0.285,
+     "odrive": null,
+     "pdhl": 0.212,
+     "round": 0.04,
+     "structure": 0.368,
+     "sweep": 0.012,
+     "trend": 0.276,
+     "vdelta": 0.046
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 24,
      "cpr": 43,
@@ -4294,6 +4635,37 @@
      "trend": 8,
      "vdelta": 52
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.115,
+     "cpr": 0.283,
+     "fvg": 0.229,
+     "inside": null,
+     "ob": 0.337,
+     "odrive": 0.126,
+     "pdhl": 0.179,
+     "round": 0.052,
+     "structure": 0.279,
+     "sweep": 0.238,
+     "trend": 0.056,
+     "vdelta": 0.313
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 4,
+     "cpr": 4,
+     "fvg": 287,
+     "inside": 0,
+     "ob": 366,
+     "odrive": 15,
+     "pdhl": 6,
+     "round": 2,
+     "structure": 207,
+     "sweep": 20,
+     "trend": 8,
+     "vdelta": 57
+    }
    }
   ],
   "BAJAJHLDNG": [
@@ -4646,6 +5018,37 @@
      "ob": 33,
      "odrive": 7,
      "pdhl": 16,
+     "round": 25,
+     "structure": 217,
+     "sweep": 53,
+     "trend": 0,
+     "vdelta": 2
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.109,
+     "cpr": 0.65,
+     "fvg": 0.171,
+     "inside": null,
+     "ob": 0.105,
+     "odrive": 0.231,
+     "pdhl": 0.281,
+     "round": 0.183,
+     "structure": 0.374,
+     "sweep": 0.311,
+     "trend": null,
+     "vdelta": 0.189
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 15,
+     "cpr": 19,
+     "fvg": 9,
+     "inside": 0,
+     "ob": 33,
+     "odrive": 7,
+     "pdhl": 14,
      "round": 25,
      "structure": 217,
      "sweep": 53,
@@ -5010,6 +5413,37 @@
      "trend": 21,
      "vdelta": 151
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.424,
+     "cpr": 0.093,
+     "fvg": 0.785,
+     "inside": 0.066,
+     "ob": 0.222,
+     "odrive": 0.377,
+     "pdhl": 0.223,
+     "round": 0.203,
+     "structure": 0.383,
+     "sweep": 0.459,
+     "trend": 0.737,
+     "vdelta": 0.486
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 15,
+     "cpr": 8,
+     "fvg": 470,
+     "inside": 19,
+     "ob": 87,
+     "odrive": 13,
+     "pdhl": 14,
+     "round": 2,
+     "structure": 126,
+     "sweep": 53,
+     "trend": 21,
+     "vdelta": 147
+    }
    }
   ],
   "BANKBARODA": [
@@ -5367,6 +5801,37 @@
      "sweep": 78,
      "trend": 0,
      "vdelta": 204
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.046,
+     "cpr": 0.269,
+     "fvg": 0.561,
+     "inside": 0.19,
+     "ob": 0.16,
+     "odrive": 0.414,
+     "pdhl": 0.297,
+     "round": 0.065,
+     "structure": 0.8,
+     "sweep": 0.429,
+     "trend": null,
+     "vdelta": 0.285
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 1,
+     "cpr": 17,
+     "fvg": 500,
+     "inside": 5,
+     "ob": 248,
+     "odrive": 21,
+     "pdhl": 19,
+     "round": 4,
+     "structure": 308,
+     "sweep": 78,
+     "trend": 0,
+     "vdelta": 206
     }
    }
   ],
@@ -5726,6 +6191,37 @@
      "trend": 0,
      "vdelta": 93
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.025,
+     "cpr": 0.128,
+     "fvg": 0.119,
+     "inside": null,
+     "ob": 0.024,
+     "odrive": 0.04,
+     "pdhl": 0.161,
+     "round": 0.044,
+     "structure": 0.236,
+     "sweep": 0.092,
+     "trend": null,
+     "vdelta": 0.181
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 4,
+     "cpr": 6,
+     "fvg": 93,
+     "inside": 0,
+     "ob": 2,
+     "odrive": 3,
+     "pdhl": 41,
+     "round": 1,
+     "structure": 165,
+     "sweep": 7,
+     "trend": 0,
+     "vdelta": 88
+    }
    }
   ],
   "BHARTIARTL": [
@@ -6084,6 +6580,37 @@
      "trend": 12,
      "vdelta": 39
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.062,
+     "cpr": 0.153,
+     "fvg": 0.18,
+     "inside": 0.1,
+     "ob": 0.327,
+     "odrive": null,
+     "pdhl": 0.265,
+     "round": 0.159,
+     "structure": 0.448,
+     "sweep": 0.457,
+     "trend": 0.11,
+     "vdelta": 0.228
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 5,
+     "cpr": 40,
+     "fvg": 247,
+     "inside": 32,
+     "ob": 252,
+     "odrive": 0,
+     "pdhl": 25,
+     "round": 9,
+     "structure": 486,
+     "sweep": 13,
+     "trend": 12,
+     "vdelta": 39
+    }
    }
   ],
   "BOSCHLTD": [
@@ -6428,6 +6955,37 @@
      "vdelta": 0.139
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 10,
+     "cpr": 18,
+     "fvg": 508,
+     "inside": 1,
+     "ob": 407,
+     "odrive": 0,
+     "pdhl": 48,
+     "round": 19,
+     "structure": 1053,
+     "sweep": 25,
+     "trend": 11,
+     "vdelta": 54
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.089,
+     "cpr": 0.536,
+     "fvg": 0.304,
+     "inside": 0.061,
+     "ob": 0.389,
+     "odrive": null,
+     "pdhl": 0.42,
+     "round": 0.123,
+     "structure": 0.408,
+     "sweep": 0.119,
+     "trend": 0.276,
+     "vdelta": 0.139
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 10,
      "cpr": 18,
@@ -6800,6 +7358,37 @@
      "trend": 32,
      "vdelta": 237
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.234,
+     "cpr": 0.2,
+     "fvg": 0.129,
+     "inside": 0.031,
+     "ob": 0.524,
+     "odrive": null,
+     "pdhl": 0.061,
+     "round": 0.328,
+     "structure": 0.486,
+     "sweep": 0.147,
+     "trend": 0.234,
+     "vdelta": 0.433
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 45,
+     "cpr": 29,
+     "fvg": 181,
+     "inside": 6,
+     "ob": 372,
+     "odrive": 0,
+     "pdhl": 2,
+     "round": 24,
+     "structure": 329,
+     "sweep": 29,
+     "trend": 32,
+     "vdelta": 237
+    }
    }
   ],
   "BRITANNIA": [
@@ -7158,6 +7747,37 @@
      "trend": 4,
      "vdelta": 82
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": null,
+     "cpr": 0.241,
+     "fvg": 0.342,
+     "inside": 0.097,
+     "ob": 0.219,
+     "odrive": 0.307,
+     "pdhl": 0.618,
+     "round": 0.079,
+     "structure": 0.241,
+     "sweep": 0.103,
+     "trend": 0.163,
+     "vdelta": 0.324
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 0,
+     "cpr": 22,
+     "fvg": 237,
+     "inside": 14,
+     "ob": 152,
+     "odrive": 7,
+     "pdhl": 19,
+     "round": 4,
+     "structure": 109,
+     "sweep": 11,
+     "trend": 4,
+     "vdelta": 70
+    }
    }
   ],
   "BSE": [
@@ -7502,6 +8122,37 @@
      "vdelta": 1.105
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 42,
+     "cpr": 23,
+     "fvg": 13,
+     "inside": 9,
+     "ob": 154,
+     "odrive": 27,
+     "pdhl": 12,
+     "round": 22,
+     "structure": 378,
+     "sweep": 36,
+     "trend": 2,
+     "vdelta": 283
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.372,
+     "cpr": 0.298,
+     "fvg": 0.63,
+     "inside": 0.156,
+     "ob": 0.671,
+     "odrive": 0.581,
+     "pdhl": 0.12,
+     "round": 0.498,
+     "structure": 0.404,
+     "sweep": 0.354,
+     "trend": 0.246,
+     "vdelta": 1.105
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 42,
      "cpr": 23,
@@ -7874,6 +8525,37 @@
      "trend": 0,
      "vdelta": 144
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.078,
+     "cpr": 0.231,
+     "fvg": 0.392,
+     "inside": 0.181,
+     "ob": 0.246,
+     "odrive": 0.076,
+     "pdhl": 0.488,
+     "round": 0.118,
+     "structure": 0.345,
+     "sweep": 0.396,
+     "trend": null,
+     "vdelta": 0.307
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 2,
+     "cpr": 19,
+     "fvg": 210,
+     "inside": 12,
+     "ob": 260,
+     "odrive": 2,
+     "pdhl": 29,
+     "round": 8,
+     "structure": 255,
+     "sweep": 34,
+     "trend": 0,
+     "vdelta": 144
+    }
    }
   ],
   "CGPOWER": [
@@ -8220,6 +8902,37 @@
     "date": "2026-11-24",
     "robust": {
      "candle": 72,
+     "cpr": 48,
+     "fvg": 1261,
+     "inside": 14,
+     "ob": 22,
+     "odrive": 15,
+     "pdhl": 12,
+     "round": 24,
+     "structure": 347,
+     "sweep": 18,
+     "trend": 24,
+     "vdelta": 50
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.516,
+     "cpr": 0.506,
+     "fvg": 0.641,
+     "inside": 0.253,
+     "ob": 0.312,
+     "odrive": 0.35,
+     "pdhl": 0.259,
+     "round": 0.242,
+     "structure": 0.727,
+     "sweep": 0.691,
+     "trend": 0.234,
+     "vdelta": 0.239
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 73,
      "cpr": 48,
      "fvg": 1261,
      "inside": 14,
@@ -8590,6 +9303,37 @@
      "trend": 31,
      "vdelta": 94
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.242,
+     "cpr": 0.307,
+     "fvg": 0.397,
+     "inside": 0.023,
+     "ob": 0.167,
+     "odrive": null,
+     "pdhl": 0.172,
+     "round": 0.325,
+     "structure": 0.334,
+     "sweep": 0.153,
+     "trend": 0.534,
+     "vdelta": 0.29
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 26,
+     "cpr": 70,
+     "fvg": 211,
+     "inside": 2,
+     "ob": 55,
+     "odrive": 0,
+     "pdhl": 7,
+     "round": 22,
+     "structure": 98,
+     "sweep": 21,
+     "trend": 31,
+     "vdelta": 97
+    }
    }
   ],
   "CIPLA": [
@@ -8940,6 +9684,37 @@
      "fvg": 48,
      "inside": 0,
      "ob": 84,
+     "odrive": 0,
+     "pdhl": 3,
+     "round": 7,
+     "structure": 0,
+     "sweep": 4,
+     "trend": 0,
+     "vdelta": 0
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": null,
+     "cpr": null,
+     "fvg": 0.121,
+     "inside": null,
+     "ob": 0.117,
+     "odrive": null,
+     "pdhl": 0.203,
+     "round": 0.196,
+     "structure": null,
+     "sweep": 0.151,
+     "trend": null,
+     "vdelta": null
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 0,
+     "cpr": 0,
+     "fvg": 48,
+     "inside": 0,
+     "ob": 94,
      "odrive": 0,
      "pdhl": 3,
      "round": 7,
@@ -9306,6 +10081,37 @@
      "trend": 4,
      "vdelta": 55
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.124,
+     "cpr": 0.296,
+     "fvg": 0.235,
+     "inside": 0.063,
+     "ob": 0.258,
+     "odrive": null,
+     "pdhl": 0.2,
+     "round": 0.028,
+     "structure": 0.657,
+     "sweep": 0.125,
+     "trend": 0.325,
+     "vdelta": 0.139
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 20,
+     "cpr": 41,
+     "fvg": 335,
+     "inside": 7,
+     "ob": 18,
+     "odrive": 0,
+     "pdhl": 4,
+     "round": 7,
+     "structure": 323,
+     "sweep": 18,
+     "trend": 4,
+     "vdelta": 57
+    }
    }
   ],
   "CUMMINSIND": [
@@ -9652,6 +10458,37 @@
     "date": "2026-11-24",
     "robust": {
      "candle": 49,
+     "cpr": 23,
+     "fvg": 132,
+     "inside": 8,
+     "ob": 10,
+     "odrive": 14,
+     "pdhl": 13,
+     "round": 31,
+     "structure": 44,
+     "sweep": 0,
+     "trend": 9,
+     "vdelta": 224
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.144,
+     "cpr": 0.277,
+     "fvg": 0.233,
+     "inside": 0.058,
+     "ob": 0.054,
+     "odrive": 0.398,
+     "pdhl": 0.505,
+     "round": 0.119,
+     "structure": 0.496,
+     "sweep": null,
+     "trend": 0.332,
+     "vdelta": 0.847
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 48,
      "cpr": 23,
      "fvg": 132,
      "inside": 8,
@@ -10022,6 +10859,37 @@
      "trend": 10,
      "vdelta": 58
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.278,
+     "cpr": 1.047,
+     "fvg": 0.085,
+     "inside": null,
+     "ob": 0.3,
+     "odrive": null,
+     "pdhl": 0.436,
+     "round": 0.108,
+     "structure": 0.5,
+     "sweep": 0.392,
+     "trend": 0.056,
+     "vdelta": 0.236
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 43,
+     "cpr": 49,
+     "fvg": 49,
+     "inside": 0,
+     "ob": 239,
+     "odrive": 0,
+     "pdhl": 53,
+     "round": 30,
+     "structure": 465,
+     "sweep": 52,
+     "trend": 10,
+     "vdelta": 71
+    }
    }
   ],
   "DLF": [
@@ -10366,6 +11234,37 @@
      "vdelta": 0.25
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 36,
+     "cpr": 38,
+     "fvg": 5,
+     "inside": 17,
+     "ob": 689,
+     "odrive": 10,
+     "pdhl": 23,
+     "round": 9,
+     "structure": 1060,
+     "sweep": 18,
+     "trend": 36,
+     "vdelta": 126
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.313,
+     "cpr": 0.81,
+     "fvg": 0.06,
+     "inside": 0.207,
+     "ob": 0.573,
+     "odrive": 0.384,
+     "pdhl": 0.204,
+     "round": 0.232,
+     "structure": 0.499,
+     "sweep": 0.506,
+     "trend": 0.374,
+     "vdelta": 0.25
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 36,
      "cpr": 38,
@@ -10738,6 +11637,37 @@
      "trend": 20,
      "vdelta": 102
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.04,
+     "cpr": 0.231,
+     "fvg": 0.153,
+     "inside": null,
+     "ob": 0.207,
+     "odrive": null,
+     "pdhl": 0.092,
+     "round": 0.135,
+     "structure": 0.161,
+     "sweep": 0.217,
+     "trend": 0.114,
+     "vdelta": 0.262
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 13,
+     "cpr": 50,
+     "fvg": 255,
+     "inside": 0,
+     "ob": 90,
+     "odrive": 0,
+     "pdhl": 14,
+     "round": 11,
+     "structure": 56,
+     "sweep": 25,
+     "trend": 20,
+     "vdelta": 102
+    }
    }
   ],
   "DRREDDY": [
@@ -11082,6 +12012,37 @@
      "vdelta": 0.392
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 0,
+     "cpr": 14,
+     "fvg": 110,
+     "inside": 4,
+     "ob": 652,
+     "odrive": 0,
+     "pdhl": 13,
+     "round": 5,
+     "structure": 811,
+     "sweep": 0,
+     "trend": 6,
+     "vdelta": 63
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": null,
+     "cpr": 0.138,
+     "fvg": 0.404,
+     "inside": 0.266,
+     "ob": 0.311,
+     "odrive": null,
+     "pdhl": 0.166,
+     "round": 0.308,
+     "structure": 0.766,
+     "sweep": null,
+     "trend": 0.166,
+     "vdelta": 0.392
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 0,
      "cpr": 14,
@@ -11454,6 +12415,37 @@
      "trend": 7,
      "vdelta": 57
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.314,
+     "cpr": 0.229,
+     "fvg": 0.188,
+     "inside": 0.122,
+     "ob": 0.616,
+     "odrive": 0.37,
+     "pdhl": 0.138,
+     "round": 0.065,
+     "structure": 0.29,
+     "sweep": 0.348,
+     "trend": 0.231,
+     "vdelta": 0.477
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 32,
+     "cpr": 27,
+     "fvg": 127,
+     "inside": 23,
+     "ob": 148,
+     "odrive": 10,
+     "pdhl": 10,
+     "round": 7,
+     "structure": 327,
+     "sweep": 19,
+     "trend": 7,
+     "vdelta": 57
+    }
    }
   ],
   "ENRIN": [
@@ -11807,6 +12799,37 @@
      "odrive": 29,
      "pdhl": 1,
      "round": 27,
+     "structure": 451,
+     "sweep": 2,
+     "trend": 15,
+     "vdelta": 132
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.102,
+     "cpr": 0.942,
+     "fvg": 0.505,
+     "inside": 0.183,
+     "ob": 0.677,
+     "odrive": 0.646,
+     "pdhl": 0.241,
+     "round": 0.359,
+     "structure": 0.663,
+     "sweep": 0.343,
+     "trend": 0.167,
+     "vdelta": 0.4
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 22,
+     "cpr": 54,
+     "fvg": 412,
+     "inside": 21,
+     "ob": 197,
+     "odrive": 29,
+     "pdhl": 1,
+     "round": 26,
      "structure": 451,
      "sweep": 2,
      "trend": 15,
@@ -12170,6 +13193,37 @@
      "trend": 18,
      "vdelta": 116
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.099,
+     "cpr": 0.397,
+     "fvg": 0.326,
+     "inside": 0.357,
+     "ob": 0.301,
+     "odrive": null,
+     "pdhl": 0.471,
+     "round": 0.493,
+     "structure": 0.564,
+     "sweep": 0.022,
+     "trend": 0.523,
+     "vdelta": 1.027
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 23,
+     "cpr": 56,
+     "fvg": 600,
+     "inside": 51,
+     "ob": 126,
+     "odrive": 0,
+     "pdhl": 3,
+     "round": 55,
+     "structure": 1051,
+     "sweep": 1,
+     "trend": 18,
+     "vdelta": 133
+    }
    }
   ],
   "GAIL": [
@@ -12528,6 +13582,37 @@
      "trend": 6,
      "vdelta": 17
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.098,
+     "cpr": 0.302,
+     "fvg": 0.353,
+     "inside": 0.19,
+     "ob": 0.066,
+     "odrive": 0.191,
+     "pdhl": 0.448,
+     "round": 0.162,
+     "structure": 0.626,
+     "sweep": 0.111,
+     "trend": 0.107,
+     "vdelta": 0.314
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 34,
+     "cpr": 34,
+     "fvg": 324,
+     "inside": 18,
+     "ob": 4,
+     "odrive": 8,
+     "pdhl": 40,
+     "round": 10,
+     "structure": 326,
+     "sweep": 1,
+     "trend": 6,
+     "vdelta": 17
+    }
    }
   ],
   "GODREJCP": [
@@ -12878,6 +13963,37 @@
      "fvg": 43,
      "inside": 24,
      "ob": 86,
+     "odrive": 0,
+     "pdhl": 31,
+     "round": 16,
+     "structure": 95,
+     "sweep": 4,
+     "trend": 10,
+     "vdelta": 86
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.145,
+     "cpr": 0.202,
+     "fvg": 0.222,
+     "inside": 0.125,
+     "ob": 0.206,
+     "odrive": null,
+     "pdhl": 0.544,
+     "round": 0.814,
+     "structure": 0.258,
+     "sweep": 0.105,
+     "trend": 0.308,
+     "vdelta": 0.493
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 17,
+     "cpr": 1,
+     "fvg": 43,
+     "inside": 24,
+     "ob": 88,
      "odrive": 0,
      "pdhl": 31,
      "round": 16,
@@ -13244,6 +14360,37 @@
      "trend": 2,
      "vdelta": 120
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.2,
+     "cpr": 0.178,
+     "fvg": 0.251,
+     "inside": 0.035,
+     "ob": 0.142,
+     "odrive": null,
+     "pdhl": 0.199,
+     "round": 0.003,
+     "structure": 0.35,
+     "sweep": 0.129,
+     "trend": 0.079,
+     "vdelta": 0.159
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 1,
+     "cpr": 20,
+     "fvg": 168,
+     "inside": 2,
+     "ob": 23,
+     "odrive": 0,
+     "pdhl": 15,
+     "round": 2,
+     "structure": 328,
+     "sweep": 24,
+     "trend": 2,
+     "vdelta": 120
+    }
    }
   ],
   "HAL": [
@@ -13597,6 +14744,37 @@
      "odrive": 0,
      "pdhl": 25,
      "round": 17,
+     "structure": 359,
+     "sweep": 18,
+     "trend": 0,
+     "vdelta": 10
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.085,
+     "cpr": 0.181,
+     "fvg": 0.093,
+     "inside": null,
+     "ob": 0.349,
+     "odrive": null,
+     "pdhl": 0.527,
+     "round": 0.306,
+     "structure": 0.503,
+     "sweep": 0.497,
+     "trend": null,
+     "vdelta": 0.215
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 15,
+     "cpr": 10,
+     "fvg": 46,
+     "inside": 0,
+     "ob": 253,
+     "odrive": 0,
+     "pdhl": 24,
+     "round": 18,
      "structure": 359,
      "sweep": 18,
      "trend": 0,
@@ -13960,6 +15138,37 @@
      "trend": 1,
      "vdelta": 35
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.072,
+     "cpr": 0.017,
+     "fvg": 0.073,
+     "inside": 0.064,
+     "ob": 0.156,
+     "odrive": 0.184,
+     "pdhl": null,
+     "round": null,
+     "structure": 0.26,
+     "sweep": null,
+     "trend": 0.007,
+     "vdelta": 0.108
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 8,
+     "cpr": 4,
+     "fvg": 15,
+     "inside": 20,
+     "ob": 93,
+     "odrive": 3,
+     "pdhl": 0,
+     "round": 0,
+     "structure": 139,
+     "sweep": 0,
+     "trend": 1,
+     "vdelta": 37
+    }
    }
   ],
   "HDFCAMC": [
@@ -14304,6 +15513,37 @@
      "vdelta": 0.117
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 33,
+     "cpr": 21,
+     "fvg": 167,
+     "inside": 0,
+     "ob": 11,
+     "odrive": 6,
+     "pdhl": 24,
+     "round": 11,
+     "structure": 72,
+     "sweep": 2,
+     "trend": 7,
+     "vdelta": 17
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.213,
+     "cpr": 0.164,
+     "fvg": 0.191,
+     "inside": null,
+     "ob": 0.156,
+     "odrive": 0.075,
+     "pdhl": 0.184,
+     "round": 0.147,
+     "structure": 0.249,
+     "sweep": 0.075,
+     "trend": 0.041,
+     "vdelta": 0.117
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 33,
      "cpr": 21,
@@ -14676,6 +15916,37 @@
      "trend": 4,
      "vdelta": 231
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.171,
+     "cpr": 0.251,
+     "fvg": 0.37,
+     "inside": 0.484,
+     "ob": 0.187,
+     "odrive": 0.614,
+     "pdhl": 0.266,
+     "round": 0.395,
+     "structure": 0.412,
+     "sweep": 0.365,
+     "trend": 0.077,
+     "vdelta": 0.459
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 35,
+     "cpr": 22,
+     "fvg": 325,
+     "inside": 61,
+     "ob": 233,
+     "odrive": 25,
+     "pdhl": 4,
+     "round": 42,
+     "structure": 779,
+     "sweep": 67,
+     "trend": 4,
+     "vdelta": 231
+    }
    }
   ],
   "HDFCLIFE": [
@@ -15034,6 +16305,37 @@
      "trend": 21,
      "vdelta": 3
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.481,
+     "cpr": 0.302,
+     "fvg": 0.255,
+     "inside": 0.036,
+     "ob": 0.021,
+     "odrive": 0.291,
+     "pdhl": 0.254,
+     "round": 0.067,
+     "structure": 0.253,
+     "sweep": 0.23,
+     "trend": 0.202,
+     "vdelta": 0.423
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 10,
+     "cpr": 27,
+     "fvg": 239,
+     "inside": 6,
+     "ob": 5,
+     "odrive": 13,
+     "pdhl": 63,
+     "round": 9,
+     "structure": 264,
+     "sweep": 14,
+     "trend": 17,
+     "vdelta": 2
+    }
    }
   ],
   "HINDALCO": [
@@ -15378,6 +16680,37 @@
      "vdelta": 0.434
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 29,
+     "cpr": 11,
+     "fvg": 181,
+     "inside": 31,
+     "ob": 293,
+     "odrive": 10,
+     "pdhl": 0,
+     "round": 16,
+     "structure": 353,
+     "sweep": 11,
+     "trend": 28,
+     "vdelta": 277
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.402,
+     "cpr": 0.662,
+     "fvg": 0.22,
+     "inside": 0.17,
+     "ob": 0.447,
+     "odrive": 0.232,
+     "pdhl": null,
+     "round": 0.727,
+     "structure": 0.395,
+     "sweep": 0.184,
+     "trend": 0.313,
+     "vdelta": 0.434
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 29,
      "cpr": 11,
@@ -15750,6 +17083,37 @@
      "trend": 0,
      "vdelta": 48
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.198,
+     "cpr": 0.411,
+     "fvg": 0.245,
+     "inside": null,
+     "ob": 0.224,
+     "odrive": 0.109,
+     "pdhl": null,
+     "round": 0.057,
+     "structure": 0.358,
+     "sweep": null,
+     "trend": null,
+     "vdelta": 0.127
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 21,
+     "cpr": 28,
+     "fvg": 383,
+     "inside": 0,
+     "ob": 222,
+     "odrive": 6,
+     "pdhl": 0,
+     "round": 2,
+     "structure": 377,
+     "sweep": 0,
+     "trend": 0,
+     "vdelta": 48
+    }
    }
   ],
   "HINDZINC": [
@@ -16107,6 +17471,37 @@
      "sweep": 7,
      "trend": 10,
      "vdelta": 124
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.264,
+     "cpr": 0.207,
+     "fvg": 0.311,
+     "inside": null,
+     "ob": 0.493,
+     "odrive": 0.566,
+     "pdhl": 0.179,
+     "round": 0.112,
+     "structure": 0.239,
+     "sweep": 0.141,
+     "trend": 0.136,
+     "vdelta": 0.308
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 4,
+     "cpr": 26,
+     "fvg": 231,
+     "inside": 0,
+     "ob": 177,
+     "odrive": 43,
+     "pdhl": 23,
+     "round": 4,
+     "structure": 138,
+     "sweep": 7,
+     "trend": 10,
+     "vdelta": 125
     }
    }
   ],
@@ -16466,6 +17861,37 @@
      "trend": 8,
      "vdelta": 162
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.227,
+     "cpr": 0.261,
+     "fvg": 0.524,
+     "inside": 0.175,
+     "ob": 0.186,
+     "odrive": 0.45,
+     "pdhl": 0.389,
+     "round": 0.324,
+     "structure": 0.525,
+     "sweep": 0.392,
+     "trend": 0.205,
+     "vdelta": 0.516
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 18,
+     "cpr": 26,
+     "fvg": 971,
+     "inside": 26,
+     "ob": 129,
+     "odrive": 2,
+     "pdhl": 22,
+     "round": 20,
+     "structure": 1059,
+     "sweep": 24,
+     "trend": 8,
+     "vdelta": 160
+    }
    }
   ],
   "ICICIBANK": [
@@ -16810,6 +18236,37 @@
      "vdelta": 0.645
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 25,
+     "cpr": 21,
+     "fvg": 422,
+     "inside": 64,
+     "ob": 898,
+     "odrive": 0,
+     "pdhl": 49,
+     "round": 17,
+     "structure": 1025,
+     "sweep": 6,
+     "trend": 2,
+     "vdelta": 199
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.148,
+     "cpr": 0.2,
+     "fvg": 0.304,
+     "inside": 0.439,
+     "ob": 0.317,
+     "odrive": null,
+     "pdhl": 0.994,
+     "round": 0.407,
+     "structure": 0.605,
+     "sweep": 0.15,
+     "trend": 0.252,
+     "vdelta": 0.645
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 25,
      "cpr": 21,
@@ -17182,6 +18639,37 @@
      "trend": 1,
      "vdelta": 104
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.444,
+     "cpr": 0.303,
+     "fvg": 0.323,
+     "inside": 0.25,
+     "ob": 0.528,
+     "odrive": 0.248,
+     "pdhl": 0.287,
+     "round": 0.172,
+     "structure": 0.703,
+     "sweep": 0.646,
+     "trend": 0.075,
+     "vdelta": 0.65
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 42,
+     "cpr": 30,
+     "fvg": 46,
+     "inside": 15,
+     "ob": 318,
+     "odrive": 25,
+     "pdhl": 35,
+     "round": 9,
+     "structure": 546,
+     "sweep": 34,
+     "trend": 1,
+     "vdelta": 104
+    }
    }
   ],
   "INDIGO": [
@@ -17530,6 +19018,37 @@
      "candle": 28,
      "cpr": 37,
      "fvg": 77,
+     "inside": 5,
+     "ob": 185,
+     "odrive": 10,
+     "pdhl": 8,
+     "round": 14,
+     "structure": 315,
+     "sweep": 14,
+     "trend": 1,
+     "vdelta": 0
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.15,
+     "cpr": 0.343,
+     "fvg": 0.347,
+     "inside": 0.139,
+     "ob": 0.267,
+     "odrive": 0.462,
+     "pdhl": 0.497,
+     "round": 0.104,
+     "structure": 0.352,
+     "sweep": 0.54,
+     "trend": 0.109,
+     "vdelta": null
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 28,
+     "cpr": 37,
+     "fvg": 84,
      "inside": 5,
      "ob": 185,
      "odrive": 10,
@@ -17898,6 +19417,37 @@
      "trend": 0,
      "vdelta": 78
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.018,
+     "cpr": 0.142,
+     "fvg": 0.121,
+     "inside": 0.155,
+     "ob": 0.353,
+     "odrive": 0.2,
+     "pdhl": 0.069,
+     "round": 0.138,
+     "structure": 0.245,
+     "sweep": null,
+     "trend": null,
+     "vdelta": 0.175
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 1,
+     "cpr": 12,
+     "fvg": 28,
+     "inside": 33,
+     "ob": 315,
+     "odrive": 20,
+     "pdhl": 4,
+     "round": 11,
+     "structure": 684,
+     "sweep": 0,
+     "trend": 0,
+     "vdelta": 79
+    }
    }
   ],
   "IOC": [
@@ -18248,6 +19798,37 @@
      "fvg": 1168,
      "inside": 26,
      "ob": 384,
+     "odrive": 16,
+     "pdhl": 2,
+     "round": 28,
+     "structure": 215,
+     "sweep": 15,
+     "trend": 37,
+     "vdelta": 229
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.183,
+     "cpr": 0.265,
+     "fvg": 0.302,
+     "inside": 0.095,
+     "ob": 0.271,
+     "odrive": 0.37,
+     "pdhl": 0.075,
+     "round": 0.235,
+     "structure": 0.353,
+     "sweep": 0.214,
+     "trend": 0.233,
+     "vdelta": 0.249
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 44,
+     "cpr": 55,
+     "fvg": 1168,
+     "inside": 26,
+     "ob": 391,
      "odrive": 16,
      "pdhl": 2,
      "round": 28,
@@ -18614,6 +20195,37 @@
      "trend": 34,
      "vdelta": 290
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.122,
+     "cpr": 0.68,
+     "fvg": 0.368,
+     "inside": 0.369,
+     "ob": 0.567,
+     "odrive": 0.792,
+     "pdhl": 0.804,
+     "round": 0.605,
+     "structure": 0.945,
+     "sweep": null,
+     "trend": 0.35,
+     "vdelta": 0.411
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 24,
+     "cpr": 53,
+     "fvg": 438,
+     "inside": 41,
+     "ob": 332,
+     "odrive": 12,
+     "pdhl": 51,
+     "round": 58,
+     "structure": 1115,
+     "sweep": 0,
+     "trend": 34,
+     "vdelta": 276
+    }
    }
   ],
   "ITC": [
@@ -18960,6 +20572,37 @@
     "date": "2026-11-24",
     "robust": {
      "candle": 53,
+     "cpr": 22,
+     "fvg": 368,
+     "inside": 0,
+     "ob": 811,
+     "odrive": 17,
+     "pdhl": 9,
+     "round": 18,
+     "structure": 882,
+     "sweep": 16,
+     "trend": 3,
+     "vdelta": 78
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.221,
+     "cpr": 0.177,
+     "fvg": 0.351,
+     "inside": null,
+     "ob": 0.457,
+     "odrive": 0.685,
+     "pdhl": 0.068,
+     "round": 0.173,
+     "structure": 0.726,
+     "sweep": 0.186,
+     "trend": 0.155,
+     "vdelta": 0.366
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 55,
      "cpr": 22,
      "fvg": 368,
      "inside": 0,
@@ -19330,6 +20973,37 @@
      "trend": 11,
      "vdelta": 234
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.088,
+     "cpr": 0.719,
+     "fvg": 0.686,
+     "inside": null,
+     "ob": 0.501,
+     "odrive": 0.263,
+     "pdhl": 0.285,
+     "round": 0.411,
+     "structure": 0.47,
+     "sweep": 0.529,
+     "trend": 0.214,
+     "vdelta": 0.563
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 6,
+     "cpr": 25,
+     "fvg": 601,
+     "inside": 0,
+     "ob": 375,
+     "odrive": 15,
+     "pdhl": 32,
+     "round": 27,
+     "structure": 539,
+     "sweep": 65,
+     "trend": 11,
+     "vdelta": 237
+    }
    }
   ],
   "JIOFIN": [
@@ -19688,6 +21362,37 @@
      "trend": 5,
      "vdelta": 8
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.041,
+     "cpr": 0.108,
+     "fvg": 0.157,
+     "inside": 0.114,
+     "ob": 0.156,
+     "odrive": 0.066,
+     "pdhl": 0.072,
+     "round": 0.229,
+     "structure": 0.241,
+     "sweep": 0.331,
+     "trend": 0.016,
+     "vdelta": 0.203
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 6,
+     "cpr": 6,
+     "fvg": 43,
+     "inside": 12,
+     "ob": 101,
+     "odrive": 3,
+     "pdhl": 8,
+     "round": 8,
+     "structure": 188,
+     "sweep": 15,
+     "trend": 5,
+     "vdelta": 8
+    }
    }
   ],
   "JSWSTEEL": [
@@ -20032,6 +21737,37 @@
      "vdelta": 0.292
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 4,
+     "cpr": 10,
+     "fvg": 184,
+     "inside": 40,
+     "ob": 225,
+     "odrive": 6,
+     "pdhl": 13,
+     "round": 25,
+     "structure": 504,
+     "sweep": 4,
+     "trend": 7,
+     "vdelta": 183
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.142,
+     "cpr": 0.152,
+     "fvg": 0.207,
+     "inside": 0.156,
+     "ob": 0.213,
+     "odrive": 0.219,
+     "pdhl": 0.094,
+     "round": 0.201,
+     "structure": 0.509,
+     "sweep": 0.022,
+     "trend": 0.172,
+     "vdelta": 0.292
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 4,
      "cpr": 10,
@@ -20404,6 +22140,37 @@
      "trend": 26,
      "vdelta": 109
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.143,
+     "cpr": 0.108,
+     "fvg": 0.283,
+     "inside": null,
+     "ob": 0.194,
+     "odrive": 0.157,
+     "pdhl": 0.745,
+     "round": 0.432,
+     "structure": 0.519,
+     "sweep": 0.472,
+     "trend": 0.272,
+     "vdelta": 0.338
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 65,
+     "cpr": 19,
+     "fvg": 218,
+     "inside": 0,
+     "ob": 403,
+     "odrive": 13,
+     "pdhl": 46,
+     "round": 45,
+     "structure": 533,
+     "sweep": 24,
+     "trend": 26,
+     "vdelta": 109
+    }
    }
   ],
   "LT": [
@@ -20758,6 +22525,37 @@
      "pdhl": 33,
      "round": 17,
      "structure": 420,
+     "sweep": 7,
+     "trend": 22,
+     "vdelta": 30
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.418,
+     "cpr": 0.196,
+     "fvg": 0.257,
+     "inside": 0.143,
+     "ob": 0.444,
+     "odrive": 0.073,
+     "pdhl": 0.516,
+     "round": 0.293,
+     "structure": 0.285,
+     "sweep": 0.141,
+     "trend": 0.219,
+     "vdelta": 0.139
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 41,
+     "cpr": 24,
+     "fvg": 621,
+     "inside": 7,
+     "ob": 463,
+     "odrive": 2,
+     "pdhl": 33,
+     "round": 16,
+     "structure": 406,
      "sweep": 7,
      "trend": 22,
      "vdelta": 30
@@ -21120,6 +22918,37 @@
      "trend": 29,
      "vdelta": 85
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.293,
+     "cpr": 0.317,
+     "fvg": 0.248,
+     "inside": 0.086,
+     "ob": 0.393,
+     "odrive": null,
+     "pdhl": 0.414,
+     "round": 0.098,
+     "structure": 0.2,
+     "sweep": 0.251,
+     "trend": 0.519,
+     "vdelta": 0.302
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 62,
+     "cpr": 62,
+     "fvg": 144,
+     "inside": 3,
+     "ob": 212,
+     "odrive": 0,
+     "pdhl": 14,
+     "round": 5,
+     "structure": 52,
+     "sweep": 16,
+     "trend": 26,
+     "vdelta": 90
+    }
    }
   ],
   "M&M": [
@@ -21470,6 +23299,37 @@
      "fvg": 191,
      "inside": 3,
      "ob": 183,
+     "odrive": 12,
+     "pdhl": 0,
+     "round": 29,
+     "structure": 302,
+     "sweep": 24,
+     "trend": 8,
+     "vdelta": 24
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.191,
+     "cpr": 0.179,
+     "fvg": 0.682,
+     "inside": 0.143,
+     "ob": 0.457,
+     "odrive": 0.075,
+     "pdhl": null,
+     "round": 0.697,
+     "structure": 0.599,
+     "sweep": 0.056,
+     "trend": 0.189,
+     "vdelta": 0.125
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 18,
+     "cpr": 23,
+     "fvg": 190,
+     "inside": 3,
+     "ob": 191,
      "odrive": 12,
      "pdhl": 0,
      "round": 29,
@@ -21836,6 +23696,37 @@
      "trend": 14,
      "vdelta": 148
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": null,
+     "cpr": 0.079,
+     "fvg": 0.257,
+     "inside": 0.04,
+     "ob": 0.385,
+     "odrive": 0.89,
+     "pdhl": 0.263,
+     "round": 0.103,
+     "structure": 0.548,
+     "sweep": 0.008,
+     "trend": 0.29,
+     "vdelta": 0.384
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 0,
+     "cpr": 4,
+     "fvg": 492,
+     "inside": 5,
+     "ob": 609,
+     "odrive": 8,
+     "pdhl": 14,
+     "round": 7,
+     "structure": 592,
+     "sweep": 1,
+     "trend": 14,
+     "vdelta": 152
+    }
    }
   ],
   "MAXHEALTH": [
@@ -22194,6 +24085,37 @@
      "trend": 4,
      "vdelta": 156
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.13,
+     "cpr": 0.117,
+     "fvg": 0.25,
+     "inside": 0.315,
+     "ob": 0.304,
+     "odrive": null,
+     "pdhl": 0.239,
+     "round": 0.157,
+     "structure": 0.318,
+     "sweep": 0.291,
+     "trend": 0.425,
+     "vdelta": 0.491
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 19,
+     "cpr": 12,
+     "fvg": 144,
+     "inside": 34,
+     "ob": 329,
+     "odrive": 0,
+     "pdhl": 30,
+     "round": 24,
+     "structure": 147,
+     "sweep": 5,
+     "trend": 4,
+     "vdelta": 156
+    }
    }
   ],
   "MAZDOCK": [
@@ -22547,6 +24469,37 @@
      "odrive": 8,
      "pdhl": 0,
      "round": 16,
+     "structure": 494,
+     "sweep": 2,
+     "trend": 18,
+     "vdelta": 112
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.103,
+     "cpr": 0.425,
+     "fvg": 0.693,
+     "inside": null,
+     "ob": 0.596,
+     "odrive": 0.139,
+     "pdhl": null,
+     "round": 0.156,
+     "structure": 0.717,
+     "sweep": 0.131,
+     "trend": 0.275,
+     "vdelta": 0.319
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 15,
+     "cpr": 27,
+     "fvg": 523,
+     "inside": 0,
+     "ob": 313,
+     "odrive": 8,
+     "pdhl": 0,
+     "round": 18,
      "structure": 494,
      "sweep": 2,
      "trend": 18,
@@ -22910,6 +24863,37 @@
      "trend": 11,
      "vdelta": 37
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.031,
+     "cpr": 0.848,
+     "fvg": 0.086,
+     "inside": 0.215,
+     "ob": 0.35,
+     "odrive": 0.307,
+     "pdhl": 0.492,
+     "round": 0.168,
+     "structure": 0.341,
+     "sweep": 0.08,
+     "trend": 0.389,
+     "vdelta": 0.36
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 3,
+     "cpr": 29,
+     "fvg": 7,
+     "inside": 11,
+     "ob": 491,
+     "odrive": 18,
+     "pdhl": 15,
+     "round": 17,
+     "structure": 348,
+     "sweep": 15,
+     "trend": 11,
+     "vdelta": 38
+    }
    }
   ],
   "MUTHOOTFIN": [
@@ -23268,6 +25252,37 @@
      "trend": 3,
      "vdelta": 60
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.213,
+     "cpr": 0.189,
+     "fvg": 0.657,
+     "inside": null,
+     "ob": 0.187,
+     "odrive": 0.347,
+     "pdhl": 0.19,
+     "round": 0.323,
+     "structure": 0.637,
+     "sweep": 0.514,
+     "trend": 0.134,
+     "vdelta": 0.457
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 17,
+     "cpr": 2,
+     "fvg": 131,
+     "inside": 0,
+     "ob": 123,
+     "odrive": 10,
+     "pdhl": 11,
+     "round": 4,
+     "structure": 462,
+     "sweep": 20,
+     "trend": 3,
+     "vdelta": 60
+    }
    }
   ],
   "NESTLEIND": [
@@ -23612,6 +25627,37 @@
      "vdelta": 0.299
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 36,
+     "cpr": 17,
+     "fvg": 304,
+     "inside": 10,
+     "ob": 157,
+     "odrive": 0,
+     "pdhl": 27,
+     "round": 3,
+     "structure": 529,
+     "sweep": 26,
+     "trend": 14,
+     "vdelta": 147
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.413,
+     "cpr": 0.316,
+     "fvg": 0.362,
+     "inside": 0.042,
+     "ob": 0.303,
+     "odrive": null,
+     "pdhl": 0.428,
+     "round": 0.226,
+     "structure": 0.584,
+     "sweep": 0.175,
+     "trend": 0.175,
+     "vdelta": 0.299
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 36,
      "cpr": 17,
@@ -23984,6 +26030,37 @@
      "trend": 7,
      "vdelta": 45
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.167,
+     "cpr": 0.14,
+     "fvg": 0.196,
+     "inside": null,
+     "ob": 0.107,
+     "odrive": null,
+     "pdhl": 0.108,
+     "round": 0.146,
+     "structure": 0.244,
+     "sweep": 0.091,
+     "trend": 0.313,
+     "vdelta": 0.35
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 15,
+     "cpr": 18,
+     "fvg": 218,
+     "inside": 0,
+     "ob": 10,
+     "odrive": 0,
+     "pdhl": 12,
+     "round": 32,
+     "structure": 133,
+     "sweep": 31,
+     "trend": 7,
+     "vdelta": 49
+    }
    }
   ],
   "ONGC": [
@@ -24330,6 +26407,37 @@
     "date": "2026-11-24",
     "robust": {
      "candle": 25,
+     "cpr": 20,
+     "fvg": 235,
+     "inside": 12,
+     "ob": 355,
+     "odrive": 3,
+     "pdhl": 0,
+     "round": 10,
+     "structure": 126,
+     "sweep": 5,
+     "trend": 0,
+     "vdelta": 42
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.138,
+     "cpr": 0.147,
+     "fvg": 0.153,
+     "inside": 0.038,
+     "ob": 0.239,
+     "odrive": 0.126,
+     "pdhl": null,
+     "round": 0.259,
+     "structure": 0.253,
+     "sweep": 0.035,
+     "trend": null,
+     "vdelta": 0.172
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 26,
      "cpr": 20,
      "fvg": 235,
      "inside": 12,
@@ -24700,6 +26808,37 @@
      "trend": 15,
      "vdelta": 90
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.058,
+     "cpr": 0.061,
+     "fvg": 0.2,
+     "inside": 0.138,
+     "ob": 0.15,
+     "odrive": 0.181,
+     "pdhl": 0.175,
+     "round": 0.059,
+     "structure": 0.399,
+     "sweep": 0.103,
+     "trend": 0.161,
+     "vdelta": 0.4
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 3,
+     "cpr": 5,
+     "fvg": 316,
+     "inside": 17,
+     "ob": 28,
+     "odrive": 4,
+     "pdhl": 27,
+     "round": 10,
+     "structure": 420,
+     "sweep": 14,
+     "trend": 15,
+     "vdelta": 90
+    }
    }
   ],
   "PIDILITIND": [
@@ -25044,6 +27183,37 @@
      "vdelta": 0.536
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 19,
+     "cpr": 18,
+     "fvg": 81,
+     "inside": 31,
+     "ob": 347,
+     "odrive": 0,
+     "pdhl": 20,
+     "round": 10,
+     "structure": 494,
+     "sweep": 12,
+     "trend": 4,
+     "vdelta": 145
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.158,
+     "cpr": 0.389,
+     "fvg": 0.187,
+     "inside": 0.319,
+     "ob": 0.361,
+     "odrive": null,
+     "pdhl": 0.439,
+     "round": 0.226,
+     "structure": 0.378,
+     "sweep": 0.445,
+     "trend": 0.161,
+     "vdelta": 0.536
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 19,
      "cpr": 18,
@@ -25416,6 +27586,37 @@
      "trend": 33,
      "vdelta": 152
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.132,
+     "cpr": 0.268,
+     "fvg": 0.303,
+     "inside": 0.184,
+     "ob": 0.174,
+     "odrive": 0.231,
+     "pdhl": 0.102,
+     "round": 0.185,
+     "structure": 0.393,
+     "sweep": 0.199,
+     "trend": 0.2,
+     "vdelta": 0.304
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 13,
+     "cpr": 58,
+     "fvg": 114,
+     "inside": 9,
+     "ob": 31,
+     "odrive": 4,
+     "pdhl": 24,
+     "round": 17,
+     "structure": 582,
+     "sweep": 7,
+     "trend": 33,
+     "vdelta": 152
+    }
    }
   ],
   "POLYCAB": [
@@ -25762,6 +27963,37 @@
     "date": "2026-11-24",
     "robust": {
      "candle": 33,
+     "cpr": 38,
+     "fvg": 525,
+     "inside": 32,
+     "ob": 144,
+     "odrive": 2,
+     "pdhl": 39,
+     "round": 20,
+     "structure": 252,
+     "sweep": 22,
+     "trend": 20,
+     "vdelta": 161
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.251,
+     "cpr": 0.809,
+     "fvg": 0.906,
+     "inside": 0.322,
+     "ob": 0.362,
+     "odrive": 0.027,
+     "pdhl": 1.153,
+     "round": 0.212,
+     "structure": 0.466,
+     "sweep": 0.907,
+     "trend": 0.34,
+     "vdelta": 0.439
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 22,
      "cpr": 38,
      "fvg": 525,
      "inside": 32,
@@ -26132,6 +28364,37 @@
      "trend": 18,
      "vdelta": 107
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.423,
+     "cpr": 0.787,
+     "fvg": 0.603,
+     "inside": 0.081,
+     "ob": 0.856,
+     "odrive": 0.417,
+     "pdhl": 0.507,
+     "round": 0.204,
+     "structure": 0.295,
+     "sweep": 0.159,
+     "trend": 0.226,
+     "vdelta": 0.453
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 7,
+     "cpr": 26,
+     "fvg": 334,
+     "inside": 8,
+     "ob": 318,
+     "odrive": 12,
+     "pdhl": 47,
+     "round": 3,
+     "structure": 76,
+     "sweep": 33,
+     "trend": 18,
+     "vdelta": 115
+    }
    }
   ],
   "POWERINDIA": [
@@ -26480,6 +28743,37 @@
      "candle": 34,
      "cpr": 22,
      "fvg": 203,
+     "inside": 9,
+     "ob": 26,
+     "odrive": 0,
+     "pdhl": 34,
+     "round": 5,
+     "structure": 233,
+     "sweep": 61,
+     "trend": 3,
+     "vdelta": 4
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.273,
+     "cpr": 0.375,
+     "fvg": 0.186,
+     "inside": 0.193,
+     "ob": 0.185,
+     "odrive": null,
+     "pdhl": 0.548,
+     "round": 0.169,
+     "structure": 0.323,
+     "sweep": 0.875,
+     "trend": 0.713,
+     "vdelta": 0.077
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 35,
+     "cpr": 22,
+     "fvg": 202,
      "inside": 9,
      "ob": 26,
      "odrive": 0,
@@ -26848,6 +29142,37 @@
      "trend": 5,
      "vdelta": 96
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.045,
+     "cpr": 0.587,
+     "fvg": 0.614,
+     "inside": 0.01,
+     "ob": 0.563,
+     "odrive": null,
+     "pdhl": 0.692,
+     "round": 0.741,
+     "structure": 0.335,
+     "sweep": 0.185,
+     "trend": 0.046,
+     "vdelta": 0.228
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 5,
+     "cpr": 8,
+     "fvg": 512,
+     "inside": 1,
+     "ob": 473,
+     "odrive": 0,
+     "pdhl": 25,
+     "round": 17,
+     "structure": 487,
+     "sweep": 9,
+     "trend": 5,
+     "vdelta": 87
+    }
    }
   ],
   "SBILIFE": [
@@ -27192,6 +29517,37 @@
      "vdelta": 0.406
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 11,
+     "cpr": 26,
+     "fvg": 83,
+     "inside": 29,
+     "ob": 242,
+     "odrive": 0,
+     "pdhl": 3,
+     "round": 19,
+     "structure": 534,
+     "sweep": 25,
+     "trend": 11,
+     "vdelta": 75
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.056,
+     "cpr": 0.189,
+     "fvg": 0.194,
+     "inside": 0.171,
+     "ob": 0.283,
+     "odrive": null,
+     "pdhl": 0.521,
+     "round": 0.293,
+     "structure": 0.523,
+     "sweep": 0.14,
+     "trend": 0.099,
+     "vdelta": 0.406
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 11,
      "cpr": 26,
@@ -27564,6 +29920,37 @@
      "trend": 4,
      "vdelta": 57
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.186,
+     "cpr": 0.144,
+     "fvg": 0.489,
+     "inside": null,
+     "ob": 0.185,
+     "odrive": 0.098,
+     "pdhl": 0.149,
+     "round": 0.16,
+     "structure": 0.214,
+     "sweep": 0.127,
+     "trend": 0.039,
+     "vdelta": 0.13
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 30,
+     "cpr": 17,
+     "fvg": 385,
+     "inside": 0,
+     "ob": 207,
+     "odrive": 8,
+     "pdhl": 4,
+     "round": 6,
+     "structure": 191,
+     "sweep": 25,
+     "trend": 4,
+     "vdelta": 57
+    }
    }
   ],
   "SHRIRAMFIN": [
@@ -27908,6 +30295,37 @@
      "vdelta": 0.184
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 26,
+     "cpr": 7,
+     "fvg": 489,
+     "inside": 1,
+     "ob": 268,
+     "odrive": 8,
+     "pdhl": 2,
+     "round": 1,
+     "structure": 444,
+     "sweep": 53,
+     "trend": 18,
+     "vdelta": 60
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.235,
+     "cpr": 0.637,
+     "fvg": 0.434,
+     "inside": 0.057,
+     "ob": 0.381,
+     "odrive": 0.09,
+     "pdhl": 0.062,
+     "round": 0.072,
+     "structure": 0.649,
+     "sweep": 0.486,
+     "trend": 0.233,
+     "vdelta": 0.184
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 26,
      "cpr": 7,
@@ -28280,6 +30698,37 @@
      "trend": 4,
      "vdelta": 103
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.061,
+     "cpr": 0.283,
+     "fvg": 0.422,
+     "inside": 0.27,
+     "ob": 0.558,
+     "odrive": 0.125,
+     "pdhl": 0.35,
+     "round": 0.505,
+     "structure": 0.427,
+     "sweep": 0.419,
+     "trend": 0.159,
+     "vdelta": 0.652
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 18,
+     "cpr": 17,
+     "fvg": 381,
+     "inside": 8,
+     "ob": 501,
+     "odrive": 1,
+     "pdhl": 31,
+     "round": 41,
+     "structure": 249,
+     "sweep": 35,
+     "trend": 4,
+     "vdelta": 99
+    }
    }
   ],
   "SOLARINDS": [
@@ -28638,6 +31087,37 @@
      "trend": 2,
      "vdelta": 79
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": null,
+     "cpr": null,
+     "fvg": 0.317,
+     "inside": null,
+     "ob": 0.253,
+     "odrive": 0.95,
+     "pdhl": 0.231,
+     "round": 0.027,
+     "structure": 0.504,
+     "sweep": 0.115,
+     "trend": 0.15,
+     "vdelta": 0.299
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 0,
+     "cpr": 0,
+     "fvg": 232,
+     "inside": 0,
+     "ob": 54,
+     "odrive": 38,
+     "pdhl": 19,
+     "round": 1,
+     "structure": 609,
+     "sweep": 2,
+     "trend": 2,
+     "vdelta": 80
+    }
    }
   ],
   "SUNPHARMA": [
@@ -28994,6 +31474,37 @@
      "structure": 259,
      "sweep": 18,
      "trend": 24,
+     "vdelta": 6
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.074,
+     "cpr": 0.291,
+     "fvg": 0.252,
+     "inside": 0.109,
+     "ob": 0.238,
+     "odrive": null,
+     "pdhl": null,
+     "round": 0.106,
+     "structure": 0.297,
+     "sweep": 0.23,
+     "trend": 0.224,
+     "vdelta": 0.133
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 2,
+     "cpr": 26,
+     "fvg": 77,
+     "inside": 8,
+     "ob": 45,
+     "odrive": 0,
+     "pdhl": 0,
+     "round": 1,
+     "structure": 259,
+     "sweep": 13,
+     "trend": 22,
      "vdelta": 6
     }
    }
@@ -29354,6 +31865,37 @@
      "trend": 26,
      "vdelta": 136
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.085,
+     "cpr": 0.17,
+     "fvg": 0.496,
+     "inside": 0.073,
+     "ob": 0.592,
+     "odrive": 0.198,
+     "pdhl": 0.17,
+     "round": 0.175,
+     "structure": 0.724,
+     "sweep": 0.323,
+     "trend": 0.636,
+     "vdelta": 0.545
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 13,
+     "cpr": 29,
+     "fvg": 791,
+     "inside": 5,
+     "ob": 423,
+     "odrive": 5,
+     "pdhl": 27,
+     "round": 27,
+     "structure": 1314,
+     "sweep": 11,
+     "trend": 26,
+     "vdelta": 143
+    }
    }
   ],
   "TATACONSUM": [
@@ -29698,6 +32240,37 @@
      "vdelta": 0.315
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 6,
+     "cpr": 12,
+     "fvg": 311,
+     "inside": 0,
+     "ob": 270,
+     "odrive": 4,
+     "pdhl": 15,
+     "round": 3,
+     "structure": 241,
+     "sweep": 24,
+     "trend": 2,
+     "vdelta": 106
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.056,
+     "cpr": 0.2,
+     "fvg": 0.139,
+     "inside": null,
+     "ob": 0.164,
+     "odrive": 0.498,
+     "pdhl": 0.266,
+     "round": 0.171,
+     "structure": 0.36,
+     "sweep": 0.163,
+     "trend": 0.435,
+     "vdelta": 0.315
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 6,
      "cpr": 12,
@@ -30070,6 +32643,37 @@
      "trend": 7,
      "vdelta": 24
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.347,
+     "cpr": 0.224,
+     "fvg": 0.15,
+     "inside": 0.105,
+     "ob": 0.179,
+     "odrive": 0.255,
+     "pdhl": 0.186,
+     "round": 0.145,
+     "structure": 0.528,
+     "sweep": 0.505,
+     "trend": 0.098,
+     "vdelta": 0.134
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 28,
+     "cpr": 39,
+     "fvg": 193,
+     "inside": 8,
+     "ob": 191,
+     "odrive": 6,
+     "pdhl": 57,
+     "round": 1,
+     "structure": 285,
+     "sweep": 35,
+     "trend": 7,
+     "vdelta": 24
+    }
    }
   ],
   "TATASTEEL": [
@@ -30427,6 +33031,37 @@
      "sweep": 37,
      "trend": 1,
      "vdelta": 175
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.078,
+     "cpr": 0.136,
+     "fvg": 0.16,
+     "inside": 0.076,
+     "ob": 0.97,
+     "odrive": 0.68,
+     "pdhl": 0.261,
+     "round": 0.207,
+     "structure": 0.587,
+     "sweep": 0.464,
+     "trend": 0.125,
+     "vdelta": 0.378
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 11,
+     "cpr": 6,
+     "fvg": 96,
+     "inside": 6,
+     "ob": 182,
+     "odrive": 13,
+     "pdhl": 33,
+     "round": 12,
+     "structure": 272,
+     "sweep": 37,
+     "trend": 1,
+     "vdelta": 178
     }
    }
   ],
@@ -30786,6 +33421,37 @@
      "trend": 0,
      "vdelta": 58
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.176,
+     "cpr": 0.223,
+     "fvg": 0.108,
+     "inside": 0.07,
+     "ob": 0.27,
+     "odrive": null,
+     "pdhl": 0.122,
+     "round": 0.11,
+     "structure": 0.167,
+     "sweep": null,
+     "trend": null,
+     "vdelta": 0.238
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 2,
+     "cpr": 5,
+     "fvg": 20,
+     "inside": 20,
+     "ob": 36,
+     "odrive": 0,
+     "pdhl": 8,
+     "round": 7,
+     "structure": 57,
+     "sweep": 0,
+     "trend": 0,
+     "vdelta": 59
+    }
    }
   ],
   "TECHM": [
@@ -31130,6 +33796,37 @@
      "vdelta": 0.164
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 1,
+     "cpr": 19,
+     "fvg": 452,
+     "inside": 4,
+     "ob": 238,
+     "odrive": 0,
+     "pdhl": 0,
+     "round": 6,
+     "structure": 249,
+     "sweep": 7,
+     "trend": 3,
+     "vdelta": 36
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.026,
+     "cpr": 0.16,
+     "fvg": 0.451,
+     "inside": 0.051,
+     "ob": 0.254,
+     "odrive": null,
+     "pdhl": null,
+     "round": 0.056,
+     "structure": 0.287,
+     "sweep": 0.103,
+     "trend": 0.28,
+     "vdelta": 0.164
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 1,
      "cpr": 19,
@@ -31502,6 +34199,37 @@
      "trend": 52,
      "vdelta": 235
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.041,
+     "cpr": 0.252,
+     "fvg": 0.129,
+     "inside": 0.128,
+     "ob": 0.311,
+     "odrive": 0.285,
+     "pdhl": 0.449,
+     "round": 0.496,
+     "structure": 0.548,
+     "sweep": 0.55,
+     "trend": 0.305,
+     "vdelta": 0.437
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 7,
+     "cpr": 49,
+     "fvg": 92,
+     "inside": 11,
+     "ob": 271,
+     "odrive": 12,
+     "pdhl": 33,
+     "round": 2,
+     "structure": 786,
+     "sweep": 33,
+     "trend": 51,
+     "vdelta": 235
+    }
    }
   ],
   "TMCV": [
@@ -31848,6 +34576,37 @@
     "date": "2026-11-24",
     "robust": {
      "candle": 48,
+     "cpr": 25,
+     "fvg": 560,
+     "inside": 0,
+     "ob": 459,
+     "odrive": 2,
+     "pdhl": 36,
+     "round": 11,
+     "structure": 486,
+     "sweep": 6,
+     "trend": 1,
+     "vdelta": 35
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.298,
+     "cpr": 0.368,
+     "fvg": 0.607,
+     "inside": null,
+     "ob": 1.124,
+     "odrive": 0.117,
+     "pdhl": 0.458,
+     "round": 0.135,
+     "structure": 0.431,
+     "sweep": 0.197,
+     "trend": 0.173,
+     "vdelta": 0.187
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 46,
      "cpr": 25,
      "fvg": 560,
      "inside": 0,
@@ -32218,6 +34977,37 @@
      "trend": 40,
      "vdelta": 149
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.141,
+     "cpr": 0.63,
+     "fvg": 0.283,
+     "inside": 0.19,
+     "ob": 0.075,
+     "odrive": 0.389,
+     "pdhl": 0.299,
+     "round": 0.228,
+     "structure": 0.487,
+     "sweep": 0.415,
+     "trend": 0.263,
+     "vdelta": 0.292
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 18,
+     "cpr": 72,
+     "fvg": 341,
+     "inside": 30,
+     "ob": 31,
+     "odrive": 16,
+     "pdhl": 30,
+     "round": 22,
+     "structure": 649,
+     "sweep": 23,
+     "trend": 40,
+     "vdelta": 151
+    }
    }
   ],
   "TORNTPHARM": [
@@ -32575,6 +35365,37 @@
      "sweep": 0,
      "trend": 22,
      "vdelta": 120
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.097,
+     "cpr": 0.11,
+     "fvg": 0.161,
+     "inside": null,
+     "ob": 0.25,
+     "odrive": 0.2,
+     "pdhl": 0.05,
+     "round": 0.188,
+     "structure": 0.246,
+     "sweep": null,
+     "trend": 0.336,
+     "vdelta": 0.422
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 10,
+     "cpr": 33,
+     "fvg": 90,
+     "inside": 0,
+     "ob": 60,
+     "odrive": 1,
+     "pdhl": 1,
+     "round": 13,
+     "structure": 225,
+     "sweep": 0,
+     "trend": 22,
+     "vdelta": 135
     }
    }
   ],
@@ -32934,6 +35755,37 @@
      "trend": 23,
      "vdelta": 132
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.376,
+     "cpr": 0.343,
+     "fvg": 0.173,
+     "inside": 0.189,
+     "ob": 0.248,
+     "odrive": 0.303,
+     "pdhl": 0.132,
+     "round": 0.15,
+     "structure": 0.475,
+     "sweep": 0.105,
+     "trend": 0.205,
+     "vdelta": 0.372
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 21,
+     "cpr": 31,
+     "fvg": 252,
+     "inside": 46,
+     "ob": 93,
+     "odrive": 2,
+     "pdhl": 12,
+     "round": 2,
+     "structure": 635,
+     "sweep": 12,
+     "trend": 20,
+     "vdelta": 122
+    }
    }
   ],
   "TVSMOTOR": [
@@ -33288,6 +36140,37 @@
      "pdhl": 8,
      "round": 16,
      "structure": 499,
+     "sweep": 39,
+     "trend": 9,
+     "vdelta": 184
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.236,
+     "cpr": 0.515,
+     "fvg": 0.144,
+     "inside": 0.05,
+     "ob": 0.376,
+     "odrive": 0.054,
+     "pdhl": 0.465,
+     "round": 0.256,
+     "structure": 0.361,
+     "sweep": 0.135,
+     "trend": 0.128,
+     "vdelta": 0.821
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 31,
+     "cpr": 22,
+     "fvg": 29,
+     "inside": 1,
+     "ob": 38,
+     "odrive": 8,
+     "pdhl": 8,
+     "round": 16,
+     "structure": 508,
      "sweep": 39,
      "trend": 9,
      "vdelta": 184
@@ -33650,6 +36533,37 @@
      "trend": 3,
      "vdelta": 211
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.165,
+     "cpr": 0.179,
+     "fvg": 0.567,
+     "inside": 0.114,
+     "ob": 0.17,
+     "odrive": 0.304,
+     "pdhl": 0.289,
+     "round": 0.476,
+     "structure": 0.491,
+     "sweep": 0.138,
+     "trend": 0.101,
+     "vdelta": 0.27
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 14,
+     "cpr": 34,
+     "fvg": 453,
+     "inside": 20,
+     "ob": 253,
+     "odrive": 1,
+     "pdhl": 1,
+     "round": 13,
+     "structure": 1368,
+     "sweep": 8,
+     "trend": 3,
+     "vdelta": 211
+    }
    }
   ],
   "UNIONBANK": [
@@ -33998,6 +36912,37 @@
      "candle": 8,
      "cpr": 6,
      "fvg": 425,
+     "inside": 55,
+     "ob": 246,
+     "odrive": 2,
+     "pdhl": 47,
+     "round": 16,
+     "structure": 475,
+     "sweep": 16,
+     "trend": 8,
+     "vdelta": 222
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.216,
+     "cpr": 0.068,
+     "fvg": 0.431,
+     "inside": 0.369,
+     "ob": 0.274,
+     "odrive": 0.152,
+     "pdhl": 0.498,
+     "round": 0.347,
+     "structure": 0.557,
+     "sweep": 0.124,
+     "trend": 0.147,
+     "vdelta": 0.4
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 6,
+     "cpr": 6,
+     "fvg": 413,
      "inside": 55,
      "ob": 246,
      "odrive": 2,
@@ -34366,6 +37311,37 @@
      "trend": 0,
      "vdelta": 208
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.179,
+     "cpr": 0.388,
+     "fvg": 0.465,
+     "inside": 0.11,
+     "ob": 0.717,
+     "odrive": 0.567,
+     "pdhl": 0.214,
+     "round": 0.402,
+     "structure": 0.295,
+     "sweep": 0.137,
+     "trend": null,
+     "vdelta": 0.627
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 18,
+     "cpr": 34,
+     "fvg": 290,
+     "inside": 34,
+     "ob": 222,
+     "odrive": 18,
+     "pdhl": 34,
+     "round": 21,
+     "structure": 329,
+     "sweep": 9,
+     "trend": 0,
+     "vdelta": 216
+    }
    }
   ],
   "VBL": [
@@ -34724,6 +37700,37 @@
      "trend": 25,
      "vdelta": 226
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.052,
+     "cpr": 0.396,
+     "fvg": 0.281,
+     "inside": 0.089,
+     "ob": 0.385,
+     "odrive": 0.576,
+     "pdhl": 0.331,
+     "round": 0.072,
+     "structure": 0.341,
+     "sweep": 0.432,
+     "trend": 0.108,
+     "vdelta": 0.877
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 8,
+     "cpr": 40,
+     "fvg": 256,
+     "inside": 2,
+     "ob": 52,
+     "odrive": 10,
+     "pdhl": 7,
+     "round": 5,
+     "structure": 600,
+     "sweep": 6,
+     "trend": 25,
+     "vdelta": 213
+    }
    }
   ],
   "VEDL": [
@@ -35068,6 +38075,37 @@
      "vdelta": 0.377
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 16,
+     "cpr": 7,
+     "fvg": 129,
+     "inside": 13,
+     "ob": 390,
+     "odrive": 6,
+     "pdhl": 8,
+     "round": 12,
+     "structure": 58,
+     "sweep": 44,
+     "trend": 2,
+     "vdelta": 124
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.342,
+     "cpr": 0.783,
+     "fvg": 0.3,
+     "inside": 0.078,
+     "ob": 0.344,
+     "odrive": 0.2,
+     "pdhl": 0.215,
+     "round": 0.161,
+     "structure": 0.117,
+     "sweep": 0.283,
+     "trend": 0.084,
+     "vdelta": 0.377
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 16,
      "cpr": 7,
@@ -35440,6 +38478,37 @@
      "trend": 17,
      "vdelta": 31
     }
+   },
+   {
+    "best_test_exp": {
+     "candle": null,
+     "cpr": 0.004,
+     "fvg": 0.05,
+     "inside": 0.033,
+     "ob": 0.253,
+     "odrive": 0.075,
+     "pdhl": 0.436,
+     "round": 0.186,
+     "structure": 0.141,
+     "sweep": 0.076,
+     "trend": 0.326,
+     "vdelta": 0.066
+    },
+    "date": "2026-11-25",
+    "robust": {
+     "candle": 0,
+     "cpr": 1,
+     "fvg": 12,
+     "inside": 1,
+     "ob": 560,
+     "odrive": 2,
+     "pdhl": 10,
+     "round": 11,
+     "structure": 100,
+     "sweep": 9,
+     "trend": 17,
+     "vdelta": 31
+    }
    }
   ],
   "ZYDUSLIFE": [
@@ -35784,6 +38853,37 @@
      "vdelta": 0.299
     },
     "date": "2026-11-24",
+    "robust": {
+     "candle": 11,
+     "cpr": 22,
+     "fvg": 0,
+     "inside": 14,
+     "ob": 137,
+     "odrive": 4,
+     "pdhl": 45,
+     "round": 1,
+     "structure": 138,
+     "sweep": 0,
+     "trend": 11,
+     "vdelta": 98
+    }
+   },
+   {
+    "best_test_exp": {
+     "candle": 0.249,
+     "cpr": 0.14,
+     "fvg": null,
+     "inside": 0.195,
+     "ob": 0.168,
+     "odrive": 0.114,
+     "pdhl": 0.165,
+     "round": 0.238,
+     "structure": 0.237,
+     "sweep": null,
+     "trend": 0.109,
+     "vdelta": 0.596
+    },
+    "date": "2026-11-25",
     "robust": {
      "candle": 11,
      "cpr": 22,
@@ -193100,7 +196200,7 @@
  "settings_per_stock": 14088,
  "stocks": {
   "ABB": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -193194,52 +196294,6 @@
       {
        "p": {
         "age": 6,
-        "dead": 690,
-        "filt": "none",
-        "minpct": 0.002,
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": "eod"
-       },
-       "test": {
-        "exp": 0.297,
-        "n": 10,
-        "tot": 2.972,
-        "win": 50.0
-       },
-       "train": {
-        "exp": 0.259,
-        "n": 15,
-        "tot": 3.887,
-        "win": 46.667
-       }
-      },
-      {
-       "p": {
-        "age": 6,
-        "dead": 690,
-        "filt": "none",
-        "minpct": 0.002,
-        "side": "both",
-        "stop": "natural",
-        "tgt": "eod"
-       },
-       "test": {
-        "exp": 0.302,
-        "n": 10,
-        "tot": 3.015,
-        "win": 40.0
-       },
-       "train": {
-        "exp": 0.253,
-        "n": 15,
-        "tot": 3.801,
-        "win": 46.667
-       }
-      },
-      {
-       "p": {
-        "age": 6,
         "dead": 630,
         "filt": "none",
         "minpct": 0.002,
@@ -193254,16 +196308,62 @@
         "win": 42.857
        },
        "train": {
-        "exp": 0.339,
-        "n": 9,
-        "tot": 3.05,
-        "win": 44.444
+        "exp": 0.25,
+        "n": 10,
+        "tot": 2.5,
+        "win": 40.0
+       }
+      },
+      {
+       "p": {
+        "age": 6,
+        "dead": 630,
+        "filt": "none",
+        "minpct": 0.002,
+        "side": "both",
+        "stop": "natural",
+        "tgt": "eod"
+       },
+       "test": {
+        "exp": 0.236,
+        "n": 7,
+        "tot": 1.653,
+        "win": 42.857
+       },
+       "train": {
+        "exp": 0.393,
+        "n": 10,
+        "tot": 3.93,
+        "win": 40.0
+       }
+      },
+      {
+       "p": {
+        "age": 12,
+        "dead": 630,
+        "filt": "none",
+        "minpct": 0.002,
+        "side": "both",
+        "stop": "natural",
+        "tgt": "eod"
+       },
+       "test": {
+        "exp": 0.236,
+        "n": 7,
+        "tot": 1.653,
+        "win": 42.857
+       },
+       "train": {
+        "exp": 0.313,
+        "n": 11,
+        "tot": 3.438,
+        "win": 36.364
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 171,
+     "robust": 160,
      "tested": 3240
     },
     "inside": {
@@ -193446,9 +196546,9 @@
         "win": 60.0
        },
        "train": {
-        "exp": 0.158,
+        "exp": 0.155,
         "n": 12,
-        "tot": 1.892,
+        "tot": 1.856,
         "win": 41.667
        }
       },
@@ -193469,9 +196569,9 @@
         "win": 60.0
        },
        "train": {
-        "exp": 0.094,
+        "exp": 0.092,
         "n": 23,
-        "tot": 2.16,
+        "tot": 2.123,
         "win": 39.13
        }
       },
@@ -193492,9 +196592,9 @@
         "win": 61.538
        },
        "train": {
-        "exp": 0.09,
+        "exp": 0.088,
         "n": 17,
-        "tot": 1.534,
+        "tot": 1.497,
         "win": 41.176
        }
       }
@@ -193776,7 +196876,7 @@
        "train": {
         "exp": 0.031,
         "n": 35,
-        "tot": 1.093,
+        "tot": 1.08,
         "win": 34.286
        }
       }
@@ -193869,7 +196969,7 @@
    ]
   },
   "ADANIENSOL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -194259,7 +197359,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 280,
+     "robust": 278,
      "tested": 3240
     },
     "odrive": {
@@ -194429,10 +197529,10 @@
         "tgt": "eod"
        },
        "test": {
-        "exp": 0.31,
+        "exp": 0.232,
         "n": 19,
-        "tot": 5.883,
-        "win": 26.316
+        "tot": 4.417,
+        "win": 21.053
        },
        "train": {
         "exp": 0.239,
@@ -194490,7 +197590,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 9,
+     "robust": 7,
      "tested": 96
     },
     "structure": {
@@ -194661,13 +197761,13 @@
        "test": {
         "exp": 0.271,
         "n": 14,
-        "tot": 3.796,
+        "tot": 3.795,
         "win": 57.143
        },
        "train": {
         "exp": 0.149,
         "n": 26,
-        "tot": 3.865,
+        "tot": 3.862,
         "win": 50.0
        }
       },
@@ -194689,7 +197789,7 @@
        "train": {
         "exp": 0.145,
         "n": 19,
-        "tot": 2.76,
+        "tot": 2.754,
         "win": 57.895
        }
       },
@@ -194709,9 +197809,9 @@
         "win": 80.0
        },
        "train": {
-        "exp": 0.126,
+        "exp": 0.125,
         "n": 19,
-        "tot": 2.388,
+        "tot": 2.383,
         "win": 52.632
        }
       }
@@ -194802,7 +197902,7 @@
    "skipped_gap_days": []
   },
   "ADANIENT": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -194827,34 +197927,10 @@
         "win": 57.143
        },
        "train": {
-        "exp": 0.202,
-        "n": 19,
-        "tot": 3.834,
-        "win": 31.579
-       }
-      },
-      {
-       "p": {
-        "at": "pivot",
-        "dead": 690,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": "eod",
-        "tol": 0.003
-       },
-       "test": {
-        "exp": 0.323,
-        "n": 17,
-        "tot": 5.483,
-        "win": 52.941
-       },
-       "train": {
-        "exp": 0.165,
-        "n": 32,
-        "tot": 5.293,
-        "win": 34.375
+        "exp": 0.164,
+        "n": 20,
+        "tot": 3.284,
+        "win": 30.0
        }
       },
       {
@@ -194875,16 +197951,40 @@
         "win": 40.0
        },
        "train": {
-        "exp": 0.187,
-        "n": 21,
-        "tot": 3.917,
-        "win": 33.333
+        "exp": 0.153,
+        "n": 22,
+        "tot": 3.367,
+        "win": 31.818
+       }
+      },
+      {
+       "p": {
+        "at": "pivot",
+        "dead": 690,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "both",
+        "stop": "p0.5",
+        "tgt": "eod",
+        "tol": 0.003
+       },
+       "test": {
+        "exp": 0.323,
+        "n": 17,
+        "tot": 5.483,
+        "win": 52.941
+       },
+       "train": {
+        "exp": 0.108,
+        "n": 32,
+        "tot": 3.461,
+        "win": 31.25
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 42,
+     "robust": 32,
      "tested": 192
     },
     "cpr": {
@@ -195667,7 +198767,7 @@
    ]
   },
   "ADANIGREEN": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -195686,40 +198786,16 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.132,
+        "exp": 0.268,
         "n": 11,
-        "tot": 1.45,
-        "win": 45.455
+        "tot": 2.95,
+        "win": 54.545
        },
        "train": {
         "exp": 0.132,
         "n": 23,
         "tot": 3.045,
         "win": 47.826
-       }
-      },
-      {
-       "p": {
-        "at": "pivot",
-        "dead": 870,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "long",
-        "stop": "p0.5",
-        "tgt": 2,
-        "tol": 0.001
-       },
-       "test": {
-        "exp": 0.145,
-        "n": 14,
-        "tot": 2.033,
-        "win": 50.0
-       },
-       "train": {
-        "exp": 0.107,
-        "n": 27,
-        "tot": 2.89,
-        "win": 44.444
        }
       },
       {
@@ -195734,10 +198810,10 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.086,
+        "exp": 0.18,
         "n": 16,
-        "tot": 1.384,
-        "win": 43.75
+        "tot": 2.884,
+        "win": 50.0
        },
        "train": {
         "exp": 0.11,
@@ -195745,11 +198821,35 @@
         "tot": 3.756,
         "win": 47.059
        }
+      },
+      {
+       "p": {
+        "at": "pivot",
+        "dead": 870,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "long",
+        "stop": "p0.5",
+        "tgt": 2,
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.252,
+        "n": 14,
+        "tot": 3.533,
+        "win": 57.143
+       },
+       "train": {
+        "exp": 0.084,
+        "n": 28,
+        "tot": 2.34,
+        "win": 42.857
+       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 22,
+     "robust": 19,
      "tested": 192
     },
     "cpr": {
@@ -196492,10 +199592,10 @@
         "win": 55.556
        },
        "train": {
-        "exp": 0.445,
-        "n": 20,
-        "tot": 8.908,
-        "win": 55.0
+        "exp": 0.488,
+        "n": 19,
+        "tot": 9.279,
+        "win": 57.895
        }
       },
       {
@@ -196515,10 +199615,10 @@
         "win": 55.556
        },
        "train": {
-        "exp": 0.433,
-        "n": 20,
-        "tot": 8.669,
-        "win": 55.0
+        "exp": 0.476,
+        "n": 19,
+        "tot": 9.041,
+        "win": 57.895
        }
       },
       {
@@ -196538,10 +199638,10 @@
         "win": 55.556
        },
        "train": {
-        "exp": 0.364,
-        "n": 20,
-        "tot": 7.288,
-        "win": 55.0
+        "exp": 0.403,
+        "n": 19,
+        "tot": 7.659,
+        "win": 57.895
        }
       }
      ],
@@ -196554,7 +199654,7 @@
    "skipped_gap_days": []
   },
   "ADANIPORTS": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -196597,9 +199697,9 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.212,
+        "exp": 0.2,
         "n": 15,
-        "tot": 3.187,
+        "tot": 2.998,
         "win": 33.333
        },
        "train": {
@@ -196621,9 +199721,9 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.23,
+        "exp": 0.211,
         "n": 10,
-        "tot": 2.298,
+        "tot": 2.11,
         "win": 30.0
        },
        "train": {
@@ -196636,7 +199736,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 40,
+     "robust": 37,
      "tested": 192
     },
     "cpr": {
@@ -196790,7 +199890,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 1001,
+     "robust": 995,
      "tested": 3240
     },
     "inside": {
@@ -196812,9 +199912,9 @@
         "win": 31.25
        },
        "train": {
-        "exp": 0.218,
+        "exp": 0.206,
         "n": 24,
-        "tot": 5.241,
+        "tot": 4.936,
         "win": 25.0
        }
       },
@@ -196835,9 +199935,9 @@
         "win": 31.25
        },
        "train": {
-        "exp": 0.211,
+        "exp": 0.198,
         "n": 24,
-        "tot": 5.061,
+        "tot": 4.756,
         "win": 25.0
        }
       },
@@ -196858,16 +199958,16 @@
         "win": 31.579
        },
        "train": {
-        "exp": 0.147,
+        "exp": 0.138,
         "n": 31,
-        "tot": 4.572,
+        "tot": 4.267,
         "win": 32.258
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 27,
+     "robust": 25,
      "tested": 144
     },
     "ob": {
@@ -197252,7 +200352,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 640,
+     "robust": 630,
      "tested": 3240
     },
     "sweep": {
@@ -197350,9 +200450,9 @@
         "win": 50.0
        },
        "train": {
-        "exp": 0.121,
+        "exp": 0.094,
         "n": 15,
-        "tot": 1.821,
+        "tot": 1.413,
         "win": 33.333
        }
       },
@@ -197374,7 +200474,7 @@
        "train": {
         "exp": 0.22,
         "n": 16,
-        "tot": 3.521,
+        "tot": 3.52,
         "win": 37.5
        }
       },
@@ -197480,7 +200580,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 312,
+     "robust": 307,
      "tested": 3240
     }
    },
@@ -197489,37 +200589,13 @@
    ]
   },
   "ADANIPOWER": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
    "setups": {
     "candle": {
      "best": [
-      {
-       "p": {
-        "at": "swing",
-        "dead": 690,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "long",
-        "stop": "natural",
-        "tgt": "eod",
-        "tol": 0.001
-       },
-       "test": {
-        "exp": 0.201,
-        "n": 11,
-        "tot": 2.21,
-        "win": 45.455
-       },
-       "train": {
-        "exp": 0.234,
-        "n": 17,
-        "tot": 3.977,
-        "win": 23.529
-       }
-      },
       {
        "p": {
         "at": "swing",
@@ -197538,9 +200614,9 @@
         "win": 31.579
        },
        "train": {
-        "exp": 0.155,
+        "exp": 0.154,
         "n": 38,
-        "tot": 5.884,
+        "tot": 5.864,
         "win": 31.579
        }
       },
@@ -197562,16 +200638,40 @@
         "win": 25.0
        },
        "train": {
-        "exp": 0.169,
+        "exp": 0.168,
         "n": 38,
-        "tot": 6.407,
+        "tot": 6.388,
         "win": 34.211
+       }
+      },
+      {
+       "p": {
+        "at": "swing",
+        "dead": 690,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "long",
+        "stop": "natural",
+        "tgt": "eod",
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.115,
+        "n": 11,
+        "tot": 1.266,
+        "win": 36.364
+       },
+       "train": {
+        "exp": 0.234,
+        "n": 17,
+        "tot": 3.977,
+        "win": 23.529
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 49,
+     "robust": 46,
      "tested": 192
     },
     "cpr": {
@@ -197879,7 +200979,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 577,
+     "robust": 579,
      "tested": 3240
     },
     "odrive": {
@@ -198376,7 +201476,7 @@
    "skipped_gap_days": []
   },
   "AMBUJACEM": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -198612,7 +201712,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 337,
+     "robust": 333,
      "tested": 3240
     },
     "inside": {
@@ -198628,10 +201728,10 @@
         "tgt": "eod"
        },
        "test": {
-        "exp": 0.147,
+        "exp": 0.211,
         "n": 20,
-        "tot": 2.943,
-        "win": 50.0
+        "tot": 4.211,
+        "win": 55.0
        },
        "train": {
         "exp": 0.165,
@@ -198651,10 +201751,10 @@
         "tgt": "eod"
        },
        "test": {
-        "exp": 0.241,
-        "n": 14,
-        "tot": 3.377,
-        "win": 57.143
+        "exp": 0.302,
+        "n": 13,
+        "tot": 3.927,
+        "win": 61.538
        },
        "train": {
         "exp": 0.14,
@@ -198674,10 +201774,10 @@
         "tgt": 2
        },
        "test": {
-        "exp": 0.162,
+        "exp": 0.225,
         "n": 20,
-        "tot": 3.231,
-        "win": 55.0
+        "tot": 4.498,
+        "win": 60.0
        },
        "train": {
         "exp": 0.125,
@@ -198782,10 +201882,10 @@
         "tgt": 1.5
        },
        "test": {
-        "exp": 0.123,
-        "n": 10,
-        "tot": 1.229,
-        "win": 60.0
+        "exp": 0.015,
+        "n": 11,
+        "tot": 0.16,
+        "win": 54.545
        },
        "train": {
         "exp": 0.017,
@@ -199005,7 +202105,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 595,
+     "robust": 599,
      "tested": 3240
     },
     "sweep": {
@@ -199149,7 +202249,7 @@
        "train": {
         "exp": 0.382,
         "n": 18,
-        "tot": 6.87,
+        "tot": 6.871,
         "win": 38.889
        }
       }
@@ -199233,14 +202333,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 187,
+     "robust": 188,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "APOLLOHOSP": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -199273,6 +202373,30 @@
       },
       {
        "p": {
+        "at": "swing",
+        "dead": 870,
+        "filt": "none",
+        "pat": "pin",
+        "side": "both",
+        "stop": "natural",
+        "tgt": "eod",
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.239,
+        "n": 20,
+        "tot": 4.778,
+        "win": 40.0
+       },
+       "train": {
+        "exp": 0.094,
+        "n": 40,
+        "tot": 3.765,
+        "win": 22.5
+       }
+      },
+      {
+       "p": {
         "at": "pivot",
         "dead": 690,
         "filt": "none",
@@ -199289,40 +202413,16 @@
         "win": 50.0
        },
        "train": {
-        "exp": 0.122,
+        "exp": 0.082,
         "n": 37,
-        "tot": 4.527,
-        "win": 45.946
-       }
-      },
-      {
-       "p": {
-        "at": "pivot",
-        "dead": 870,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": 2,
-        "tol": 0.003
-       },
-       "test": {
-        "exp": 0.159,
-        "n": 17,
-        "tot": 2.708,
-        "win": 47.059
-       },
-       "train": {
-        "exp": 0.122,
-        "n": 37,
-        "tot": 4.527,
-        "win": 45.946
+        "tot": 3.027,
+        "win": 43.243
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 40,
+     "robust": 39,
      "tested": 192
     },
     "cpr": {
@@ -199938,7 +203038,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 107,
+     "robust": 104,
      "tested": 3240
     },
     "sweep": {
@@ -200046,28 +203146,6 @@
        "p": {
         "dead": 690,
         "filt": "none",
-        "kind": "st3",
-        "side": "both",
-        "stop": "natural",
-        "tgt": "eod"
-       },
-       "test": {
-        "exp": 0.137,
-        "n": 8,
-        "tot": 1.097,
-        "win": 37.5
-       },
-       "train": {
-        "exp": 0.0,
-        "n": 23,
-        "tot": 0.01,
-        "win": 39.13
-       }
-      },
-      {
-       "p": {
-        "dead": 690,
-        "filt": "none",
         "kind": "st2",
         "side": "both",
         "stop": "p0.5",
@@ -200089,7 +203167,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 3,
+     "robust": 2,
      "tested": 72
     },
     "vdelta": {
@@ -200173,7 +203251,7 @@
    "skipped_gap_days": []
   },
   "ASIANPAINT": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -200697,29 +203775,6 @@
         "side": "both",
         "src": "swing3",
         "stop": "p0.5",
-        "tgt": 2,
-        "w": 1
-       },
-       "test": {
-        "exp": 0.146,
-        "n": 20,
-        "tot": 2.915,
-        "win": 55.0
-       },
-       "train": {
-        "exp": 0.131,
-        "n": 33,
-        "tot": 4.31,
-        "win": 54.545
-       }
-      },
-      {
-       "p": {
-        "dead": 870,
-        "filt": "none",
-        "side": "both",
-        "src": "swing3",
-        "stop": "p0.5",
         "tgt": "eod",
         "w": 3
        },
@@ -200743,6 +203798,29 @@
         "side": "both",
         "src": "swing3",
         "stop": "p0.5",
+        "tgt": 2,
+        "w": 1
+       },
+       "test": {
+        "exp": 0.146,
+        "n": 20,
+        "tot": 2.915,
+        "win": 55.0
+       },
+       "train": {
+        "exp": 0.126,
+        "n": 33,
+        "tot": 4.17,
+        "win": 54.545
+       }
+      },
+      {
+       "p": {
+        "dead": 870,
+        "filt": "none",
+        "side": "both",
+        "src": "swing3",
+        "stop": "p0.5",
         "tgt": "eod",
         "w": 1
        },
@@ -200753,9 +203831,9 @@
         "win": 50.0
        },
        "train": {
-        "exp": 0.168,
+        "exp": 0.162,
         "n": 33,
-        "tot": 5.539,
+        "tot": 5.343,
         "win": 54.545
        }
       }
@@ -200913,7 +203991,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 8,
+     "robust": 4,
      "tested": 3240
     }
    },
@@ -200922,7 +204000,7 @@
    ]
   },
   "AXISBANK": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -201848,7 +204926,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 202,
+     "robust": 200,
      "tested": 3240
     }
    },
@@ -201857,7 +204935,7 @@
    ]
   },
   "BAJAJ-AUTO": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -202514,7 +205592,7 @@
        "train": {
         "exp": 0.267,
         "n": 24,
-        "tot": 6.404,
+        "tot": 6.405,
         "win": 66.667
        }
       },
@@ -202536,7 +205614,7 @@
        "train": {
         "exp": 0.378,
         "n": 24,
-        "tot": 9.063,
+        "tot": 9.065,
         "win": 66.667
        }
       }
@@ -202604,7 +205682,7 @@
    "skipped_gap_days": []
   },
   "BAJAJFINSV": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -203368,83 +206446,83 @@
       {
        "p": {
         "dead": 630,
-        "filt": "sma20",
+        "filt": "rsi50",
         "n": 6,
         "side": "both",
-        "stop": "p0.5",
+        "stop": "natural",
         "tgt": 3,
         "thr": 0.3
        },
        "test": {
-        "exp": 0.25,
+        "exp": 0.313,
         "n": 5,
-        "tot": 1.25,
-        "win": 40.0
+        "tot": 1.563,
+        "win": 60.0
        },
        "train": {
-        "exp": 0.186,
-        "n": 15,
-        "tot": 2.794,
-        "win": 46.667
+        "exp": 0.263,
+        "n": 11,
+        "tot": 2.891,
+        "win": 54.545
        }
       },
       {
        "p": {
         "dead": 630,
-        "filt": "sma20",
+        "filt": "rsi50",
         "n": 6,
         "side": "both",
-        "stop": "p1.0",
-        "tgt": 1.5,
+        "stop": "natural",
+        "tgt": 2,
         "thr": 0.3
        },
        "test": {
-        "exp": 0.3,
+        "exp": 0.313,
         "n": 5,
-        "tot": 1.498,
+        "tot": 1.563,
         "win": 60.0
        },
        "train": {
-        "exp": 0.164,
-        "n": 15,
-        "tot": 2.457,
-        "win": 53.333
+        "exp": 0.233,
+        "n": 11,
+        "tot": 2.561,
+        "win": 54.545
        }
       },
       {
        "p": {
-        "dead": 690,
-        "filt": "sma20",
+        "dead": 630,
+        "filt": "rsi50",
         "n": 6,
         "side": "both",
-        "stop": "p1.0",
-        "tgt": 1.5,
+        "stop": "natural",
+        "tgt": "eod",
         "thr": 0.3
        },
        "test": {
-        "exp": 0.19,
-        "n": 8,
-        "tot": 1.522,
-        "win": 50.0
+        "exp": 0.313,
+        "n": 5,
+        "tot": 1.563,
+        "win": 60.0
        },
        "train": {
-        "exp": 0.139,
-        "n": 27,
-        "tot": 3.764,
-        "win": 59.259
+        "exp": 0.218,
+        "n": 11,
+        "tot": 2.397,
+        "win": 54.545
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 52,
+     "robust": 57,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "BAJAJHLDNG": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -203603,7 +206681,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 20,
+     "robust": 19,
      "tested": 192
     },
     "fvg": {
@@ -203918,7 +206996,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 16,
+     "robust": 14,
      "tested": 144
     },
     "round": {
@@ -204219,7 +207297,7 @@
    ]
   },
   "BAJFINANCE": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -204894,7 +207972,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 118,
+     "robust": 126,
      "tested": 3240
     },
     "sweep": {
@@ -204994,7 +208072,7 @@
        "train": {
         "exp": 0.281,
         "n": 18,
-        "tot": 5.065,
+        "tot": 5.055,
         "win": 61.111
        }
       },
@@ -205016,7 +208094,7 @@
        "train": {
         "exp": 0.282,
         "n": 27,
-        "tot": 7.615,
+        "tot": 7.611,
         "win": 66.667
        }
       },
@@ -205038,7 +208116,7 @@
        "train": {
         "exp": 0.261,
         "n": 27,
-        "tot": 7.049,
+        "tot": 7.039,
         "win": 59.259
        }
       }
@@ -205122,14 +208200,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 151,
+     "robust": 147,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "BANKBARODA": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -205471,7 +208549,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 247,
+     "robust": 248,
      "tested": 3240
     },
     "odrive": {
@@ -205885,33 +208963,10 @@
         "win": 63.636
        },
        "train": {
-        "exp": 0.294,
-        "n": 22,
-        "tot": 6.471,
-        "win": 68.182
-       }
-      },
-      {
-       "p": {
-        "dead": 780,
-        "filt": "none",
-        "n": 6,
-        "side": "both",
-        "stop": "p1.0",
-        "tgt": 2,
-        "thr": 0.5
-       },
-       "test": {
-        "exp": 0.252,
-        "n": 11,
-        "tot": 2.772,
-        "win": 63.636
-       },
-       "train": {
-        "exp": 0.244,
-        "n": 22,
-        "tot": 5.372,
-        "win": 68.182
+        "exp": 0.316,
+        "n": 20,
+        "tot": 6.328,
+        "win": 70.0
        }
       },
       {
@@ -205931,23 +208986,46 @@
         "win": 63.636
        },
        "train": {
-        "exp": 0.244,
-        "n": 22,
-        "tot": 5.372,
-        "win": 68.182
+        "exp": 0.286,
+        "n": 20,
+        "tot": 5.712,
+        "win": 70.0
+       }
+      },
+      {
+       "p": {
+        "dead": 780,
+        "filt": "none",
+        "n": 6,
+        "side": "both",
+        "stop": "p1.0",
+        "tgt": 2,
+        "thr": 0.5
+       },
+       "test": {
+        "exp": 0.252,
+        "n": 11,
+        "tot": 2.772,
+        "win": 63.636
+       },
+       "train": {
+        "exp": 0.286,
+        "n": 20,
+        "tot": 5.712,
+        "win": 70.0
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 204,
+     "robust": 206,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "BEL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -206589,10 +209667,10 @@
         "win": 66.667
        },
        "train": {
-        "exp": 0.214,
-        "n": 11,
-        "tot": 2.354,
-        "win": 54.545
+        "exp": 0.271,
+        "n": 10,
+        "tot": 2.713,
+        "win": 60.0
        }
       },
       {
@@ -206612,9 +209690,9 @@
         "win": 61.538
        },
        "train": {
-        "exp": 0.142,
+        "exp": 0.134,
         "n": 28,
-        "tot": 3.977,
+        "tot": 3.74,
         "win": 53.571
        }
       },
@@ -206635,23 +209713,23 @@
         "win": 66.667
        },
        "train": {
-        "exp": 0.204,
-        "n": 11,
-        "tot": 2.243,
-        "win": 54.545
+        "exp": 0.26,
+        "n": 10,
+        "tot": 2.602,
+        "win": 60.0
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 93,
+     "robust": 88,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "BHARTIARTL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -207356,7 +210434,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 12,
+     "robust": 13,
      "tested": 144
     },
     "trend": {
@@ -207514,7 +210592,7 @@
    "skipped_gap_days": []
   },
   "BOSCHLTD": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -208196,7 +211274,7 @@
        "train": {
         "exp": 0.114,
         "n": 23,
-        "tot": 2.633,
+        "tot": 2.628,
         "win": 47.826
        }
       },
@@ -208218,7 +211296,7 @@
        "train": {
         "exp": 0.125,
         "n": 23,
-        "tot": 2.874,
+        "tot": 2.87,
         "win": 47.826
        }
       },
@@ -208331,7 +211409,7 @@
    "skipped_gap_days": []
   },
   "BPCL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -208413,7 +211491,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 44,
+     "robust": 45,
      "tested": 192
     },
     "cpr": {
@@ -209171,7 +212249,7 @@
    "skipped_gap_days": []
   },
   "BRITANNIA": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -209849,25 +212927,25 @@
       },
       {
        "p": {
-        "dead": 690,
+        "dead": 870,
         "filt": "none",
         "side": "both",
-        "src": "swing2",
+        "src": "swing3",
         "stop": "p0.5",
-        "tgt": 1.5,
+        "tgt": "eod",
         "w": 1
        },
        "test": {
-        "exp": 0.073,
-        "n": 19,
-        "tot": 1.39,
-        "win": 52.632
+        "exp": 0.201,
+        "n": 20,
+        "tot": 4.013,
+        "win": 45.0
        },
        "train": {
-        "exp": 0.131,
-        "n": 30,
-        "tot": 3.919,
-        "win": 56.667
+        "exp": 0.077,
+        "n": 36,
+        "tot": 2.759,
+        "win": 44.444
        }
       }
      ],
@@ -210024,7 +213102,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 82,
+     "robust": 70,
      "tested": 3240
     }
    },
@@ -210033,7 +213111,7 @@
    ]
   },
   "BSE": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -210944,7 +214022,7 @@
    "skipped_gap_days": []
   },
   "CANBK": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -211763,7 +214841,7 @@
    "skipped_gap_days": []
   },
   "CGPOWER": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -211845,7 +214923,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 72,
+     "robust": 73,
      "tested": 192
     },
     "cpr": {
@@ -212559,9 +215637,9 @@
         "win": 37.5
        },
        "train": {
-        "exp": 0.194,
+        "exp": 0.2,
         "n": 21,
-        "tot": 4.078,
+        "tot": 4.201,
         "win": 38.095
        }
       },
@@ -212603,9 +215681,9 @@
         "win": 38.889
        },
        "train": {
-        "exp": 0.101,
+        "exp": 0.105,
         "n": 33,
-        "tot": 3.331,
+        "tot": 3.454,
         "win": 36.364
        }
       }
@@ -212634,10 +215712,10 @@
         "win": 54.545
        },
        "train": {
-        "exp": 0.18,
-        "n": 16,
-        "tot": 2.874,
-        "win": 50.0
+        "exp": 0.193,
+        "n": 15,
+        "tot": 2.89,
+        "win": 53.333
        }
       },
       {
@@ -212657,33 +215735,33 @@
         "win": 50.0
        },
        "train": {
-        "exp": 0.203,
+        "exp": 0.197,
         "n": 35,
-        "tot": 7.09,
+        "tot": 6.892,
         "win": 57.143
        }
       },
       {
        "p": {
-        "dead": 690,
+        "dead": 780,
         "filt": "none",
         "n": 6,
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": 1.5,
-        "thr": 0.5
+        "side": "long",
+        "stop": "natural",
+        "tgt": "eod",
+        "thr": 0.3
        },
        "test": {
-        "exp": 0.132,
-        "n": 11,
-        "tot": 1.45,
-        "win": 54.545
+        "exp": 0.124,
+        "n": 14,
+        "tot": 1.736,
+        "win": 35.714
        },
        "train": {
-        "exp": 0.153,
-        "n": 16,
-        "tot": 2.45,
-        "win": 56.25
+        "exp": 0.126,
+        "n": 30,
+        "tot": 3.781,
+        "win": 36.667
        }
       }
      ],
@@ -212696,7 +215774,7 @@
    "skipped_gap_days": []
   },
   "CHOLAFIN": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -212778,34 +215856,11 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 24,
+     "robust": 26,
      "tested": 192
     },
     "cpr": {
      "best": [
-      {
-       "p": {
-        "dead": 690,
-        "filt": "none",
-        "levels": "cpr",
-        "mode": "break",
-        "side": "long",
-        "stop": "natural",
-        "tgt": 2
-       },
-       "test": {
-        "exp": 0.33,
-        "n": 8,
-        "tot": 2.638,
-        "win": 75.0
-       },
-       "train": {
-        "exp": 0.309,
-        "n": 13,
-        "tot": 4.021,
-        "win": 46.154
-       }
-      },
       {
        "p": {
         "dead": 870,
@@ -212850,6 +215905,29 @@
         "n": 10,
         "tot": 3.013,
         "win": 50.0
+       }
+      },
+      {
+       "p": {
+        "dead": 690,
+        "filt": "none",
+        "levels": "cpr",
+        "mode": "break",
+        "side": "long",
+        "stop": "natural",
+        "tgt": 2
+       },
+       "test": {
+        "exp": 0.33,
+        "n": 8,
+        "tot": 2.638,
+        "win": 75.0
+       },
+       "train": {
+        "exp": 0.274,
+        "n": 14,
+        "tot": 3.834,
+        "win": 42.857
        }
       }
      ],
@@ -213423,7 +216501,7 @@
        "train": {
         "exp": 0.281,
         "n": 21,
-        "tot": 5.893,
+        "tot": 5.896,
         "win": 61.905
        }
       },
@@ -213529,7 +216607,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 94,
+     "robust": 97,
      "tested": 3240
     }
    },
@@ -213538,7 +216616,7 @@
    ]
   },
   "CIPLA": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -213715,7 +216793,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 84,
+     "robust": 94,
      "tested": 3240
     },
     "odrive": {
@@ -213981,7 +217059,7 @@
    "skipped_gap_days": []
   },
   "COALINDIA": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -214000,9 +217078,9 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.125,
+        "exp": 0.124,
         "n": 16,
-        "tot": 1.995,
+        "tot": 1.982,
         "win": 43.75
        },
        "train": {
@@ -214239,9 +217317,9 @@
         "win": 42.105
        },
        "train": {
-        "exp": 0.045,
+        "exp": 0.053,
         "n": 33,
-        "tot": 1.481,
+        "tot": 1.744,
         "win": 48.485
        }
       },
@@ -214262,9 +217340,9 @@
         "win": 42.105
        },
        "train": {
-        "exp": 0.044,
+        "exp": 0.052,
         "n": 33,
-        "tot": 1.444,
+        "tot": 1.707,
         "win": 51.515
        }
       },
@@ -214285,16 +217363,16 @@
         "win": 42.105
        },
        "train": {
-        "exp": 0.03,
+        "exp": 0.038,
         "n": 33,
-        "tot": 0.981,
+        "tot": 1.244,
         "win": 42.424
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 6,
+     "robust": 7,
      "tested": 144
     },
     "ob": {
@@ -214386,6 +217464,52 @@
       {
        "p": {
         "buf": 0.0,
+        "dead": 690,
+        "filt": "none",
+        "mode": "break",
+        "side": "long",
+        "stop": "p0.5",
+        "tgt": 1.5
+       },
+       "test": {
+        "exp": 0.2,
+        "n": 5,
+        "tot": 1.0,
+        "win": 60.0
+       },
+       "train": {
+        "exp": 0.086,
+        "n": 14,
+        "tot": 1.199,
+        "win": 50.0
+       }
+      },
+      {
+       "p": {
+        "buf": 0.0,
+        "dead": 870,
+        "filt": "none",
+        "mode": "break",
+        "side": "long",
+        "stop": "p0.5",
+        "tgt": 1.5
+       },
+       "test": {
+        "exp": 0.2,
+        "n": 5,
+        "tot": 1.0,
+        "win": 60.0
+       },
+       "train": {
+        "exp": 0.043,
+        "n": 15,
+        "tot": 0.649,
+        "win": 46.667
+       }
+      },
+      {
+       "p": {
+        "buf": 0.0,
         "dead": 870,
         "filt": "none",
         "mode": "break",
@@ -214405,34 +217529,11 @@
         "tot": 1.482,
         "win": 38.71
        }
-      },
-      {
-       "p": {
-        "buf": 0.001,
-        "dead": 870,
-        "filt": "none",
-        "mode": "break",
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": "eod"
-       },
-       "test": {
-        "exp": 0.032,
-        "n": 13,
-        "tot": 0.415,
-        "win": 30.769
-       },
-       "train": {
-        "exp": 0.021,
-        "n": 29,
-        "tot": 0.622,
-        "win": 37.931
-       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 2,
+     "robust": 4,
      "tested": 144
     },
     "round": {
@@ -214586,7 +217687,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 301,
+     "robust": 323,
      "tested": 3240
     },
     "sweep": {
@@ -214686,7 +217787,7 @@
        "train": {
         "exp": 0.11,
         "n": 21,
-        "tot": 2.314,
+        "tot": 2.306,
         "win": 47.619
        }
       },
@@ -214706,9 +217807,9 @@
         "win": 83.333
        },
        "train": {
-        "exp": 0.05,
+        "exp": 0.049,
         "n": 21,
-        "tot": 1.044,
+        "tot": 1.036,
         "win": 47.619
        }
       },
@@ -214728,9 +217829,9 @@
         "win": 83.333
        },
        "train": {
-        "exp": 0.045,
+        "exp": 0.044,
         "n": 21,
-        "tot": 0.937,
+        "tot": 0.929,
         "win": 47.619
        }
       }
@@ -214814,14 +217915,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 55,
+     "robust": 57,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "CUMMINSIND": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -214903,7 +218004,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 49,
+     "robust": 48,
      "tested": 192
     },
     "cpr": {
@@ -215684,7 +218785,7 @@
    "skipped_gap_days": []
   },
   "DIVISLAB": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -215766,7 +218867,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 41,
+     "robust": 43,
      "tested": 192
     },
     "cpr": {
@@ -216150,9 +219251,9 @@
         "tgt": 1.5
        },
        "test": {
-        "exp": 0.091,
+        "exp": 0.086,
         "n": 13,
-        "tot": 1.179,
+        "tot": 1.118,
         "win": 38.462
        },
        "train": {
@@ -216364,7 +219465,7 @@
        "train": {
         "exp": 0.095,
         "n": 22,
-        "tot": 2.087,
+        "tot": 2.079,
         "win": 50.0
        }
       },
@@ -216451,7 +219552,7 @@
         "n": 6,
         "side": "long",
         "stop": "p1.0",
-        "tgt": 3,
+        "tgt": 2,
         "thr": 0.5
        },
        "test": {
@@ -216461,23 +219562,23 @@
         "win": 60.0
        },
        "train": {
-        "exp": 0.207,
-        "n": 14,
-        "tot": 2.904,
-        "win": 57.143
+        "exp": 0.26,
+        "n": 15,
+        "tot": 3.896,
+        "win": 60.0
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 58,
+     "robust": 71,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "DLF": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -217412,7 +220513,7 @@
    ]
   },
   "DMART": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -218205,7 +221306,7 @@
    "skipped_gap_days": []
   },
   "DRREDDY": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -218863,10 +221964,10 @@
         "win": 77.778
        },
        "train": {
-        "exp": 0.404,
-        "n": 12,
-        "tot": 4.853,
-        "win": 66.667
+        "exp": 0.369,
+        "n": 13,
+        "tot": 4.803,
+        "win": 61.538
        }
       },
       {
@@ -218886,10 +221987,10 @@
         "win": 77.778
        },
        "train": {
-        "exp": 0.46,
-        "n": 12,
-        "tot": 5.517,
-        "win": 66.667
+        "exp": 0.421,
+        "n": 13,
+        "tot": 5.467,
+        "win": 61.538
        }
       },
       {
@@ -218909,10 +222010,10 @@
         "win": 77.778
        },
        "train": {
-        "exp": 0.427,
-        "n": 12,
-        "tot": 5.122,
-        "win": 66.667
+        "exp": 0.39,
+        "n": 13,
+        "tot": 5.072,
+        "win": 61.538
        }
       }
      ],
@@ -218925,7 +222026,7 @@
    "skipped_gap_days": []
   },
   "EICHERMOT": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -219858,7 +222959,7 @@
    "skipped_gap_days": []
   },
   "ENRIN": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -219907,10 +223008,10 @@
         "win": 35.0
        },
        "train": {
-        "exp": 0.124,
+        "exp": 0.109,
         "n": 39,
-        "tot": 4.853,
-        "win": 38.462
+        "tot": 4.253,
+        "win": 35.897
        }
       },
       {
@@ -220094,7 +223195,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 417,
+     "robust": 412,
      "tested": 3240
     },
     "inside": {
@@ -220433,7 +223534,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 27,
+     "robust": 26,
      "tested": 96
     },
     "structure": {
@@ -220722,7 +223823,7 @@
    "skipped_gap_days": []
   },
   "ETERNAL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -220897,39 +223998,16 @@
         "tgt": 1.5
        },
        "test": {
-        "exp": 0.479,
-        "n": 5,
-        "tot": 2.396,
-        "win": 80.0
+        "exp": 0.326,
+        "n": 6,
+        "tot": 1.955,
+        "win": 66.667
        },
        "train": {
         "exp": 0.306,
         "n": 15,
         "tot": 4.591,
         "win": 66.667
-       }
-      },
-      {
-       "p": {
-        "age": 24,
-        "dead": 690,
-        "filt": "none",
-        "minpct": 0.002,
-        "side": "long",
-        "stop": "p1.0",
-        "tgt": 2
-       },
-       "test": {
-        "exp": 0.411,
-        "n": 6,
-        "tot": 2.463,
-        "win": 66.667
-       },
-       "train": {
-        "exp": 0.304,
-        "n": 17,
-        "tot": 5.17,
-        "win": 58.824
        }
       },
       {
@@ -220943,10 +224021,10 @@
         "tgt": 2
        },
        "test": {
-        "exp": 0.579,
-        "n": 5,
-        "tot": 2.896,
-        "win": 80.0
+        "exp": 0.409,
+        "n": 6,
+        "tot": 2.455,
+        "win": 66.667
        },
        "train": {
         "exp": 0.302,
@@ -220954,11 +224032,34 @@
         "tot": 4.529,
         "win": 60.0
        }
+      },
+      {
+       "p": {
+        "age": 24,
+        "dead": 690,
+        "filt": "none",
+        "minpct": 0.002,
+        "side": "long",
+        "stop": "p1.0",
+        "tgt": 2
+       },
+       "test": {
+        "exp": 0.289,
+        "n": 7,
+        "tot": 2.022,
+        "win": 57.143
+       },
+       "train": {
+        "exp": 0.304,
+        "n": 17,
+        "tot": 5.17,
+        "win": 58.824
+       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 606,
+     "robust": 600,
      "tested": 3240
     },
     "inside": {
@@ -221402,9 +224503,9 @@
         "win": 58.333
        },
        "train": {
-        "exp": 0.268,
+        "exp": 0.269,
         "n": 22,
-        "tot": 5.905,
+        "tot": 5.908,
         "win": 50.0
        }
       },
@@ -221448,7 +224549,7 @@
        "train": {
         "exp": 0.207,
         "n": 22,
-        "tot": 4.555,
+        "tot": 4.557,
         "win": 50.0
        }
       }
@@ -221471,9 +224572,9 @@
         "thr": 0.3
        },
        "test": {
-        "exp": 0.898,
+        "exp": 1.027,
         "n": 7,
-        "tot": 6.284,
+        "tot": 7.189,
         "win": 71.429
        },
        "train": {
@@ -221494,9 +224595,9 @@
         "thr": 0.3
        },
        "test": {
-        "exp": 0.826,
+        "exp": 0.955,
         "n": 7,
-        "tot": 5.783,
+        "tot": 6.688,
         "win": 71.429
        },
        "train": {
@@ -221517,9 +224618,9 @@
         "thr": 0.3
        },
        "test": {
-        "exp": 0.967,
+        "exp": 1.097,
         "n": 7,
-        "tot": 6.771,
+        "tot": 7.676,
         "win": 71.429
        },
        "train": {
@@ -221532,14 +224633,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 116,
+     "robust": 133,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "GAIL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -222237,7 +225338,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 330,
+     "robust": 326,
      "tested": 3240
     },
     "sweep": {
@@ -222426,7 +225527,7 @@
    "skipped_gap_days": []
   },
   "GODREJCP": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -222770,7 +225871,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 86,
+     "robust": 88,
      "tested": 3240
     },
     "odrive": {
@@ -222861,29 +225962,6 @@
      "best": [
       {
        "p": {
-        "dead": 690,
-        "filt": "none",
-        "mode": "bounce",
-        "scale": "coarse",
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": 1.5
-       },
-       "test": {
-        "exp": 0.164,
-        "n": 7,
-        "tot": 1.15,
-        "win": 57.143
-       },
-       "train": {
-        "exp": 0.138,
-        "n": 14,
-        "tot": 1.931,
-        "win": 50.0
-       }
-      },
-      {
-       "p": {
         "dead": 870,
         "filt": "none",
         "mode": "bounce",
@@ -222926,6 +226004,29 @@
         "n": 16,
         "tot": 1.844,
         "win": 50.0
+       }
+      },
+      {
+       "p": {
+        "dead": 690,
+        "filt": "none",
+        "mode": "bounce",
+        "scale": "coarse",
+        "side": "both",
+        "stop": "p0.5",
+        "tgt": 1.5
+       },
+       "test": {
+        "exp": 0.164,
+        "n": 7,
+        "tot": 1.15,
+        "win": 57.143
+       },
+       "train": {
+        "exp": 0.092,
+        "n": 15,
+        "tot": 1.381,
+        "win": 46.667
        }
       }
      ],
@@ -223130,7 +226231,7 @@
        "train": {
         "exp": 0.048,
         "n": 37,
-        "tot": 1.784,
+        "tot": 1.783,
         "win": 48.649
        }
       },
@@ -223243,7 +226344,7 @@
    "skipped_gap_days": []
   },
   "GRASIM": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -223685,9 +226786,9 @@
         "tgt": "eod"
        },
        "test": {
-        "exp": 0.105,
+        "exp": 0.106,
         "n": 20,
-        "tot": 2.105,
+        "tot": 2.115,
         "win": 20.0
        },
        "train": {
@@ -223854,7 +226955,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 26,
+     "robust": 24,
      "tested": 144
     },
     "trend": {
@@ -223990,7 +227091,7 @@
    "skipped_gap_days": []
   },
   "HAL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -224094,10 +227195,10 @@
         "win": 42.857
        },
        "train": {
-        "exp": 0.131,
-        "n": 17,
-        "tot": 2.23,
-        "win": 41.176
+        "exp": 0.135,
+        "n": 18,
+        "tot": 2.426,
+        "win": 44.444
        }
       },
       {
@@ -224370,31 +227471,31 @@
       },
       {
        "p": {
-        "buf": 0.001,
+        "buf": 0.0,
         "dead": 690,
         "filt": "none",
         "mode": "break",
-        "side": "both",
+        "side": "long",
         "stop": "p0.5",
-        "tgt": 1.5
+        "tgt": 2
        },
        "test": {
-        "exp": 0.179,
-        "n": 12,
-        "tot": 2.15,
-        "win": 58.333
+        "exp": 0.2,
+        "n": 8,
+        "tot": 1.6,
+        "win": 50.0
        },
        "train": {
-        "exp": 0.119,
-        "n": 26,
-        "tot": 3.106,
-        "win": 57.692
+        "exp": 0.11,
+        "n": 11,
+        "tot": 1.207,
+        "win": 45.455
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 25,
+     "robust": 24,
      "tested": 144
     },
     "round": {
@@ -224471,7 +227572,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 17,
+     "robust": 18,
      "tested": 96
     },
     "structure": {
@@ -224718,7 +227819,7 @@
    ]
   },
   "HCLTECH": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -224737,9 +227838,9 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.082,
+        "exp": 0.072,
         "n": 19,
-        "tot": 1.558,
+        "tot": 1.36,
         "win": 36.842
        },
        "train": {
@@ -224761,9 +227862,9 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.066,
+        "exp": 0.056,
         "n": 20,
-        "tot": 1.319,
+        "tot": 1.122,
         "win": 35.0
        },
        "train": {
@@ -225390,14 +228491,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 35,
+     "robust": 37,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "HDFCAMC": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -226237,7 +229338,7 @@
    "skipped_gap_days": []
   },
   "HDFCBANK": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -227170,7 +230271,7 @@
    "skipped_gap_days": []
   },
   "HDFCLIFE": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -227406,7 +230507,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 194,
+     "robust": 239,
      "tested": 3240
     },
     "inside": {
@@ -228019,7 +231120,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 21,
+     "robust": 17,
      "tested": 72
     },
     "vdelta": {
@@ -228069,41 +231170,18 @@
         "tot": 0.249,
         "win": 38.095
        }
-      },
-      {
-       "p": {
-        "dead": 870,
-        "filt": "none",
-        "n": 24,
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": "eod",
-        "thr": 0.3
-       },
-       "test": {
-        "exp": 0.153,
-        "n": 8,
-        "tot": 1.226,
-        "win": 37.5
-       },
-       "train": {
-        "exp": 0.003,
-        "n": 10,
-        "tot": 0.032,
-        "win": 30.0
-       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 3,
+     "robust": 2,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "HINDALCO": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -228122,9 +231200,9 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.399,
+        "exp": 0.402,
         "n": 14,
-        "tot": 5.579,
+        "tot": 5.625,
         "win": 35.714
        },
        "train": {
@@ -228170,9 +231248,9 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.301,
+        "exp": 0.304,
         "n": 17,
-        "tot": 5.119,
+        "tot": 5.164,
         "win": 29.412
        },
        "train": {
@@ -228825,7 +231903,7 @@
        "test": {
         "exp": 0.313,
         "n": 16,
-        "tot": 5.008,
+        "tot": 5.003,
         "win": 43.75
        },
        "train": {
@@ -228847,7 +231925,7 @@
        "test": {
         "exp": 0.165,
         "n": 20,
-        "tot": 3.299,
+        "tot": 3.294,
         "win": 40.0
        },
        "train": {
@@ -228966,7 +232044,7 @@
    "skipped_gap_days": []
   },
   "HINDUNILVR": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -229599,37 +232677,13 @@
    "skipped_gap_days": []
   },
   "HINDZINC": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
    "setups": {
     "candle": {
      "best": [
-      {
-       "p": {
-        "at": "swing",
-        "dead": 690,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "both",
-        "stop": "natural",
-        "tgt": "eod",
-        "tol": 0.001
-       },
-       "test": {
-        "exp": 0.075,
-        "n": 15,
-        "tot": 1.132,
-        "win": 26.667
-       },
-       "train": {
-        "exp": 0.095,
-        "n": 32,
-        "tot": 3.032,
-        "win": 28.125
-       }
-      },
       {
        "p": {
         "at": "pivot",
@@ -229666,10 +232720,10 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.079,
-        "n": 10,
-        "tot": 0.791,
-        "win": 40.0
+        "exp": 0.054,
+        "n": 9,
+        "tot": 0.483,
+        "win": 33.333
        },
        "train": {
         "exp": 0.051,
@@ -229677,11 +232731,35 @@
         "tot": 1.321,
         "win": 42.308
        }
+      },
+      {
+       "p": {
+        "at": "swing",
+        "dead": 690,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "long",
+        "stop": "natural",
+        "tgt": 1.5,
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.087,
+        "n": 9,
+        "tot": 0.784,
+        "win": 44.444
+       },
+       "train": {
+        "exp": 0.018,
+        "n": 26,
+        "tot": 0.457,
+        "win": 46.154
+       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 8,
+     "robust": 4,
      "tested": 192
     },
     "cpr": {
@@ -230327,7 +233405,7 @@
        "train": {
         "exp": 0.087,
         "n": 16,
-        "tot": 1.395,
+        "tot": 1.389,
         "win": 43.75
        }
       },
@@ -230371,7 +233449,7 @@
        "train": {
         "exp": 0.083,
         "n": 16,
-        "tot": 1.33,
+        "tot": 1.324,
         "win": 43.75
        }
       }
@@ -230431,38 +233509,38 @@
       },
       {
        "p": {
-        "dead": 780,
+        "dead": 690,
         "filt": "none",
         "n": 6,
-        "side": "long",
+        "side": "both",
         "stop": "natural",
-        "tgt": 1,
-        "thr": 0.5
+        "tgt": 3,
+        "thr": 0.3
        },
        "test": {
-        "exp": 0.305,
-        "n": 9,
-        "tot": 2.748,
-        "win": 66.667
+        "exp": 0.299,
+        "n": 17,
+        "tot": 5.087,
+        "win": 52.941
        },
        "train": {
-        "exp": 0.334,
-        "n": 11,
-        "tot": 3.673,
-        "win": 63.636
+        "exp": 0.29,
+        "n": 35,
+        "tot": 10.143,
+        "win": 57.143
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 124,
+     "robust": 125,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "HYUNDAI": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -230495,6 +233573,30 @@
       },
       {
        "p": {
+        "at": "swing",
+        "dead": 870,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "long",
+        "stop": "p0.5",
+        "tgt": "eod",
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.071,
+        "n": 15,
+        "tot": 1.062,
+        "win": 46.667
+       },
+       "train": {
+        "exp": 0.082,
+        "n": 29,
+        "tot": 2.381,
+        "win": 37.931
+       }
+      },
+      {
+       "p": {
         "at": "pivot",
         "dead": 690,
         "filt": "none",
@@ -230516,35 +233618,11 @@
         "tot": 2.042,
         "win": 48.387
        }
-      },
-      {
-       "p": {
-        "at": "swing",
-        "dead": 690,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "long",
-        "stop": "p0.5",
-        "tgt": "eod",
-        "tol": 0.001
-       },
-       "test": {
-        "exp": 0.061,
-        "n": 14,
-        "tot": 0.857,
-        "win": 42.857
-       },
-       "train": {
-        "exp": 0.079,
-        "n": 11,
-        "tot": 0.865,
-        "win": 45.455
-       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 19,
+     "robust": 18,
      "tested": 192
     },
     "cpr": {
@@ -230852,7 +233930,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 128,
+     "robust": 129,
      "tested": 3240
     },
     "odrive": {
@@ -231310,10 +234388,10 @@
         "win": 45.455
        },
        "train": {
-        "exp": 0.323,
+        "exp": 0.33,
         "n": 21,
-        "tot": 6.784,
-        "win": 57.143
+        "tot": 6.924,
+        "win": 61.905
        }
       },
       {
@@ -231333,10 +234411,10 @@
         "win": 45.455
        },
        "train": {
-        "exp": 0.32,
+        "exp": 0.326,
         "n": 21,
-        "tot": 6.711,
-        "win": 57.143
+        "tot": 6.852,
+        "win": 61.905
        }
       },
       {
@@ -231356,16 +234434,16 @@
         "win": 45.455
        },
        "train": {
-        "exp": 0.309,
+        "exp": 0.316,
         "n": 21,
-        "tot": 6.496,
-        "win": 57.143
+        "tot": 6.637,
+        "win": 61.905
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 162,
+     "robust": 160,
      "tested": 3240
     }
    },
@@ -231374,7 +234452,7 @@
    ]
   },
   "ICICIBANK": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -232102,7 +235180,7 @@
        "train": {
         "exp": 0.016,
         "n": 27,
-        "tot": 0.424,
+        "tot": 0.432,
         "win": 37.037
        }
       },
@@ -232215,7 +235293,7 @@
    "skipped_gap_days": []
   },
   "IDEA": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -233104,7 +236182,7 @@
    "skipped_gap_days": []
   },
   "INDIGO": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -233293,6 +236371,29 @@
       },
       {
        "p": {
+        "age": 12,
+        "dead": 780,
+        "filt": "sma20",
+        "minpct": 0.002,
+        "side": "both",
+        "stop": "p1.0",
+        "tgt": 1
+       },
+       "test": {
+        "exp": 0.256,
+        "n": 5,
+        "tot": 1.282,
+        "win": 60.0
+       },
+       "train": {
+        "exp": 0.125,
+        "n": 16,
+        "tot": 2.007,
+        "win": 56.25
+       }
+      },
+      {
+       "p": {
         "age": 6,
         "dead": 780,
         "filt": "none",
@@ -233313,34 +236414,11 @@
         "tot": 3.918,
         "win": 40.0
        }
-      },
-      {
-       "p": {
-        "age": 6,
-        "dead": 780,
-        "filt": "none",
-        "minpct": 0.001,
-        "side": "both",
-        "stop": "p1.0",
-        "tgt": 2
-       },
-       "test": {
-        "exp": 0.104,
-        "n": 15,
-        "tot": 1.566,
-        "win": 53.333
-       },
-       "train": {
-        "exp": 0.103,
-        "n": 30,
-        "tot": 3.098,
-        "win": 40.0
-       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 77,
+     "robust": 84,
      "tested": 3240
     },
     "inside": {
@@ -233923,7 +237001,7 @@
    "skipped_gap_days": []
   },
   "INFY": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -234664,14 +237742,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 78,
+     "robust": 79,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "IOC": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -234753,7 +237831,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 41,
+     "robust": 44,
      "tested": 192
     },
     "cpr": {
@@ -234815,9 +237893,9 @@
         "tgt": "eod"
        },
        "test": {
-        "exp": 0.281,
+        "exp": 0.295,
         "n": 8,
-        "tot": 2.248,
+        "tot": 2.364,
         "win": 50.0
        },
        "train": {
@@ -235061,7 +238139,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 384,
+     "robust": 391,
      "tested": 3240
     },
     "odrive": {
@@ -235581,7 +238659,7 @@
    "skipped_gap_days": []
   },
   "IRFC": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -235630,40 +238708,40 @@
         "win": 47.368
        },
        "train": {
-        "exp": 0.088,
+        "exp": 0.089,
         "n": 36,
-        "tot": 3.185,
+        "tot": 3.211,
         "win": 41.667
        }
       },
       {
        "p": {
         "at": "pivot",
-        "dead": 870,
+        "dead": 690,
         "filt": "none",
         "pat": "pin",
         "side": "both",
-        "stop": "p0.5",
+        "stop": "natural",
         "tgt": "eod",
         "tol": 0.003
        },
        "test": {
-        "exp": 0.393,
+        "exp": 0.447,
         "n": 19,
-        "tot": 7.465,
+        "tot": 8.499,
         "win": 47.368
        },
        "train": {
-        "exp": 0.071,
-        "n": 37,
-        "tot": 2.635,
-        "win": 40.541
+        "exp": 0.089,
+        "n": 36,
+        "tot": 3.201,
+        "win": 30.556
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 23,
+     "robust": 24,
      "tested": 192
     },
     "cpr": {
@@ -235817,7 +238895,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 441,
+     "robust": 438,
      "tested": 3240
     },
     "inside": {
@@ -236382,69 +239460,69 @@
         "win": 50.0
        },
        "train": {
-        "exp": 0.709,
-        "n": 9,
-        "tot": 6.382,
-        "win": 66.667
+        "exp": 0.554,
+        "n": 8,
+        "tot": 4.432,
+        "win": 62.5
        }
       },
       {
        "p": {
-        "dead": 780,
-        "filt": "none",
-        "n": 12,
-        "side": "long",
-        "stop": "p1.0",
-        "tgt": 2,
+        "dead": 690,
+        "filt": "sma20",
+        "n": 6,
+        "side": "both",
+        "stop": "natural",
+        "tgt": "eod",
         "thr": 0.3
        },
        "test": {
-        "exp": 0.587,
-        "n": 7,
-        "tot": 4.106,
-        "win": 71.429
+        "exp": 0.47,
+        "n": 9,
+        "tot": 4.229,
+        "win": 66.667
        },
        "train": {
-        "exp": 0.376,
-        "n": 10,
-        "tot": 3.763,
-        "win": 60.0
+        "exp": 0.349,
+        "n": 17,
+        "tot": 5.934,
+        "win": 58.824
        }
       },
       {
        "p": {
         "dead": 780,
-        "filt": "none",
-        "n": 12,
-        "side": "long",
+        "filt": "sma20",
+        "n": 6,
+        "side": "both",
         "stop": "p1.0",
         "tgt": 1.5,
-        "thr": 0.3
+        "thr": 0.5
        },
        "test": {
-        "exp": 0.444,
-        "n": 7,
-        "tot": 3.106,
-        "win": 71.429
+        "exp": 0.514,
+        "n": 5,
+        "tot": 2.571,
+        "win": 100.0
        },
        "train": {
-        "exp": 0.375,
-        "n": 10,
-        "tot": 3.749,
-        "win": 60.0
+        "exp": 0.345,
+        "n": 13,
+        "tot": 4.484,
+        "win": 76.923
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 290,
+     "robust": 276,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "ITC": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -236478,6 +239556,30 @@
       {
        "p": {
         "at": "swing",
+        "dead": 870,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "both",
+        "stop": "natural",
+        "tgt": "eod",
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.135,
+        "n": 20,
+        "tot": 2.703,
+        "win": 35.0
+       },
+       "train": {
+        "exp": 0.126,
+        "n": 39,
+        "tot": 4.896,
+        "win": 30.769
+       }
+      },
+      {
+       "p": {
+        "at": "swing",
         "dead": 690,
         "filt": "none",
         "pat": "engulf",
@@ -236498,35 +239600,11 @@
         "tot": 5.104,
         "win": 28.571
        }
-      },
-      {
-       "p": {
-        "at": "swing",
-        "dead": 690,
-        "filt": "none",
-        "pat": "pin",
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": "eod",
-        "tol": 0.003
-       },
-       "test": {
-        "exp": 0.185,
-        "n": 16,
-        "tot": 2.954,
-        "win": 50.0
-       },
-       "train": {
-        "exp": 0.124,
-        "n": 37,
-        "tot": 4.57,
-        "win": 48.649
-       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 53,
+     "robust": 55,
      "tested": 192
     },
     "cpr": {
@@ -237307,7 +240385,7 @@
    "skipped_gap_days": []
   },
   "JINDALSTEL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -238035,7 +241113,7 @@
        "train": {
         "exp": 0.208,
         "n": 16,
-        "tot": 3.322,
+        "tot": 3.323,
         "win": 56.25
        }
       },
@@ -238163,7 +241241,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 234,
+     "robust": 237,
      "tested": 3240
     }
    },
@@ -238172,7 +241250,7 @@
    ]
   },
   "JIOFIN": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -238254,7 +241332,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 7,
+     "robust": 6,
      "tested": 192
     },
     "cpr": {
@@ -238992,7 +242070,7 @@
        "train": {
         "exp": 0.015,
         "n": 37,
-        "tot": 0.561,
+        "tot": 0.558,
         "win": 40.541
        }
       },
@@ -239014,7 +242092,7 @@
        "train": {
         "exp": 0.045,
         "n": 37,
-        "tot": 1.668,
+        "tot": 1.664,
         "win": 37.838
        }
       }
@@ -239105,7 +242183,7 @@
    "skipped_gap_days": []
   },
   "JSWSTEEL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -240038,7 +243116,7 @@
    "skipped_gap_days": []
   },
   "KOTAKBANK": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -240901,7 +243979,7 @@
    "skipped_gap_days": []
   },
   "LT": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -241137,7 +244215,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 619,
+     "robust": 621,
      "tested": 3240
     },
     "inside": {
@@ -241499,7 +244577,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 17,
+     "robust": 16,
      "tested": 96
     },
     "structure": {
@@ -241521,9 +244599,9 @@
         "win": 60.0
        },
        "train": {
-        "exp": 0.408,
+        "exp": 0.388,
         "n": 16,
-        "tot": 6.52,
+        "tot": 6.207,
         "win": 62.5
        }
       },
@@ -241544,9 +244622,9 @@
         "win": 60.0
        },
        "train": {
-        "exp": 0.561,
+        "exp": 0.539,
         "n": 14,
-        "tot": 7.854,
+        "tot": 7.54,
         "win": 71.429
        }
       },
@@ -241567,16 +244645,16 @@
         "win": 60.0
        },
        "train": {
-        "exp": 0.465,
+        "exp": 0.446,
         "n": 16,
-        "tot": 7.444,
+        "tot": 7.131,
         "win": 62.5
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 420,
+     "robust": 406,
      "tested": 3240
     },
     "sweep": {
@@ -241696,9 +244774,9 @@
         "win": 57.143
        },
        "train": {
-        "exp": 0.25,
+        "exp": 0.251,
         "n": 27,
-        "tot": 6.763,
+        "tot": 6.769,
         "win": 66.667
        }
       },
@@ -241811,7 +244889,7 @@
    "skipped_gap_days": []
   },
   "LTM": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -242146,33 +245224,33 @@
         "win": 55.556
        },
        "train": {
-        "exp": 0.219,
-        "n": 17,
-        "tot": 3.724,
-        "win": 47.059
+        "exp": 0.267,
+        "n": 16,
+        "tot": 4.274,
+        "win": 50.0
        }
       },
       {
        "p": {
         "L": 5,
-        "age": 6,
-        "dead": 870,
+        "age": 12,
+        "dead": 780,
         "filt": "none",
         "side": "both",
-        "stop": "p0.5",
-        "tgt": 3
+        "stop": "p1.0",
+        "tgt": 1.5
        },
        "test": {
-        "exp": 0.202,
-        "n": 11,
-        "tot": 2.227,
-        "win": 45.455
+        "exp": 0.226,
+        "n": 9,
+        "tot": 2.036,
+        "win": 55.556
        },
        "train": {
-        "exp": 0.19,
-        "n": 23,
-        "tot": 4.36,
-        "win": 52.174
+        "exp": 0.229,
+        "n": 16,
+        "tot": 3.666,
+        "win": 56.25
        }
       },
       {
@@ -242192,16 +245270,16 @@
         "win": 60.0
        },
        "train": {
-        "exp": 0.176,
-        "n": 18,
-        "tot": 3.174,
-        "win": 44.444
+        "exp": 0.219,
+        "n": 17,
+        "tot": 3.724,
+        "win": 47.059
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 186,
+     "robust": 212,
      "tested": 3240
     },
     "odrive": {
@@ -242537,9 +245615,9 @@
         "win": 58.824
        },
        "train": {
-        "exp": 0.378,
+        "exp": 0.373,
         "n": 28,
-        "tot": 10.573,
+        "tot": 10.457,
         "win": 60.714
        }
       },
@@ -242559,9 +245637,9 @@
         "win": 57.895
        },
        "train": {
-        "exp": 0.25,
+        "exp": 0.247,
         "n": 38,
-        "tot": 9.493,
+        "tot": 9.378,
         "win": 63.158
        }
       },
@@ -242581,16 +245659,16 @@
         "win": 58.824
        },
        "train": {
-        "exp": 0.243,
+        "exp": 0.239,
         "n": 28,
-        "tot": 6.81,
+        "tot": 6.695,
         "win": 60.714
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 29,
+     "robust": 26,
      "tested": 72
     },
     "vdelta": {
@@ -242667,7 +245745,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 85,
+     "robust": 90,
      "tested": 3240
     }
    },
@@ -242676,7 +245754,7 @@
    ]
   },
   "M&M": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -242695,10 +245773,10 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.163,
-        "n": 13,
-        "tot": 2.123,
-        "win": 46.154
+        "exp": 0.191,
+        "n": 12,
+        "tot": 2.291,
+        "win": 50.0
        },
        "train": {
         "exp": 0.07,
@@ -242719,9 +245797,9 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.169,
+        "exp": 0.146,
         "n": 15,
-        "tot": 2.537,
+        "tot": 2.19,
         "win": 53.333
        },
        "train": {
@@ -242743,10 +245821,10 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.175,
-        "n": 13,
-        "tot": 2.272,
-        "win": 53.846
+        "exp": 0.179,
+        "n": 12,
+        "tot": 2.145,
+        "win": 50.0
        },
        "train": {
         "exp": 0.044,
@@ -242912,7 +245990,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 191,
+     "robust": 190,
      "tested": 3240
     },
     "inside": {
@@ -243066,7 +246144,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 183,
+     "robust": 191,
      "tested": 3240
     },
     "odrive": {
@@ -243136,7 +246214,7 @@
        "train": {
         "exp": 0.069,
         "n": 15,
-        "tot": 1.035,
+        "tot": 1.04,
         "win": 40.0
        }
       }
@@ -243539,7 +246617,7 @@
    "skipped_gap_days": []
   },
   "MARUTI": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -244164,7 +247242,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 590,
+     "robust": 592,
      "tested": 3240
     },
     "sweep": {
@@ -244346,7 +247424,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 148,
+     "robust": 152,
      "tested": 3240
     }
    },
@@ -244355,7 +247433,7 @@
    ]
   },
   "MAXHEALTH": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -244380,10 +247458,10 @@
         "win": 46.154
        },
        "train": {
-        "exp": 0.119,
-        "n": 26,
-        "tot": 3.085,
-        "win": 50.0
+        "exp": 0.145,
+        "n": 25,
+        "tot": 3.635,
+        "win": 52.0
        }
       },
       {
@@ -244745,7 +247823,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 349,
+     "robust": 329,
      "tested": 3240
     },
     "odrive": {
@@ -244983,7 +248061,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 157,
+     "robust": 147,
      "tested": 3240
     },
     "sweep": {
@@ -245081,9 +248159,9 @@
         "win": 50.0
        },
        "train": {
-        "exp": 0.086,
+        "exp": 0.085,
         "n": 21,
-        "tot": 1.815,
+        "tot": 1.79,
         "win": 47.619
        }
       },
@@ -245218,7 +248296,7 @@
    "skipped_gap_days": []
   },
   "MAZDOCK": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -245644,10 +248722,33 @@
         "win": 47.059
        },
        "train": {
-        "exp": 0.084,
+        "exp": 0.125,
         "n": 37,
-        "tot": 3.118,
-        "win": 45.946
+        "tot": 4.618,
+        "win": 48.649
+       }
+      },
+      {
+       "p": {
+        "dead": 870,
+        "filt": "none",
+        "mode": "bounce",
+        "scale": "fine",
+        "side": "both",
+        "stop": "p0.5",
+        "tgt": 2
+       },
+       "test": {
+        "exp": 0.131,
+        "n": 19,
+        "tot": 2.496,
+        "win": 47.368
+       },
+       "train": {
+        "exp": 0.09,
+        "n": 39,
+        "tot": 3.518,
+        "win": 46.154
        }
       },
       {
@@ -245672,34 +248773,11 @@
         "tot": 1.2,
         "win": 50.0
        }
-      },
-      {
-       "p": {
-        "dead": 690,
-        "filt": "none",
-        "mode": "bounce",
-        "scale": "fine",
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": "eod"
-       },
-       "test": {
-        "exp": 0.074,
-        "n": 17,
-        "tot": 1.259,
-        "win": 35.294
-       },
-       "train": {
-        "exp": 0.105,
-        "n": 37,
-        "tot": 3.869,
-        "win": 43.243
-       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 16,
+     "robust": 18,
      "tested": 96
     },
     "structure": {
@@ -245988,7 +249066,7 @@
    "skipped_gap_days": []
   },
   "MOTHERSON": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -246138,9 +249216,9 @@
         "win": 16.667
        },
        "train": {
-        "exp": 0.288,
+        "exp": 0.279,
         "n": 22,
-        "tot": 6.343,
+        "tot": 6.134,
         "win": 22.727
        }
       }
@@ -246784,9 +249862,9 @@
         "win": 53.846
        },
        "train": {
-        "exp": 0.136,
+        "exp": 0.138,
         "n": 31,
-        "tot": 4.208,
+        "tot": 4.271,
         "win": 51.613
        }
       },
@@ -246806,9 +249884,9 @@
         "win": 70.0
        },
        "train": {
-        "exp": 0.115,
+        "exp": 0.117,
         "n": 24,
-        "tot": 2.751,
+        "tot": 2.814,
         "win": 45.833
        }
       },
@@ -246882,10 +249960,10 @@
         "win": 69.231
        },
        "train": {
-        "exp": 0.148,
-        "n": 26,
-        "tot": 3.853,
-        "win": 57.692
+        "exp": 0.15,
+        "n": 27,
+        "tot": 4.039,
+        "win": 59.259
        }
       },
       {
@@ -246905,23 +249983,23 @@
         "win": 71.429
        },
        "train": {
-        "exp": 0.11,
-        "n": 30,
-        "tot": 3.291,
-        "win": 56.667
+        "exp": 0.112,
+        "n": 31,
+        "tot": 3.477,
+        "win": 58.065
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 37,
+     "robust": 38,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "MUTHOOTFIN": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -246996,7 +250074,7 @@
        "train": {
         "exp": 0.084,
         "n": 31,
-        "tot": 2.608,
+        "tot": 2.59,
         "win": 12.903
        }
       }
@@ -247025,9 +250103,9 @@
         "win": 21.429
        },
        "train": {
-        "exp": 0.117,
+        "exp": 0.115,
         "n": 30,
-        "tot": 3.509,
+        "tot": 3.461,
         "win": 16.667
        }
       },
@@ -247526,7 +250604,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 466,
+     "robust": 462,
      "tested": 3240
     },
     "sweep": {
@@ -247624,9 +250702,9 @@
         "win": 55.0
        },
        "train": {
-        "exp": 0.043,
+        "exp": 0.041,
         "n": 37,
-        "tot": 1.581,
+        "tot": 1.503,
         "win": 37.838
        }
       },
@@ -247646,9 +250724,9 @@
         "win": 55.0
        },
        "train": {
-        "exp": 0.037,
+        "exp": 0.035,
         "n": 39,
-        "tot": 1.437,
+        "tot": 1.359,
         "win": 38.462
        }
       },
@@ -247668,9 +250746,9 @@
         "win": 45.0
        },
        "train": {
-        "exp": 0.003,
+        "exp": 0.002,
         "n": 39,
-        "tot": 0.136,
+        "tot": 0.059,
         "win": 25.641
        }
       }
@@ -247763,7 +250841,7 @@
    ]
   },
   "NESTLEIND": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -248491,7 +251569,7 @@
        "train": {
         "exp": 0.208,
         "n": 22,
-        "tot": 4.566,
+        "tot": 4.57,
         "win": 50.0
        }
       },
@@ -248513,7 +251591,7 @@
        "train": {
         "exp": 0.324,
         "n": 22,
-        "tot": 7.124,
+        "tot": 7.129,
         "win": 50.0
        }
       },
@@ -248626,7 +251704,7 @@
    "skipped_gap_days": []
   },
   "NTPC": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -248684,31 +251762,31 @@
       {
        "p": {
         "at": "pivot",
-        "dead": 870,
+        "dead": 690,
         "filt": "none",
         "pat": "pin",
         "side": "both",
-        "stop": "p0.5",
+        "stop": "natural",
         "tgt": "eod",
         "tol": 0.003
        },
        "test": {
-        "exp": 0.091,
-        "n": 18,
-        "tot": 1.631,
-        "win": 38.889
+        "exp": 0.088,
+        "n": 16,
+        "tot": 1.409,
+        "win": 18.75
        },
        "train": {
-        "exp": 0.168,
-        "n": 37,
-        "tot": 6.226,
-        "win": 48.649
+        "exp": 0.062,
+        "n": 34,
+        "tot": 2.102,
+        "win": 23.529
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 18,
+     "robust": 15,
      "tested": 192
     },
     "cpr": {
@@ -249347,43 +252425,20 @@
         "n": 6,
         "side": "both",
         "stop": "p0.5",
-        "tgt": 3,
-        "thr": 0.3
+        "tgt": 2,
+        "thr": 0.5
        },
        "test": {
-        "exp": 0.173,
-        "n": 13,
-        "tot": 2.255,
-        "win": 53.846
+        "exp": 0.35,
+        "n": 5,
+        "tot": 1.75,
+        "win": 60.0
        },
        "train": {
-        "exp": 0.209,
-        "n": 18,
-        "tot": 3.763,
+        "exp": 0.2,
+        "n": 12,
+        "tot": 2.4,
         "win": 50.0
-       }
-      },
-      {
-       "p": {
-        "dead": 630,
-        "filt": "none",
-        "n": 6,
-        "side": "both",
-        "stop": "natural",
-        "tgt": 3,
-        "thr": 0.3
-       },
-       "test": {
-        "exp": 0.163,
-        "n": 13,
-        "tot": 2.124,
-        "win": 61.538
-       },
-       "train": {
-        "exp": 0.225,
-        "n": 18,
-        "tot": 4.054,
-        "win": 55.556
        }
       },
       {
@@ -249393,26 +252448,49 @@
         "n": 6,
         "side": "both",
         "stop": "p0.5",
-        "tgt": 2,
+        "tgt": 1.5,
         "thr": 0.3
        },
        "test": {
-        "exp": 0.157,
+        "exp": 0.179,
         "n": 13,
-        "tot": 2.043,
-        "win": 53.846
+        "tot": 2.331,
+        "win": 61.538
        },
        "train": {
-        "exp": 0.175,
-        "n": 18,
-        "tot": 3.157,
-        "win": 50.0
+        "exp": 0.185,
+        "n": 17,
+        "tot": 3.15,
+        "win": 58.824
+       }
+      },
+      {
+       "p": {
+        "dead": 630,
+        "filt": "none",
+        "n": 6,
+        "side": "both",
+        "stop": "p0.5",
+        "tgt": 1.5,
+        "thr": 0.5
+       },
+       "test": {
+        "exp": 0.2,
+        "n": 5,
+        "tot": 1.0,
+        "win": 60.0
+       },
+       "train": {
+        "exp": 0.179,
+        "n": 12,
+        "tot": 2.15,
+        "win": 58.333
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 45,
+     "robust": 49,
      "tested": 3240
     }
    },
@@ -249421,7 +252499,7 @@
    ]
   },
   "ONGC": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -249503,7 +252581,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 25,
+     "robust": 26,
      "tested": 192
     },
     "cpr": {
@@ -250217,7 +253295,7 @@
    "skipped_gap_days": []
   },
   "PFC": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -250915,7 +253993,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 417,
+     "robust": 420,
      "tested": 3240
     },
     "sweep": {
@@ -251150,7 +254228,7 @@
    "skipped_gap_days": []
   },
   "PIDILITIND": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -251810,29 +254888,6 @@
        "p": {
         "dead": 870,
         "filt": "none",
-        "side": "long",
-        "src": "pdhl",
-        "stop": "natural",
-        "tgt": 1.5,
-        "w": 1
-       },
-       "test": {
-        "exp": 0.239,
-        "n": 6,
-        "tot": 1.436,
-        "win": 50.0
-       },
-       "train": {
-        "exp": 0.044,
-        "n": 20,
-        "tot": 0.872,
-        "win": 55.0
-       }
-      },
-      {
-       "p": {
-        "dead": 870,
-        "filt": "none",
         "side": "both",
         "src": "pdhl",
         "stop": "natural",
@@ -251848,8 +254903,31 @@
        "train": {
         "exp": 0.031,
         "n": 25,
-        "tot": 0.775,
+        "tot": 0.769,
         "win": 40.0
+       }
+      },
+      {
+       "p": {
+        "dead": 870,
+        "filt": "none",
+        "side": "long",
+        "src": "pdhl",
+        "stop": "natural",
+        "tgt": "eod",
+        "w": 3
+       },
+       "test": {
+        "exp": 0.504,
+        "n": 6,
+        "tot": 3.024,
+        "win": 50.0
+       },
+       "train": {
+        "exp": 0.029,
+        "n": 20,
+        "tot": 0.574,
+        "win": 30.0
        }
       }
      ],
@@ -251922,7 +255000,7 @@
        "train": {
         "exp": 0.025,
         "n": 25,
-        "tot": 0.634,
+        "tot": 0.631,
         "win": 48.0
        }
       }
@@ -252013,7 +255091,7 @@
    "skipped_gap_days": []
   },
   "PNB": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -252038,34 +255116,10 @@
         "win": 54.545
        },
        "train": {
-        "exp": 0.092,
+        "exp": 0.138,
         "n": 27,
-        "tot": 2.482,
-        "win": 55.556
-       }
-      },
-      {
-       "p": {
-        "at": "pivot",
-        "dead": 690,
-        "filt": "none",
-        "pat": "pin",
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": "eod",
-        "tol": 0.001
-       },
-       "test": {
-        "exp": 0.332,
-        "n": 11,
-        "tot": 3.649,
-        "win": 45.455
-       },
-       "train": {
-        "exp": 0.087,
-        "n": 27,
-        "tot": 2.351,
-        "win": 44.444
+        "tot": 3.732,
+        "win": 59.259
        }
       },
       {
@@ -252086,16 +255140,40 @@
         "win": 53.846
        },
        "train": {
-        "exp": 0.069,
+        "exp": 0.108,
         "n": 32,
-        "tot": 2.212,
-        "win": 53.125
+        "tot": 3.462,
+        "win": 56.25
+       }
+      },
+      {
+       "p": {
+        "at": "pivot",
+        "dead": 690,
+        "filt": "none",
+        "pat": "pin",
+        "side": "both",
+        "stop": "p0.5",
+        "tgt": 2,
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.268,
+        "n": 11,
+        "tot": 2.95,
+        "win": 54.545
+       },
+       "train": {
+        "exp": 0.108,
+        "n": 27,
+        "tot": 2.917,
+        "win": 51.852
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 11,
+     "robust": 13,
      "tested": 192
     },
     "cpr": {
@@ -252249,7 +255327,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 116,
+     "robust": 114,
      "tested": 3240
     },
     "inside": {
@@ -252946,61 +256024,13 @@
    "skipped_gap_days": []
   },
   "POLYCAB": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
    "setups": {
     "candle": {
      "best": [
-      {
-       "p": {
-        "at": "pivot",
-        "dead": 690,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "long",
-        "stop": "p0.5",
-        "tgt": "eod",
-        "tol": 0.001
-       },
-       "test": {
-        "exp": 0.15,
-        "n": 13,
-        "tot": 1.954,
-        "win": 46.154
-       },
-       "train": {
-        "exp": 0.451,
-        "n": 21,
-        "tot": 9.462,
-        "win": 57.143
-       }
-      },
-      {
-       "p": {
-        "at": "pivot",
-        "dead": 870,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "long",
-        "stop": "p0.5",
-        "tgt": "eod",
-        "tol": 0.001
-       },
-       "test": {
-        "exp": 0.15,
-        "n": 13,
-        "tot": 1.954,
-        "win": 46.154
-       },
-       "train": {
-        "exp": 0.307,
-        "n": 28,
-        "tot": 8.61,
-        "win": 50.0
-       }
-      },
       {
        "p": {
         "at": "swing",
@@ -253013,22 +256043,70 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.33,
+        "exp": 0.251,
         "n": 15,
-        "tot": 4.955,
+        "tot": 3.767,
+        "win": 26.667
+       },
+       "train": {
+        "exp": 0.125,
+        "n": 33,
+        "tot": 4.116,
+        "win": 33.333
+       }
+      },
+      {
+       "p": {
+        "at": "pivot",
+        "dead": 690,
+        "filt": "none",
+        "pat": "pin",
+        "side": "long",
+        "stop": "p0.5",
+        "tgt": "eod",
+        "tol": 0.003
+       },
+       "test": {
+        "exp": 0.115,
+        "n": 13,
+        "tot": 1.49,
+        "win": 38.462
+       },
+       "train": {
+        "exp": 0.106,
+        "n": 23,
+        "tot": 2.448,
+        "win": 39.13
+       }
+      },
+      {
+       "p": {
+        "at": "swing",
+        "dead": 690,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "long",
+        "stop": "natural",
+        "tgt": "eod",
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.522,
+        "n": 9,
+        "tot": 4.701,
         "win": 33.333
        },
        "train": {
-        "exp": 0.116,
-        "n": 32,
-        "tot": 3.703,
-        "win": 31.25
+        "exp": 0.102,
+        "n": 23,
+        "tot": 2.336,
+        "win": 26.087
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 33,
+     "robust": 22,
      "tested": 192
     },
     "cpr": {
@@ -253856,7 +256934,7 @@
    "skipped_gap_days": []
   },
   "POWERGRID": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -254782,14 +257860,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 107,
+     "robust": 115,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "POWERINDIA": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -254856,10 +257934,10 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.21,
-        "n": 13,
-        "tot": 2.725,
-        "win": 38.462
+        "exp": 0.273,
+        "n": 12,
+        "tot": 3.275,
+        "win": 41.667
        },
        "train": {
         "exp": 0.146,
@@ -254871,7 +257949,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 34,
+     "robust": 35,
      "tested": 192
     },
     "cpr": {
@@ -255025,7 +258103,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 203,
+     "robust": 202,
      "tested": 3240
     },
     "inside": {
@@ -255517,7 +258595,7 @@
        "train": {
         "exp": 0.067,
         "n": 23,
-        "tot": 1.539,
+        "tot": 1.535,
         "win": 43.478
        }
       },
@@ -255561,7 +258639,7 @@
        "train": {
         "exp": 0.008,
         "n": 23,
-        "tot": 0.182,
+        "tot": 0.178,
         "win": 43.478
        }
       }
@@ -255654,7 +258732,7 @@
    ]
   },
   "RELIANCE": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -255679,34 +258757,10 @@
         "win": 27.778
        },
        "train": {
-        "exp": 0.064,
-        "n": 32,
-        "tot": 2.046,
-        "win": 28.125
-       }
-      },
-      {
-       "p": {
-        "at": "swing",
-        "dead": 690,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "both",
-        "stop": "natural",
-        "tgt": 2,
-        "tol": 0.001
-       },
-       "test": {
-        "exp": 0.124,
-        "n": 18,
-        "tot": 2.232,
-        "win": 55.556
-       },
-       "train": {
-        "exp": 0.029,
-        "n": 32,
-        "tot": 0.92,
-        "win": 37.5
+        "exp": 0.057,
+        "n": 33,
+        "tot": 1.874,
+        "win": 27.273
        }
       },
       {
@@ -255727,10 +258781,34 @@
         "win": 44.444
        },
        "train": {
-        "exp": 0.025,
-        "n": 32,
-        "tot": 0.784,
-        "win": 43.75
+        "exp": 0.053,
+        "n": 33,
+        "tot": 1.734,
+        "win": 45.455
+       }
+      },
+      {
+       "p": {
+        "at": "swing",
+        "dead": 690,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "both",
+        "stop": "natural",
+        "tgt": 2,
+        "tol": 0.001
+       },
+       "test": {
+        "exp": 0.124,
+        "n": 18,
+        "tot": 2.232,
+        "win": 55.556
+       },
+       "train": {
+        "exp": 0.023,
+        "n": 33,
+        "tot": 0.749,
+        "win": 36.364
        }
       }
      ],
@@ -256464,14 +259542,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 96,
+     "robust": 87,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "SBILIFE": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -256498,7 +259576,7 @@
        "train": {
         "exp": 0.086,
         "n": 38,
-        "tot": 3.279,
+        "tot": 3.267,
         "win": 50.0
        }
       },
@@ -256520,9 +259598,9 @@
         "win": 50.0
        },
        "train": {
-        "exp": 0.086,
+        "exp": 0.085,
         "n": 40,
-        "tot": 3.429,
+        "tot": 3.417,
         "win": 50.0
        }
       },
@@ -257334,7 +260412,7 @@
    "skipped_gap_days": []
   },
   "SBIN": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -257570,7 +260648,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 387,
+     "robust": 385,
      "tested": 3240
     },
     "inside": {
@@ -258113,10 +261191,33 @@
         "win": 41.667
        },
        "train": {
-        "exp": 0.138,
+        "exp": 0.132,
         "n": 29,
-        "tot": 3.991,
+        "tot": 3.83,
         "win": 58.621
+       }
+      },
+      {
+       "p": {
+        "dead": 780,
+        "filt": "rsi50",
+        "n": 6,
+        "side": "both",
+        "stop": "natural",
+        "tgt": 1.5,
+        "thr": 0.5
+       },
+       "test": {
+        "exp": 0.134,
+        "n": 7,
+        "tot": 0.939,
+        "win": 42.857
+       },
+       "train": {
+        "exp": 0.109,
+        "n": 15,
+        "tot": 1.636,
+        "win": 53.333
        }
       },
       {
@@ -258136,33 +261237,10 @@
         "win": 42.857
        },
        "train": {
-        "exp": 0.205,
+        "exp": 0.197,
         "n": 21,
-        "tot": 4.297,
+        "tot": 4.146,
         "win": 66.667
-       }
-      },
-      {
-       "p": {
-        "dead": 690,
-        "filt": "rsi50",
-        "n": 6,
-        "side": "both",
-        "stop": "natural",
-        "tgt": 2,
-        "thr": 0.3
-       },
-       "test": {
-        "exp": 0.103,
-        "n": 7,
-        "tot": 0.721,
-        "win": 28.571
-       },
-       "train": {
-        "exp": 0.239,
-        "n": 21,
-        "tot": 5.025,
-        "win": 61.905
        }
       }
      ],
@@ -258175,7 +261253,7 @@
    "skipped_gap_days": []
   },
   "SHRIRAMFIN": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -258852,7 +261930,7 @@
        "test": {
         "exp": 0.233,
         "n": 12,
-        "tot": 2.792,
+        "tot": 2.793,
         "win": 58.333
        },
        "train": {
@@ -258874,7 +261952,7 @@
        "test": {
         "exp": 0.206,
         "n": 12,
-        "tot": 2.469,
+        "tot": 2.47,
         "win": 58.333
        },
        "train": {
@@ -258896,7 +261974,7 @@
        "test": {
         "exp": 0.152,
         "n": 12,
-        "tot": 1.819,
+        "tot": 1.82,
         "win": 58.333
        },
        "train": {
@@ -258995,7 +262073,7 @@
    ]
   },
   "SIEMENS": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -259077,7 +262155,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 19,
+     "robust": 18,
      "tested": 192
     },
     "cpr": {
@@ -259231,7 +262309,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 377,
+     "robust": 381,
      "tested": 3240
     },
     "inside": {
@@ -259385,7 +262463,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 499,
+     "robust": 501,
      "tested": 3240
     },
     "odrive": {
@@ -259875,7 +262953,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 103,
+     "robust": 99,
      "tested": 3240
     }
    },
@@ -259884,7 +262962,7 @@
    ]
   },
   "SOLARINDS": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -260506,14 +263584,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 79,
+     "robust": 80,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "SUNPHARMA": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -260562,10 +263640,10 @@
         "win": 21.429
        },
        "train": {
-        "exp": 0.015,
-        "n": 31,
-        "tot": 0.452,
-        "win": 9.677
+        "exp": 0.011,
+        "n": 32,
+        "tot": 0.35,
+        "win": 9.375
        }
       }
      ],
@@ -260909,10 +263987,10 @@
         "tgt": 2
        },
        "test": {
-        "exp": 0.072,
-        "n": 17,
-        "tot": 1.219,
-        "win": 41.176
+        "exp": 0.106,
+        "n": 16,
+        "tot": 1.698,
+        "win": 43.75
        },
        "train": {
         "exp": 0.013,
@@ -261078,7 +264156,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 18,
+     "robust": 13,
      "tested": 144
     },
     "trend": {
@@ -261095,13 +264173,13 @@
        "test": {
         "exp": 0.224,
         "n": 20,
-        "tot": 4.484,
+        "tot": 4.489,
         "win": 60.0
        },
        "train": {
         "exp": 0.174,
         "n": 37,
-        "tot": 6.455,
+        "tot": 6.454,
         "win": 51.351
        }
       },
@@ -261121,10 +264199,10 @@
         "win": 83.333
        },
        "train": {
-        "exp": 0.162,
-        "n": 20,
-        "tot": 3.247,
-        "win": 55.0
+        "exp": 0.159,
+        "n": 21,
+        "tot": 3.349,
+        "win": 57.143
        }
       },
       {
@@ -261143,16 +264221,16 @@
         "win": 72.222
        },
        "train": {
-        "exp": 0.15,
-        "n": 34,
-        "tot": 5.106,
-        "win": 47.059
+        "exp": 0.149,
+        "n": 35,
+        "tot": 5.208,
+        "win": 48.571
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 24,
+     "robust": 22,
      "tested": 72
     },
     "vdelta": {
@@ -261236,7 +264314,7 @@
    "skipped_gap_days": []
   },
   "TATACAP": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -261403,29 +264481,6 @@
       {
        "p": {
         "age": 6,
-        "dead": 870,
-        "filt": "none",
-        "minpct": 0.002,
-        "side": "long",
-        "stop": "p1.0",
-        "tgt": 1.5
-       },
-       "test": {
-        "exp": 0.297,
-        "n": 9,
-        "tot": 2.675,
-        "win": 55.556
-       },
-       "train": {
-        "exp": 0.265,
-        "n": 19,
-        "tot": 5.044,
-        "win": 68.421
-       }
-      },
-      {
-       "p": {
-        "age": 6,
         "dead": 690,
         "filt": "rsi50",
         "minpct": 0.0,
@@ -261444,6 +264499,29 @@
         "n": 9,
         "tot": 2.386,
         "win": 77.778
+       }
+      },
+      {
+       "p": {
+        "age": 6,
+        "dead": 870,
+        "filt": "none",
+        "minpct": 0.002,
+        "side": "long",
+        "stop": "p1.0",
+        "tgt": 1.5
+       },
+       "test": {
+        "exp": 0.297,
+        "n": 9,
+        "tot": 2.675,
+        "win": 55.556
+       },
+       "train": {
+        "exp": 0.265,
+        "n": 19,
+        "tot": 5.028,
+        "win": 68.421
        }
       },
       {
@@ -261472,7 +264550,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 792,
+     "robust": 791,
      "tested": 3240
     },
     "inside": {
@@ -261626,7 +264704,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 420,
+     "robust": 423,
      "tested": 3240
     },
     "odrive": {
@@ -262162,14 +265240,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 136,
+     "robust": 143,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "TATACONSUM": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -263010,7 +266088,7 @@
    "skipped_gap_days": []
   },
   "TATAPOWER": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -263077,10 +266155,10 @@
         "tol": 0.001
        },
        "test": {
-        "exp": 0.132,
-        "n": 11,
-        "tot": 1.45,
-        "win": 45.455
+        "exp": 0.2,
+        "n": 12,
+        "tot": 2.4,
+        "win": 50.0
        },
        "train": {
         "exp": 0.1,
@@ -263092,7 +266170,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 21,
+     "robust": 28,
      "tested": 192
     },
     "cpr": {
@@ -263662,7 +266740,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 278,
+     "robust": 285,
      "tested": 3240
     },
     "sweep": {
@@ -263881,10 +266959,10 @@
         "win": 57.143
        },
        "train": {
-        "exp": 0.118,
-        "n": 16,
-        "tot": 1.882,
-        "win": 56.25
+        "exp": 0.078,
+        "n": 17,
+        "tot": 1.332,
+        "win": 52.941
        }
       }
      ],
@@ -263897,7 +266975,7 @@
    "skipped_gap_days": []
   },
   "TATASTEEL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -264595,7 +267673,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 279,
+     "robust": 272,
      "tested": 3240
     },
     "sweep": {
@@ -264693,9 +267771,9 @@
         "win": 57.143
        },
        "train": {
-        "exp": 0.0,
+        "exp": 0.001,
         "n": 27,
-        "tot": 0.013,
+        "tot": 0.019,
         "win": 51.852
        }
       }
@@ -264779,7 +267857,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 175,
+     "robust": 178,
      "tested": 3240
     }
    },
@@ -264788,7 +267866,7 @@
    ]
   },
   "TCS": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -265483,7 +268561,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 58,
+     "robust": 59,
      "tested": 3240
     }
    },
@@ -265492,7 +268570,7 @@
    ]
   },
   "TECHM": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -266214,7 +269292,7 @@
    "skipped_gap_days": []
   },
   "TITAN": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -266466,9 +269544,9 @@
         "tgt": "eod"
        },
        "test": {
-        "exp": 0.122,
+        "exp": 0.128,
         "n": 9,
-        "tot": 1.096,
+        "tot": 1.155,
         "win": 55.556
        },
        "train": {
@@ -266512,9 +269590,9 @@
         "tgt": "eod"
        },
        "test": {
-        "exp": 0.122,
+        "exp": 0.128,
         "n": 9,
-        "tot": 1.096,
+        "tot": 1.155,
         "win": 55.556
        },
        "train": {
@@ -266987,9 +270065,9 @@
         "win": 55.556
        },
        "train": {
-        "exp": 0.136,
+        "exp": 0.135,
         "n": 20,
-        "tot": 2.71,
+        "tot": 2.707,
         "win": 55.0
        }
       },
@@ -267033,14 +270111,14 @@
        "train": {
         "exp": 0.126,
         "n": 28,
-        "tot": 3.537,
+        "tot": 3.535,
         "win": 57.143
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 52,
+     "robust": 51,
      "tested": 72
     },
     "vdelta": {
@@ -267124,7 +270202,7 @@
    "skipped_gap_days": []
   },
   "TMCV": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -267206,7 +270284,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 48,
+     "robust": 46,
      "tested": 192
     },
     "cpr": {
@@ -267920,7 +270998,7 @@
    "skipped_gap_days": []
   },
   "TMPV": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -268156,7 +271234,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 337,
+     "robust": 341,
      "tested": 3240
     },
     "inside": {
@@ -268310,7 +271388,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 29,
+     "robust": 31,
      "tested": 3240
     },
     "odrive": {
@@ -268822,38 +271900,38 @@
       },
       {
        "p": {
-        "dead": 780,
+        "dead": 870,
         "filt": "none",
-        "n": 6,
+        "n": 12,
         "side": "both",
-        "stop": "p1.0",
+        "stop": "natural",
         "tgt": 1.5,
-        "thr": 0.5
+        "thr": 0.3
        },
        "test": {
-        "exp": 0.318,
-        "n": 6,
-        "tot": 1.905,
-        "win": 66.667
+        "exp": 0.271,
+        "n": 13,
+        "tot": 3.526,
+        "win": 53.846
        },
        "train": {
-        "exp": 0.248,
-        "n": 24,
-        "tot": 5.941,
-        "win": 50.0
+        "exp": 0.246,
+        "n": 31,
+        "tot": 7.619,
+        "win": 58.065
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 149,
+     "robust": 151,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "TORNTPHARM": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -269118,9 +272196,9 @@
         "win": 80.0
        },
        "train": {
-        "exp": 0.115,
+        "exp": 0.114,
         "n": 15,
-        "tot": 1.73,
+        "tot": 1.71,
         "win": 60.0
        }
       },
@@ -269463,7 +272541,7 @@
        "train": {
         "exp": 0.127,
         "n": 28,
-        "tot": 3.562,
+        "tot": 3.564,
         "win": 53.571
        }
       }
@@ -269547,14 +272625,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 120,
+     "robust": 135,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "TRENT": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -270304,32 +273382,10 @@
         "win": 53.846
        },
        "train": {
-        "exp": 0.192,
+        "exp": 0.12,
         "n": 19,
-        "tot": 3.639,
-        "win": 52.632
-       }
-      },
-      {
-       "p": {
-        "dead": 690,
-        "filt": "none",
-        "kind": "st3",
-        "side": "long",
-        "stop": "p0.5",
-        "tgt": 2
-       },
-       "test": {
-        "exp": 0.167,
-        "n": 10,
-        "tot": 1.672,
-        "win": 50.0
-       },
-       "train": {
-        "exp": 0.204,
-        "n": 9,
-        "tot": 1.84,
-        "win": 55.556
+        "tot": 2.272,
+        "win": 47.368
        }
       },
       {
@@ -270348,16 +273404,38 @@
         "win": 30.769
        },
        "train": {
-        "exp": 0.225,
+        "exp": 0.174,
         "n": 19,
-        "tot": 4.277,
-        "win": 47.368
+        "tot": 3.303,
+        "win": 42.105
+       }
+      },
+      {
+       "p": {
+        "dead": 690,
+        "filt": "none",
+        "kind": "st3",
+        "side": "long",
+        "stop": "p0.5",
+        "tgt": 2
+       },
+       "test": {
+        "exp": 0.167,
+        "n": 10,
+        "tot": 1.672,
+        "win": 50.0
+       },
+       "train": {
+        "exp": 0.104,
+        "n": 9,
+        "tot": 0.936,
+        "win": 55.556
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 23,
+     "robust": 20,
      "tested": 72
     },
     "vdelta": {
@@ -270434,14 +273512,14 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 132,
+     "robust": 122,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "TVSMOTOR": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -271093,7 +274171,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 499,
+     "robust": 508,
      "tested": 3240
     },
     "sweep": {
@@ -271260,9 +274338,9 @@
         "thr": 0.5
        },
        "test": {
-        "exp": 0.779,
+        "exp": 0.821,
         "n": 6,
-        "tot": 4.675,
+        "tot": 4.923,
         "win": 66.667
        },
        "train": {
@@ -271306,9 +274384,9 @@
         "thr": 0.5
        },
        "test": {
-        "exp": 0.513,
+        "exp": 0.554,
         "n": 6,
-        "tot": 3.078,
+        "tot": 3.326,
         "win": 66.667
        },
        "train": {
@@ -271328,7 +274406,7 @@
    "skipped_gap_days": []
   },
   "ULTRACEMCO": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -271347,10 +274425,10 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.203,
+        "exp": 0.165,
         "n": 17,
-        "tot": 3.456,
-        "win": 41.176
+        "tot": 2.797,
+        "win": 35.294
        },
        "train": {
         "exp": 0.094,
@@ -271371,9 +274449,9 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.164,
+        "exp": 0.167,
         "n": 12,
-        "tot": 1.963,
+        "tot": 2.008,
         "win": 33.333
        },
        "train": {
@@ -271395,9 +274473,9 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.129,
+        "exp": 0.13,
         "n": 16,
-        "tot": 2.065,
+        "tot": 2.083,
         "win": 25.0
        },
        "train": {
@@ -271945,6 +275023,52 @@
         "filt": "none",
         "side": "long",
         "src": "swing2",
+        "stop": "natural",
+        "tgt": 1.5,
+        "w": 1
+       },
+       "test": {
+        "exp": 0.138,
+        "n": 10,
+        "tot": 1.383,
+        "win": 70.0
+       },
+       "train": {
+        "exp": 0.031,
+        "n": 21,
+        "tot": 0.65,
+        "win": 38.095
+       }
+      },
+      {
+       "p": {
+        "dead": 690,
+        "filt": "none",
+        "side": "both",
+        "src": "swing2",
+        "stop": "natural",
+        "tgt": 2,
+        "w": 3
+       },
+       "test": {
+        "exp": 0.171,
+        "n": 15,
+        "tot": 2.572,
+        "win": 53.333
+       },
+       "train": {
+        "exp": 0.025,
+        "n": 36,
+        "tot": 0.886,
+        "win": 38.889
+       }
+      },
+      {
+       "p": {
+        "dead": 690,
+        "filt": "none",
+        "side": "long",
+        "src": "swing2",
         "stop": "p0.5",
         "tgt": 2,
         "w": 1
@@ -271956,62 +275080,16 @@
         "win": 70.0
        },
        "train": {
-        "exp": 0.063,
-        "n": 22,
-        "tot": 1.384,
-        "win": 45.455
-       }
-      },
-      {
-       "p": {
-        "dead": 690,
-        "filt": "none",
-        "side": "long",
-        "src": "swing2",
-        "stop": "p0.5",
-        "tgt": "eod",
-        "w": 1
-       },
-       "test": {
-        "exp": 0.405,
-        "n": 10,
-        "tot": 4.048,
-        "win": 60.0
-       },
-       "train": {
-        "exp": 0.035,
-        "n": 22,
-        "tot": 0.781,
-        "win": 45.455
-       }
-      },
-      {
-       "p": {
-        "dead": 690,
-        "filt": "none",
-        "side": "long",
-        "src": "swing2",
-        "stop": "p0.5",
-        "tgt": 1.5,
-        "w": 1
-       },
-       "test": {
-        "exp": 0.28,
-        "n": 10,
-        "tot": 2.803,
-        "win": 70.0
-       },
-       "train": {
-        "exp": 0.03,
-        "n": 22,
-        "tot": 0.669,
-        "win": 45.455
+        "exp": 0.021,
+        "n": 21,
+        "tot": 0.434,
+        "win": 42.857
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 12,
+     "robust": 8,
      "tested": 144
     },
     "trend": {
@@ -272042,6 +275120,28 @@
        "p": {
         "dead": 690,
         "filt": "none",
+        "kind": "ema9_21",
+        "side": "long",
+        "stop": "p0.5",
+        "tgt": 1.5
+       },
+       "test": {
+        "exp": 0.227,
+        "n": 15,
+        "tot": 3.4,
+        "win": 66.667
+       },
+       "train": {
+        "exp": 0.008,
+        "n": 26,
+        "tot": 0.219,
+        "win": 42.308
+       }
+      },
+      {
+       "p": {
+        "dead": 690,
+        "filt": "none",
         "kind": "st2",
         "side": "long",
         "stop": "p0.5",
@@ -272058,28 +275158,6 @@
         "n": 20,
         "tot": 0.109,
         "win": 45.0
-       }
-      },
-      {
-       "p": {
-        "dead": 690,
-        "filt": "none",
-        "kind": "ema9_21",
-        "side": "long",
-        "stop": "p0.5",
-        "tgt": 1.5
-       },
-       "test": {
-        "exp": 0.227,
-        "n": 15,
-        "tot": 3.4,
-        "win": 66.667
-       },
-       "train": {
-        "exp": 0.004,
-        "n": 26,
-        "tot": 0.099,
-        "win": 42.308
        }
       }
      ],
@@ -272171,37 +275249,13 @@
    ]
   },
   "UNIONBANK": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
    "setups": {
     "candle": {
      "best": [
-      {
-       "p": {
-        "at": "swing",
-        "dead": 690,
-        "filt": "none",
-        "pat": "engulf",
-        "side": "both",
-        "stop": "p0.5",
-        "tgt": 2,
-        "tol": 0.003
-       },
-       "test": {
-        "exp": 0.118,
-        "n": 17,
-        "tot": 2.007,
-        "win": 47.059
-       },
-       "train": {
-        "exp": 0.097,
-        "n": 37,
-        "tot": 3.605,
-        "win": 45.946
-       }
-      },
       {
        "p": {
         "at": "swing",
@@ -272214,9 +275268,9 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.223,
+        "exp": 0.216,
         "n": 18,
-        "tot": 4.01,
+        "tot": 3.889,
         "win": 27.778
        },
        "train": {
@@ -272238,10 +275292,10 @@
         "tol": 0.003
        },
        "test": {
-        "exp": 0.107,
-        "n": 17,
-        "tot": 1.822,
-        "win": 41.176
+        "exp": 0.092,
+        "n": 16,
+        "tot": 1.474,
+        "win": 37.5
        },
        "train": {
         "exp": 0.069,
@@ -272249,11 +275303,35 @@
         "tot": 2.567,
         "win": 56.757
        }
+      },
+      {
+       "p": {
+        "at": "swing",
+        "dead": 690,
+        "filt": "none",
+        "pat": "engulf",
+        "side": "both",
+        "stop": "p0.5",
+        "tgt": 2,
+        "tol": 0.003
+       },
+       "test": {
+        "exp": 0.066,
+        "n": 16,
+        "tot": 1.057,
+        "win": 43.75
+       },
+       "train": {
+        "exp": 0.097,
+        "n": 37,
+        "tot": 3.605,
+        "win": 45.946
+       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 8,
+     "robust": 6,
      "tested": 192
     },
     "cpr": {
@@ -272407,7 +275485,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 425,
+     "robust": 413,
      "tested": 3240
     },
     "inside": {
@@ -272944,9 +276022,9 @@
         "win": 36.842
        },
        "train": {
-        "exp": 0.099,
+        "exp": 0.09,
         "n": 31,
-        "tot": 3.07,
+        "tot": 2.799,
         "win": 41.935
        }
       },
@@ -272966,9 +276044,9 @@
         "win": 41.176
        },
        "train": {
-        "exp": 0.089,
+        "exp": 0.088,
         "n": 28,
-        "tot": 2.485,
+        "tot": 2.468,
         "win": 35.714
        }
       },
@@ -272988,9 +276066,9 @@
         "win": 42.105
        },
        "train": {
-        "exp": 0.049,
+        "exp": 0.04,
         "n": 31,
-        "tot": 1.506,
+        "tot": 1.235,
         "win": 45.161
        }
       }
@@ -273081,7 +276159,7 @@
    "skipped_gap_days": []
   },
   "VAML": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -273779,11 +276857,34 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 308,
+     "robust": 329,
      "tested": 3240
     },
     "sweep": {
      "best": [
+      {
+       "p": {
+        "dead": 870,
+        "filt": "none",
+        "side": "both",
+        "src": "swing2",
+        "stop": "p0.5",
+        "tgt": 1.5,
+        "w": 3
+       },
+       "test": {
+        "exp": 0.137,
+        "n": 20,
+        "tot": 2.75,
+        "win": 55.0
+       },
+       "train": {
+        "exp": 0.095,
+        "n": 40,
+        "tot": 3.795,
+        "win": 52.5
+       }
+      },
       {
        "p": {
         "dead": 690,
@@ -273809,7 +276910,7 @@
       },
       {
        "p": {
-        "dead": 870,
+        "dead": 690,
         "filt": "none",
         "side": "both",
         "src": "swing2",
@@ -273819,38 +276920,15 @@
        },
        "test": {
         "exp": 0.075,
-        "n": 20,
-        "tot": 1.5,
+        "n": 18,
+        "tot": 1.35,
         "win": 50.0
        },
        "train": {
-        "exp": 0.095,
-        "n": 40,
-        "tot": 3.795,
-        "win": 52.5
-       }
-      },
-      {
-       "p": {
-        "dead": 870,
-        "filt": "none",
-        "side": "both",
-        "src": "swing3",
-        "stop": "p0.5",
-        "tgt": 1.5,
-        "w": 3
-       },
-       "test": {
-        "exp": 0.075,
-        "n": 20,
-        "tot": 1.5,
-        "win": 50.0
-       },
-       "train": {
-        "exp": 0.063,
-        "n": 38,
-        "tot": 2.395,
-        "win": 50.0
+        "exp": 0.069,
+        "n": 29,
+        "tot": 2.0,
+        "win": 48.276
        }
       }
      ],
@@ -273870,29 +276948,6 @@
      "best": [
       {
        "p": {
-        "dead": 690,
-        "filt": "none",
-        "n": 6,
-        "side": "both",
-        "stop": "p1.0",
-        "tgt": 3,
-        "thr": 0.5
-       },
-       "test": {
-        "exp": 0.546,
-        "n": 11,
-        "tot": 6.006,
-        "win": 54.545
-       },
-       "train": {
-        "exp": 0.58,
-        "n": 17,
-        "tot": 9.852,
-        "win": 64.706
-       }
-      },
-      {
-       "p": {
         "dead": 630,
         "filt": "none",
         "n": 6,
@@ -273908,46 +276963,69 @@
         "win": 75.0
        },
        "train": {
-        "exp": 0.506,
-        "n": 19,
-        "tot": 9.62,
-        "win": 68.421
+        "exp": 0.587,
+        "n": 18,
+        "tot": 10.557,
+        "win": 72.222
        }
       },
       {
        "p": {
-        "dead": 690,
+        "dead": 780,
         "filt": "none",
-        "n": 6,
+        "n": 12,
         "side": "both",
         "stop": "natural",
-        "tgt": "eod",
+        "tgt": 2,
         "thr": 0.5
        },
        "test": {
-        "exp": 0.502,
-        "n": 11,
-        "tot": 5.524,
-        "win": 54.545
+        "exp": 0.636,
+        "n": 5,
+        "tot": 3.18,
+        "win": 40.0
        },
        "train": {
-        "exp": 0.621,
-        "n": 17,
-        "tot": 10.552,
-        "win": 64.706
+        "exp": 0.582,
+        "n": 8,
+        "tot": 4.66,
+        "win": 62.5
+       }
+      },
+      {
+       "p": {
+        "dead": 780,
+        "filt": "none",
+        "n": 12,
+        "side": "both",
+        "stop": "natural",
+        "tgt": 3,
+        "thr": 0.5
+       },
+       "test": {
+        "exp": 0.622,
+        "n": 5,
+        "tot": 3.11,
+        "win": 40.0
+       },
+       "train": {
+        "exp": 0.582,
+        "n": 8,
+        "tot": 4.66,
+        "win": 62.5
        }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 208,
+     "robust": 216,
      "tested": 3240
     }
    },
    "skipped_gap_days": []
   },
   "VBL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -274314,7 +277392,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 53,
+     "robust": 52,
      "tested": 3240
     },
     "odrive": {
@@ -274622,7 +277700,7 @@
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 598,
+     "robust": 600,
      "tested": 3240
     },
     "sweep": {
@@ -274766,7 +277844,7 @@
        "train": {
         "exp": 0.09,
         "n": 29,
-        "tot": 2.603,
+        "tot": 2.604,
         "win": 48.276
        }
       }
@@ -274803,6 +277881,29 @@
       },
       {
        "p": {
+        "dead": 690,
+        "filt": "none",
+        "n": 6,
+        "side": "both",
+        "stop": "p1.0",
+        "tgt": 2,
+        "thr": 0.5
+       },
+       "test": {
+        "exp": 0.418,
+        "n": 7,
+        "tot": 2.929,
+        "win": 57.143
+       },
+       "train": {
+        "exp": 0.481,
+        "n": 12,
+        "tot": 5.777,
+        "win": 50.0
+       }
+      },
+      {
+       "p": {
         "dead": 630,
         "filt": "none",
         "n": 6,
@@ -274823,34 +277924,11 @@
         "tot": 2.777,
         "win": 62.5
        }
-      },
-      {
-       "p": {
-        "dead": 630,
-        "filt": "none",
-        "n": 6,
-        "side": "long",
-        "stop": "p1.0",
-        "tgt": "eod",
-        "thr": 0.3
-       },
-       "test": {
-        "exp": 0.914,
-        "n": 6,
-        "tot": 5.486,
-        "win": 66.667
-       },
-       "train": {
-        "exp": 0.347,
-        "n": 8,
-        "tot": 2.777,
-        "win": 62.5
-       }
       }
      ],
      "first": "2026-08-26",
      "last": "2026-11-23",
-     "robust": 226,
+     "robust": 213,
      "tested": 3240
     }
    },
@@ -274859,7 +277937,7 @@
    ]
   },
   "VEDL": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -275770,7 +278848,7 @@
    "skipped_gap_days": []
   },
   "WIPRO": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 60,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -276515,7 +279593,7 @@
    "skipped_gap_days": []
   },
   "ZYDUSLIFE": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "days": 59,
    "first": "2026-08-26",
    "last": "2026-11-23",
@@ -277125,10 +280203,10 @@
         "win": 53.846
        },
        "train": {
-        "exp": 0.208,
+        "exp": 0.147,
         "n": 29,
-        "tot": 6.018,
-        "win": 51.724
+        "tot": 4.266,
+        "win": 48.276
        }
       },
       {
@@ -277147,10 +280225,10 @@
         "win": 47.368
        },
        "train": {
-        "exp": 0.15,
+        "exp": 0.103,
         "n": 37,
-        "tot": 5.559,
-        "win": 48.649
+        "tot": 3.807,
+        "win": 45.946
        }
       },
       {
@@ -277190,29 +280268,6 @@
         "n": 6,
         "side": "both",
         "stop": "natural",
-        "tgt": 3,
-        "thr": 0.3
-       },
-       "test": {
-        "exp": 0.299,
-        "n": 15,
-        "tot": 4.483,
-        "win": 60.0
-       },
-       "train": {
-        "exp": 0.239,
-        "n": 35,
-        "tot": 8.355,
-        "win": 45.714
-       }
-      },
-      {
-       "p": {
-        "dead": 690,
-        "filt": "none",
-        "n": 6,
-        "side": "both",
-        "stop": "natural",
         "tgt": 2,
         "thr": 0.5
        },
@@ -277223,15 +280278,15 @@
         "win": 71.429
        },
        "train": {
-        "exp": 0.236,
-        "n": 26,
-        "tot": 6.131,
-        "win": 50.0
+        "exp": 0.202,
+        "n": 27,
+        "tot": 5.447,
+        "win": 48.148
        }
       },
       {
        "p": {
-        "dead": 780,
+        "dead": 690,
         "filt": "none",
         "n": 6,
         "side": "both",
@@ -277240,16 +280295,39 @@
         "thr": 0.3
        },
        "test": {
-        "exp": 0.225,
-        "n": 17,
-        "tot": 3.817,
-        "win": 52.941
+        "exp": 0.299,
+        "n": 15,
+        "tot": 4.483,
+        "win": 60.0
        },
        "train": {
-        "exp": 0.192,
-        "n": 39,
-        "tot": 7.497,
-        "win": 43.59
+        "exp": 0.201,
+        "n": 35,
+        "tot": 7.035,
+        "win": 42.857
+       }
+      },
+      {
+       "p": {
+        "dead": 690,
+        "filt": "none",
+        "n": 6,
+        "side": "both",
+        "stop": "natural",
+        "tgt": 1,
+        "thr": 0.5
+       },
+       "test": {
+        "exp": 0.479,
+        "n": 7,
+        "tot": 3.353,
+        "win": 85.714
+       },
+       "train": {
+        "exp": 0.159,
+        "n": 27,
+        "tot": 4.3,
+        "win": 59.259
        }
       }
      ],
@@ -277264,5 +280342,5 @@
    ]
   }
  },
- "updated": "2026-11-24"
+ "updated": "2026-11-25"
 }
